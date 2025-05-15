@@ -40,12 +40,12 @@
   --yellow-level-three: oklch(0.66 0.191281 44.6218);
   --yellow-level-four: oklch(0.86 0.1754 90.59);
 
-  --paragraph-heading: clamp(16px, 1.2vw, 20px);
+  --paragraph-heading: clamp(16px, 1.4vw, 24px);
   --our_text-heading: clamp(28px, 2.4vw, 36px);
-  --secondary-heading: clamp(28px, 4.2vw, 52px);
+  --secondary-heading: clamp(28px, 2.4vw, 44px);
   --primary-heading: clamp(36px, 7.2vw, 68px);
   --tertiary-heading: clamp(20px, 2vw, 28px);
-  --subtitle-heading: clamp(16px, 1.8vw, 20px);
+  --subtitle-heading: clamp(16px, 1.2vw, 20px);
   --extra-subtitle-heading: clamp(14px, 1.6vw, 18px);
   --extra-paragraph-heading: clamp(14px, 1.3vw, 15px);
   --special-heading: clamp(94px, 12.8vw, 190px);
@@ -87,16 +87,6 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-
-  --paragraph-heading: clamp(16px, 1.2vw, 20px);
-  --our_text-heading: clamp(28px, 2.4vw, 36px);
-  --secondary-heading: clamp(28px, 4.2vw, 52px);
-  --primary-heading: clamp(36px, 7.2vw, 68px);
-  --tertiary-heading: clamp(20px, 2vw, 28px);
-  --subtitle-heading: clamp(16px, 1.8vw, 20px);
-  --extra-subtitle-heading: clamp(14px, 1.6vw, 18px);
-  --extra-paragraph-heading: clamp(14px, 1.3vw, 15px);
-  --special-heading: clamp(94px, 12.8vw, 190px);
 }
 
 @theme inline {
@@ -138,6 +128,12 @@
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
+  --color-yellow-level-one: oklch(0.86 0.1754 90.59);
+  --color-yellow-level-two: oklch(0.86 0.1754 90.59);
+  --color-yellow-level-three: oklch(0.66 0.191281 44.6218);
+  --color-yellow-level-four: oklch(0.86 0.1754 90.59);
+  --color-yellow-level-five: oklch(0.58 0.2191 26.4);
+
   --text-paragraph-heading: var(--paragraph-heading);
   --text-our-text-heading: var(--our_text-heading);
   --text-secondary-heading: var(--secondary-heading);
@@ -147,6 +143,17 @@
   --text-extra-subtitle-heading: var(--extra-subtitle-heading);
   --text-extra-paragraph-heading: var(--extra-paragraph-heading);
   --text-special-heading: var(--special-heading);
+
+  --font-heading: var(--heading);
+  --font-paragraph: var(--paragraph);
+}
+
+@utility container {
+  padding-inline: 1rem;
+
+  @variant 2xl {
+    max-width: 1400px;
+  }
 }
 
 @layer base {
