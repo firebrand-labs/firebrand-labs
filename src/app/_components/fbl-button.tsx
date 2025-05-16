@@ -1,0 +1,27 @@
+import { FC } from "react";
+import Link from "next/link";
+import { buttonVariants } from "@/app/_components/ui/button";
+import { cn } from "@/lib/utils";
+import { Icons } from "@/app/_components/icons";
+
+interface FBLButtonProps {
+  href: string;
+  body: string;
+}
+
+const FBLButton: FC<FBLButtonProps> = ({ href, body }) => {
+  return (
+    <Link
+      href={href}
+      className={cn(
+        buttonVariants({ variant: "outline", size: "lg" }),
+        "font-paragraph tracking-wide relative group rounded-full flex items-center justify-between text-subtitle-heading font-bold mt-4 hover:bg-transparent hover:text-foreground w-[246px] h-[48px]"
+      )}
+    >
+      {body}
+      <Icons.ArrowRight className="!h-[40px] !w-[68px] absolute right-0.5 top-1/2  -translate-y-1/2 rounded-full  stroke-foreground group-hover:bg-yellow-level-five" />
+    </Link>
+  );
+};
+
+export default FBLButton;

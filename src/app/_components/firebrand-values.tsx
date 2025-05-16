@@ -12,6 +12,8 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/app/_components/ui/carousel";
+import { firebrandLabsValuesContent } from "@/config/marketing";
+import AnimatedIcon from "@/app/_components/animated-icon";
 
 const tailSectionData = [{ palette: "one", title: "hello" }];
 
@@ -55,32 +57,31 @@ const FirebrandValues: FC<FirebrandValuesProps> = ({ className }) => {
       className={"w-full "}
     >
       <CarouselContent className="w-full pl-0 ml-0 ">
-        {Array.from({ length: 2 }).map((_, index) => (
+        {Array.from([...firebrandLabsValuesContent]).map((item, index) => (
           <CarouselItem key={index} className="pl-0 ">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 items-start justify-center gap-4">
               <div className="flex items-start justify-center flex-col gap-3">
-                <h3 className="text-paragraph-heading font-semibold text-2xl md:text-7xl leading-tight text-yellow-level-three font-paragraph">
-                  Why not?
+                <h3 className="text-paragraph-heading tracking-wide font-semibold text-2xl md:text-7xl leading-tight text-yellow-level-three font-paragraph">
+                  {item.title}
                 </h3>
-                <p className="text-paragraph-heading italic font-extrabold mt-4 text-foreground leading-normal font-paragraph">
-                  we question the norm.
-                </p>
-                <p className="text-paragraph-heading text-foreground max-w-4xl leading-normal font-paragraph">
-                  we explore possibilities.
-                </p>
-                <p className="text-paragraph-heading text-foreground max-w-4xl leading-normal font-paragraph">
-                  our dynamic team is always ready for the next big challenge.
-                </p>
+                <ul className="flex items-start flex-col justify-center gap-4 text-paragraph-heading">
+                  {item.description.map((li, i) => (
+                    <li
+                      key={i}
+                      className={cn(
+                        "font-paragraph tracking-wide text-paragraph-heading leading-normal text-foreground",
+                        i === 0 ? "font-bold italic" : "font-normal"
+                      )}
+                    >
+                      {li}
+                    </li>
+                  ))}
+                </ul>
               </div>
               <div className="flex items-center justify-center">
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXitD5vdMQy8dYGkW7LiuezHjnCqUf4xgBcb0wo"
-                  }
-                  alt="hello"
-                  className="w-[280px] h-auto"
-                  width={100}
-                  height={100}
+                <AnimatedIcon
+                  className="max-w-full md:max-w-[360px]"
+                  icon={item.icon}
                 />
               </div>
             </div>

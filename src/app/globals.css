@@ -46,7 +46,7 @@
   --primary-heading: clamp(36px, 7.2vw, 68px);
   --tertiary-heading: clamp(20px, 2vw, 28px);
   --subtitle-heading: clamp(16px, 1.2vw, 20px);
-  --extra-subtitle-heading: clamp(14px, 1.6vw, 18px);
+  --extra-subtitle-heading: clamp(14px, 1.2vw, 16px);
   --extra-paragraph-heading: clamp(14px, 1.3vw, 15px);
   --special-heading: clamp(94px, 12.8vw, 190px);
 }
@@ -131,7 +131,7 @@
   --color-yellow-level-one: oklch(0.86 0.1754 90.59);
   --color-yellow-level-two: oklch(0.86 0.1754 90.59);
   --color-yellow-level-three: oklch(0.66 0.191281 44.6218);
-  --color-yellow-level-four: oklch(0.86 0.1754 90.59);
+  --color-yellow-level-four: oklch(0.75 0.1682 65.18);
   --color-yellow-level-five: oklch(0.58 0.2191 26.4);
 
   --text-paragraph-heading: var(--paragraph-heading);

@@ -6,9 +6,6 @@ import { useMediaQuery } from "react-responsive";
 
 import Image from "next/image";
 import { useRef } from "react";
-import { teamContent } from "@/app/config/marketing";
-import { Button } from "@/app/_components/ui/button";
-import { Icons } from "./icons";
 
 const solutionsTitle = ["Experience", "Automate", "Predict", "Secure"];
 
@@ -42,13 +39,16 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
       >
         {/* <div className="container"> */}
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] md:h-[100vh] overflow-hidden">
-          <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-6 ">
-            <h2 className="text-secondary-heading text-background mb-8 leading-tight font-semibold font-heading">
+          <div className="container overflow-hidden flex flex-col items-start justify-center gap-6 md:gap-8">
+            <h2 className="text-secondary-heading text-background leading-tight font-semibold font-heading">
               and then came the rest of us
             </h2>
             <motion.div style={{ x }} className="flex gap-12 md:gap-8">
               {Array.from({ length: 7 }).map((item, i) => (
-                <div className="flex items-start flex-col gap-3 justify-center min-w-[480px]">
+                <div
+                  key={i}
+                  className="flex items-start flex-col gap-3 justify-center min-w-[400px]"
+                >
                   <Image
                     src={
                       "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi166xwPUD7g3autyIcM42eqsf6Vb5PvXwEiWU"

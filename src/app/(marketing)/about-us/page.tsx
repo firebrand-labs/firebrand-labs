@@ -4,6 +4,11 @@ import { FC } from "react";
 import Image from "next/image";
 import HorizontalTeamSection from "@/app/_components/horizontal-team-section";
 import SubHorizontalTeamSection from "@/app/_components/sub-horizontal-team-section";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/app/_components/ui/button";
+import { Icons } from "@/app/_components/icons";
+import FBLButton from "@/app/_components/fbl-button";
 
 interface pageProps {}
 
@@ -13,11 +18,11 @@ const page: FC<pageProps> = () => {
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 md:pt-40 md:pb-24">
         <div className="container flex flex-col items-start justify-center gap-16">
           <div className="flex flex-col items-start justify-center max-w-4xl gap-4">
-            <h1 className="text-secondary-heading text-foreground leading-tight font-semibold font-heading">
+            <h1 className="text-secondary-heading text-foreground leading-tight tracking-wide font-semibold font-heading">
               a little aggression, a lot of ambition, and an unshakable urge to
               get things done and grow.
             </h1>
-            <p className="text-paragraph-heading text-foreground leading-normal font-paragraph">
+            <p className="text-paragraph-heading text-foreground leading-normal tracking-wide font-paragraph">
               firebrand labs began with a mindset, not a business plan. a plan
               where we chased momentum instead of comfort and one that helped
               brands move fast, think clearly, and show up like they mean it.
@@ -53,10 +58,10 @@ const page: FC<pageProps> = () => {
               philosophy.
             </p>
           </div>
-          <p className="text-paragraph-heading italic mt-12 font-extrabold text-foreground leading-normal font-paragraph">
+          <p className="text-paragraph-heading tracking-wide italic mt-12 font-extrabold text-foreground leading-normal font-paragraph">
             We put people first — our clients, and our team.
           </p>
-          <p className="text-subtitle-heading text-foreground max-w-4xl leading-normal font-paragraph">
+          <p className="text-subtitle-heading tracking-wide text-foreground max-w-4xl leading-normal font-paragraph">
             that mindset fuels our spark. It’s why we show up with energy,
             curiosity, and the drive to move brands forward, together.
           </p>
@@ -65,7 +70,7 @@ const page: FC<pageProps> = () => {
 
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16">
         <div className="container flex flex-col items-start justify-center gap-8">
-          <h2 className="text-secondary-heading text-foreground leading-tight font-semibold font-heading">
+          <h2 className="text-secondary-heading tracking-wide text-foreground leading-tight font-semibold font-heading">
             the firebrand values
           </h2>
           <FirebrandValues />
@@ -79,13 +84,13 @@ const page: FC<pageProps> = () => {
         <div className="container flex flex-col items-start justify-center gap-8">
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center">
-              <h2 className="text-secondary-heading text-foreground leading-tight font-semibold font-heading">
+              <h2 className="text-secondary-heading tracking-wide text-foreground leading-tight font-semibold font-heading">
                 want to learn more about us?
               </h2>
-              <p className="text-paragraph-heading italic mt-8 font-extrabold text-foreground leading-normal font-paragraph">
+              <p className="text-paragraph-heading tracking-wide italic mt-8 font-extrabold text-foreground leading-normal font-paragraph">
                 fabulous ideas. brilliant execution. loveable people.
               </p>
-              <p className="text-paragraph-heading text-foreground max-w-4xl leading-normal font-paragraph">
+              <p className="text-paragraph-heading tracking-wide text-foreground max-w-4xl leading-normal font-paragraph">
                 arvind and firebrand labs have been around for 14 years! This
                 conviction to stay on the path is truly exemplary; it must be
                 celebrated. This is the story of how FBL has made execution
@@ -93,7 +98,9 @@ const page: FC<pageProps> = () => {
                 approach of singularly focusing on one idea, and making it your
                 life, is indeed worthy of celebration.
               </p>
+              <FBLButton body="read the book" href="/" />
             </div>
+
             <div className="flex items-center justify-center">
               <Image
                 src={

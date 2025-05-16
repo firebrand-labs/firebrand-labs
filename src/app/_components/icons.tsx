@@ -25,6 +25,7 @@ import {
   LoaderCircle,
   Play,
   Minus,
+  Linkedin,
   MoveDown,
 } from "lucide-react";
 
@@ -35,6 +36,7 @@ export const Icons = {
   UserRoundCog,
   MoveDown,
   LoaderCircle,
+  Linkedin,
   Sliders,
   Plus,
   Minus,
