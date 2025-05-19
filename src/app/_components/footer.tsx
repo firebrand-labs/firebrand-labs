@@ -16,7 +16,7 @@ const page: FC<pageProps> = () => {
             <br /> brilliant. lovable.
           </h2>
           <div className="flex flex-col items-center justify-center gap-3 w-full h-full ">
-            <ul className="grid grid-cols-2 gap-2 list-none md:px-8 w-full items-center justify-center max-w-[280px] py-2">
+            <ul className="grid grid-cols-2 gap-2 list-none md:px-8 w-full items-center justify-center max-w-[280px] py-2 ">
               {mainNavContents.map((item, i) => (
                 <li
                   className={cn(
@@ -36,7 +36,7 @@ const page: FC<pageProps> = () => {
             </ul>
           </div>
           <div className="flex flex-col items-center justify-center gap-3 w-full h-full ">
-            <ul className="flex flex-row items-end justify-center gap-4 list-none md:px-8 w-full h-full py-6">
+            <ul className="flex flex-row items-end justify-end gap-4 list-none  w-full h-full py-3">
               <li>
                 <Link
                   className="text-subtitle-heading text-foreground hover:text-foreground/80"
@@ -50,15 +50,15 @@ const page: FC<pageProps> = () => {
                   target="_blank"
                   href={"https://www.instagram.com/firebrandlabs/"}
                 >
-                  <Icons.Instagram />
+                  <Icons.Instagram className="" />
                 </Link>
               </li>
               <li>
                 <Link
                   target="_blank"
-                  href={"https://www.instagram.com/firebrandlabs/"}
+                  href={"https://www.linkedin.com/company/firebrand-labs"}
                 >
-                  <Icons.Linkedin />
+                  <Icons.Linkedin className="" />
                 </Link>
               </li>
             </ul>

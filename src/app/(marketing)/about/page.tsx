@@ -18,11 +18,11 @@ const page: FC<pageProps> = () => {
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 md:pt-40 md:pb-24">
         <div className="container flex flex-col items-start justify-center gap-16">
           <div className="flex flex-col items-start justify-center max-w-4xl gap-4">
-            <h1 className="text-secondary-heading text-foreground leading-tight tracking-wide font-semibold font-heading">
+            <h1 className="text-secondary-heading text-foreground leading-tight tracking-wide font-normal font-heading">
               a little aggression, a lot of ambition, and an unshakable urge to
               get things done and grow.
             </h1>
-            <p className="text-paragraph-heading text-foreground leading-normal tracking-wide font-paragraph">
+            <p className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
               firebrand labs began with a mindset, not a business plan. a plan
               where we chased momentum instead of comfort and one that helped
               brands move fast, think clearly, and show up like they mean it.
@@ -37,21 +37,21 @@ const page: FC<pageProps> = () => {
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16">
         <div className="container flex flex-col items-start justify-center gap-2">
           <div className="flex items-end gap-12 justify-end ">
-            <p className="text-paragraph-heading text-foreground leading-tight font-paragraph">
+            <p className="text-paragraph-heading text-foreground leading-tight font-paragraph font-light">
               <span className="text-paragraph-heading font-semibold text-2xl md:text-7xl leading-tight text-yellow-level-one font-paragraph">
                 15
               </span>
               <br />
               years.
             </p>
-            <p className="text-paragraph-heading text-foreground leading-tight font-paragraph">
+            <p className="text-paragraph-heading text-foreground leading-tight font-paragraph font-light">
               <span className="text-paragraph-heading font-semibold text-2xl md:text-7xl leading-tight text-yellow-level-one font-paragraph">
                 150+
               </span>
               <br />
               clients.
             </p>
-            <p className="text-paragraph-heading text-foreground leading-tight font-paragraph flex items-end justify-center">
+            <p className="text-paragraph-heading text-foreground leading-tight font-paragraph font-light flex items-end justify-center">
               <span className="text-paragraph-heading font-semibold text-2xl md:text-[68px] lg:text-[148px] leading-[0.55] text-yellow-level-one font-paragraph">
                 1
               </span>
@@ -61,7 +61,7 @@ const page: FC<pageProps> = () => {
           <p className="text-paragraph-heading tracking-wide italic mt-12 font-extrabold text-foreground leading-normal font-paragraph">
             We put people first — our clients, and our team.
           </p>
-          <p className="text-subtitle-heading tracking-wide text-foreground max-w-4xl leading-normal font-paragraph">
+          <p className="text-subtitle-heading tracking-wide text-foreground max-w-4xl font-light leading-normal font-paragraph">
             that mindset fuels our spark. It’s why we show up with energy,
             curiosity, and the drive to move brands forward, together.
           </p>
@@ -84,13 +84,13 @@ const page: FC<pageProps> = () => {
         <div className="container flex flex-col items-start justify-center gap-8">
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center">
-              <h2 className="text-secondary-heading tracking-wide text-foreground leading-tight font-semibold font-heading">
+              <h2 className="text-secondary-heading tracking-wide text-foreground leading-tight font-normal font-heading">
                 want to learn more about us?
               </h2>
               <p className="text-paragraph-heading tracking-wide italic mt-8 font-extrabold text-foreground leading-normal font-paragraph">
                 fabulous ideas. brilliant execution. loveable people.
               </p>
-              <p className="text-paragraph-heading tracking-wide text-foreground max-w-4xl leading-normal font-paragraph">
+              <p className="text-paragraph-heading tracking-wide text-foreground max-w-4xl leading-normal font-light font-paragraph">
                 arvind and firebrand labs have been around for 14 years! This
                 conviction to stay on the path is truly exemplary; it must be
                 celebrated. This is the story of how FBL has made execution
@@ -98,7 +98,11 @@ const page: FC<pageProps> = () => {
                 approach of singularly focusing on one idea, and making it your
                 life, is indeed worthy of celebration.
               </p>
-              <FBLButton body="read the book" href="/" />
+              <FBLButton
+                body="read the book"
+                target="_blank"
+                href="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiJzCdUF1Xtk8lBi1RnmfQyYqaNL52Fzu7hpWo"
+              />
             </div>
 
             <div className="flex items-center justify-center">

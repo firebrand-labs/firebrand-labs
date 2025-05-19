@@ -70,7 +70,7 @@ const FirebrandValues: FC<FirebrandValuesProps> = ({ className }) => {
                       key={i}
                       className={cn(
                         "font-paragraph tracking-wide text-paragraph-heading leading-normal text-foreground",
-                        i === 0 ? "font-bold italic" : "font-normal"
+                        i === 0 ? "font-bold italic" : "font-light"
                       )}
                     >
                       {li}

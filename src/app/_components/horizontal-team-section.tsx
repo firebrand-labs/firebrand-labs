@@ -51,10 +51,10 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
       {/* <div className="container"> */}
       <div className="sticky w-full top-0 flex flex-col items-center justify-center min-h-[80vh] md:min-h-[80vh] overflow-hidden">
         <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-6 ">
-          <h2 className="text-secondary-heading text-background leading-tight font-semibold font-heading">
+          <h2 className="text-secondary-heading text-background leading-tight font-normal font-heading">
             the ones who set it in motion
           </h2>
-          <p className="text-paragraph-heading max-w-4xl text-background leading-normal font-paragraph">
+          <p className="text-paragraph-heading max-w-4xl text-background leading-normal font-light font-paragraph">
             born from the belief that design moves business forward — and that
             every bold idea begins with a simple “why not?”
           </p>
@@ -74,10 +74,10 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                   />
                 </div>
                 <div className="flex flex-col items-start justify-end gap-3 py-2 md:py-4">
-                  <h4 className="text-paragraph-heading max-w-4xl text-background leading-normal font-paragraph font-bold">
+                  <h4 className="text-paragraph-heading max-w-4xl text-background leading-normal font-paragraph font-normal">
                     {item.name}
                   </h4>
-                  <p className="text-subtitle-heading max-w-4xl text-background leading-normal font-paragraph">
+                  <p className="text-subtitle-heading max-w-4xl text-background leading-normal font-light font-paragraph">
                     {item.description}
                   </p>
 
@@ -101,10 +101,10 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                           />
                         </div>
                         <div className="flex flex-col items-start justify-center gap-2">
-                          <h4 className="text-paragraph-heading max-w-4xl text-background leading-normal font-paragraph font-bold">
+                          <h4 className="text-paragraph-heading max-w-4xl text-background leading-normal font-paragraph font-normal">
                             {item.name}
                           </h4>
-                          <p className="text-subtitle-heading max-w-4xl text-background leading-normal font-paragraph">
+                          <p className="text-subtitle-heading max-w-4xl text-background leading-normal font-paragraph font-light">
                             {item.popupContent.role}
                           </p>
                           <div />

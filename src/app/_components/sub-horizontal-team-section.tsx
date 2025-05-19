@@ -40,7 +40,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
         {/* <div className="container"> */}
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] md:h-[100vh] overflow-hidden">
           <div className="container overflow-hidden flex flex-col items-start justify-center gap-6 md:gap-8">
-            <h2 className="text-secondary-heading text-background leading-tight font-semibold font-heading">
+            <h2 className="text-secondary-heading text-background leading-tight font-normal font-heading">
               and then came the rest of us
             </h2>
             <motion.div style={{ x }} className="flex gap-12 md:gap-8">

@@ -3,7 +3,7 @@ import BackgroundVideo from "@/app/_components/background-video";
 import FBLButton from "@/app/_components/fbl-button";
 import Image from "next/image";
 import RandomCards from "@/app//_components/random-cards";
-import { Icons } from "../_components/icons";
+import { Icons } from "@/app/_components/icons";
 
 interface pageProps {}
 
@@ -38,7 +38,7 @@ const page: FC<pageProps> = () => {
             <br /> through design, and storytelling, we create momentum that
             lasts.
           </h2>
-          <FBLButton href="/" body="know more" />
+          <FBLButton href="/about" body="know more" />
         </div>
       </section>
 
@@ -120,7 +120,7 @@ const page: FC<pageProps> = () => {
               and now AI. get insights from our expertise on latest trends and
               highlights in the world of marketing!
             </p>
-            <FBLButton href="/resources" body="resources" />
+            <FBLButton href="/blog" body="resources" />
           </div>
           <Image
             src={
@@ -139,7 +139,7 @@ const page: FC<pageProps> = () => {
           <h2 className="text-secondary-heading  max-w-4xl text-foreground leading-tight tracking-wide font-normal font-heading">
             ready to give your brand momentum? we need to talk.
           </h2>
-          <FBLButton href="/resources" body="get in touch" />
+          <FBLButton href="/contact" body="get in touch" />
         </div>
       </section>
     </>

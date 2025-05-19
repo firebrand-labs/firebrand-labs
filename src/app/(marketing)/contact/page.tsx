@@ -9,7 +9,7 @@ const page: FC<pageProps> = () => {
     <>
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 md:pt-40 md:pb-24">
         <div className="container flex flex-col items-start justify-center gap-4 md:gap-16">
-          <h1 className="text-secondary-heading text-foreground tracking-wide leading-tight font-semibold font-heading max-w-4xl">
+          <h1 className="text-secondary-heading text-foreground tracking-wide leading-tight font-normal font-heading max-w-4xl">
             branding? marketing? read an interesting book— let’s catch up!
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-6 md:gap-1">
@@ -17,28 +17,28 @@ const page: FC<pageProps> = () => {
             <div className="flex flex-col items-start justify-between gap-6 md:gap-8 h-full">
               <div className="flex flex-col items-start justify-center gap-6 md:gap-8">
                 <div className="flex flex-col items-start justify-center gap-2">
-                  <p className="text-extra-subtitle-heading  uppercase text-foreground/75 leading-normal font-paragraph">
+                  <p className="text-extra-subtitle-heading font-light uppercase text-foreground/75 leading-normal font-paragraph">
                     EMAIL US
                   </p>
                   <Link
-                    className="text-paragraph-heading text-foreground font-semibold tracking-wide leading-tight font-paragraph"
+                    className="text-paragraph-heading text-foreground font-normal tracking-wide leading-tight font-paragraph"
                     href={"mailto:arvind@firebrandlabs.in"}
                   >
                     arvind@firebrandlabs.in
                   </Link>
                 </div>
                 <div className="flex flex-col items-start justify-center gap-2">
-                  <p className="text-extra-subtitle-heading uppercase text-foreground/75 leading-normal font-paragraph">
+                  <p className="text-extra-subtitle-heading font-light uppercase text-foreground/75 leading-normal font-paragraph">
                     Social Media
                   </p>
                   <Link
-                    className="text-paragraph-heading font-semibold text-foreground tracking-wide leading-tight font-paragraph"
+                    className="text-paragraph-heading font-normal text-foreground tracking-wide leading-tight font-paragraph"
                     href={"mailto:arvind@firebrandlabs.in"}
                   >
                     instagram
                   </Link>
                   <Link
-                    className="text-paragraph-heading font-semibold text-foreground tracking-wide leading-tight font-paragraph"
+                    className="text-paragraph-heading font-normal text-foreground tracking-wide leading-tight font-paragraph"
                     href={"mailto:arvind@firebrandlabs.in"}
                   >
                     linkedin
@@ -47,12 +47,12 @@ const page: FC<pageProps> = () => {
               </div>
               {/* Address */}
               <div className="flex flex-col items-start justify-center gap-2">
-                <p className="text-extra-subtitle-heading uppercase text-foreground/75 leading-normal font-paragraph">
+                <p className="text-extra-subtitle-heading font-light uppercase text-foreground/75 leading-normal font-paragraph">
                   Visit us
                 </p>
                 <p className="text-extra-subtitle-heading text-foreground max-w-sm leading-normal font-paragraph tracking-wide">
                   no 12, first floor, karpagam gardens 1st cross street, adyar,
-                  chennai 20
+                  chennai-20
                 </p>
               </div>
             </div>
