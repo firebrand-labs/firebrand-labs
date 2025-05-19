@@ -5,17 +5,43 @@ import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 
 const paragraph = localFont({
-  src: "../../public/fonts/fonnts.com-Paralucent_Light.otf",
+  src: [
+    {
+      path: "../../public/fonts/fonnts.com-Paralucent_Medium.otf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/fonnts.com-Paralucent_Light.otf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/fonnts.com-Paralucent_Demi_Bold.otf",
+      weight: "800",
+    },
+  ],
   variable: "--heading",
   display: "swap",
-  // weight: "600",
+  // weight: "800",
 });
 
 const heading = localFont({
-  src: "../../public/fonts/fonnts.com-Paralucent_Light.otf",
+  src: [
+    {
+      path: "../../public/fonts/fonnts.com-Paralucent_Medium.otf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/fonnts.com-Paralucent_Light.otf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/fonnts.com-Paralucent_Demi_Bold.otf",
+      weight: "800",
+    },
+  ],
   variable: "--paragraph",
   display: "swap",
-  // weight: "600",
+  // weight: "800",
 });
 
 export const metadata: Metadata = {

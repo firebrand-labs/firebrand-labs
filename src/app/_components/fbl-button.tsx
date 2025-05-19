@@ -19,7 +19,7 @@ const FBLButton: FC<FBLButtonProps> = ({ href, body }) => {
       )}
     >
       {body}
-      <Icons.ArrowRight className="!h-[40px] !w-[68px] absolute right-0.5 top-1/2  -translate-y-1/2 rounded-full  stroke-foreground group-hover:bg-yellow-level-five" />
+      <Icons.ArrowRight className="!h-[40px] !w-[68px] absolute right-0.5 top-1/2  -translate-y-1/2 rounded-full  stroke-foreground bg-yellow-level-five group-hover:bg-yellow-level-five/70 transition-colors duration-150" />
     </Link>
   );
 };

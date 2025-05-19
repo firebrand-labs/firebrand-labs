@@ -10,8 +10,8 @@ const page: FC<pageProps> = () => {
   return (
     <footer className="flex items-center justify-center flex-col min-w-screen overflow-x-hidden bg-background pt-16 md:pb-8">
       <div className="container flex items-center justify-start md:justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 ">
-          <h2 className="text-3xl md:text-4xl lg:text-6xl text-foreground/65 leading-tight tracking-wide font-extrabold font-heading">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground/65 leading-tight tracking-wide font-extrabold font-heading">
             fabulous.
             <br /> brilliant. lovable.
           </h2>

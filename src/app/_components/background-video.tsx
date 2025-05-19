@@ -15,9 +15,7 @@ const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
   classForVideo,
 }) => {
   return (
-    <div
-      className={cn("relative w-screen h-screen overflow-hidden", className)}
-    >
+    <div className={cn("relative w-full h-full overflow-hidden", className)}>
       <video
         autoPlay
         loop

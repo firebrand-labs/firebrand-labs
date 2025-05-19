@@ -28,7 +28,7 @@ const page: FC<pageProps> = () => {
           <p className="text-extra-subtitle-heading  uppercase text-foreground/40 leading-normal font-paragraph">
             ABOUT
           </p>
-          <h2 className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading">
+          <h2 className="text-secondary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading">
             <span className="font-extrabold inline-block">
               fuelling brands and stories
             </span>{" "}
@@ -42,7 +42,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background md:min-h-svh ">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background md:min-h-svh">
         <div className="container md:h-screen relative flex items-center justify-center flex-col gap-8 py-16">
           <div className="flex flex-col items-center justify-center">
             <div className="relative flex-col items-center justify-center flex">
@@ -69,15 +69,15 @@ const page: FC<pageProps> = () => {
 
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-screen">
         <BackgroundVideo
-          className="absolute left-0 top-0 w-full h-full z-0 "
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full "
           classForVideo="object-right md:object-cover"
           videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoOo0UkQaAN2xy7u8gkcnHmWrtVoJiaswfYqBK"
         />
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-screen">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-16 md:py-0 md:min-h-screen">
         <div className="container flex items-center justify-center ">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full ">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
             <div className="flex flex-col items-start justify-start h-full  gap-3">
               <h2 className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading">
                 dreamers. thinkers. firebrands.
@@ -88,7 +88,7 @@ const page: FC<pageProps> = () => {
               <FBLButton href="/team" body="our team" />
             </div>
             <div className="flex items-center justify-center self-center ">
-              <div className="min-w-lg group min-h-[540px] relative rounded-2xl">
+              <div className="min-w-[320px] group min-h-[540px] relative rounded-2xl">
                 {/* Static center card */}
                 <div className="absolute w-full h-full border border-foreground/10 bg-background flex items-center justify-center rounded-2xl z-[10]">
                   <Icons.Vercel />
@@ -109,7 +109,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-screen">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background md:min-h-screen py-16">
         <div className="container flex flex-col items-start justify-center gap-8">
           <div className="flex flex-col items-start justify-start h-full  gap-3 max-w-4xl">
             <h2 className="text-secondary-heading  max-w-4xl text-foreground leading-tight tracking-wide font-normal font-heading">
@@ -134,10 +134,10 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-36">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-16 md:py-36">
         <div className="container flex flex-col items-start justify-center gap-2">
           <h2 className="text-secondary-heading  max-w-4xl text-foreground leading-tight tracking-wide font-normal font-heading">
-            how are we getting ready for the AI revolution?
+            ready to give your brand momentum? we need to talk.
           </h2>
           <FBLButton href="/resources" body="get in touch" />
         </div>
