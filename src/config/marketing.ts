@@ -2,6 +2,7 @@ import WhyNot from "@/config/animated-svg/why-not.json";
 import TakeOnGoliath from "@/config/animated-svg/take-on-goliath.json";
 import RadicallyHonest from "@/config/animated-svg/radically-honest.json";
 import IntenselyAuthentic from "@/config/animated-svg/intensely-authentic.json";
+import { MainNavItems } from "@/types";
 export const teamContent = [
   {
     id: "1",
@@ -30,6 +31,39 @@ export const teamContent = [
       description:
         "hello and vanakkam! do you need trusted advisor for marketing? I am arvind aathreya and I am the captain of the deck at firebrand labs, marketing consulting company. look no further. we think like a CMO, work like an agile team, and deliver ethically. how about we power your brand? my team comprises 25 of us with multidisciplinary skills and I will be your CMO with over 2 decades of marketing experience. ready to team up? let’s get to know your story over a hot cuppa filter kaapi. together, let’s build a brand and leave a legacy behind. game? let’s talk!",
     },
+  },
+];
+
+export const mainNavContents: MainNavItems = [
+  {
+    href: "/",
+    title: "Home",
+    subItems: [],
+  },
+  {
+    href: "/team",
+    title: "Team",
+    subItems: [],
+  },
+  {
+    href: "/about-us",
+    title: "About",
+    subItems: [],
+  },
+  {
+    href: "/products",
+    title: "Products",
+    subItems: [],
+  },
+  {
+    href: "/word",
+    title: "Work",
+    subItems: [],
+  },
+  {
+    href: "/resources",
+    title: "Resources",
+    subItems: [],
   },
 ];
 

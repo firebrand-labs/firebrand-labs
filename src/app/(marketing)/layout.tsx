@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Footer from "@/app/_components/footer";
 
 interface layoutProps {
   children: React.ReactNode;
@@ -6,7 +7,10 @@ interface layoutProps {
 
 const layout: FC<layoutProps> = ({ children }) => {
   return (
-    <main className="min-h-screen w-screen bg-background">{children}</main>
+    <main className="min-h-screen w-screen bg-background">
+      {children}
+      <Footer />
+    </main>
   );
 };
 
