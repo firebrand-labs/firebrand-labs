@@ -26,7 +26,7 @@ const page: FC<pageProps> = () => {
                   key={i}
                 >
                   <Link
-                    className="text-foreground text-subtitle-heading no-underline hover:text-foreground"
+                    className="text-foreground font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
                     href={item.href}
                   >
                     {item.title}
