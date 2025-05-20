@@ -15,7 +15,7 @@ const page: FC<pageProps> = () => {
             fabulous.
             <br /> brilliant. lovable.
           </h2>
-          <div className="flex flex-col items-center justify-center gap-3 w-full h-full ">
+          <div className="flex flex-col items-start justify-start md:items-center  md:justify-center gap-3 w-full h-full ">
             <ul className="grid grid-cols-2 gap-2 list-none md:px-8 w-full items-center justify-center max-w-[280px] py-2 ">
               {mainNavContents.map((item, i) => (
                 <li
@@ -36,7 +36,7 @@ const page: FC<pageProps> = () => {
             </ul>
           </div>
           <div className="flex flex-col items-center justify-center gap-3 w-full h-full ">
-            <ul className="flex flex-row items-end justify-end gap-4 list-none  w-full h-full py-3">
+            <ul className="flex flex-row items-end justify-start md:justify-end gap-4 list-none  w-full h-full py-3">
               <li>
                 <Link
                   className="text-subtitle-heading text-foreground hover:text-foreground/80"

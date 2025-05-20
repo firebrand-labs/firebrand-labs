@@ -1,21 +1,15 @@
-import { FC } from "react";
 import { Button } from "@/app/_components/ui/button";
-import { Input } from "@/app/_components/ui/input";
-import { Label } from "@/app/_components/ui/label";
-import { cn } from "@/lib/utils";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/app/_components/ui/sheet";
-import Link from "next/link";
-import Image from "next/image";
 import { mainNavContents } from "@/config/marketing";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+import { FC } from "react";
 
 interface HeaderProps {}
 

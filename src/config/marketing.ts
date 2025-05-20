@@ -46,7 +46,7 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
-    href: "/about-us",
+    href: "/about",
     title: "About",
     subItems: [],
   },
