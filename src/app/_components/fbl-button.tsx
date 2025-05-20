@@ -8,16 +8,18 @@ interface FBLButtonProps extends LinkProps {
   href: string;
   body: string;
   target?: React.HTMLAttributeAnchorTarget;
+  className?: string;
 }
 
-const FBLButton: FC<FBLButtonProps> = ({ href, body, target }) => {
+const FBLButton: FC<FBLButtonProps> = ({ href, body, target, className }) => {
   return (
     <Link
       href={href}
       target={target}
       className={cn(
         buttonVariants({ variant: "outline", size: "lg" }),
-        "font-paragraph tracking-wide relative group rounded-full flex items-center justify-between text-subtitle-heading font-normal mt-4 py-4 hover:bg-transparent hover:text-foreground min-w-[246px] min-h-[48px]"
+        "font-paragraph tracking-wide relative group rounded-full flex items-center justify-between text-subtitle-heading font-normal mt-4 py-4 hover:bg-transparent hover:text-foreground min-w-[246px] min-h-[48px]",
+        className
       )}
     >
       {body}
