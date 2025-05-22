@@ -5,13 +5,14 @@ import FBLButton from "@/app/_components/fbl-button";
 import { Button, buttonVariants } from "@/app/_components/ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import CardsAnimation from "@/app/_components/cards-animation";
 
 interface pageProps {}
 
 const page: FC<pageProps> = () => {
   return (
     <>
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-screen py-16">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh py-16">
         <div className="container flex items-start flex-col gap-4 justify-start">
           <h2 className="text-secondary-heading  text-foreground font-normal leading-tight tracking-wide max-w-4xl font-heading">
             this is what ambiguity looks like, and it hinders growth.
@@ -21,7 +22,7 @@ const page: FC<pageProps> = () => {
           </p>
         </div>
       </section>
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-screen py-16">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh py-16">
         <div className="container flex items-start flex-col gap-4 justify-start">
           <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
             <div className="flex flex-col items-start justify-start h-full  gap-3">
@@ -58,7 +59,7 @@ const page: FC<pageProps> = () => {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-start flex-col w-screen overflow-x-hidden relative bg-foreground h-screen py-16">
+      <section className="flex hidden relative items-center justify-start flex-col w-screen overflow-x-hidden bg-foreground min-h-svh py-16">
         <div className="container flex items-start flex-col gap-4 justify-start">
           <h2 className="text-secondary-heading  max-w-3xl text-background leading-tight tracking-wide font-normal font-heading">
             cultivate empathy. tide over ambiguity.
@@ -69,7 +70,9 @@ const page: FC<pageProps> = () => {
           </p>
         </div>
       </section>
-      <section className="flex items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary min-h-screen py-16 bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] bg-contain bg-no-repeat bg-right-bottom">
+      <CardsAnimation />
+
+      <section className="flex items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary min-h-svh py-16 bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] bg-contain bg-no-repeat bg-right-bottom">
         <div className="container flex items-start flex-col gap-4 justify-start md:mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
             <div className="flex flex-col items-start justify-start h-full  gap-3">

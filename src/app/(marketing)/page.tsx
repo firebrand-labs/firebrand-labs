@@ -4,13 +4,14 @@ import FBLButton from "@/app/_components/fbl-button";
 import Image from "next/image";
 import RandomCards from "@/app//_components/random-cards";
 import { Icons } from "@/app/_components/icons";
+import Footer from "@/app/_components/footer";
 
 interface pageProps {}
 
 const page: FC<pageProps> = () => {
   return (
-    <>
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background h-screen">
+    <div className="h-screen md:snap-y snap-mandatory overflow-y-scroll w-full overflow-x-hidden">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background h-screen snap-start">
         <div className="container md:h-[60vh] z-10 bg-yellow-level-five flex items-end justify-start">
           <h1 className="text-4xl md:text-6xl lg:text-8xl text-foreground leading-tight tracking-wide font-extrabold font-heading">
             marketing is <br /> momentum
@@ -23,7 +24,7 @@ const page: FC<pageProps> = () => {
         />
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background md:min-h-svh py-16">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background md:min-h-svh py-16 snap-start">
         <div className="container flex flex-col items-start justify-center gap-3">
           <p className="text-extra-subtitle-heading  uppercase text-foreground/40 leading-normal font-paragraph">
             ABOUT
@@ -42,7 +43,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background md:min-h-svh">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background md:min-h-svh snap-start">
         <div className="container md:h-screen relative flex items-center justify-center flex-col gap-8 py-16">
           <div className="flex flex-col items-center justify-center">
             <div className="relative flex-col items-center justify-center flex">
@@ -67,7 +68,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-screen">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh snap-start">
         <BackgroundVideo
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full "
           classForVideo="object-right md:object-cover"
@@ -75,7 +76,7 @@ const page: FC<pageProps> = () => {
         />
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-16 md:py-0 md:min-h-screen">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-16 md:py-0 md:min-h-svh snap-start">
         <div className="container flex items-center justify-center ">
           <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
             <div className="flex flex-col items-start justify-start h-full  gap-3">
@@ -109,7 +110,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background md:min-h-screen py-16">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background md:min-h-svh py-16 snap-start">
         <div className="container flex flex-col items-start justify-center gap-8">
           <div className="flex flex-col items-start justify-start h-full  gap-3 max-w-4xl">
             <h2 className="text-secondary-heading  max-w-4xl text-foreground leading-tight tracking-wide font-normal font-heading">
@@ -134,7 +135,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-16 md:py-36">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-16 md:py-36 snap-start">
         <div className="container flex flex-col items-start justify-center gap-2">
           <h2 className="text-secondary-heading  max-w-4xl text-foreground leading-tight tracking-wide font-normal font-heading">
             ready to give your brand momentum? we need to talk.
@@ -142,7 +143,8 @@ const page: FC<pageProps> = () => {
           <FBLButton href="/contact" body="get in touch" />
         </div>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 };
 
