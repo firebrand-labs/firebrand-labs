@@ -33,6 +33,8 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
     target: targetRef,
   });
 
+  useEffect(() => {}, []);
+
   useEffect(() => {
     if (isMobile) {
       setScrollDistance("-60%"); // Adjust this value for mobile
@@ -46,6 +48,7 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
   return (
     <section
       ref={targetRef}
+      id="team"
       className="w-screen flex-col h-[200vh] items-center justify-center bg-foreground py-4 md:py-24 relative"
     >
       {/* <div className="container"> */}

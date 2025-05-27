@@ -6,6 +6,8 @@ import { Button, buttonVariants } from "@/app/_components/ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import CardsAnimation from "@/app/_components/cards-animation";
+import Footer from "@/app/_components/footer";
+import { cardsAgainstAmbiguityContent } from "@/config/marketing";
 
 interface pageProps {}
 
@@ -22,7 +24,7 @@ const page: FC<pageProps> = () => {
           </p>
         </div>
       </section>
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh py-16">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh py-16 bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi09Y3QHlw1XDjFSAfqtTI8r6nlO93vEsMkUcz')] bg-contain bg-no-repeat bg-right">
         <div className="container flex items-start flex-col gap-4 justify-start">
           <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
             <div className="flex flex-col items-start justify-start h-full  gap-3">
@@ -45,21 +47,11 @@ const page: FC<pageProps> = () => {
                 markets, target segments, target audiences and employees.
               </p>
             </div>
-            <div className="flex items-center justify-center self-center">
-              <Image
-                src={
-                  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu"
-                }
-                alt="Blog Banner"
-                className="w-full md:w-full h-auto max-w-[500px]"
-                width={700}
-                height={300}
-              />
-            </div>
+            <div className="flex items-center justify-center self-center" />
           </div>
         </div>
       </section>
-      <section className="flex hidden relative items-center justify-start flex-col w-screen overflow-x-hidden bg-foreground min-h-svh py-16">
+      <section className=" hidden relative items-center justify-start flex-col w-screen overflow-x-hidden bg-foreground min-h-svh py-16">
         <div className="container flex items-start flex-col gap-4 justify-start">
           <h2 className="text-secondary-heading  max-w-3xl text-background leading-tight tracking-wide font-normal font-heading">
             cultivate empathy. tide over ambiguity.
@@ -71,6 +63,29 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
       <CardsAnimation />
+
+      <section className="flex md:hidden items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary min-h-svh py-16">
+        <div className="container flex items-center flex-col  justify-center md:mt-16 gap-4">
+          {cardsAgainstAmbiguityContent.map((item, i) => (
+            <div
+              key={i}
+              className="max-w-[80%] bg-background flex flex-col  items-start justify-between rounded-2xl origin-center  px-3 py-6 min-h-[400px] "
+            >
+              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
+                {item.title}
+              </h3>
+              <p className="text-extra-subtitle-heading tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph min-h-[66.25%]">
+                {item.description}
+              </p>
+              <div className="w-full flex items-center justify-between">
+                <span className="text-[14px] tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph">
+                  Cards Against Ambiguity
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className="flex items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary min-h-svh py-16 bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] bg-contain bg-no-repeat bg-right-bottom">
         <div className="container flex items-start flex-col gap-4 justify-start md:mt-16">
@@ -112,6 +127,7 @@ const page: FC<pageProps> = () => {
           </div>
         </div>
       </section>
+      <Footer className="bg-[#1A1A1A]" />
     </>
   );
 };

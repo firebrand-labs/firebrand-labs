@@ -16,7 +16,11 @@ const AnimatedIcon: FC<AnimatedIconProps> = ({ icon, className }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
+    const getData = async function () {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      setIsMounted(true);
+    };
+    getData();
   }, []);
 
   if (!isMounted) {

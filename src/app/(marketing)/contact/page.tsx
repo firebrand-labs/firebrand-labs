@@ -1,4 +1,5 @@
 import ContactUsForm from "@/app/_components/contact-us-form";
+import Footer from "@/app/_components/footer";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -7,7 +8,18 @@ interface pageProps {}
 const page: FC<pageProps> = () => {
   return (
     <>
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 md:pt-40 md:pb-24">
+      <section
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 160px,
+    rgba(255, 255, 255, 0.1) 160px,
+    rgba(255, 255, 255, 0.1) 161px
+  )`,
+        }}
+        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 pt-32 md:pt-40 md:pb-24"
+      >
         <div className="container flex flex-col items-start justify-center gap-4 md:gap-16">
           <h1 className="text-secondary-heading text-foreground tracking-wide leading-tight font-normal font-heading max-w-4xl">
             branding? marketing? read an interesting book— let’s catch up!
@@ -66,6 +78,8 @@ const page: FC<pageProps> = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };

@@ -1,21 +1,33 @@
-import FirebrandValues from "@/app/_components/firebrand-values";
-import { Switch } from "@/app/_components/ui/switch";
-import { FC } from "react";
-import Image from "next/image";
-import HorizontalTeamSection from "@/app/_components/horizontal-team-section";
-import SubHorizontalTeamSection from "@/app/_components/sub-horizontal-team-section";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/app/_components/ui/button";
-import { Icons } from "@/app/_components/icons";
 import FBLButton from "@/app/_components/fbl-button";
+import FirebrandValues from "@/app/_components/firebrand-values";
+import Footer from "@/app/_components/footer";
+import HorizontalTeamSection from "@/app/_components/horizontal-team-section";
+import { ScrollToHash } from "@/app/_components/scroll-to-hash";
+import SubHorizontalTeamSection from "@/app/_components/sub-horizontal-team-section";
+import { Switch } from "@/app/_components/ui/switch";
+import Image from "next/image";
+import { FC, Suspense } from "react";
 
 interface pageProps {}
 
 const page: FC<pageProps> = () => {
   return (
     <>
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 md:pt-40 md:pb-24">
+      <Suspense fallback={null}>
+        <ScrollToHash />
+      </Suspense>
+      <section
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 160px,
+    rgba(255, 255, 255, 0.1) 160px,
+    rgba(255, 255, 255, 0.1) 161px
+  )`,
+        }}
+        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 pt-32 md:pt-40 md:pb-24"
+      >
         <div className="container flex flex-col items-start justify-center gap-16">
           <div className="flex flex-col items-start justify-center max-w-4xl gap-4">
             <h1 className="text-secondary-heading text-foreground leading-tight tracking-wide font-normal font-heading">
@@ -34,7 +46,18 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16">
+      <section
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 160px,
+    rgba(255, 255, 255, 0.1) 160px,
+    rgba(255, 255, 255, 0.1) 161px
+  )`,
+        }}
+        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16"
+      >
         <div className="container flex flex-col items-start justify-center gap-2">
           <div className="flex items-end gap-12 justify-end ">
             <p className="text-paragraph-heading text-foreground leading-tight font-paragraph font-light">
@@ -51,10 +74,11 @@ const page: FC<pageProps> = () => {
               <br />
               clients.
             </p>
-            <p className="text-paragraph-heading text-foreground leading-tight font-paragraph font-light flex items-end justify-center">
-              <span className="text-paragraph-heading font-semibold text-2xl md:text-[68px] lg:text-[148px] leading-[0.55] text-yellow-level-one font-paragraph">
+            <p className="text-paragraph-heading text-foreground leading-tight font-paragraph font-light md:flex items-end justify-center">
+              <span className="text-paragraph-heading font-semibold text-2xl md:text-[68px] lg:text-[148px] md:leading-[0.55] text-yellow-level-one font-paragraph">
                 1
               </span>
+              <br className="md:hidden" />
               philosophy.
             </p>
           </div>
@@ -68,7 +92,18 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16">
+      <section
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 160px,
+    rgba(255, 255, 255, 0.1) 160px,
+    rgba(255, 255, 255, 0.1) 161px
+  )`,
+        }}
+        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16"
+      >
         <div className="container flex flex-col items-start justify-center gap-8">
           <h2 className="text-secondary-heading tracking-wide text-foreground leading-tight font-semibold font-heading">
             the firebrand values
@@ -80,7 +115,18 @@ const page: FC<pageProps> = () => {
       <HorizontalTeamSection />
       <SubHorizontalTeamSection />
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16">
+      <section
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 160px,
+    rgba(255, 255, 255, 0.1) 160px,
+    rgba(255, 255, 255, 0.1) 161px
+  )`,
+        }}
+        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16"
+      >
         <div className="container flex flex-col items-start justify-center gap-8">
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center">
@@ -119,6 +165,7 @@ const page: FC<pageProps> = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

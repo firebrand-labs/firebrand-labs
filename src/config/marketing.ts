@@ -3,6 +3,7 @@ import TakeOnGoliath from "@/config/animated-svg/take-on-goliath.json";
 import RadicallyHonest from "@/config/animated-svg/radically-honest.json";
 import IntenselyAuthentic from "@/config/animated-svg/intensely-authentic.json";
 import { MainNavItems } from "@/types";
+import { title } from "process";
 export const teamContent = [
   {
     id: "1",
@@ -41,23 +42,23 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
-    href: "/team",
-    title: "Team",
-    subItems: [],
-  },
-  {
     href: "/about",
     title: "About",
     subItems: [],
   },
   {
-    href: "/products",
-    title: "Products",
+    href: "/about#team",
+    title: "Team",
     subItems: [],
   },
   {
-    href: "/word",
-    title: "Work",
+    href: "/cards-against-ambiguity",
+    title: "CAA",
+    subItems: [],
+  },
+  {
+    href: "/contact",
+    title: "Contact",
     subItems: [],
   },
   {
@@ -104,5 +105,36 @@ export const firebrandLabsValuesContent = [
       "one thing our team and our brands have in common is a strong personality",
     ],
     icon: IntenselyAuthentic,
+  },
+];
+
+export const cardsAgainstAmbiguityContent = [
+  {
+    title: "understand your business",
+    description:
+      "Your brand has a personality just like human beings do, answer the questions from your brand/business’ point of view. Can be played by an individual (a brand custodian) or a small group of key decision makers of the brand.",
+  },
+  {
+    title: "understand your business",
+    description:
+      "Your brand has a personality just like human beings do, answer the questions from your brand/business’ point of view. Can be played by an individual (a brand custodian) or a small group of key decision makers of the brand.",
+  },
+  {
+    title: "understand your business",
+    description:
+      "Your brand has a personality just like human beings do, answer the questions from your brand/business’ point of view. Can be played by an individual (a brand custodian) or a small group of key decision makers of the brand.",
+  },
+];
+
+export const socialMediaIcons = [
+  {
+    icon: "Instagram",
+    href: "https://www.instagram.com/firebrandlabs/",
+    title: "Instagram",
+  },
+  {
+    icon: "Linkedin",
+    href: "https://www.linkedin.com/company/firebrand-labs",
+    title: "Linkedin",
   },
 ];

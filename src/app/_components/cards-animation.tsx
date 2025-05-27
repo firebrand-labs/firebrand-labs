@@ -26,12 +26,12 @@ const CardsAnimation = () => {
   const strategyCardY = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    [-400, 0, 0]
+    [-400, 130, 130]
   );
   const strategyCardRotateY = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.75, 1],
-    [-0, 0, 90, 180]
+    [0, 0.25, 0.5, 1],
+    [-0, 0, 180, 360]
   );
 
   const strategyCardRotateZ = useTransform(
@@ -43,11 +43,15 @@ const CardsAnimation = () => {
   //pink
 
   const designCardX = useTransform(scrollYProgress, [0, 0.5], [0, 0]);
-  const designCardY = useTransform(scrollYProgress, [0, 0.5], [-400, 0]);
+  const designCardY = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [-400, 130, 130]
+  );
   const designCardRotateY = useTransform(
     scrollYProgress,
     [0, 0.5, 0.75, 1],
-    [-0, 0, 0, 0]
+    [0, 130, 260, 360]
   );
   const designCardRotateZ = useTransform(
     scrollYProgress,
@@ -58,11 +62,15 @@ const CardsAnimation = () => {
   //orange
 
   const buildCardX = useTransform(scrollYProgress, [0, 0.5, 1], [0, 120, 440]);
-  const buildCardY = useTransform(scrollYProgress, [0, 0.5, 1], [-400, 0, 0]);
+  const buildCardY = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [-400, 130, 130]
+  );
   const buildCardRotateY = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.75, 1],
-    [-0, 0, -90, -180]
+    [0, 0.25, 0.5, 1],
+    [-0, 0, -180, -360]
   );
   const buildCardRotateZ = useTransform(
     scrollYProgress,
@@ -78,7 +86,7 @@ const CardsAnimation = () => {
   const strategyListX = useTransform(scrollYProgress, [0.66, 1], [-100, 0]);
 
   return (
-    <div className="min-h-screen bg-foreground flex items-center justify-center">
+    <div className="min-h-screen bg-foreground items-center justify-center hidden md:flex">
       {/* Navigation */}
       <motion.nav
         className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm"
@@ -89,12 +97,12 @@ const CardsAnimation = () => {
       <div
         ref={containerRef}
         className="relative container"
-        style={{ height: "400vh" }}
+        style={{ height: "250vh" }}
       >
         {/* Sticky container for animation */}
-        <div className="sticky top-0 h-screen flex flex-col items-start justify-center overflow-hidden ">
+        <div className="sticky top-0 min-h-screen flex flex-col items-start justify-start overflow-hidden ">
           {/* Main quote */}
-          <div className="text-left  mb-16 py-16 z-10">
+          <div className="text-left  mb-16 py-16 z-10 ">
             <h2 className="text-secondary-heading  max-w-3xl text-background leading-tight tracking-wide font-normal font-heading">
               cultivate empathy. tide over ambiguity.
             </h2>
@@ -106,12 +114,12 @@ const CardsAnimation = () => {
 
           {/* Animated cards */}
           <div
-            className="relative w-full max-w-4xl mx-auto bg-violet-900"
+            className="relative w-full max-w-4xl mx-auto"
             style={{ perspective: "1000px" }}
           >
             {/* Strategy Card (Purple) */}
             <motion.div
-              className="absolute w-80 h-96 bg-gradient-to-br from-purple-200 to-purple-300 rounded-2xl shadow-lg origin-center"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center"
               style={{
                 x: strategyCardX,
                 y: strategyCardY,
@@ -124,11 +132,26 @@ const CardsAnimation = () => {
                 marginTop: "-192px",
                 transformStyle: "preserve-3d",
               }}
-            ></motion.div>
+            >
+              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
+                understand your business
+              </h3>
+              <p className="text-extra-subtitle-heading tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph min-h-[66.25%]">
+                Your brand has a personality just like human beings do, answer
+                the questions from your brand/business’ point of view. Can be
+                played by an individual (a brand custodian) or a small group of
+                key decision makers of the brand.
+              </p>
+              <div className="w-full flex items-center justify-between">
+                <span className="text-[14px] tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph">
+                  Cards Against Ambiguity
+                </span>
+              </div>
+            </motion.div>
 
             {/* Design Card (Pink) */}
             <motion.div
-              className="absolute w-80 h-96 bg-gradient-to-br from-pink-200 to-pink-300 rounded-2xl shadow-lg"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center"
               style={{
                 x: designCardX,
                 y: designCardY,
@@ -141,11 +164,26 @@ const CardsAnimation = () => {
                 marginTop: "-192px",
                 transformStyle: "preserve-3d",
               }}
-            ></motion.div>
+            >
+              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
+                understand your business
+              </h3>
+              <p className="text-extra-subtitle-heading tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph min-h-[66.25%]">
+                Your brand has a personality just like human beings do, answer
+                the questions from your brand/business’ point of view. Can be
+                played by an individual (a brand custodian) or a small group of
+                key decision makers of the brand.
+              </p>
+              <div className="w-full flex items-center justify-between">
+                <span className="text-[14px] tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph">
+                  Cards Against Ambiguity
+                </span>
+              </div>
+            </motion.div>
 
             {/* Build Card (Orange) */}
             <motion.div
-              className="absolute w-80 h-96 bg-gradient-to-br from-orange-200 to-orange-300 rounded-2xl shadow-lg"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center"
               style={{
                 x: buildCardX,
                 y: buildCardY,
@@ -158,7 +196,22 @@ const CardsAnimation = () => {
                 marginTop: "-192px",
                 transformStyle: "preserve-3d",
               }}
-            ></motion.div>
+            >
+              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
+                understand your business
+              </h3>
+              <p className="text-extra-subtitle-heading tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph min-h-[66.25%]">
+                Your brand has a personality just like human beings do, answer
+                the questions from your brand/business’ point of view. Can be
+                played by an individual (a brand custodian) or a small group of
+                key decision makers of the brand.
+              </p>
+              <div className="w-full flex items-center justify-between">
+                <span className="text-[14px] tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph">
+                  Cards Against Ambiguity
+                </span>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
