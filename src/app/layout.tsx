@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import ReactLenis from "@/app/_components/react-lenis";
 
 const paragraph = localFont({
   src: [

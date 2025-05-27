@@ -24,7 +24,7 @@ const page: FC<pageProps> = () => {
       }}
     >
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background h-screen snap-start">
-        <div className="container md:h-[60vh] z-10 bg-yellow-level-five flex items-end justify-start">
+        <div className="container md:h-[60vh] z-10  flex items-end justify-start">
           <h1 className="text-4xl md:text-6xl lg:text-8xl text-foreground leading-tight tracking-wide font-extrabold font-heading">
             marketing is <br /> momentum
           </h1>
@@ -32,7 +32,7 @@ const page: FC<pageProps> = () => {
         <BackgroundVideo
           className="absolute left-0 top-0 w-full h-full z-0 "
           classForVideo="object-right md:object-cover"
-          videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoOo0UkQaAN2xy7u8gkcnHmWrtVoJiaswfYqBK"
+          videoSrc="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiK5N8NW40uc9qOMHzApnW38NDejVaClskLmrx"
         />
       </section>
 
