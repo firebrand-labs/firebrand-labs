@@ -147,6 +147,7 @@
 
   --font-heading: var(--heading);
   --font-paragraph: var(--paragraph);
+  --font-highlighter: var(--highlighter);
 
   --animate-in: animate-in 0.4s ease-out;
   --animate-out: animate-out 0.3s ease-in;

@@ -2,6 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  AnimatedRichText,
+  AnimatedSpan,
+  AnimatedTextReveal,
+} from "./animated-text";
 
 const CardsAnimation = () => {
   const containerRef = useRef(null);
@@ -103,13 +108,20 @@ const CardsAnimation = () => {
         <div className="sticky top-0 min-h-screen flex flex-col items-start justify-start overflow-hidden ">
           {/* Main quote */}
           <div className="text-left  mb-16 py-16 z-10 ">
-            <h2 className="text-secondary-heading  max-w-3xl text-background leading-tight tracking-wide font-normal font-heading">
-              cultivate empathy. tide over ambiguity.
-            </h2>
-            <p className="text-subtitle-heading tracking-wide text-background max-w-3xl leading-normal font-light font-paragraph">
-              keep scrolling to understand exactly how cards against ambiguity
-              can help you and your business.
-            </p>
+            <AnimatedTextReveal
+              text="cultivate empathy. tide over ambiguity."
+              className="text-secondary-heading  max-w-3xl text-background leading-tight tracking-wide font-normal font-heading"
+            />
+
+            <AnimatedRichText delay={1.6}>
+              <AnimatedSpan
+                className="text-subtitle-heading tracking-wide text-background max-w-3xl leading-normal font-light font-paragraph"
+                delay={1.8}
+              >
+                keep scrolling to understand exactly how cards against ambiguity
+                can help you and your business.
+              </AnimatedSpan>
+            </AnimatedRichText>
           </div>
 
           {/* Animated cards */}

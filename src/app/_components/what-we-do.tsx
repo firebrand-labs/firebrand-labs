@@ -4,6 +4,11 @@ import { FC } from "react";
 import RandomCards from "@/app/_components/random-cards";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import {
+  AnimatedRichText,
+  AnimatedSpan,
+  AnimatedTextReveal,
+} from "@/app/_components/animated-text";
 interface WhatWeDoProps {}
 
 const WhatWeDo: FC<WhatWeDoProps> = () => {
@@ -29,7 +34,7 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.6, // 200ms delay between each line
+        staggerChildren: 0.1, // 200ms delay between each line
         delayChildren: 0.4, // Small initial delay
       },
     },
@@ -46,7 +51,7 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
     rgba(255, 255, 255, 0.1) 161px
   )`,
       }}
-      className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background md:min-h-svh snap-start"
+      className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh md:min-h-svh snap-start"
     >
       <div className="container md:h-screen relative flex items-center justify-center flex-col gap-8 py-16">
         <motion.div
@@ -59,53 +64,66 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
           }}
         >
           <div className="relative flex-col items-center justify-center flex bg-lime-0">
-            <h2 className="text-3xl md:text-4xl lg:text-6xl text-foreground leading-tight tracking-wide font-extrabold font-heading">
-              what we do
-            </h2>
-            {/* <div className="absolute w-20 h-1 bg-yellow-level-five top-1/2 right-0 -rotate-12 before:content-[''] before:absolute before:top-[-5px] before:right-0 before:bg-inherit before:w-full before:h-full before:rotate-[-10deg] after:content-[''] after:absolute after:bottom-[-5px] after:right-0 after:bg-inherit after:w-full after:h-full after:rotate-[-10deg] " /> */}
-            <motion.div
-              className="absolute w-20 h-1 top-1/2 right-0 -rotate-12"
-              variants={containerVariants}
+            <AnimatedRichText
+              className="relative text-secondary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
+              delay={1.4}
             >
-              {/* First Line */}
-              <motion.div
-                className="absolute w-full h-full bg-yellow-level-five"
-                variants={lineVariants}
-                style={{ originX: 0 }} // Transform origin left
-              />
-
-              {/* Third Line */}
-              <motion.div
-                className="absolute w-full h-full bg-yellow-level-five bottom-[-5px] rotate-[-16deg]"
-                variants={lineVariants}
-                style={{ originX: 0 }}
-              />
-
-              {/* Second Line */}
-              <motion.div
-                className="absolute w-full h-full bg-yellow-level-five top-[-5px] rotate-[-10deg]"
-                variants={lineVariants}
-                style={{ originX: 0 }}
-              />
-              <motion.div
-                variants={lineVariants}
-                style={{ originX: 0 }}
-                className="absolute w-full h-full  top-[-80px] right-[-80px]"
+              <AnimatedSpan
+                className="text-3xl md:text-4xl lg:text-6xl text-foreground leading-tight tracking-wide font-extrabold font-heading"
+                delay={1.4}
               >
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigzzBlhQA7l16tQ289KNofiDrnEuvmRbjhqdT"
-                  }
-                  alt="Firebrand Labs Logo"
-                  width={200}
-                  height={100}
+                we are EMO
+              </AnimatedSpan>
+              <motion.div
+                className="absolute w-16 md:w-28 h-1 top-1/2 right-0 "
+                variants={containerVariants}
+              >
+                {/* First Line */}
+                <motion.div
+                  className="absolute w-full h-full bg-yellow-level-three hidden"
+                  variants={lineVariants}
+                  style={{ originX: 0 }} // Transform origin left
                 />
+
+                {/* Third Line */}
+                <motion.div
+                  className="absolute w-full h-full bg-yellow-level-three bottom-[-5px] rotate-[-16deg] hidden"
+                  variants={lineVariants}
+                  style={{ originX: 0 }}
+                />
+
+                {/* Second Line */}
+                <motion.div
+                  className="absolute w-full h-full bg-yellow-level-three top-[-5px] rotate-[-10deg] hidden"
+                  variants={lineVariants}
+                  style={{ originX: 0 }}
+                />
+                <motion.div
+                  variants={lineVariants}
+                  style={{ originX: 0 }}
+                  className="absolute  w-[300px] top-[-80px] right-[-100px] md:top-[-100px] md:right-[-170px] rotate-0"
+                >
+                  <Image
+                    src={
+                      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiCBTZxAMWlPmUtW4ZvzoY1BwsJc3TSOd2XFAG"
+                    }
+                    alt="Firebrand Labs Logo"
+                    className="w-[700px]"
+                    width={500}
+                    height={200}
+                  />
+                </motion.div>
               </motion.div>
-            </motion.div>
+            </AnimatedRichText>
+            <AnimatedRichText
+              className="text-secondary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
+              delay={1.6}
+            >
+              <AnimatedSpan className="text-center" delay={1.6}>
+                O = Officers, not Office. we are humans.
+              </AnimatedSpan>
+            </AnimatedRichText>
           </div>
-          <p className="text-extra-subtitle-heading tracking-wide text-foreground leading-normal font-paragraph duration-500">
-            among other things.
-          </p>
         </motion.div>
         <RandomCards />
       </div>

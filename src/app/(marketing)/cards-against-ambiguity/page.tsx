@@ -9,6 +9,11 @@ import CardsAnimation from "@/app/_components/cards-animation";
 import Footer from "@/app/_components/footer";
 import { cardsAgainstAmbiguityContent } from "@/config/marketing";
 import ReactLenis from "@/app/_components/react-lenis";
+import {
+  AnimatedRichText,
+  AnimatedSpan,
+  AnimatedTextReveal,
+} from "@/app/_components/animated-text";
 
 interface pageProps {}
 
@@ -29,12 +34,19 @@ const page: FC<pageProps> = () => {
           className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh py-16"
         >
           <div className="container flex items-start flex-col gap-4 justify-start">
-            <h2 className="text-secondary-heading  text-foreground font-normal leading-tight tracking-wide max-w-4xl font-heading">
-              this is what ambiguity looks like, and it hinders growth.
-            </h2>
-            <p className="text-extra-subtitle-heading tracking-wide font-light text-foreground leading-normal font-paragraph">
-              you’ve been here, and so have we.
-            </p>
+            <AnimatedTextReveal
+              text="this is what ambiguity looks like, and it hinders growth."
+              className="text-secondary-heading  text-foreground font-normal leading-tight tracking-wide max-w-4xl font-heading"
+            />
+
+            <AnimatedRichText
+              className="text-extra-subtitle-heading tracking-wide font-light text-foreground leading-normal font-paragraph"
+              delay={1.8}
+            >
+              <AnimatedSpan className="" delay={1.8}>
+                you’ve been here, and so have we.
+              </AnimatedSpan>
+            </AnimatedRichText>
           </div>
         </section>
         <section
@@ -52,38 +64,58 @@ const page: FC<pageProps> = () => {
           <div className="container flex items-start flex-col gap-4 justify-start">
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">
-                <p className="text-paragraph-heading tracking-wide text-foreground leading-normal font-paragraph">
-                  presenting
-                </p>
-                <h2 className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading">
-                  Cards Against Ambiguity (CAA)
-                </h2>
-                <p className="text-subtitle-heading tracking-wide text-foreground leading-normal font-semibold font-paragraph">
-                  A creative tool to enable introspection and drive clarity in a
-                  volatile, uncertain, complex and ambiguous world.
-                </p>
-                <p className="text-subtitle-heading tracking-wide text-foreground leading-normal font-light font-paragraph">
-                  Designed for entrepreneurs, professionals, CxOs and Business
-                  Owners, these set of cards enable a deep understanding of
-                  their businesses and the people who are actively driving these
-                  businesses. Each card has an open ended question to enable
-                  businesses to derive clarity about their brand, customers,
-                  markets, target segments, target audiences and employees.
-                </p>
+                <AnimatedTextReveal
+                  text="presenting"
+                  className="text-paragraph-heading tracking-wide text-foreground leading-normal font-paragraph"
+                />
+                <AnimatedTextReveal
+                  text="Cards Against Ambiguity (CAA)"
+                  delay={0.8}
+                  className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading"
+                />
+
+                <AnimatedRichText delay={1.6}>
+                  <AnimatedSpan
+                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-semibold font-paragraph mb-2.5"
+                    delay={1.8}
+                  >
+                    A creative tool to enable introspection and drive clarity in
+                    a volatile, uncertain, complex and ambiguous world.
+                  </AnimatedSpan>
+                  <AnimatedSpan
+                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-light font-paragraph"
+                    delay={1.8}
+                  >
+                    Designed for entrepreneurs, professionals, CxOs and Business
+                    Owners, these set of cards enable a deep understanding of
+                    their businesses and the people who are actively driving
+                    these businesses. Each card has an open ended question to
+                    enable businesses to derive clarity about their brand,
+                    customers, markets, target segments, target audiences and
+                    employees.
+                  </AnimatedSpan>
+                </AnimatedRichText>
               </div>
               <div className="flex items-center justify-center self-center" />
             </div>
           </div>
         </section>
-        <section className=" hidden relative items-center justify-start flex-col w-screen overflow-x-hidden bg-foreground min-h-svh py-16">
+        <section className="hidden relative items-center justify-start flex-col w-screen overflow-x-hidden bg-foreground min-h-svh py-16">
           <div className="container flex items-start flex-col gap-4 justify-start">
-            <h2 className="text-secondary-heading  max-w-3xl text-background leading-tight tracking-wide font-normal font-heading">
-              cultivate empathy. tide over ambiguity.
-            </h2>
-            <p className="text-subtitle-heading tracking-wide text-background max-w-3xl leading-normal font-light font-paragraph">
-              keep scrolling to understand exactly how cards against ambiguity
-              can help you and your business.
-            </p>
+            <AnimatedTextReveal
+              text="cultivate empathy. tide over ambiguity."
+              className="text-secondary-heading  max-w-3xl text-background leading-tight tracking-wide font-normal font-heading"
+            />
+
+            <AnimatedRichText delay={1.6}>
+              <AnimatedSpan
+                className="text-subtitle-heading tracking-wide text-background max-w-3xl leading-normal font-light font-paragraph"
+                delay={1.8}
+              >
+                keep scrolling to understand exactly how cards against ambiguity
+                can help you and your business.
+              </AnimatedSpan>
+            </AnimatedRichText>
           </div>
         </section>
         <CardsAnimation />
@@ -126,16 +158,27 @@ const page: FC<pageProps> = () => {
           <div className="container flex items-start flex-col gap-4 justify-start md:mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">
-                <h2 className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading">
-                  buy the entire pack
-                </h2>
-                <p className="text-subtitle-heading tracking-wide text-foreground leading-normal font-semibold font-paragraph">
-                  The complete pack consists of 54 unique question cards.
-                </p>
-                <p className="text-subtitle-heading tracking-wide text-foreground leading-normal font-light font-paragraph">
-                  Place an order for your own pack of cards to keep it handy for
-                  the next time you are overwhelmed by ambiguity.
-                </p>
+                <AnimatedTextReveal
+                  text="buy the entire pack"
+                  className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading"
+                />
+
+                <AnimatedRichText delay={1.6}>
+                  <AnimatedSpan
+                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-semibold font-paragraph"
+                    delay={1.8}
+                  >
+                    The complete pack consists of 54 unique question cards.
+                  </AnimatedSpan>
+                  <AnimatedSpan
+                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-light font-paragraph"
+                    delay={1.8}
+                  >
+                    Place an order for your own pack of cards to keep it handy
+                    for the next time you are overwhelmed by ambiguity.
+                  </AnimatedSpan>
+                </AnimatedRichText>
+
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-6">
                   <Link
                     href={"/"}

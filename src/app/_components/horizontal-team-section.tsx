@@ -20,6 +20,11 @@ import {
 } from "@/app/_components/ui/dialog";
 import { Input } from "@/app/_components/ui/input";
 import { Label } from "@/app/_components/ui/label";
+import {
+  AnimatedRichText,
+  AnimatedSpan,
+  AnimatedTextReveal,
+} from "./animated-text";
 
 interface HorizontalTeamSectionProps {}
 const colors = ["#263C7B", "#322A5E", "#84357B", "#4A4A48"];
@@ -54,13 +59,20 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
       {/* <div className="container"> */}
       <div className="sticky w-full top-0 flex flex-col items-center justify-center min-h-[80vh] md:min-h-[80vh] overflow-hidden">
         <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-6 ">
-          <h2 className="text-secondary-heading text-background leading-tight font-normal font-heading">
-            the ones who set it in motion
-          </h2>
-          <p className="text-paragraph-heading max-w-4xl text-background leading-normal font-light font-paragraph">
-            born from the belief that design moves business forward — and that
-            every bold idea begins with a simple “why not?”
-          </p>
+          <AnimatedTextReveal
+            text="the ones who set it in motion"
+            className="text-secondary-heading text-background leading-tight font-normal font-heading"
+          />
+
+          <AnimatedRichText delay={1.6}>
+            <AnimatedSpan
+              className="text-paragraph-heading max-w-4xl text-background leading-normal font-light font-paragraph"
+              delay={1.8}
+            >
+              born from the belief that design moves business forward — and that
+              every bold idea begins with a simple “why not?”
+            </AnimatedSpan>
+          </AnimatedRichText>
           <motion.div style={{ x }} className="flex gap-12 md:gap-8">
             {Array.from([...teamContent]).map((item, i) => (
               <div

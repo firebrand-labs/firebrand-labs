@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 import Image from "next/image";
 import { useRef } from "react";
+import { AnimatedTextReveal } from "./animated-text";
 
 const solutionsTitle = ["Experience", "Automate", "Predict", "Secure"];
 
@@ -39,10 +40,11 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
       >
         {/* <div className="container"> */}
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] md:h-[100vh] overflow-hidden">
-          <div className="container overflow-hidden flex flex-col items-start justify-center gap-6 md:gap-8">
-            <h2 className="text-secondary-heading text-background leading-tight font-normal font-heading">
-              and then came the rest of us
-            </h2>
+          <div className="container overflow-hidden flex flex-col items-start justify-center gap-10 md:gap-8">
+            <AnimatedTextReveal
+              text="and then came the rest of us"
+              className="text-secondary-heading text-background leading-tight font-normal font-heading"
+            />
             <motion.div style={{ x }} className="flex gap-12 md:gap-8">
               {Array.from({ length: 7 }).map((item, i) => (
                 <div

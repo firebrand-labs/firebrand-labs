@@ -1,3 +1,4 @@
+import { AnimatedTextReveal } from "@/app/_components/animated-text";
 import ContactUsForm from "@/app/_components/contact-us-form";
 import Footer from "@/app/_components/footer";
 import ReactLenis from "@/app/_components/react-lenis";
@@ -23,9 +24,10 @@ const page: FC<pageProps> = () => {
           className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 pt-32 md:pt-40 md:pb-24"
         >
           <div className="container flex flex-col items-start justify-center gap-4 md:gap-16">
-            <h1 className="text-secondary-heading text-foreground tracking-wide leading-tight font-normal font-heading max-w-4xl">
-              branding? marketing? read an interesting book— let’s catch up!
-            </h1>
+            <AnimatedTextReveal
+              text="branding? marketing? read an interesting book— let’s catch up!"
+              className="text-secondary-heading text-foreground tracking-wide leading-tight font-normal font-heading max-w-4xl"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-6 md:gap-1">
               {/* Social Media */}
               <div className="flex flex-col items-start justify-between gap-6 md:gap-8 h-full">

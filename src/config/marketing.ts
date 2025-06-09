@@ -62,8 +62,8 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
-    href: "/resources",
-    title: "Resources",
+    href: "/blogs",
+    title: "Blogs",
     subItems: [],
   },
 ];

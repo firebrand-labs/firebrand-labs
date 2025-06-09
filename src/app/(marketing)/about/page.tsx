@@ -1,3 +1,8 @@
+import {
+  AnimatedRichText,
+  AnimatedSpan,
+  AnimatedTextReveal,
+} from "@/app/_components/animated-text";
 import FBLButton from "@/app/_components/fbl-button";
 import FirebrandValues from "@/app/_components/firebrand-values";
 import Footer from "@/app/_components/footer";
@@ -32,15 +37,22 @@ const page: FC<pageProps> = () => {
         >
           <div className="container flex flex-col items-start justify-center gap-16">
             <div className="flex flex-col items-start justify-center max-w-4xl gap-4">
-              <h1 className="text-secondary-heading text-foreground leading-tight tracking-wide font-normal font-heading">
-                a little aggression, a lot of ambition, and an unshakable urge
-                to get things done and grow.
-              </h1>
-              <p className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
-                firebrand labs began with a mindset, not a business plan. a plan
-                where we chased momentum instead of comfort and one that helped
-                brands move fast, think clearly, and show up like they mean it.
-              </p>
+              <AnimatedTextReveal
+                text="a little aggression, a lot of ambition, and an unshakable urge to get things done and grow."
+                className="text-secondary-heading text-foreground leading-tight tracking-wide font-normal font-heading"
+              />
+
+              <AnimatedRichText
+                className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph"
+                delay={5}
+              >
+                <AnimatedSpan className="" delay={1.8}>
+                  firebrand labs began with a mindset, not a business plan. a
+                  plan where we chased momentum instead of comfort and one that
+                  helped brands move fast, think clearly, and show up like they
+                  mean it.
+                </AnimatedSpan>
+              </AnimatedRichText>
             </div>
             <div className="flex items-center justify-center border border-foreground rounded-2xl w-full min-h-[75.75vh]">
               <Switch className="w-[240px] h-[120px] rounded-full" />
@@ -84,13 +96,19 @@ const page: FC<pageProps> = () => {
                 philosophy.
               </p>
             </div>
-            <p className="text-paragraph-heading tracking-wide italic mt-12 font-extrabold text-foreground leading-normal font-paragraph">
-              We put people first — our clients, and our team.
-            </p>
-            <p className="text-subtitle-heading tracking-wide text-foreground max-w-4xl font-light leading-normal font-paragraph">
-              that mindset fuels our spark. It’s why we show up with energy,
-              curiosity, and the drive to move brands forward, together.
-            </p>
+            <AnimatedTextReveal
+              text="We put people first — our clients, and our team."
+              className="text-paragraph-heading tracking-wide italic mt-12 font-extrabold text-foreground leading-normal font-paragraph"
+            />
+            <AnimatedRichText delay={1.6}>
+              <AnimatedSpan
+                className="text-subtitle-heading tracking-wide text-foreground max-w-4xl font-light leading-normal font-paragraph"
+                delay={1.8}
+              >
+                that mindset fuels our spark. It’s why we show up with energy,
+                curiosity, and the drive to move brands forward, together.
+              </AnimatedSpan>
+            </AnimatedRichText>
           </div>
         </section>
 
@@ -107,9 +125,10 @@ const page: FC<pageProps> = () => {
           className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16"
         >
           <div className="container flex flex-col items-start justify-center gap-8">
-            <h2 className="text-secondary-heading tracking-wide text-foreground leading-tight font-semibold font-heading">
-              the firebrand values
-            </h2>
+            <AnimatedTextReveal
+              text="the firebrand values"
+              className="text-secondary-heading tracking-wide text-foreground leading-tight font-semibold font-heading"
+            />
             <FirebrandValues />
           </div>
         </section>
@@ -132,9 +151,10 @@ const page: FC<pageProps> = () => {
           <div className="container flex flex-col items-start justify-center gap-8">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center">
-                <h2 className="text-secondary-heading tracking-wide text-foreground leading-tight font-normal font-heading">
-                  want to learn more about us?
-                </h2>
+                <AnimatedTextReveal
+                  text="want to learn more about us?"
+                  className="text-secondary-heading tracking-wide text-foreground leading-tight font-normal font-heading"
+                />
                 <p className="text-paragraph-heading tracking-wide italic mt-8 font-extrabold text-foreground leading-normal font-paragraph">
                   fabulous ideas. brilliant execution. loveable people.
                 </p>
