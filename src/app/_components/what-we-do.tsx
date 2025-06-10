@@ -55,7 +55,7 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
     >
       <div className="container md:h-screen relative flex items-center justify-center flex-col gap-8 py-16">
         <motion.div
-          className="flex flex-col items-center justify-center"
+          className="flex flex-col items-center justify-center z-10"
           initial="hidden"
           whileInView="visible"
           viewport={{

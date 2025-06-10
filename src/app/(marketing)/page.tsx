@@ -113,11 +113,11 @@ const page: FC<pageProps> = () => {
             <AnimatedSpan className="font-bold" delay={0.8}>
               we are curiously minded, bold hearted, and restlessly creative.
             </AnimatedSpan>
-            <AnimatedSpan className="py-2" delay={0.8}>
+            <AnimatedSpan className="pt-2" delay={0.8}>
               we believe in asking better questions, pushing past the obvious,
               and showing up with{" "}
             </AnimatedSpan>
-            <AnimatedSpan className="py-2" delay={0.8}>
+            <AnimatedSpan className="pb-2" delay={0.8}>
               purpose.{" "}
             </AnimatedSpan>
             <AnimatedSpan delay={0.8}>
