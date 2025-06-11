@@ -51,20 +51,12 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
     rgba(255, 255, 255, 0.1) 161px
   )`,
       }}
-      className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh md:min-h-svh snap-start"
+      className="flex items-center justify-center relative flex-col w-screen overflow-x-hidden bg-background min-h-svh md:min-h-svh snap-start"
     >
-      <RandomCards />
-      <div className="container md:h-screen relative flex items-center justify-center flex-col gap-8 py-16">
-        <motion.div
-          className="hidden flex-col items-center justify-center z-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{
-            once: true, // Animation triggers only once
-            amount: 0.3, // Trigger when 30% is visible
-          }}
-        >
-          <div className="relative flex-col items-center justify-center flex bg-lime-0">
+      <div className="flex relative items-center justify-center w-full h-full">
+        <RandomCards />
+        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:h-screen flex items-center justify-center flex-col gap-8 py-16 ">
+          <div className=" flex-col items-center justify-center flex bg-lime-0">
             <AnimatedRichText
               className="relative text-secondary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
               delay={1.4}
@@ -125,7 +117,7 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
               </AnimatedSpan>
             </AnimatedRichText>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

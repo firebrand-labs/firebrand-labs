@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, Variants, Transition } from "framer-motion";
 
 // Type definitions
@@ -7,12 +7,17 @@ interface Position {
   y: number;
 }
 
+interface ResponsivePosition {
+  xPercent: number;
+  yPercent: number;
+}
+
 type ArcType = "high" | "medium" | "low";
 
 interface Card {
   id: number;
   title: string;
-  position: Position;
+  position: ResponsivePosition; // Changed to responsive position
   arcType: ArcType;
   delay: number;
 }
@@ -42,141 +47,179 @@ interface ArcVariants extends Variants {
 
 const AnimatedCardInterface: React.FC = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
-  const [animationCycle, setAnimationCycle] = useState<number>(0);
+  const [windowSize, setWindowSize] = useState({ width: 1200, height: 800 });
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  // Uniformly distributed cards across the screen
+  // Convert static positions to percentage-based positions
   const cards: Card[] = [
     {
       id: 1,
       title: "orchestrating a unified user experience",
-      position: { x: 120, y: 100 },
+      position: { xPercent: 10, yPercent: 12.5 }, // ~120px/1200px, ~100px/800px
       arcType: "high",
       delay: 0,
     },
     {
       id: 2,
       title: "engineering strategic brand narratives",
-      position: { x: 1050, y: 140 },
+      position: { xPercent: 87.5, yPercent: 17.5 }, // ~1050px/1200px, ~140px/800px
       arcType: "low",
       delay: 0.4,
     },
     {
       id: 3,
       title: "strategic vision one",
-      position: { x: 450, y: 180 },
+      position: { xPercent: 37.5, yPercent: 22.5 }, // ~450px/1200px, ~180px/800px
       arcType: "medium",
       delay: 0.8,
     },
     {
       id: 4,
       title: "strategic vision",
-      position: { x: 800, y: 220 },
+      position: { xPercent: 66.7, yPercent: 27.5 }, // ~800px/1200px, ~220px/800px
       arcType: "high",
       delay: 1.2,
     },
     {
       id: 5,
       title: "embedding brand advocacy within organizations",
-      position: { x: 200, y: 320 },
+      position: { xPercent: 16.7, yPercent: 40 }, // ~200px/1200px, ~320px/800px
       arcType: "low",
       delay: 1.6,
     },
     {
       id: 6,
       title: "innovation hub",
-      position: { x: 600, y: 280 },
+      position: { xPercent: 50, yPercent: 35 }, // ~600px/1200px, ~280px/800px
       arcType: "medium",
       delay: 2.0,
     },
     {
       id: 7,
       title: "cultivating digital brand ecosystems",
-      position: { x: 950, y: 300 },
+      position: { xPercent: 79.2, yPercent: 37.5 }, // ~950px/1200px, ~300px/800px
       arcType: "high",
       delay: 2.4,
     },
     {
       id: 8,
       title: "transformative design thinking",
-      position: { x: 300, y: 420 },
+      position: { xPercent: 25, yPercent: 52.5 }, // ~300px/1200px, ~420px/800px
       arcType: "low",
       delay: 2.8,
     },
     {
       id: 9,
       title: "data-driven user insights",
-      position: { x: 750, y: 380 },
+      position: { xPercent: 62.5, yPercent: 47.5 }, // ~750px/1200px, ~380px/800px
       arcType: "medium",
       delay: 3.2,
     },
     {
       id: 10,
       title: "agile development methodologies",
-      position: { x: 1100, y: 360 },
+      position: { xPercent: 91.7, yPercent: 45 }, // ~1100px/1200px, ~360px/800px
       arcType: "high",
       delay: 3.6,
     },
     {
       id: 11,
       title: "cross-platform integration",
-      position: { x: 150, y: 520 },
+      position: { xPercent: 12.5, yPercent: 65 }, // ~150px/1200px, ~520px/800px
       arcType: "low",
       delay: 4.0,
     },
     {
       id: 12,
       title: "scalable architecture solutions",
-      position: { x: 500, y: 480 },
+      position: { xPercent: 41.7, yPercent: 60 }, // ~500px/1200px, ~480px/800px
       arcType: "medium",
       delay: 4.4,
     },
     {
       id: 13,
       title: "user-centric design philosophy",
-      position: { x: 850, y: 500 },
+      position: { xPercent: 70.8, yPercent: 62.5 }, // ~850px/1200px, ~500px/800px
       arcType: "high",
       delay: 4.8,
     },
     {
       id: 14,
       title: "emerging technology adoption",
-      position: { x: 350, y: 580 },
+      position: { xPercent: 29.2, yPercent: 72.5 }, // ~350px/1200px, ~580px/800px
       arcType: "low",
       delay: 5.2,
     },
     {
       id: 15,
       title: "collaborative innovation frameworks",
-      position: { x: 700, y: 560 },
+      position: { xPercent: 58.3, yPercent: 70 }, // ~700px/1200px, ~560px/800px
       arcType: "medium",
       delay: 5.6,
     },
     {
       id: 16,
       title: "sustainable development practices",
-      position: { x: 1000, y: 540 },
+      position: { xPercent: 83.3, yPercent: 67.5 }, // ~1000px/1200px, ~540px/800px
       arcType: "high",
       delay: 6.0,
     },
     {
       id: 17,
       title: "machine learning integration",
-      position: { x: 250, y: 680 },
+      position: { xPercent: 20.8, yPercent: 85 }, // ~250px/1200px, ~680px/800px
       arcType: "low",
       delay: 6.4,
     },
     {
       id: 18,
       title: "cloud infrastructure optimization",
-      position: { x: 600, y: 640 },
+      position: { xPercent: 50, yPercent: 80 }, // ~600px/1200px, ~640px/800px
+      arcType: "medium",
+      delay: 6.8,
+    },
+    {
+      id: 19,
+      title: "sustainable development practices",
+      position: { xPercent: 100, yPercent: 80 }, // ~1200px/1200px, ~640px/800px
+      arcType: "high",
+      delay: 6.0,
+    },
+    {
+      id: 20,
+      title: "machine learning integration",
+      position: { xPercent: 104.2, yPercent: 60 }, // ~1250px/1200px, ~480px/800px
+      arcType: "low",
+      delay: 6.4,
+    },
+    {
+      id: 21,
+      title: "cloud infrastructure optimization",
+      position: { xPercent: 108.3, yPercent: 30 }, // ~1300px/1200px, ~240px/800px
       arcType: "medium",
       delay: 6.8,
     },
   ];
 
+  // Update window size on resize
   useEffect(() => {
-    // Remove the interval since we want continuous animation
-    // Each card will have its own infinite loop timing
+    const handleResize = () => {
+      if (typeof window !== "undefined") {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+    };
+
+    // Set initial size
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Stone-throwing arc trajectories with varied timing
@@ -306,7 +349,6 @@ const AnimatedCardInterface: React.FC = () => {
           transition: {
             duration: duration,
             delay: startDelay,
-
             ease: "linear",
             repeat: Infinity,
           },
@@ -347,8 +389,19 @@ const AnimatedCardInterface: React.FC = () => {
     },
   };
 
+  // Calculate actual pixel positions based on percentages
+  const getPixelPosition = (position: ResponsivePosition) => {
+    return {
+      x: ((position.xPercent - 15) / 100) * windowSize.width,
+      y: (position.yPercent / 100) * windowSize.height,
+    };
+  };
+
   return (
-    <div className="w-full h-screen bg-black overflow-hidden relative">
+    <div
+      className="w-full h-screen overflow-hidden relative bg-black"
+      ref={containerRef}
+    >
       {/* 3D Perspective Container */}
       <div
         className="absolute inset-0"
@@ -375,16 +428,6 @@ const AnimatedCardInterface: React.FC = () => {
           />
         </div>
 
-        {/* dlabs Logo */}
-        <motion.div
-          className="absolute top-8 left-8 text-white text-2xl font-light tracking-wider z-50"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          dlabs
-        </motion.div>
-
         {/* Arc Animated Cards */}
         <div
           className="relative w-full h-full"
@@ -397,13 +440,16 @@ const AnimatedCardInterface: React.FC = () => {
               card.id
             );
 
+            // Calculate pixel position based on current window size
+            const pixelPosition = getPixelPosition(card.position);
+
             return (
               <motion.div
-                key={card.id} // Remove animationCycle to prevent restart
+                key={card.id}
                 className="absolute cursor-pointer group"
                 style={{
-                  left: card.position.x,
-                  top: card.position.y,
+                  left: pixelPosition.x,
+                  top: pixelPosition.y,
                   transformStyle: "preserve-3d",
                 }}
                 variants={{ ...arcVariants, ...hoverVariants }}
@@ -478,12 +524,8 @@ const AnimatedCardInterface: React.FC = () => {
             key={i}
             className="absolute w-1 h-1 bg-red-500/30 rounded-full"
             initial={{
-              x:
-                Math.random() *
-                (typeof window !== "undefined" ? window.innerWidth : 1200),
-              y:
-                Math.random() *
-                (typeof window !== "undefined" ? window.innerHeight : 800),
+              x: Math.random() * windowSize.width,
+              y: Math.random() * windowSize.height,
               z: Math.random() * -100,
               opacity: 0,
             }}
