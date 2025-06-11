@@ -1,226 +1,509 @@
-"use client";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence, Variants, Transition } from "framer-motion";
 
-import type React from "react";
+// Type definitions
+interface Position {
+  x: number;
+  y: number;
+}
 
-import { type FC, useRef } from "react";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Icons } from "@/app/_components/icons";
+type ArcType = "high" | "medium" | "low";
 
-type RandomCardsProps = {};
+interface Card {
+  id: number;
+  title: string;
+  position: Position;
+  arcType: ArcType;
+  delay: number;
+}
 
-const RandomCards: FC<RandomCardsProps> = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
+interface ArcConfig {
+  initial: {
+    x: number;
+    y: number;
+    z: number;
+    opacity: number;
+    scale: number;
+  };
+  animate: {
+    x: number[];
+    y: number[];
+    z: number[];
+    opacity: number[];
+    scale: number[];
+    transition: Transition;
+  };
+}
 
-  // Mouse position values
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
+interface ArcVariants extends Variants {
+  initial: ArcConfig["initial"];
+  animate: ArcConfig["animate"];
+}
 
-  // Spring animations for smooth movement
-  const springConfig = { damping: 25, stiffness: 700 };
-  const x = useSpring(mouseX, springConfig);
-  const y = useSpring(mouseY, springConfig);
+const AnimatedCardInterface: React.FC = () => {
+  const [activeCard, setActiveCard] = useState<number | null>(null);
+  const [animationCycle, setAnimationCycle] = useState<number>(0);
 
-  // Transform values for different layers (parallax effect)
-  const x1 = useTransform(x, [-0.5, 0.5], [-20, 20]);
-  const y1 = useTransform(y, [-0.5, 0.5], [-20, 20]);
+  // Uniformly distributed cards across the screen
+  const cards: Card[] = [
+    {
+      id: 1,
+      title: "orchestrating a unified user experience",
+      position: { x: 120, y: 100 },
+      arcType: "high",
+      delay: 0,
+    },
+    {
+      id: 2,
+      title: "engineering strategic brand narratives",
+      position: { x: 1050, y: 140 },
+      arcType: "low",
+      delay: 0.4,
+    },
+    {
+      id: 3,
+      title: "strategic vision one",
+      position: { x: 450, y: 180 },
+      arcType: "medium",
+      delay: 0.8,
+    },
+    {
+      id: 4,
+      title: "strategic vision",
+      position: { x: 800, y: 220 },
+      arcType: "high",
+      delay: 1.2,
+    },
+    {
+      id: 5,
+      title: "embedding brand advocacy within organizations",
+      position: { x: 200, y: 320 },
+      arcType: "low",
+      delay: 1.6,
+    },
+    {
+      id: 6,
+      title: "innovation hub",
+      position: { x: 600, y: 280 },
+      arcType: "medium",
+      delay: 2.0,
+    },
+    {
+      id: 7,
+      title: "cultivating digital brand ecosystems",
+      position: { x: 950, y: 300 },
+      arcType: "high",
+      delay: 2.4,
+    },
+    {
+      id: 8,
+      title: "transformative design thinking",
+      position: { x: 300, y: 420 },
+      arcType: "low",
+      delay: 2.8,
+    },
+    {
+      id: 9,
+      title: "data-driven user insights",
+      position: { x: 750, y: 380 },
+      arcType: "medium",
+      delay: 3.2,
+    },
+    {
+      id: 10,
+      title: "agile development methodologies",
+      position: { x: 1100, y: 360 },
+      arcType: "high",
+      delay: 3.6,
+    },
+    {
+      id: 11,
+      title: "cross-platform integration",
+      position: { x: 150, y: 520 },
+      arcType: "low",
+      delay: 4.0,
+    },
+    {
+      id: 12,
+      title: "scalable architecture solutions",
+      position: { x: 500, y: 480 },
+      arcType: "medium",
+      delay: 4.4,
+    },
+    {
+      id: 13,
+      title: "user-centric design philosophy",
+      position: { x: 850, y: 500 },
+      arcType: "high",
+      delay: 4.8,
+    },
+    {
+      id: 14,
+      title: "emerging technology adoption",
+      position: { x: 350, y: 580 },
+      arcType: "low",
+      delay: 5.2,
+    },
+    {
+      id: 15,
+      title: "collaborative innovation frameworks",
+      position: { x: 700, y: 560 },
+      arcType: "medium",
+      delay: 5.6,
+    },
+    {
+      id: 16,
+      title: "sustainable development practices",
+      position: { x: 1000, y: 540 },
+      arcType: "high",
+      delay: 6.0,
+    },
+    {
+      id: 17,
+      title: "machine learning integration",
+      position: { x: 250, y: 680 },
+      arcType: "low",
+      delay: 6.4,
+    },
+    {
+      id: 18,
+      title: "cloud infrastructure optimization",
+      position: { x: 600, y: 640 },
+      arcType: "medium",
+      delay: 6.8,
+    },
+  ];
 
-  const x2 = useTransform(x, [-0.5, 0.5], [-35, 35]);
-  const y2 = useTransform(y, [-0.5, 0.5], [-35, 35]);
+  useEffect(() => {
+    // Remove the interval since we want continuous animation
+    // Each card will have its own infinite loop timing
+  }, []);
 
-  const x3 = useTransform(x, [-0.5, 0.5], [-15, 15]);
-  const y3 = useTransform(y, [-0.5, 0.5], [-15, 15]);
+  // Stone-throwing arc trajectories with varied timing
+  const getArcVariants = (arcType: ArcType, delay: number, cardId: number) => {
+    // Add randomness to duration and timing for each card
+    const baseDuration: number =
+      arcType === "high" ? 4.2 : arcType === "medium" ? 3.8 : 3.2;
+    const duration: number = baseDuration + Math.sin(cardId * 0.7) * 0.8; // Varied duration
+    const startDelay: number = delay + Math.cos(cardId * 0.5) * 0.3; // Varied start
 
-  const x4 = useTransform(x, [-0.5, 0.5], [-25, 25]);
-  const y4 = useTransform(y, [-0.5, 0.5], [-25, 25]);
+    const arcConfigs: Record<ArcType, ArcConfig> = {
+      high: {
+        // High arc like throwing a stone high
+        initial: {
+          x: 0,
+          y: 0,
+          z: -420 + (cardId % 3) * 20, // Slight depth variation
+          opacity: 0.15 + (cardId % 5) * 0.03,
+          scale: 0.35 + (cardId % 4) * 0.02,
+        },
+        animate: {
+          x: [
+            0,
+            -18 + Math.sin(cardId) * 8,
+            -8 + Math.cos(cardId) * 4,
+            3 + Math.sin(cardId * 2) * 2,
+            -2,
+          ],
+          y: [
+            0,
+            -70 - Math.abs(Math.sin(cardId * 0.8)) * 20,
+            -110 - Math.abs(Math.cos(cardId * 0.6)) * 25,
+            -45 - Math.sin(cardId) * 15,
+            0,
+          ],
+          z: [
+            -420 + (cardId % 3) * 20,
+            -300 + Math.sin(cardId * 0.4) * 30,
+            -180 + Math.cos(cardId * 0.3) * 20,
+            -90 + Math.sin(cardId * 0.2) * 10,
+            0,
+          ],
+          opacity: [0.15 + (cardId % 5) * 0.03, 0.35, 0.55, 0.75, 1],
+          scale: [0.35 + (cardId % 4) * 0.02, 0.55, 0.7, 0.85, 1],
+          transition: {
+            duration: duration,
+            delay: startDelay,
+            ease: "linear",
+            repeat: Infinity,
+          },
+        },
+      },
+      medium: {
+        // Medium arc trajectory
+        initial: {
+          x: 0,
+          y: 0,
+          z: -370 + (cardId % 4) * 15,
+          opacity: 0.2 + (cardId % 4) * 0.03,
+          scale: 0.4 + (cardId % 5) * 0.02,
+        },
+        animate: {
+          x: [
+            0,
+            -12 + Math.cos(cardId * 0.7) * 6,
+            -6 + Math.sin(cardId * 0.9) * 3,
+            2 + Math.cos(cardId * 1.2) * 1,
+            -1,
+          ],
+          y: [
+            0,
+            -40 - Math.abs(Math.cos(cardId * 0.6)) * 15,
+            -65 - Math.abs(Math.sin(cardId * 0.8)) * 20,
+            -25 - Math.cos(cardId) * 10,
+            0,
+          ],
+          z: [
+            -370 + (cardId % 4) * 15,
+            -260 + Math.cos(cardId * 0.5) * 25,
+            -150 + Math.sin(cardId * 0.4) * 15,
+            -80 + Math.cos(cardId * 0.3) * 8,
+            0,
+          ],
+          opacity: [0.2 + (cardId % 4) * 0.03, 0.4, 0.6, 0.8, 1],
+          scale: [0.4 + (cardId % 5) * 0.02, 0.6, 0.75, 0.9, 1],
+          transition: {
+            duration: duration,
+            delay: startDelay,
+            ease: "linear",
+            repeat: Infinity,
+          },
+        },
+      },
+      low: {
+        // Low arc like skipping a stone
+        initial: {
+          x: 0,
+          y: 0,
+          z: -320 + (cardId % 5) * 12,
+          opacity: 0.25 + (cardId % 3) * 0.04,
+          scale: 0.45 + (cardId % 6) * 0.02,
+        },
+        animate: {
+          x: [
+            0,
+            -8 + Math.sin(cardId * 0.8) * 4,
+            -4 + Math.cos(cardId * 1.1) * 2,
+            1 + Math.sin(cardId * 1.5) * 1,
+            -1,
+          ],
+          y: [
+            0,
+            -20 - Math.abs(Math.sin(cardId * 0.9)) * 8,
+            -35 - Math.abs(Math.cos(cardId * 0.7)) * 12,
+            -15 - Math.sin(cardId * 0.6) * 5,
+            0,
+          ],
+          z: [
+            -320 + (cardId % 5) * 12,
+            -220 + Math.sin(cardId * 0.6) * 20,
+            -130 + Math.cos(cardId * 0.5) * 12,
+            -70 + Math.sin(cardId * 0.4) * 6,
+            0,
+          ],
+          opacity: [0.25 + (cardId % 3) * 0.04, 0.45, 0.65, 0.85, 1],
+          scale: [0.45 + (cardId % 6) * 0.02, 0.65, 0.8, 0.92, 1],
+          transition: {
+            duration: duration,
+            delay: startDelay,
 
-  // Rotation values for 3D effect
-  const rotateX = useTransform(y, [-0.5, 0.5], [15, -15]);
-  const rotateY = useTransform(x, [-0.5, 0.5], [-15, 15]);
+            ease: "linear",
+            repeat: Infinity,
+          },
+        },
+      },
+    };
 
-  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (!containerRef.current) return;
-
-    const rect = containerRef.current.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
-
-    const mouseXPos = (event.clientX - centerX) / (rect.width / 2);
-    const mouseYPos = (event.clientY - centerY) / (rect.height / 2);
-
-    mouseX.set(mouseXPos);
-    mouseY.set(mouseYPos);
+    return arcConfigs[arcType] || arcConfigs.medium;
   };
 
-  const handleMouseLeave = () => {
-    mouseX.set(0);
-    mouseY.set(0);
+  const hoverVariants: Variants = {
+    hover: {
+      z: 20,
+      scale: 1.05,
+      y: -5,
+      boxShadow: "0 25px 50px -12px rgba(239, 68, 68, 0.5)",
+      transition: {
+        duration: 0.3,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const backgroundVariants: Variants = {
+    animate: {
+      background: [
+        "radial-gradient(circle at 25% 40%, rgba(239, 68, 68, 0.06) 0%, transparent 50%)",
+        "radial-gradient(circle at 75% 30%, rgba(239, 68, 68, 0.08) 0%, transparent 50%)",
+        "radial-gradient(circle at 50% 70%, rgba(239, 68, 68, 0.07) 0%, transparent 50%)",
+        "radial-gradient(circle at 30% 60%, rgba(239, 68, 68, 0.06) 0%, transparent 50%)",
+        "radial-gradient(circle at 25% 40%, rgba(239, 68, 68, 0.06) 0%, transparent 50%)",
+      ],
+      transition: {
+        duration: 12,
+        repeat: Infinity,
+        ease: "linear",
+      },
+    },
   };
 
   return (
-    <motion.div
-      ref={containerRef}
-      className="absolute inset-0 w-full h-full"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={{
-        perspective: "1000px",
-      }}
-    >
-      {/* Card 1 - Top Left */}
-      <motion.div
-        className="absolute top-16 left-6 z-10"
-        style={{
-          x: x1,
-          y: y1,
-          rotateX,
-          rotateY,
-          scale: 0.9,
-        }}
-        whileHover={{ scale: 1.05, z: 50 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+    <div className="w-full h-screen bg-black overflow-hidden relative">
+      {/* 3D Perspective Container */}
+      <div
+        className="absolute inset-0"
+        style={{ perspective: "1000px", perspectiveOrigin: "50% 50%" }}
       >
+        {/* Animated Background */}
         <motion.div
-          className="flex items-center gap-2 p-2 bg-background/80 backdrop-blur-sm rounded-lg border border-foreground/20 shadow-lg"
-          style={{
-            transformStyle: "preserve-3d",
-          }}
-        >
-          <Icons.ArrowRight className="bg-yellow-level-five stroke-foreground rounded-full !w-8 p-1 duration-75 !h-8 -rotate-45" />
-          <span className="py-2 px-4 lowercase flex items-center justify-center font-paragraph text-foreground leading-tight">
-            Orchestrating a Unified User Experience
-          </span>
-        </motion.div>
-      </motion.div>
+          className="absolute inset-0"
+          variants={backgroundVariants}
+          animate="animate"
+        />
 
-      {/* Card 2 - Top Right */}
-      <motion.div
-        className="absolute top-32 right-24 z-20"
-        style={{
-          x: x2,
-          y: y2,
-          rotateX,
-          rotateY,
-          scale: 1.1,
-        }}
-        whileHover={{ scale: 1.2, z: 80 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      >
-        <motion.div
-          className="flex items-center gap-2 p-2 bg-background/90 backdrop-blur-sm rounded-lg border border-foreground/30 shadow-xl"
-          style={{
-            transformStyle: "preserve-3d",
-          }}
-        >
-          <span className="py-2 px-4 lowercase flex items-center justify-center font-paragraph text-foreground leading-tight">
-            Engineering Strategic Brand Narratives
-          </span>
-          <Icons.ArrowRight className="bg-yellow-level-five stroke-foreground rounded-full !w-8 p-1 duration-75 !h-8 -rotate-45" />
-        </motion.div>
-      </motion.div>
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 opacity-8">
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage: `
+                   linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+                   linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)
+                 `,
+              backgroundSize: "50px 50px",
+            }}
+          />
+        </div>
 
-      {/* Card 3 - Bottom Left */}
-      <motion.div
-        className="absolute bottom-32 left-40 z-5"
-        style={{
-          x: x3,
-          y: y3,
-          rotateX,
-          rotateY,
-          scale: 0.8,
-        }}
-        whileHover={{ scale: 0.95, z: 30 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      >
+        {/* dlabs Logo */}
         <motion.div
-          className="flex items-center gap-2 p-2 bg-background/70 backdrop-blur-sm rounded-lg border border-foreground/15 shadow-md"
-          style={{
-            transformStyle: "preserve-3d",
-          }}
+          className="absolute top-8 left-8 text-white text-2xl font-light tracking-wider z-50"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 1 }}
         >
-          <span className="py-2 px-4 lowercase flex items-center justify-center font-paragraph text-foreground leading-tight">
-            Embedding Brand Advocacy Within Organizations
-          </span>
-          <Icons.ArrowRight className="bg-yellow-level-five stroke-foreground rounded-full !w-8 p-1 duration-75 !h-8 -rotate-45" />
+          dlabs
         </motion.div>
-      </motion.div>
 
-      {/* Card 4 - Bottom Right */}
-      <motion.div
-        className="absolute bottom-44 right-20 z-15"
-        style={{
-          x: x4,
-          y: y4,
-          rotateX,
-          rotateY,
-          scale: 1.0,
-        }}
-        whileHover={{ scale: 1.1, z: 60 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      >
-        <motion.div
-          className="flex items-center gap-2 p-2 bg-background/85 backdrop-blur-sm rounded-lg border border-foreground/25 shadow-lg"
-          style={{
-            transformStyle: "preserve-3d",
-          }}
+        {/* Arc Animated Cards */}
+        <div
+          className="relative w-full h-full"
+          style={{ transformStyle: "preserve-3d" }}
         >
-          <Icons.ArrowRight className="bg-yellow-level-five stroke-foreground rounded-full !w-8 p-1 duration-75 !h-8 -rotate-45" />
-          <span className="py-2 px-4 lowercase flex items-center justify-center font-paragraph text-foreground leading-tight">
-            Cultivating Digital Brand Ecosystems
-          </span>
-        </motion.div>
-      </motion.div>
+          {cards.map((card: Card, index: number) => {
+            const arcVariants = getArcVariants(
+              card.arcType,
+              card.delay,
+              card.id
+            );
 
-      {/* Additional floating cards for more depth */}
-      <motion.div
-        className="absolute top-1/2 left-1/4 z-8"
-        style={{
-          x: useTransform(x, [-0.5, 0.5], [-10, 10]),
-          y: useTransform(y, [-0.5, 0.5], [-10, 10]),
-          rotateX,
-          rotateY,
-          scale: 0.7,
-        }}
-        whileHover={{ scale: 0.85, z: 40 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      >
-        <motion.div
-          className="flex items-center gap-2 p-2 bg-background/60 backdrop-blur-sm rounded-lg border border-foreground/10 shadow-sm"
-          style={{
-            transformStyle: "preserve-3d",
-          }}
-        >
-          <span className="py-1 px-3 lowercase flex items-center justify-center font-paragraph text-foreground/80 leading-tight text-sm">
-            Strategic Vision
-          </span>
-        </motion.div>
-      </motion.div>
+            return (
+              <motion.div
+                key={card.id} // Remove animationCycle to prevent restart
+                className="absolute cursor-pointer group"
+                style={{
+                  left: card.position.x,
+                  top: card.position.y,
+                  transformStyle: "preserve-3d",
+                }}
+                variants={{ ...arcVariants, ...hoverVariants }}
+                initial="initial"
+                animate="animate"
+                whileHover="hover"
+                onHoverStart={() => setActiveCard(card.id)}
+                onHoverEnd={() => setActiveCard(null)}
+              >
+                {/* Card Container */}
+                <div className="relative">
+                  {/* Main Card */}
+                  <div
+                    className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-lg px-4 py-3 
+                                hover:border-red-500/50 transition-all duration-300 
+                                shadow-lg hover:shadow-red-500/20"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-white text-sm font-medium whitespace-nowrap max-w-xs">
+                        {card.title}
+                      </span>
 
-      <motion.div
-        className="absolute top-3/4 right-1/3 z-12"
-        style={{
-          x: useTransform(x, [-0.5, 0.5], [-30, 30]),
-          y: useTransform(y, [-0.5, 0.5], [-30, 30]),
-          rotateX,
-          rotateY,
-          scale: 0.85,
-        }}
-        whileHover={{ scale: 1.0, z: 50 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      >
-        <motion.div
-          className="flex items-center gap-2 p-2 bg-background/75 backdrop-blur-sm rounded-lg border border-foreground/20 shadow-md"
-          style={{
-            transformStyle: "preserve-3d",
-          }}
-        >
-          <span className="py-1 px-3 lowercase flex items-center justify-center font-paragraph text-foreground leading-tight text-sm">
-            Innovation Hub
-          </span>
-          <Icons.ArrowRight className="bg-yellow-level-five stroke-foreground rounded-full !w-6 p-1 duration-75 !h-6 -rotate-45" />
-        </motion.div>
-      </motion.div>
-    </motion.div>
+                      {/* Red Circle with Arrow */}
+                      <motion.div
+                        className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0"
+                        whileHover={{
+                          scale: 1.1,
+                          boxShadow: "0 0 20px rgba(239, 68, 68, 0.6)",
+                        }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <motion.svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          className="text-white"
+                          whileHover={{ x: 2 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <path
+                            d="M7 17L17 7M17 7H7M17 7V17"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </motion.svg>
+                      </motion.div>
+                    </div>
+                  </div>
+
+                  {/* Glow Effect */}
+                  <motion.div
+                    className="absolute inset-0 bg-red-500/20 rounded-lg blur-xl -z-10"
+                    initial={{ opacity: 0 }}
+                    animate={{
+                      opacity: activeCard === card.id ? 0.6 : 0,
+                      scale: activeCard === card.id ? 1.1 : 1,
+                    }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        {/* Simple Floating Particles */}
+        {[...Array(200)].map((_, i: number) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 bg-red-500/30 rounded-full"
+            initial={{
+              x:
+                Math.random() *
+                (typeof window !== "undefined" ? window.innerWidth : 1200),
+              y:
+                Math.random() *
+                (typeof window !== "undefined" ? window.innerHeight : 800),
+              z: Math.random() * -100,
+              opacity: 0,
+            }}
+            animate={{
+              y: [null, -80],
+              z: [null, 20],
+              opacity: [0, 1, 0],
+              scale: [0, 1, 0],
+            }}
+            transition={{
+              duration: Math.random() * 3 + 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+              ease: "circOut",
+            }}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default RandomCards;
+export default AnimatedCardInterface;

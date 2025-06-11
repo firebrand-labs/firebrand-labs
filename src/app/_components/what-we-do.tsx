@@ -53,9 +53,10 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
       }}
       className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh md:min-h-svh snap-start"
     >
+      <RandomCards />
       <div className="container md:h-screen relative flex items-center justify-center flex-col gap-8 py-16">
         <motion.div
-          className="flex flex-col items-center justify-center z-10"
+          className="hidden flex-col items-center justify-center z-10"
           initial="hidden"
           whileInView="visible"
           viewport={{
@@ -125,7 +126,6 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
             </AnimatedRichText>
           </div>
         </motion.div>
-        <RandomCards />
       </div>
     </section>
   );
