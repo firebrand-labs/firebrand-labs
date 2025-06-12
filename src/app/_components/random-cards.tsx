@@ -399,7 +399,7 @@ const AnimatedCardInterface: React.FC = () => {
 
   return (
     <div
-      className="w-full h-screen overflow-hidden relative bg-black"
+      className="w-full h-screen overflow-hidden relative bg-background"
       ref={containerRef}
     >
       {/* 3D Perspective Container */}
@@ -463,18 +463,18 @@ const AnimatedCardInterface: React.FC = () => {
                 <div className="relative">
                   {/* Main Card */}
                   <div
-                    className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-lg px-4 py-3 
-                                hover:border-red-500/50 transition-all duration-300 
-                                shadow-lg hover:shadow-red-500/20"
+                    className="bg-background/50 backdrop-blur-sm border border-background rounded-lg px-4 py-3 
+                                hover:border-yellow-level-five transition-all duration-300 
+                                shadow-lg hover:shadow-yellow-level-five"
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-white text-sm font-medium whitespace-nowrap max-w-xs">
+                      <span className="text-foreground text-sm font-medium whitespace-nowrap max-w-xs">
                         {card.title}
                       </span>
 
                       {/* Red Circle with Arrow */}
                       <motion.div
-                        className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0"
+                        className="w-8 h-8 bg-yellow-level-five rounded-full flex items-center justify-center flex-shrink-0"
                         whileHover={{
                           scale: 1.1,
                           boxShadow: "0 0 20px rgba(239, 68, 68, 0.6)",
@@ -504,7 +504,7 @@ const AnimatedCardInterface: React.FC = () => {
 
                   {/* Glow Effect */}
                   <motion.div
-                    className="absolute inset-0 bg-red-500/20 rounded-lg blur-xl -z-10"
+                    className="absolute inset-0 bg-yellow-level-five/20 rounded-lg blur-xl -z-10"
                     initial={{ opacity: 0 }}
                     animate={{
                       opacity: activeCard === card.id ? 0.6 : 0,
@@ -522,7 +522,7 @@ const AnimatedCardInterface: React.FC = () => {
         {[...Array(200)].map((_, i: number) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-red-500/30 rounded-full"
+            className="absolute w-1 h-1 bg-yellow-level-five/30 rounded-full"
             initial={{
               x: Math.random() * windowSize.width,
               y: Math.random() * windowSize.height,

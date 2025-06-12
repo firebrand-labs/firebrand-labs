@@ -11,18 +11,7 @@ const page: FC<pageProps> = () => {
   return (
     <>
       <ReactLenis>
-        <section
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-          }}
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 pt-32 md:pt-40 md:pb-24"
-        >
+        <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh py-16 pt-32 md:pt-40 md:pb-24">
           <div className="container flex flex-col items-start justify-center gap-4 md:gap-16">
             <AnimatedTextReveal
               text="branding? marketing? read an interesting book— let’s catch up!"

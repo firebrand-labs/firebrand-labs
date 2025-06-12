@@ -41,18 +41,7 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
   };
 
   return (
-    <section
-      style={{
-        backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-      }}
-      className="flex items-center justify-center relative flex-col w-screen overflow-x-hidden bg-background min-h-svh md:min-h-svh snap-start"
-    >
+    <section className="flex items-center justify-center relative flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh md:min-h-svh snap-start">
       <div className="flex relative items-center justify-center w-full h-full">
         <RandomCards />
         <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:h-screen flex items-center justify-center flex-col gap-8 py-16 ">

@@ -23,18 +23,7 @@ const page: FC<pageProps> = () => {
         <Suspense fallback={null}>
           <ScrollToHash />
         </Suspense>
-        <section
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-          }}
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-svh py-16 pt-32 md:pt-40 md:pb-24"
-        >
+        <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh py-16 pt-32 md:pt-40 md:pb-24">
           <div className="container flex flex-col items-start justify-center gap-16">
             <div className="flex flex-col items-start justify-center max-w-4xl gap-4">
               <AnimatedTextReveal
@@ -60,18 +49,7 @@ const page: FC<pageProps> = () => {
           </div>
         </section>
 
-        <section
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-          }}
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16"
-        >
+        <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-16">
           <div className="container flex flex-col items-start justify-center gap-2">
             <div className="flex items-end gap-12 justify-end ">
               <p className="text-paragraph-heading text-foreground leading-tight font-paragraph font-light">
@@ -112,18 +90,7 @@ const page: FC<pageProps> = () => {
           </div>
         </section>
 
-        <section
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-          }}
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16"
-        >
+        <section className="flex items-center justify-center flex-col w-screen min-h-screen md:min-h-fit overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-16">
           <div className="container flex flex-col items-start justify-center gap-8">
             <AnimatedTextReveal
               text="the firebrand values"
@@ -136,18 +103,7 @@ const page: FC<pageProps> = () => {
         <HorizontalTeamSection />
         <SubHorizontalTeamSection />
 
-        <section
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-          }}
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background py-16"
-        >
+        <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-16">
           <div className="container flex flex-col items-start justify-center gap-8">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center">

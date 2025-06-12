@@ -14,73 +14,17 @@ import {
   AnimatedSpan,
   AnimatedTextWithParts,
 } from "@/app/_components/animated-text";
+import TrustRevealAnimation from "@/app/_components/trust-reveal-animation";
 
 interface pageProps {}
 
 const page: FC<pageProps> = () => {
   return (
-    <div
-      className="h-screen md:snap-y snap-mandatory overflow-y-scroll w-full overflow-x-hidden bg-background"
-      style={{
-        backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-      }}
-    >
-      <section
-        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background relative h-screen snap-start"
-        style={{
-          backgroundImage: `repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 160px,
-      rgba(255, 255, 255, 0.1) 160px,
-      rgba(255, 255, 255, 0.1) 161px
-    )`,
-        }}
-      >
+    <div className="h-screen md:snap-y snap-mandatory overflow-y-scroll w-full overflow-x-hidden bg-background">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] h-screen snap-start ">
         <div className="container flex items-center justify-center">
           <div className="relative flex flex-col items-center justify-center gap-4">
-            <AnimatedRichText
-              className="text-2xl relative md:text-5xl xl:text-8xl  3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading "
-              delay={5}
-            >
-              <AnimatedSpan className="font-bold" delay={0.8}>
-                marketing is
-              </AnimatedSpan>
-              <AnimatedSpan
-                className="ml-4 text-yellow-level-three font-bold font-highlighter"
-                delay={0.8}
-              >
-                trust
-              </AnimatedSpan>
-              <AnimatedSpan
-                className="text-paragraph-heading absolute tracking-wide text-foreground leading-normal font-paragraph   top-0 right-0"
-                delay={1.8}
-              >
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1lSMHpD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
-                  }
-                  width={25}
-                  className="w-[25px] md:w-[50px] h-[25px] md:h-[50px] -translate-y-full translate-x-1/2  md:-translate-y-1/2 md:translate-x-1/4"
-                  height={25}
-                  alt="Firebrand Labs Orange heart"
-                />
-              </AnimatedSpan>
-            </AnimatedRichText>
-            <AnimatedRichText delay={1.6}>
-              <AnimatedSpan
-                className="text-paragraph-heading tracking-wide text-foreground leading-normal text-center font-paragraph"
-                delay={1.8}
-              >
-                Brand Design, Tech & Beyond. Marketing that is real.
-              </AnimatedSpan>
-            </AnimatedRichText>
+            <TrustRevealAnimation />
           </div>
         </div>
         <BackgroundVideo
@@ -90,18 +34,7 @@ const page: FC<pageProps> = () => {
         />
       </section>
 
-      <section
-        style={{
-          backgroundImage: `repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 160px,
-      rgba(255, 255, 255, 0.1) 160px,
-      rgba(255, 255, 255, 0.1) 161px
-    )`,
-        }}
-        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background md:min-h-svh py-16 snap-start"
-      >
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh py-16 snap-start">
         <div className="container flex flex-col items-start justify-center gap-3">
           <p className="text-extra-subtitle-heading  uppercase text-foreground/40 leading-normal font-paragraph">
             ABOUT
@@ -132,7 +65,7 @@ const page: FC<pageProps> = () => {
 
       <WhatWeDo />
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh snap-start">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh snap-start">
         <BackgroundVideo
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full "
           classForVideo="object-right md:object-cover"
@@ -140,18 +73,7 @@ const page: FC<pageProps> = () => {
         />
       </section>
 
-      <section
-        style={{
-          backgroundImage: `repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 160px,
-      rgba(255, 255, 255, 0.1) 160px,
-      rgba(255, 255, 255, 0.1) 161px
-    )`,
-        }}
-        className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-16 md:py-0 md:min-h-svh snap-start"
-      >
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 md:py-0 md:min-h-svh snap-start">
         <div className="container flex items-center justify-center ">
           <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
             <div className="flex flex-col items-start justify-start h-full  gap-3">
@@ -191,18 +113,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section
-        style={{
-          backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-        }}
-        className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background md:min-h-svh py-16 snap-start"
-      >
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh py-16 snap-start">
         <div className="container flex flex-col items-start justify-center gap-8">
           <div className="flex flex-col items-start justify-start h-full  gap-3 max-w-4xl">
             <AnimatedTextReveal
@@ -234,27 +145,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <section
-        style={{
-          backgroundImage: `repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 160px,
-      rgba(255, 255, 255, 0.1) 160px,
-      rgba(255, 255, 255, 0.1) 161px
-    )`,
-        }}
-        className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background py-16 md:py-36 snap-start"
-      >
-        <div className="container flex flex-col items-start justify-center gap-2">
-          <AnimatedTextReveal
-            text="ready to give your brand momentum? we need to talk."
-            className="text-secondary-heading  max-w-4xl text-foreground leading-tight tracking-wide font-normal font-heading"
-          />
-          <FBLButton href="/contact" body="get in touch" />
-        </div>
-      </section>
-      <Footer />
+      <Footer className="bg-[image:initial] bg-yellow-level-four" />
     </div>
   );
 };

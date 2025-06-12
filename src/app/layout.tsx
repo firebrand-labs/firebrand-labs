@@ -4,6 +4,8 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import { Shadows_Into_Light } from "next/font/google";
+import { ThemeProvider } from "@/app/_components/theme-provider";
+import ScrollSnapHandler from "./_components/scroll-snap-handler";
 
 const paragraph = localFont({
   src: [
@@ -70,7 +72,10 @@ export default function RootLayout({
           "antialiased grainy font-sans min-h-screen w-screen relative overflow-x-hidden"
         )}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ScrollSnapHandler />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

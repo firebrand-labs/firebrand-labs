@@ -21,18 +21,7 @@ const page: FC<pageProps> = () => {
   return (
     <>
       <ReactLenis>
-        <section
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-          }}
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh py-16"
-        >
+        <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh py-16">
           <div className="container flex items-start flex-col gap-4 justify-start">
             <AnimatedTextReveal
               text="this is what ambiguity looks like, and it hinders growth."
@@ -49,18 +38,7 @@ const page: FC<pageProps> = () => {
             </AnimatedRichText>
           </div>
         </section>
-        <section
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-          }}
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background min-h-svh py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi09Y3QHlw1XDjFSAfqtTI8r6nlO93vEsMkUcz')] before:bg-contain before:bg-no-repeat before:md:bg-right"
-        >
+        <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi09Y3QHlw1XDjFSAfqtTI8r6nlO93vEsMkUcz')] before:bg-contain before:bg-no-repeat before:md:bg-right">
           <div className="container flex items-start flex-col gap-4 justify-start">
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">
@@ -100,7 +78,7 @@ const page: FC<pageProps> = () => {
             </div>
           </div>
         </section>
-        <section className="hidden relative items-center justify-start flex-col w-screen overflow-x-hidden bg-foreground min-h-svh py-16">
+        <section className="hidden relative items-center justify-start flex-col w-screen overflow-x-hidden bg-primary min-h-svh py-16">
           <div className="container flex items-start flex-col gap-4 justify-start">
             <AnimatedTextReveal
               text="cultivate empathy. tide over ambiguity."
@@ -143,18 +121,7 @@ const page: FC<pageProps> = () => {
           </div>
         </section>
 
-        <section
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 160px,
-    rgba(255, 255, 255, 0.1) 160px,
-    rgba(255, 255, 255, 0.1) 161px
-  )`,
-          }}
-          className="flex items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary min-h-screen overflow-y-hidden py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] before:bg-contain before:bg-no-repeat before:md:bg-right"
-        >
+        <section className="flex items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary bg-[image:var(--color-repeating-gradient)] min-h-screen overflow-y-hidden py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] before:bg-contain before:bg-no-repeat before:md:bg-right">
           <div className="container flex items-start flex-col gap-4 justify-start md:mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">
@@ -194,7 +161,7 @@ const page: FC<pageProps> = () => {
                     href={"/"}
                     className={cn(
                       buttonVariants({ variant: "outline" }),
-                      "min-w-[246px] min-h-[48px] rounded-full bg-transparent hover:bg-foreground font-paragraph text-subtitle-heading !hover:text-transparent"
+                      "min-w-[246px] min-h-[48px] rounded-full bg-transparent hover:bg-foreground font-paragraph text-subtitle-heading !hover:text-transparent border-foreground"
                     )}
                   >
                     play virtually
@@ -205,7 +172,7 @@ const page: FC<pageProps> = () => {
             </div>
           </div>
         </section>
-        <Footer className="bg-[#1A1A1A]" />
+        <Footer />
       </ReactLenis>
     </>
   );

@@ -59,12 +59,12 @@ const FirebrandValues: FC<FirebrandValuesProps> = ({ className }) => {
       <CarouselContent className="w-full pl-0 ml-0 ">
         {Array.from([...firebrandLabsValuesContent]).map((item, index) => (
           <CarouselItem key={index} className="pl-0 ">
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 items-start justify-center gap-4">
-              <div className="flex items-start justify-center flex-col gap-3">
-                <h3 className="text-paragraph-heading tracking-wide font-semibold text-2xl md:text-7xl leading-tight text-yellow-level-three font-paragraph">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 items-start justify-center gap-4 ">
+              <div className="flex items-start justify-center flex-col gap-3 px-2">
+                <h3 className="text-tertiary-heading tracking-wide font-semibold text-2xl md:text-6xl leading-tight text-yellow-level-three font-paragraph">
                   {item.title}
                 </h3>
-                <ul className="flex items-start flex-col justify-center gap-4 text-paragraph-heading">
+                <ul className="flex items-start flex-col justify-center gap-4 text-paragraph-heading ">
                   {item.description.map((li, i) => (
                     <li
                       key={i}
@@ -78,7 +78,7 @@ const FirebrandValues: FC<FirebrandValuesProps> = ({ className }) => {
                   ))}
                 </ul>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center bg-primary rounded-md px-2">
                 <AnimatedIcon
                   className="max-w-full md:max-w-[360px]"
                   icon={item.icon}
@@ -88,7 +88,7 @@ const FirebrandValues: FC<FirebrandValuesProps> = ({ className }) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="absolute bottom-0 left-0 border border-foreground rounded-full px-2 min-w-[190px] py-2 flex items-center justify-center">
+      <div className="absolute  top-[105%] md:top-[initial] md:bottom-0 left-0 border border-foreground rounded-full px-2 min-w-[190px] py-2 flex items-center justify-center">
         <CarouselPrevious className="bg-transparent relative top-0 -translate-y-0 hover:text-yellow-level-three hover:bg-transparent cursor-pointer" />
         <span className="font-paragraph text-yellow-level-three">{`${current}/${count}`}</span>
         <CarouselNext className="bg-transparent relative top-0 -translate-y-0 hover:text-yellow-level-three hover:bg-transparent cursor-pointer" />

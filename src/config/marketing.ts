@@ -92,8 +92,7 @@ export const firebrandLabsValuesContent = [
     description: [
       "we don't faff around",
       "we make no compromise",
-      "we lay everything on the table threadbare",
-      "giving all stakeholders a clear picture",
+      "we lay everything on the table threadbare, giving all stakeholders a clear picture",
     ],
     icon: RadicallyHonest,
   },

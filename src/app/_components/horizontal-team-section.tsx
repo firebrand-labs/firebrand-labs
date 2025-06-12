@@ -54,19 +54,19 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
     <section
       ref={targetRef}
       id="team"
-      className="w-screen flex-col h-[200vh] items-center justify-center bg-foreground py-4 md:py-24 relative"
+      className="w-screen flex-col h-[200vh] items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative"
     >
       {/* <div className="container"> */}
       <div className="sticky w-full top-0 flex flex-col items-center justify-center min-h-[80vh] md:min-h-[80vh] overflow-hidden">
         <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-6 ">
           <AnimatedTextReveal
             text="the ones who set it in motion"
-            className="text-secondary-heading text-background leading-tight font-normal font-heading"
+            className="text-secondary-heading text-foreground leading-tight font-normal font-heading"
           />
 
           <AnimatedRichText delay={1.6}>
             <AnimatedSpan
-              className="text-paragraph-heading max-w-4xl text-background leading-normal font-light font-paragraph"
+              className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-light font-paragraph"
               delay={1.8}
             >
               born from the belief that design moves business forward — and that
@@ -89,16 +89,16 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                   />
                 </div>
                 <div className="flex flex-col items-start justify-end gap-3 py-2 md:py-4">
-                  <h4 className="text-paragraph-heading max-w-4xl text-background leading-normal font-paragraph font-normal">
+                  <h4 className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-paragraph font-normal">
                     {item.name}
                   </h4>
-                  <p className="text-subtitle-heading max-w-4xl text-background leading-normal font-light font-paragraph">
+                  <p className="text-subtitle-heading max-w-4xl text-foreground leading-normal font-light font-paragraph">
                     {item.description}
                   </p>
 
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button className="cursor-pointer group flex items-center justify-center bg-transparent text-paragraph-heading font-semibold text-background hover:text-background hover:bg-transparent p-0 text-left">
+                      <Button className="cursor-pointer group flex items-center justify-center bg-transparent text-paragraph-heading font-semibold text-foreground hover:text-foreground hover:bg-transparent p-0 text-left">
                         Read More
                         <Icons.ArrowRight className="bg-yellow-level-five scale-75 stroke-foreground rounded-full !w-6 p-1 duration-75 !h-6 group-hover:-rotate-45" />
                       </Button>
@@ -116,10 +116,10 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                           />
                         </div>
                         <div className="flex flex-col items-start justify-center gap-2">
-                          <h4 className="text-paragraph-heading max-w-4xl text-background leading-normal font-paragraph font-normal">
+                          <h4 className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-paragraph font-normal">
                             {item.name}
                           </h4>
-                          <p className="text-subtitle-heading max-w-4xl text-background leading-normal font-paragraph font-light">
+                          <p className="text-subtitle-heading max-w-4xl text-foreground leading-normal font-paragraph font-light">
                             {item.popupContent.role}
                           </p>
                           <div />

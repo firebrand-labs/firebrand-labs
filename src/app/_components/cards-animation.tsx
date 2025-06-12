@@ -148,14 +148,14 @@ const CardsAnimation = () => {
               <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
                 understand your business
               </h3>
-              <p className="text-extra-subtitle-heading tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph min-h-[66.25%]">
+              <p className="text-extra-subtitle-heading tracking-wide text-foreground/70 leading-normal font-light font-paragraph min-h-[66.25%]">
                 Your brand has a personality just like human beings do, answer
                 the questions from your brand/business’ point of view. Can be
                 played by an individual (a brand custodian) or a small group of
                 key decision makers of the brand.
               </p>
               <div className="w-full flex items-center justify-between">
-                <span className="text-[14px] tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph">
+                <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">
                   Cards Against Ambiguity
                 </span>
               </div>
@@ -180,14 +180,14 @@ const CardsAnimation = () => {
               <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
                 understand your business
               </h3>
-              <p className="text-extra-subtitle-heading tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph min-h-[66.25%]">
+              <p className="text-extra-subtitle-heading tracking-wide text-foreground/70 leading-normal font-light font-paragraph min-h-[66.25%]">
                 Your brand has a personality just like human beings do, answer
                 the questions from your brand/business’ point of view. Can be
                 played by an individual (a brand custodian) or a small group of
                 key decision makers of the brand.
               </p>
               <div className="w-full flex items-center justify-between">
-                <span className="text-[14px] tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph">
+                <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">
                   Cards Against Ambiguity
                 </span>
               </div>
@@ -212,14 +212,14 @@ const CardsAnimation = () => {
               <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
                 understand your business
               </h3>
-              <p className="text-extra-subtitle-heading tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph min-h-[66.25%]">
+              <p className="text-extra-subtitle-heading tracking-wide text-foreground/70 leading-normal font-light font-paragraph min-h-[66.25%]">
                 Your brand has a personality just like human beings do, answer
                 the questions from your brand/business’ point of view. Can be
                 played by an individual (a brand custodian) or a small group of
                 key decision makers of the brand.
               </p>
               <div className="w-full flex items-center justify-between">
-                <span className="text-[14px] tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph">
+                <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">
                   Cards Against Ambiguity
                 </span>
               </div>

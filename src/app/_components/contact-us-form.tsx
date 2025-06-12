@@ -172,7 +172,7 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
         variant={"default"}
         type="submit"
         size={"lg"}
-        className="bg-foreground border-1 border-background text-yellow-level-four rounded-full cursor-pointer hover:bg-foreground/80"
+        className="bg-foreground border-1 border-black text-yellow-level-four rounded-full cursor-pointer hover:bg-foreground/80"
         disabled={isSubmitting}
       >
         Submit

@@ -39,6 +39,13 @@
   --yellow-level-two: oklch(0.86 0.1754 90.59);
   --yellow-level-three: oklch(0.66 0.191281 44.6218);
   --yellow-level-four: oklch(0.86 0.1754 90.59);
+  --repeating-gradient: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 160px,
+    rgba(255, 255, 255, 0.1) 160px,
+    rgba(255, 255, 255, 0.1) 161px
+  );
 
   --paragraph-heading: clamp(16px, 1.4vw, 24px);
   --our_text-heading: clamp(28px, 2.4vw, 36px);
@@ -53,12 +60,20 @@
 }
 
 .dark {
-  --background: oklch(0 0 0);
-  --foreground: oklch(1 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0 0 0);
   --yellow-level-one: oklch(0.86 0.1754 90.59);
   --yellow-level-two: oklch(0.86 0.1754 90.59);
   --yellow-level-three: oklch(0.66 0.191281 44.6218);
   --yellow-level-four: oklch(0.86 0.1754 90.59);
+  --repeating-gradient: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 160px,
+    rgba(0, 0, 0, 0.1) 160px,
+    rgba(0, 0, 0, 0.1) 161px
+  );
+
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -134,6 +149,7 @@
   --color-yellow-level-three: oklch(0.66 0.191281 44.6218);
   --color-yellow-level-four: oklch(0.75 0.1682 65.18);
   --color-yellow-level-five: oklch(0.58 0.2191 26.4);
+  --color-repeating-gradient: var(--repeating-gradient);
 
   --text-paragraph-heading: var(--paragraph-heading);
   --text-our-text-heading: var(--our_text-heading);

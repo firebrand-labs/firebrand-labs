@@ -34,16 +34,13 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
     const x = useTransform(scrollYProgress, [0, 1], ["10%", scrollDistance]);
 
     return (
-      <section
-        ref={targetRef}
-        className="w-screen flex-col h-[200vh]  items-center justify-center bg-foreground py-4 md:py-24 relative"
-      >
+      <section className="w-screen flex-col h-[200vh]  items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative">
         {/* <div className="container"> */}
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] md:h-[100vh] overflow-hidden">
           <div className="container overflow-hidden flex flex-col items-start justify-center gap-10 md:gap-8">
             <AnimatedTextReveal
               text="and then came the rest of us"
-              className="text-secondary-heading text-background leading-tight font-normal font-heading"
+              className="text-secondary-heading text-foreground leading-tight font-normal font-heading"
             />
             <motion.div style={{ x }} className="flex gap-12 md:gap-8">
               {Array.from({ length: 7 }).map((item, i) => (
@@ -61,11 +58,11 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                     className="w-[380px] h-[380px] object-cover md:w-full md:max-w-md md:h-auto"
                   />
                   <div className="flex items-center justify-center gap-2">
-                    <p className="text-subtitle-heading text-background leading-normal font-paragraph">
+                    <p className="text-subtitle-heading text-foreground leading-normal font-paragraph">
                       Arvind
                     </p>
                   </div>
-                  <p className="text-subtitle-heading text-background/55 leading-normal font-paragraph">
+                  <p className="text-subtitle-heading text-foreground/55 leading-normal font-paragraph">
                     Founder
                   </p>
                 </div>
