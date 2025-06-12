@@ -12,7 +12,7 @@ export function ModeToggle() {
 
   const themeChangeHandler = function () {
     setThemeValue((prev) => {
-      const newTheme = prev === "light" ? "dark" : "light";
+      const newTheme = prev === "dark" ? "light" : "dark";
       setTheme(newTheme);
       return newTheme;
     });

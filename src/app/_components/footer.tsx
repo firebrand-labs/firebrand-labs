@@ -14,7 +14,7 @@ interface pageProps {
 
 const Footer: FC<pageProps> = ({ children, className }) => {
   return (
-    <>
+    <footer className={cn("w-full bg-background", className)}>
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-[image:initial] bg-yellow-level-four py-16 md:py-36 ">
         <div className="container flex flex-col items-start justify-center gap-2">
           <AnimatedTextReveal
@@ -24,10 +24,9 @@ const Footer: FC<pageProps> = ({ children, className }) => {
           <FBLButton href="/contact" body="get in touch" />
         </div>
       </section>
-      <footer
+      <div
         className={cn(
-          "flex items-center justify-center flex-col min-w-screen  bg-yellow-level-four overflow-x-hidden  pt-16 md:pb-8",
-          className
+          "flex items-center justify-center flex-col min-w-screen  bg-yellow-level-four overflow-x-hidden  pt-16 md:pb-8"
         )}
       >
         <div className="container flex flex-col items-center justify-start md:justify-center">
@@ -91,8 +90,8 @@ const Footer: FC<pageProps> = ({ children, className }) => {
             </div>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 

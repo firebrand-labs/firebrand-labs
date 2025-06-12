@@ -72,7 +72,7 @@ export default function RootLayout({
           "antialiased grainy font-sans min-h-screen w-screen relative overflow-x-hidden"
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider defaultTheme="dark" attribute="class">
           <ScrollSnapHandler />
           {children}
         </ThemeProvider>

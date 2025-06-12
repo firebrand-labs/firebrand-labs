@@ -145,7 +145,7 @@ const page: FC<pageProps> = () => {
         </div>
       </section>
 
-      <Footer className="bg-[image:initial] bg-yellow-level-four" />
+      <Footer className="bg-[image:initial] bg-yellow-level-four snap-start" />
     </div>
   );
 };
