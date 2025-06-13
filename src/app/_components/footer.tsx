@@ -48,13 +48,13 @@ const Footer: FC<pageProps> = ({ children, className }) => {
             {Array.from({ length: 8 }).map((_, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 text-2xl relative md:text-5xl xl:text-9xl ml-8 pb-12  3xl:max-w-5xl font-normal font-paragraph text-background "
+                className="flex-shrink-0 text-7xl relative md:text-7xl xl:text-9xl ml-8 pb-12  3xl:max-w-5xl font-normal font-paragraph text-background "
               >
-                we live in the space between chaos and clarity
+                we live in the space between chaos and clarity.
               </div>
             ))}
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full pb-8 md:pb-0">
             <h2 className="text-subtitle-heading text-background leading-tight tracking-wide font-normal font-heading">
               16 Years of Fabulous Ideas, Brilliant Execution, and Lovable
               People.

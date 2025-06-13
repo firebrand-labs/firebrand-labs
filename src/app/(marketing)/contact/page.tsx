@@ -44,7 +44,8 @@ const page: FC<pageProps> = () => {
                     </Link>
                     <Link
                       className="text-paragraph-heading font-normal text-foreground tracking-wide leading-tight font-paragraph"
-                      href={"mailto:arvind@firebrandlabs.in"}
+                      target="_blank"
+                      href={"https://www.linkedin.com/company/firebrand-labs"}
                     >
                       linkedin
                     </Link>

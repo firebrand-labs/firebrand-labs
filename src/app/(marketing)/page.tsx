@@ -1,39 +1,22 @@
-import { FC } from "react";
+import {
+  AnimatedRichText,
+  AnimatedSpan,
+  AnimatedTextReveal,
+} from "@/app/_components/animated-text";
 import BackgroundVideo from "@/app/_components/background-video";
 import FBLButton from "@/app/_components/fbl-button";
-import Image from "next/image";
-import RandomCards from "@/app//_components/random-cards";
-import { Icons } from "@/app/_components/icons";
 import Footer from "@/app/_components/footer";
-import WhatWeDo from "@/app/_components/what-we-do";
-import {
-  AnimatedText,
-  AnimatedStagger,
-  AnimatedRichText,
-  AnimatedTextReveal,
-  AnimatedSpan,
-  AnimatedTextWithParts,
-} from "@/app/_components/animated-text";
+import { Icons } from "@/app/_components/icons";
 import TrustRevealAnimation from "@/app/_components/trust-reveal-animation";
+import WhatWeDo from "@/app/_components/what-we-do";
+import Image from "next/image";
+import { FC } from "react";
 
 interface pageProps {}
 
 const page: FC<pageProps> = () => {
   return (
-    <div className="h-screen md:snap-y snap-mandatory overflow-y-scroll w-full overflow-x-hidden bg-background">
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] h-screen snap-start ">
-        <div className="container flex items-center justify-center">
-          <div className="relative flex flex-col items-center justify-center gap-4">
-            <TrustRevealAnimation />
-          </div>
-        </div>
-        <BackgroundVideo
-          className="absolute left-0 top-0 w-full h-full z-0 hidden"
-          classForVideo="object-right md:object-cover"
-          videoSrc="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiK5N8NW40uc9qOMHzApnW38NDejVaClskLmrx"
-        />
-      </section>
-
+    <TrustRevealAnimation>
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh py-16 snap-start">
         <div className="container flex flex-col items-start justify-center gap-3">
           <p className="text-extra-subtitle-heading  uppercase text-foreground/40 leading-normal font-paragraph">
@@ -133,20 +116,12 @@ const page: FC<pageProps> = () => {
             </AnimatedRichText>
             <FBLButton href="/blog" body="resources" />
           </div>
-          <Image
-            src={
-              "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiWM3yRo5OgAjUctJyuXL0Q2P4s8ENTrknvax3"
-            }
-            alt="Blog Banner"
-            className="w-full md:w-full h-auto "
-            width={700}
-            height={300}
-          />
+          <Icons.BlogImage className="w-full " />
         </div>
       </section>
 
       <Footer className="bg-[image:initial] bg-yellow-level-four snap-start" />
-    </div>
+    </TrustRevealAnimation>
   );
 };
 

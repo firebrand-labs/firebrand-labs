@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { FC, useState } from "react";
-import { set } from "zod";
+import { Icons } from "@/app/_components/icons";
 import { ModeToggle } from "@/app/_components/toggle-theme";
 
 interface HeaderProps {}
