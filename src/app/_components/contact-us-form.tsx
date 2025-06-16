@@ -13,13 +13,17 @@ import { Textarea } from "@/app/_components/ui/text-area";
 import { RadioGroup, RadioGroupItem } from "@/app/_components/ui/radio-group";
 import { Icons } from "@/app/_components/icons";
 import { cn } from "@/lib/utils";
+import { api } from "@/trpc/react";
 interface ContactUsFormProps {}
+
+type Purpose = "SERVICES" | "JOBS" | "PRODUCTS" | "OTHER";
 
 const ContactUsForm: FC<ContactUsFormProps> = () => {
   const {
     handleSubmit,
     setValue,
     watch,
+    reset,
     register,
     getValues,
     formState: { errors, isSubmitting },
@@ -27,9 +31,23 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
     resolver: zodResolver(contactusFormSchema),
   });
 
-  const onSubmit = function (formData: contactusFormType) {
-    console.log(errors);
-    console.log(formData);
+  const createContact = api.contact.contactHandler.useMutation({
+    onSuccess: async (data) => {
+      console.log("Task updated Successfully", data);
+      reset();
+    },
+    onError: (error) => {
+      console.log("Error creating task:", error);
+    },
+  });
+
+  const onSubmit = async function (formData: contactusFormType) {
+    try {
+      const res = await createContact.mutateAsync(formData);
+      console.log(res);
+    } catch (err) {
+      console.log(err);
+    }
   };
   return (
     <form
@@ -127,11 +145,11 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
         >
           Let's talk about
         </Label>
-        {["services", "jobs", "products", "other"].map((item) => (
+        {["SERVICES", "JOBS", "PRODUCTS", "OTHER"].map((item: string) => (
           <Button
             key={item}
             type="button"
-            onClick={() => setValue("purpose", item)}
+            onClick={() => setValue("purpose", item as Purpose)}
             className={cn(
               "uppercase rounded-full flex items-center justify-center bg-transparent text-background cursor-pointer border-background border hover:bg-background hover:text-foreground active:bg-background active:text-foreground",
               watch("purpose") === item

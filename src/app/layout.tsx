@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Shadows_Into_Light } from "next/font/google";
 import { ThemeProvider } from "@/app/_components/theme-provider";
 import ScrollSnapHandler from "./_components/scroll-snap-handler";
+import { TRPCReactProvider } from "@/trpc/react";
 
 const paragraph = localFont({
   src: [
@@ -72,10 +73,12 @@ export default function RootLayout({
           "antialiased grainy font-sans min-h-screen w-screen relative overflow-x-hidden"
         )}
       >
-        <ThemeProvider defaultTheme="dark" attribute="class">
-          <ScrollSnapHandler />
-          {children}
-        </ThemeProvider>
+        <TRPCReactProvider>
+          <ThemeProvider defaultTheme="dark" attribute="class">
+            <ScrollSnapHandler />
+            {children}
+          </ThemeProvider>
+        </TRPCReactProvider>
       </body>
     </html>
   );
