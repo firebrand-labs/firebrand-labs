@@ -1,11 +1,12 @@
 "use client";
 
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { AnimatedRichText, AnimatedSpan } from "./animated-text";
 import Image from "next/image";
 import { Icons } from "@/app/_components/icons";
 import BackgroundVideo from "@/app/_components/background-video";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 interface TrustRevealAnimationProps {
   children?: React.ReactNode;
@@ -13,16 +14,27 @@ interface TrustRevealAnimationProps {
 
 const TrustRevealAnimation: FC<TrustRevealAnimationProps> = ({ children }) => {
   const [clicked, setClicked] = React.useState(false);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    router.refresh();
+
+    return () => router.refresh();
+  }, []);
+
   return (
     <div
       className={cn(
-        "h-screen md:snap-y snap-mandatory overflow-y-scroll w-full overflow-x-hidden bg-background",
-        !clicked && "overflow-hidden"
+        "h-screen overflow-y-scroll w-full overflow-x-hidden bg-background",
+        // !clicked && "overflow-hidden",
+        true && "md:snap-y snap-mandatory"
       )}
     >
       <section
         className={cn(
           "flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] h-screen snap-start",
+
           !clicked ? "overflow-hidden" : ""
         )}
       >
@@ -41,8 +53,9 @@ const TrustRevealAnimation: FC<TrustRevealAnimationProps> = ({ children }) => {
               >
                 {!clicked ? (
                   <div className={cn("relative")}>
-                    <span className="flex flex-col items-start justify-center text-foreground font-paragraph font-extralight">
-                      ___
+                    <span className="flex flex-row items-start justify-center text-foreground font-paragraph font-extralight">
+                      <span className="inline-flex">___</span>
+                      <span className="inline-flex md:hidden">___</span>
                     </span>
                     <div className="absolute flex flex-col items-center justify-center gap-5 top-[120%] left-0 w-[120%] min-h-full ">
                       <p className="text-subtitle-heading rotate-6 font-extrabold leading-tight text-yellow-level-three ">

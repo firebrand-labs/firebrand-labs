@@ -18,7 +18,7 @@ const Footer: FC<pageProps> = ({ children, className }) => {
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-[image:initial] bg-yellow-level-four py-16 md:py-36 ">
         <div className="container flex flex-col items-start justify-center gap-2">
           <AnimatedTextReveal
-            text="ready to give your brand momentum? we need to talk."
+            text="Would you like us to be your extended marketing officers?"
             className="text-secondary-heading  max-w-4xl text-background leading-tight tracking-wide font-normal font-heading"
           />
           <FBLButton href="/contact" body="get in touch" />

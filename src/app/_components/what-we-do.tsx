@@ -21,9 +21,9 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
     visible: {
       scaleX: 1,
       opacity: 1,
-      x: 0,
+      x: 20,
       transition: {
-        duration: 0.6,
+        duration: 0,
         ease: "easeOut",
       },
     },
