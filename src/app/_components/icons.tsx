@@ -160,7 +160,7 @@ export const Icons = {
           id="Group_288"
           data-name="Group 288"
           transform="translate(-330)"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clip-path)"
         >
           <path
             id="Path_669"
