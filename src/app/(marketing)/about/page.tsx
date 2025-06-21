@@ -129,8 +129,8 @@ const page: FC<pageProps> = () => {
                   height={100}
                 />
                 <p className="text-subtitle-heading tracking-wide text-foreground max-w-2xl leading-normal font-light font-paragraph">
-                  life behind our legendary yellow door. see how we make each
-                  day count at firebrand labs.
+                  life at firebrand labs lives behind the yellow door: quietly
+                  chaotic and always worth it.
                 </p>
                 <FBLButton
                   body="read yellove"

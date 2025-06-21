@@ -180,6 +180,11 @@
   }
 }
 
+.figure{
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -217,3 +222,4 @@
     transform: translateY(-100%);
   }
 }
+
