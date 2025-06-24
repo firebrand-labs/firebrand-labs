@@ -54,10 +54,10 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
     <section
       ref={targetRef}
       id="team"
-      className="w-screen hidden h-[200vh] items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative"
+      className="w-screen flex h-[200vh] items-center justify-center  bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative "
     >
       {/* <div className="container"> */}
-      <div className="sticky w-full top-0 flex flex-col items-center justify-center min-h-[80vh] md:min-h-[80vh] overflow-hidden">
+      <div className="sticky w-full top-0 flex flex-col self-start items-center justify-center min-h-[80vh] md:min-h-[80vh] overflow-hidden ">
         <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-6 ">
           <AnimatedTextReveal
             text="the ones who set it in motion"

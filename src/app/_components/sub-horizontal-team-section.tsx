@@ -42,7 +42,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
 
       if (isMobile) {
         // More aggressive scrolling for mobile
-        return `-${Math.max(scrollPercentage + 20, 60)}%`;
+        return `-${Math.max(scrollPercentage - 200, 10)}%`;
       } else if (isTablet) {
         return `-${Math.max(scrollPercentage + 10, 50)}%`;
       } else {
@@ -61,25 +61,27 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
     const x = useTransform(
       scrollYProgress,
       [0, 1],
-      [isMobile ? "20%" : "60%", scrollDistance]
+      [isMobile ? "100%" : "60%", scrollDistance]
     );
 
     return (
       <section
         ref={targetRef}
         className={`w-screen flex-col items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative ${
-          isMobile ? "h-[400vh]" : "h-[600vh]"
+          isMobile ? "h-[200vh]" : "h-[600vh]"
         }`}
       >
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] overflow-hidden">
-          <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-16">
+          <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-8">
             <AnimatedTextReveal
               text="and then came the rest of us"
               className="text-secondary-heading text-foreground leading-tight font-normal font-heading"
             />
             <motion.div
               style={{ x }}
-              className={`flex ${isMobile ? "gap-3" : "gap-8 md:gap-12"}`}
+              className={`flex ${
+                isMobile ? "gap-6 md:gap-3" : "gap-8 md:gap-12"
+              }`}
             >
               {Array.from({ length: 7 }).map((item, i) => (
                 <div
@@ -95,7 +97,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                     height={300}
                     className={`object-cover ${
                       isMobile
-                        ? "w-[260px] h-[260px]"
+                        ? "w-[360px] h-[360px]"
                         : "w-[380px] h-[380px] md:w-full md:max-w-md md:h-auto"
                     }`}
                   />
