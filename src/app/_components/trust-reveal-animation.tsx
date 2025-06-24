@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, useEffect } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { AnimatedRichText, AnimatedSpan } from "./animated-text";
 import Image from "next/image";
 import { Icons } from "@/app/_components/icons";
@@ -13,14 +13,10 @@ interface TrustRevealAnimationProps {
 }
 
 const TrustRevealAnimation: FC<TrustRevealAnimationProps> = ({ children }) => {
-  const [clicked, setClicked] = React.useState(false);
-
-  const router = useRouter();
+  const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
-    router.refresh();
-
-    return () => router.refresh();
+    console.log(clicked, window.innerHeight);
   }, []);
 
   return (
@@ -97,23 +93,22 @@ const TrustRevealAnimation: FC<TrustRevealAnimationProps> = ({ children }) => {
                       : "!opacity-0 translate-y-2"
                   )}
                   height={25}
-                  alt="Firebrand Labs Orange heart"
+                  alt="Firebrand Labs - orange heart"
                 />
               </AnimatedSpan>
             </AnimatedRichText>
-            <AnimatedRichText delay={1.6}>
-              <AnimatedSpan
-                className={cn(
-                  "text-paragraph-heading tracking-wide text-foreground leading-normal text-center font-paragraph duration-150 ease",
-                  clicked
-                    ? "opacity-100 translate-y-0"
-                    : "!opacity-0 translate-y-2"
-                )}
-                delay={1.8}
-              >
-                Brand Design, Tech & Beyond. Marketing that is real.
-              </AnimatedSpan>
-            </AnimatedRichText>
+
+            <span
+              className={cn(
+                "text-paragraph-heading tracking-wide text-foreground leading-normal text-center font-paragraph duration-350 ease opacity-0",
+                !clicked
+                  ? "!opacity-0 translate-y-2"
+                  : "opacity-100 translate-y-0"
+              )}
+              // delay={1.5}
+            >
+              Brand Design, Tech & Beyond. Marketing that is real.
+            </span>
           </div>
         </div>
         <BackgroundVideo

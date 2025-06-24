@@ -21,11 +21,6 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
     const itemWidth = isMobile ? 300 : 400; // Adjust item width for mobile
     const gap = isMobile ? 12 : 32; // Different gaps for mobile/desktop
 
-    const totalWidth = itemWidth * itemCount + gap * (itemCount - 1);
-    const containerWidth = isMobile
-      ? window?.innerWidth * 0.9
-      : window?.innerWidth * 0.8;
-
     const scrollDistance = useMemo(() => {
       if (typeof window === "undefined") return "-80%";
 
