@@ -381,11 +381,11 @@ export const mainNavContents: MainNavItems = [
     title: "Contact",
     subItems: [],
   },
-  {
-    href: "/blogs",
-    title: "Blogs",
-    subItems: [],
-  },
+  // {
+  //   href: "/blogs",
+  //   title: "Blogs",
+  //   subItems: [],
+  // },
 ];
 
 export const firebrandLabsValuesContent = [

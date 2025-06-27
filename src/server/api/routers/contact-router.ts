@@ -24,7 +24,7 @@ export const contactRouter = createTRPCRouter({
       const resend = new Resend(env.RESEND_KEY);
       const response = await resend.emails.create({
         from: "firebrandlabs@jeyakumarjeyaraj.in",
-        to: "jeykumar@firebrandlabs.in",
+        to: "jeyakumar@firebrandlabs.in",
         subject: "Thank you for contacting us",
         text: `Thank you for contacting us. We will get back to you soon.`,
         html: `
