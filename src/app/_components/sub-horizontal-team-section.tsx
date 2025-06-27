@@ -120,7 +120,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                           <Icons.ArrowRight className="w-28 scale-200 stroke-foreground rotate-0 group-hover:-rotate-45 transition-transform duration-200" />
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="sm:max-w-[80vw] bg-[#32CE95] rounded-md max-h-[80vh] overflow-y-scroll md:overflow-y-auto">
+                      <DialogContent className="sm:max-w-[80vw] bg-[#32CE95] rounded-md max-h-[80vh] overflow-y-scroll md:overflow-y-auto relative ">
                         <DialogTitle className="hidden" />
                         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2">
                           <div className="max-w-[340px] relative flex items-center justify-center bg-transparent rounded-md">

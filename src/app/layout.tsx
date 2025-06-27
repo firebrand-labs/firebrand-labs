@@ -6,6 +6,7 @@ import { Shadows_Into_Light, Pixelify_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import ScrollSnapHandler from "./_components/scroll-snap-handler";
 import "./globals.css";
+import { Toaster } from "@/app/_components/ui/toaster";
 
 const paragraph = localFont({
   src: [
@@ -82,6 +83,7 @@ export default function RootLayout({
           <ThemeProvider defaultTheme="dark" attribute="class">
             <ScrollSnapHandler />
             {children}
+            <Toaster />
           </ThemeProvider>
         </TRPCReactProvider>
       </body>

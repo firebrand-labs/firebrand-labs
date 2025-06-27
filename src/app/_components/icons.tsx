@@ -260,6 +260,819 @@ export const Icons = {
     </svg>
   ),
 
+  PixelBox: ({ ...props }: LucideProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1390"
+      {...props}
+      height="689.954"
+      viewBox="0 0 1390 689.954"
+    >
+      <g id="pixel-box" transform="translate(-14359.487 -10162.287)">
+        <rect
+          id="Rectangle_4801"
+          data-name="Rectangle 4801"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10315.328)"
+        />
+        <rect
+          id="Rectangle_4802"
+          data-name="Rectangle 4802"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10322.98)"
+        />
+        <rect
+          id="Rectangle_4803"
+          data-name="Rectangle 4803"
+          width="7.652"
+          height="636.389"
+          transform="translate(15741.835 10192.896)"
+        />
+        <rect
+          id="Rectangle_4804"
+          data-name="Rectangle 4804"
+          width="7.652"
+          height="7.652"
+          transform="translate(14367.14 10177.592)"
+        />
+        <rect
+          id="Rectangle_4805"
+          data-name="Rectangle 4805"
+          width="7.652"
+          height="7.652"
+          transform="translate(14374.792 10169.939)"
+        />
+        <rect
+          id="Rectangle_4806"
+          data-name="Rectangle 4806"
+          width="7.652"
+          height="7.652"
+          transform="translate(14481.921 10162.287)"
+        />
+        <rect
+          id="Rectangle_4807"
+          data-name="Rectangle 4807"
+          width="7.652"
+          height="7.652"
+          transform="translate(14489.572 10162.287)"
+        />
+        <rect
+          id="Rectangle_4808"
+          data-name="Rectangle 4808"
+          width="7.652"
+          height="7.652"
+          transform="translate(14497.225 10162.287)"
+        />
+        <rect
+          id="Rectangle_4809"
+          data-name="Rectangle 4809"
+          width="7.652"
+          height="7.652"
+          transform="translate(14504.877 10162.287)"
+        />
+        <rect
+          id="Rectangle_4810"
+          data-name="Rectangle 4810"
+          width="7.652"
+          height="7.652"
+          transform="translate(14512.529 10162.287)"
+        />
+        <rect
+          id="Rectangle_4811"
+          data-name="Rectangle 4811"
+          width="7.652"
+          height="7.652"
+          transform="translate(14520.181 10162.287)"
+        />
+        <rect
+          id="Rectangle_4812"
+          data-name="Rectangle 4812"
+          width="7.652"
+          height="7.652"
+          transform="translate(14527.833 10162.287)"
+        />
+        <rect
+          id="Rectangle_4813"
+          data-name="Rectangle 4813"
+          width="7.652"
+          height="7.652"
+          transform="translate(14535.485 10162.287)"
+        />
+        <rect
+          id="Rectangle_4814"
+          data-name="Rectangle 4814"
+          width="7.652"
+          height="7.652"
+          transform="translate(14543.137 10162.287)"
+        />
+        <rect
+          id="Rectangle_4815"
+          data-name="Rectangle 4815"
+          width="7.652"
+          height="7.652"
+          transform="translate(14550.789 10162.287)"
+        />
+        <rect
+          id="Rectangle_4816"
+          data-name="Rectangle 4816"
+          width="7.652"
+          height="7.652"
+          transform="translate(14558.441 10162.287)"
+        />
+        <rect
+          id="Rectangle_4817"
+          data-name="Rectangle 4817"
+          width="7.652"
+          height="7.652"
+          transform="translate(14566.094 10162.287)"
+        />
+        <rect
+          id="Rectangle_4818"
+          data-name="Rectangle 4818"
+          width="7.652"
+          height="7.652"
+          transform="translate(14573.745 10162.287)"
+        />
+        <rect
+          id="Rectangle_4819"
+          data-name="Rectangle 4819"
+          width="7.652"
+          height="7.652"
+          transform="translate(14581.397 10162.287)"
+        />
+        <rect
+          id="Rectangle_4820"
+          data-name="Rectangle 4820"
+          width="7.652"
+          height="7.652"
+          transform="translate(14589.05 10162.287)"
+        />
+        <rect
+          id="Rectangle_4821"
+          data-name="Rectangle 4821"
+          width="7.652"
+          height="7.652"
+          transform="translate(14627.31 10315.329) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4826"
+          data-name="Rectangle 4826"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10284.721)"
+        />
+        <rect
+          id="Rectangle_4827"
+          data-name="Rectangle 4827"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10292.372)"
+        />
+        <rect
+          id="Rectangle_4828"
+          data-name="Rectangle 4828"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10300.024)"
+        />
+        <rect
+          id="Rectangle_4829"
+          data-name="Rectangle 4829"
+          width="7.652"
+          height="7.652"
+          transform="translate(14627.31 10284.721) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4833"
+          data-name="Rectangle 4833"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10261.764)"
+        />
+        <rect
+          id="Rectangle_4834"
+          data-name="Rectangle 4834"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10269.416)"
+        />
+        <rect
+          id="Rectangle_4835"
+          data-name="Rectangle 4835"
+          width="7.652"
+          height="7.652"
+          transform="translate(14627.31 10261.765) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4839"
+          data-name="Rectangle 4839"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10231.156)"
+        />
+        <rect
+          id="Rectangle_4840"
+          data-name="Rectangle 4840"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10238.808)"
+        />
+        <rect
+          id="Rectangle_4841"
+          data-name="Rectangle 4841"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10246.46)"
+        />
+        <rect
+          id="Rectangle_4845"
+          data-name="Rectangle 4845"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10215.852)"
+        />
+        <rect
+          id="Rectangle_4846"
+          data-name="Rectangle 4846"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10223.504)"
+        />
+        <rect
+          id="Rectangle_4847"
+          data-name="Rectangle 4847"
+          width="7.652"
+          height="7.652"
+          transform="translate(14627.31 10215.852) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4848"
+          data-name="Rectangle 4848"
+          width="7.652"
+          height="644.042"
+          transform="translate(14359.487 10185.243)"
+        />
+        <rect
+          id="Rectangle_4851"
+          data-name="Rectangle 4851"
+          width="7.652"
+          height="7.652"
+          transform="translate(15741.835 10185.243)"
+        />
+        <rect
+          id="Rectangle_4852"
+          data-name="Rectangle 4852"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10192.896)"
+        />
+        <rect
+          id="Rectangle_4853"
+          data-name="Rectangle 4853"
+          width="7.652"
+          height="7.652"
+          transform="translate(14619.658 10200.548)"
+        />
+        <rect
+          id="Rectangle_4854"
+          data-name="Rectangle 4854"
+          width="7.652"
+          height="7.652"
+          transform="translate(15741.835 10185.244) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4855"
+          data-name="Rectangle 4855"
+          width="7.652"
+          height="7.652"
+          transform="translate(15734.183 10177.592) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4856"
+          data-name="Rectangle 4856"
+          width="7.652"
+          height="7.652"
+          transform="translate(15741.835 10836.938) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4857"
+          data-name="Rectangle 4857"
+          width="7.652"
+          height="7.652"
+          transform="translate(15734.183 10844.589) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4858"
+          data-name="Rectangle 4858"
+          width="7.652"
+          height="7.652"
+          transform="translate(14367.14 10829.285)"
+        />
+        <rect
+          id="Rectangle_4859"
+          data-name="Rectangle 4859"
+          width="7.652"
+          height="7.652"
+          transform="translate(14374.792 10836.937)"
+        />
+        <rect
+          id="Rectangle_4860"
+          data-name="Rectangle 4860"
+          width="1129.828"
+          height="7.652"
+          transform="translate(15726.53 10169.939) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4874"
+          data-name="Rectangle 4874"
+          width="7.652"
+          height="7.652"
+          transform="translate(15726.53 10852.241) rotate(180)"
+        />
+        <rect
+          id="Rectangle_4879"
+          data-name="Rectangle 4879"
+          width="7.652"
+          height="7.652"
+          transform="translate(14382.443 10162.287)"
+        />
+        <rect
+          id="Rectangle_4880"
+          data-name="Rectangle 4880"
+          width="7.652"
+          height="7.652"
+          transform="translate(14390.096 10162.287)"
+        />
+        <rect
+          id="Rectangle_4881"
+          data-name="Rectangle 4881"
+          width="7.652"
+          height="7.652"
+          transform="translate(14397.748 10162.287)"
+        />
+        <rect
+          id="Rectangle_4882"
+          data-name="Rectangle 4882"
+          width="7.652"
+          height="7.652"
+          transform="translate(14405.4 10162.287)"
+        />
+        <rect
+          id="Rectangle_4883"
+          data-name="Rectangle 4883"
+          width="7.652"
+          height="7.652"
+          transform="translate(14413.052 10162.287)"
+        />
+        <rect
+          id="Rectangle_4884"
+          data-name="Rectangle 4884"
+          width="7.652"
+          height="7.652"
+          transform="translate(14420.704 10162.287)"
+        />
+        <rect
+          id="Rectangle_4885"
+          data-name="Rectangle 4885"
+          width="7.652"
+          height="7.652"
+          transform="translate(14428.356 10162.287)"
+        />
+        <rect
+          id="Rectangle_4886"
+          data-name="Rectangle 4886"
+          width="7.652"
+          height="7.652"
+          transform="translate(14436.008 10162.287)"
+        />
+        <rect
+          id="Rectangle_4887"
+          data-name="Rectangle 4887"
+          width="7.652"
+          height="7.652"
+          transform="translate(14443.66 10162.287)"
+        />
+        <rect
+          id="Rectangle_4888"
+          data-name="Rectangle 4888"
+          width="7.652"
+          height="7.652"
+          transform="translate(14451.313 10162.287)"
+        />
+        <rect
+          id="Rectangle_4889"
+          data-name="Rectangle 4889"
+          width="7.652"
+          height="7.652"
+          transform="translate(14458.965 10162.287)"
+        />
+        <rect
+          id="Rectangle_4890"
+          data-name="Rectangle 4890"
+          width="7.652"
+          height="7.652"
+          transform="translate(14466.616 10162.287)"
+        />
+        <rect
+          id="Rectangle_4891"
+          data-name="Rectangle 4891"
+          width="7.652"
+          height="7.652"
+          transform="translate(14474.269 10162.287)"
+        />
+        <rect
+          id="Rectangle_4892"
+          data-name="Rectangle 4892"
+          width="1344.087"
+          height="7.652"
+          transform="translate(14382.443 10844.589)"
+        />
+        <path
+          id="Path_1433"
+          data-name="Path 1433"
+          d="M3084.5,1128.192v621.737h7.652v7.652h7.652v7.652h1343.91v-7.652h7.652v-7.652h7.652V1112.888h-7.652v-7.652h-7.652v-7.652H3099.8v7.652h-7.652v7.652H3084.5v15.3Z"
+          transform="translate(11282.64 9072.355)"
+          fill="#00000000"
+        />
+        <g
+          id="Group_445"
+          data-name="Group 445"
+          transform="translate(14367.14 10821.633)"
+        >
+          <rect
+            id="Rectangle_3720"
+            data-name="Rectangle 3720"
+            width="7.652"
+            height="7.652"
+            transform="translate(114.781 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3721"
+            data-name="Rectangle 3721"
+            width="7.652"
+            height="7.652"
+            transform="translate(7.652 7.652)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3722"
+            data-name="Rectangle 3722"
+            width="7.652"
+            height="7.652"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4896"
+            data-name="Rectangle 4896"
+            width="7.652"
+            height="7.652"
+            transform="translate(7.651)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4900"
+            data-name="Rectangle 4900"
+            width="7.652"
+            height="7.652"
+            transform="translate(15.305)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4901"
+            data-name="Rectangle 4901"
+            width="7.652"
+            height="7.652"
+            transform="translate(22.957)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4893"
+            data-name="Rectangle 4893"
+            width="7.652"
+            height="7.652"
+            transform="translate(0 -7.652)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4895"
+            data-name="Rectangle 4895"
+            width="7.652"
+            height="7.652"
+            transform="translate(7.651 -7.652)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4894"
+            data-name="Rectangle 4894"
+            width="7.652"
+            height="7.652"
+            transform="translate(0 -15.305)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3723"
+            data-name="Rectangle 3723"
+            width="7.652"
+            height="7.652"
+            transform="translate(122.433 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3724"
+            data-name="Rectangle 3724"
+            width="7.652"
+            height="7.652"
+            transform="translate(130.085 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3725"
+            data-name="Rectangle 3725"
+            width="7.652"
+            height="7.652"
+            transform="translate(137.737 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3726"
+            data-name="Rectangle 3726"
+            width="7.652"
+            height="7.652"
+            transform="translate(145.389 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3727"
+            data-name="Rectangle 3727"
+            width="7.652"
+            height="7.652"
+            transform="translate(76.521 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3728"
+            data-name="Rectangle 3728"
+            width="7.652"
+            height="7.652"
+            transform="translate(84.173 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3729"
+            data-name="Rectangle 3729"
+            width="7.652"
+            height="7.652"
+            transform="translate(91.825 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3730"
+            data-name="Rectangle 3730"
+            width="7.652"
+            height="7.652"
+            transform="translate(99.477 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3731"
+            data-name="Rectangle 3731"
+            width="7.652"
+            height="7.652"
+            transform="translate(107.129 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3732"
+            data-name="Rectangle 3732"
+            width="7.652"
+            height="7.652"
+            transform="translate(38.26 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3733"
+            data-name="Rectangle 3733"
+            width="7.652"
+            height="7.652"
+            transform="translate(45.912 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3734"
+            data-name="Rectangle 3734"
+            width="7.652"
+            height="7.652"
+            transform="translate(53.564 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3735"
+            data-name="Rectangle 3735"
+            width="7.652"
+            height="7.652"
+            transform="translate(61.217 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3736"
+            data-name="Rectangle 3736"
+            width="7.652"
+            height="7.652"
+            transform="translate(68.869 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3737"
+            data-name="Rectangle 3737"
+            width="7.652"
+            height="7.652"
+            transform="translate(15.304 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4897"
+            data-name="Rectangle 4897"
+            width="7.652"
+            height="7.652"
+            transform="translate(15.304 7.652)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3738"
+            data-name="Rectangle 3738"
+            width="7.652"
+            height="7.652"
+            transform="translate(22.956 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4898"
+            data-name="Rectangle 4898"
+            width="7.652"
+            height="7.652"
+            transform="translate(22.956 7.652)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4899"
+            data-name="Rectangle 4899"
+            width="7.652"
+            height="7.652"
+            transform="translate(30.609 7.652)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3739"
+            data-name="Rectangle 3739"
+            width="7.652"
+            height="7.652"
+            transform="translate(30.608 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3740"
+            data-name="Rectangle 3740"
+            width="7.652"
+            height="7.652"
+            transform="translate(153.041 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3741"
+            data-name="Rectangle 3741"
+            width="7.652"
+            height="7.652"
+            transform="translate(160.693 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3742"
+            data-name="Rectangle 3742"
+            width="7.652"
+            height="7.652"
+            transform="translate(168.345 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3743"
+            data-name="Rectangle 3743"
+            width="7.652"
+            height="7.652"
+            transform="translate(175.997 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3744"
+            data-name="Rectangle 3744"
+            width="7.652"
+            height="7.652"
+            transform="translate(183.65 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3745"
+            data-name="Rectangle 3745"
+            width="7.652"
+            height="7.652"
+            transform="translate(191.302 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3746"
+            data-name="Rectangle 3746"
+            width="7.652"
+            height="7.652"
+            transform="translate(198.954 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3747"
+            data-name="Rectangle 3747"
+            width="7.652"
+            height="7.652"
+            transform="translate(1359.214 22.957) rotate(180)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3748"
+            data-name="Rectangle 3748"
+            width="7.652"
+            height="7.652"
+            transform="translate(1366.866 15.305) rotate(180)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4902"
+            data-name="Rectangle 4902"
+            width="7.652"
+            height="7.652"
+            transform="translate(1366.866 7.652) rotate(180)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3749"
+            data-name="Rectangle 3749"
+            width="7.652"
+            height="7.652"
+            transform="translate(1374.518 7.652) rotate(180)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4903"
+            data-name="Rectangle 4903"
+            width="7.652"
+            height="7.652"
+            transform="translate(1374.518 0) rotate(180)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4905"
+            data-name="Rectangle 4905"
+            width="7.652"
+            height="7.652"
+            transform="translate(1366.866 0) rotate(180)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_4904"
+            data-name="Rectangle 4904"
+            width="7.652"
+            height="7.652"
+            transform="translate(1374.518 -7.652) rotate(180)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3751"
+            data-name="Rectangle 3751"
+            width="7.652"
+            height="7.652"
+            transform="translate(214.258 22.957) rotate(180)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3752"
+            data-name="Rectangle 3752"
+            width="7.652"
+            height="7.652"
+            transform="translate(214.258 15.304)"
+            fill="#abafd2"
+          />
+          <rect
+            id="Rectangle_3753"
+            data-name="Rectangle 3753"
+            width="1328.604"
+            height="22.957"
+            transform="translate(1359.214 22.957) rotate(180)"
+            fill="#abafd2"
+          />
+        </g>
+      </g>
+    </svg>
+  ),
+
   GmailFBL: ({ ...props }: LucideProps) => (
     <svg
       {...props}

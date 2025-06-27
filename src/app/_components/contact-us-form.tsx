@@ -14,6 +14,9 @@ import { RadioGroup, RadioGroupItem } from "@/app/_components/ui/radio-group";
 import { Icons } from "@/app/_components/icons";
 import { cn } from "@/lib/utils";
 import { api } from "@/trpc/react";
+import { useToast } from "@/app/_components/ui/use-toast";
+import axios, { AxiosError } from "axios";
+import { z } from "zod";
 interface ContactUsFormProps {}
 
 type Purpose = "SERVICES" | "JOBS" | "PRODUCTS" | "OTHER";
@@ -24,12 +27,15 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
     setValue,
     watch,
     reset,
+    setError,
     register,
     getValues,
     formState: { errors, isSubmitting },
   } = useForm<contactusFormType>({
     resolver: zodResolver(contactusFormSchema),
   });
+
+  const { toast } = useToast();
 
   const createContact = api.contact.contactHandler.useMutation({
     onSuccess: async (data) => {
@@ -44,9 +50,35 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
   const onSubmit = async function (formData: contactusFormType) {
     try {
       const res = await createContact.mutateAsync(formData);
-      console.log(res);
+      if (res.length) {
+        toast({
+          title: "Your data has been Submitted",
+          description: "Please Check your data",
+          variant: "default",
+        });
+        return reset();
+      }
+      return toast({
+        title: "Something Went Wrong",
+        description: "Please Check your data",
+        variant: "destructive",
+      });
     } catch (err) {
-      console.log(err);
+      if (err instanceof z.ZodError) {
+        setError("email", { message: err.message });
+        return;
+      }
+      if (err instanceof AxiosError) {
+        setError("email", { message: err.response?.data });
+        return;
+      }
+
+      setError("email", { message: "something went wrong" });
+      return toast({
+        title: "Something Went Wrong",
+        description: "Please Check your data",
+        variant: "destructive",
+      });
     }
   };
   return (
