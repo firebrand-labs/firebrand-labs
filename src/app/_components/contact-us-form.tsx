@@ -52,7 +52,7 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col items-start justify-center gap-4 bg-yellow-level-four p-4 md:p-8 rounded-lg w-full"
+      className="flex flex-col items-start justify-center gap-4 bg-yellow-level-four p-4 md:p-8  rounded-lg w-full"
     >
       <div className="flex items-start flex-col justify-start gap-2 w-full group relative">
         <Label
@@ -137,7 +137,7 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
         )}
       </div>
 
-      <div className="flex items-center justify-start gap-4 w-full relative">
+      <div className="flex flex-col lg:flex-row items-start md:items-center justify-start gap-4 w-full relative">
         <Label
           aria-required="true"
           className="!text-extra-subtitle-heading uppercase text-background/75 leading-normal font-paragraph"
@@ -145,21 +145,23 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
         >
           Let's talk about
         </Label>
-        {["SERVICES", "JOBS", "PRODUCTS", "OTHER"].map((item: string) => (
-          <Button
-            key={item}
-            type="button"
-            onClick={() => setValue("purpose", item as Purpose)}
-            className={cn(
-              "uppercase rounded-full flex items-center justify-center bg-transparent text-background cursor-pointer border-background border hover:bg-background hover:text-foreground active:bg-background active:text-foreground",
-              watch("purpose") === item
-                ? "bg-background text-foreground"
-                : "text-background bg-transparent"
-            )}
-          >
-            {item}
-          </Button>
-        ))}
+        <div className="flex flex-row gap-2">
+          {["SERVICES", "JOBS", "PRODUCTS", "OTHER"].map((item: string) => (
+            <Button
+              key={item}
+              type="button"
+              onClick={() => setValue("purpose", item as Purpose)}
+              className={cn(
+                "uppercase rounded-full flex items-center justify-center bg-transparent text-background cursor-pointer border-background border hover:bg-background hover:text-foreground active:bg-background active:text-foreground",
+                watch("purpose") === item
+                  ? "bg-background text-foreground"
+                  : "text-background bg-transparent"
+              )}
+            >
+              {item}
+            </Button>
+          ))}
+        </div>
       </div>
 
       <div className="flex items-start flex-col justify-start gap-2 w-full relative">

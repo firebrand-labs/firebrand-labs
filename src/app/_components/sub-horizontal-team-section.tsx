@@ -3,8 +3,21 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { FC, useEffect, useState, useMemo } from "react";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
+import { Button } from "@/app/_components/ui/button";
 import { useRef } from "react";
-import { AnimatedTextReveal } from "./animated-text";
+import Link from "next/link";
+import { subTeamContent } from "@/config/marketing";
+import {
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogTitle,
+  DialogClose,
+  DialogTrigger,
+} from "@/app/_components/ui/dialog";
+import { AnimatedTextReveal } from "@/app/_components/animated-text";
+import { Icons } from "@/app/_components/icons";
+import { cn } from "@/lib/utils";
 
 const solutionsTitle = ["Experience", "Automate", "Predict", "Secure"];
 interface SubHorizontalTeamSectionProps {}
@@ -78,7 +91,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                 isMobile ? "gap-6 md:gap-3" : "gap-8 md:gap-12"
               }`}
             >
-              {Array.from({ length: 7 }).map((item, i) => (
+              {Array.from(subTeamContent).map((item, i) => (
                 <div
                   key={i}
                   className={`flex items-start flex-col gap-3 justify-center ${
@@ -86,8 +99,8 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                   }`}
                 >
                   <Image
-                    src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi166xwPUD7g3autyIcM42eqsf6Vb5PvXwEiWU"
-                    alt="Arvind"
+                    src={item.url}
+                    alt={item.name}
                     width={200}
                     height={300}
                     className={`object-cover ${
@@ -96,22 +109,76 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                         : "w-[380px] h-[380px] md:w-full md:max-w-md md:h-auto"
                     }`}
                   />
-                  <div className="flex items-center justify-center gap-2">
-                    <p
-                      className={`text-foreground leading-normal font-paragraph ${
-                        isMobile ? "text-lg" : "text-subtitle-heading"
-                      }`}
-                    >
-                      Arvind
-                    </p>
+                  <div className="flex items-center justify-between gap-3.5 w-full px-2 md:px-4">
+                    <h3 className="font-paragraph text-paragraph-heading font-normal leading-tight text-foreground">
+                      {item.name}
+                    </h3>
+
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button className="cursor-pointer group flex items-center justify-center min-w-12 text-paragraph-heading font-semibold text-foreground hover:text-foreground hover:bg-transparent p-0  text-left">
+                          <Icons.ArrowRight className="w-28 scale-200 stroke-foreground rotate-0 group-hover:-rotate-45 transition-transform duration-200" />
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-[80vw] bg-[#32CE95] rounded-md max-h-[80vh] overflow-y-scroll md:overflow-y-auto">
+                        <DialogTitle className="hidden" />
+                        <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2">
+                          <div className="max-w-[340px] relative flex items-center justify-center bg-transparent rounded-md">
+                            <Image
+                              src={item.popupContent.popupImage}
+                              alt={item.name}
+                              width={200}
+                              height={300}
+                              className="max-w-[200px] object-contain md:w-full md:max-w-[260px]"
+                            />
+                            <Icons.ProfileBackdrop
+                              className={cn(
+                                "w-full h-full absolute inset-0 z-[-1] stroke-amber-500"
+                              )}
+                              style={{
+                                fill: item.popupContent.colors.paletteX,
+                              }}
+                            />
+                          </div>
+                          <div className="w-full flex flex-col md:flex-row gap-6 items-center justify-between md:col-start-2 md:col-end-4">
+                            <div className="flex flex-col items-start justify-center gap-2 ">
+                              <h4 className="text-tertiary-heading max-w-4xl text-foreground leading-normal font-pixelify font-bold">
+                                {item.name}
+                              </h4>
+                              <p className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-pixelify font-light">
+                                {item.popupContent.role}
+                              </p>
+                              <ul className="text-foreground text-[17px] font-normal leading-normal font-pixelify">
+                                {item.popupContent.description.map(
+                                  (subItem, i) => (
+                                    <li key={i}>{subItem}</li>
+                                  )
+                                )}
+                              </ul>
+                            </div>
+                            <ul className="flex flex-row md:flex-col gap-3 items-center w-full justify-start md:justify-center">
+                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                                <Link href={item.popupContent.linkedIn}>
+                                  <Icons.LinkedInFBL className="w-6 h-6 " />
+                                </Link>
+                              </li>
+                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                                <Link href={item.popupContent.phone}>
+                                  <Icons.PhoneFBL className="w-6 h-6 " />
+                                </Link>
+                              </li>
+                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                                <Link href={item.popupContent.mail}>
+                                  <Icons.GmailFBL className="w-6 h-6 " />
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <DialogFooter className="hidden" />
+                      </DialogContent>
+                    </Dialog>
                   </div>
-                  <p
-                    className={`text-foreground/55 leading-normal font-paragraph ${
-                      isMobile ? "text-base" : "text-subtitle-heading"
-                    }`}
-                  >
-                    Founder
-                  </p>
                 </div>
               ))}
             </motion.div>

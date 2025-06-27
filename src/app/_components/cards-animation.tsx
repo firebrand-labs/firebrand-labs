@@ -105,7 +105,7 @@ const CardsAnimation = () => {
         style={{ height: "250vh" }}
       >
         {/* Sticky container for animation */}
-        <div className="sticky top-0 min-h-screen flex flex-col items-start justify-start overflow-hidden ">
+        <div className="sticky top-0 min-h-screen flex flex-col items-start justify-start overflow-visible lg:">
           {/* Main quote */}
           <div className="text-left  mb-16 py-16 z-10 ">
             <AnimatedTextReveal
@@ -131,7 +131,7 @@ const CardsAnimation = () => {
           >
             {/* Strategy Card (Purple) */}
             <motion.div
-              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center md:!ml-[200px] lg:!ml-[-140px] 2xl:!ml-[-160px]"
               style={{
                 x: strategyCardX,
                 y: strategyCardY,
@@ -140,7 +140,7 @@ const CardsAnimation = () => {
                 scale: scaleStrategy,
                 left: "50%",
                 top: "50%",
-                marginLeft: "-160px",
+                // marginLeft: "-160px",
                 marginTop: "-192px",
                 transformStyle: "preserve-3d",
               }}
@@ -148,11 +148,9 @@ const CardsAnimation = () => {
               <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
                 understand your business
               </h3>
-              <p className="text-extra-subtitle-heading tracking-wide text-foreground/70 leading-normal font-light font-paragraph min-h-[66.25%]">
+              <p className="text-subtitle-heading  tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[66.25%]">
                 Your brand has a personality just like human beings do, answer
-                the questions from your brand/business’ point of view. Can be
-                played by an individual (a brand custodian) or a small group of
-                key decision makers of the brand.
+                the questions from your brand/business’ point of view.
               </p>
               <div className="w-full flex items-center justify-between">
                 <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">
@@ -163,7 +161,7 @@ const CardsAnimation = () => {
 
             {/* Design Card (Pink) */}
             <motion.div
-              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center !ml-[-100px] lg:!ml-[-140px] 2xl:!ml-[-160px]"
               style={{
                 x: designCardX,
                 y: designCardY,
@@ -172,7 +170,7 @@ const CardsAnimation = () => {
                 scale: scaleDesign,
                 left: "50%",
                 top: "50%",
-                marginLeft: "-160px",
+                // marginLeft: "-160px",
                 marginTop: "-192px",
                 transformStyle: "preserve-3d",
               }}
@@ -180,11 +178,9 @@ const CardsAnimation = () => {
               <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
                 understand your business
               </h3>
-              <p className="text-extra-subtitle-heading tracking-wide text-foreground/70 leading-normal font-light font-paragraph min-h-[66.25%]">
+              <p className="text-subtitle-heading  tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[66.25%]">
                 Your brand has a personality just like human beings do, answer
-                the questions from your brand/business’ point of view. Can be
-                played by an individual (a brand custodian) or a small group of
-                key decision makers of the brand.
+                the questions from your brand/business’ point of view.
               </p>
               <div className="w-full flex items-center justify-between">
                 <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">
@@ -195,7 +191,7 @@ const CardsAnimation = () => {
 
             {/* Build Card (Orange) */}
             <motion.div
-              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center md:!ml-[200px] lg:!ml-[-140px] 2xl:!ml-[-160px]"
               style={{
                 x: buildCardX,
                 y: buildCardY,
@@ -204,7 +200,7 @@ const CardsAnimation = () => {
                 scale: scaleBuild,
                 left: "50%",
                 top: "50%",
-                marginLeft: "-160px",
+                // marginLeft: "-160px",
                 marginTop: "-192px",
                 transformStyle: "preserve-3d",
               }}
@@ -212,11 +208,9 @@ const CardsAnimation = () => {
               <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
                 understand your business
               </h3>
-              <p className="text-extra-subtitle-heading tracking-wide text-foreground/70 leading-normal font-light font-paragraph min-h-[66.25%]">
+              <p className="text-subtitle-heading  tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[66.25%]">
                 Your brand has a personality just like human beings do, answer
-                the questions from your brand/business’ point of view. Can be
-                played by an individual (a brand custodian) or a small group of
-                key decision makers of the brand.
+                the questions from your brand/business’ point of view.
               </p>
               <div className="w-full flex items-center justify-between">
                 <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">

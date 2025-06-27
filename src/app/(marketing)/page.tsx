@@ -80,7 +80,7 @@ const page: FC<pageProps> = () => {
                 <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl z-[10]">
                   <Image
                     src={
-                      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl"
+                      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1JA7huD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
                     }
                     alt="doers. misfits. firebrands. "
                     className="w-full"
@@ -106,7 +106,7 @@ const page: FC<pageProps> = () => {
                 <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl transition-transform ease-in duration-200 group-hover:-translate-x-6 group-hover:-rotate-[20deg] origin-bottom">
                   <Image
                     src={
-                      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl"
+                      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQVNEx6scTnmCMBktVKZO5ofSazG3yJAgPeI"
                     }
                     alt="doers. misfits. firebrands. "
                     className="w-full"

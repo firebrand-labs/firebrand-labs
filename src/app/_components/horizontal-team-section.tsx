@@ -5,26 +5,24 @@ import { FC, useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import { Button } from "@/app/_components/ui/button";
-import { teamContent } from "@/config/marketing";
-import Image from "next/image";
-import { useRef } from "react";
-import { Icons } from "./icons";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
-  DialogHeader,
   DialogTitle,
+  DialogClose,
   DialogTrigger,
 } from "@/app/_components/ui/dialog";
-import { Input } from "@/app/_components/ui/input";
-import { Label } from "@/app/_components/ui/label";
+import { teamContent } from "@/config/marketing";
+import Image from "next/image";
+import { useRef } from "react";
 import {
   AnimatedRichText,
   AnimatedSpan,
   AnimatedTextReveal,
-} from "./animated-text";
+} from "@/app/_components/animated-text";
+import { Icons } from "./icons";
+import Link from "next/link";
 
 interface HorizontalTeamSectionProps {}
 const colors = ["#263C7B", "#322A5E", "#84357B", "#4A4A48"];
@@ -103,44 +101,52 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                         <Icons.ArrowRight className="bg-yellow-level-five scale-75 stroke-foreground rounded-full !w-6 p-1 duration-75 !h-6 group-hover:-rotate-45" />
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="sm:max-w-[80vw] bg-[#32CE95] rounded-md">
+                    <DialogContent className="sm:max-w-[80vw] bg-[#32CE95] rounded-md max-h-[80vh] overflow-y-scroll md:overflow-y-auto">
                       <DialogTitle className="hidden" />
-                      <div className="flex items-center justify-between ">
-                        <div className="max-w-[300px] flex items-center justify-center">
+                      <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2">
+                        <div className="max-w-[300px] flex items-center justify-center bg-[#ABB5DF] rounded-md">
                           <Image
                             src={item.popupContent.popupImage}
                             alt={item.name}
                             width={200}
                             height={300}
-                            className="w-[380px] h-[380px] object-cover md:w-full md:max-w-md md:h-auto"
+                            className="max-w-[380px] object-cover md:w-full md:max-w-md md:h-auto"
                           />
                         </div>
-                        <div className="flex flex-col items-start justify-center gap-2">
-                          <h4 className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-paragraph font-normal">
-                            {item.name}
-                          </h4>
-                          <p className="text-subtitle-heading max-w-4xl text-foreground leading-normal font-paragraph font-light">
-                            {item.popupContent.role}
-                          </p>
-                          <div />
-                          <div />
+                        <div className="w-full flex flex-col md:flex-row gap-6 items-center justify-between md:col-start-2 md:col-end-4">
+                          <div className="flex flex-col items-start justify-center gap-2 ">
+                            <h4 className="text-tertiary-heading max-w-4xl text-foreground leading-normal font-pixelify font-bold">
+                              {item.name}
+                            </h4>
+                            <p className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-pixelify font-light">
+                              {item.popupContent.role}
+                            </p>
+                            <ul className="text-foreground text-[17px] font-normal leading-normal font-pixelify">
+                              {item.popupContent.description.map(
+                                (subItem, i) => (
+                                  <li key={i}>{subItem}</li>
+                                )
+                              )}
+                            </ul>
+                          </div>
+                          <ul className="flex flex-row md:flex-col gap-3 items-center w-full justify-start md:justify-center">
+                            <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                              <Link href={item.popupContent.linkedIn}>
+                                <Icons.LinkedInFBL className="w-6 h-6 " />
+                              </Link>
+                            </li>
+                            <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                              <Link href={item.popupContent.phone}>
+                                <Icons.PhoneFBL className="w-6 h-6 " />
+                              </Link>
+                            </li>
+                            <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                              <Link href={item.popupContent.mail}>
+                                <Icons.GmailFBL className="w-6 h-6 " />
+                              </Link>
+                            </li>
+                          </ul>
                         </div>
-                        <div className="">
-                          <Image
-                            src={
-                              "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi64vcdcpThs8Y3qHSXFb0ok97ftJVZcnBQCEw"
-                            }
-                            alt={item.name}
-                            width={200}
-                            height={300}
-                            className="w-[380px] h-[380px] object-cover md:w-full md:max-w-md md:h-auto"
-                          />
-                        </div>
-                        <ul className="flex flex-col items-start justify-center">
-                          <li>
-                            <Icons.Linkedin className="w-6 h-auto" />
-                          </li>
-                        </ul>
                       </div>
                       <DialogFooter className="hidden" />
                     </DialogContent>

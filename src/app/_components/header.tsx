@@ -32,7 +32,7 @@ const Header: FC<HeaderProps> = () => {
     >
       <div className=" w-full flex items-center justify-between">
         <Link href={"/"}>
-          <Image
+          {/* <Image
             src={
               "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKL6L3fr40uc9qOMHzApnW38NDejVaClskLmr"
             }
@@ -40,7 +40,8 @@ const Header: FC<HeaderProps> = () => {
             className="w-[80px] md:w-[160px] h-auto"
             width={70}
             height={100}
-          />
+          /> */}
+          <Icons.FBLLogo className="w-36 fill-foreground stroke-foreground" />
         </Link>
         <div className="flex items-center justify-center gap-4">
           <ModeToggle />
@@ -137,7 +138,7 @@ const Header: FC<HeaderProps> = () => {
                         key={i}
                       >
                         <Link
-                          className="text-foreground lowercase text-4xl md:text-6xl lg:text-8xl no-underline font-paragraph font-light italic  hover:text-foreground/60"
+                          className="text-foreground lowercase text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl no-underline font-paragraph font-light italic  hover:text-foreground/60"
                           href={item.href}
                           onClick={handleLinkClick}
                         >
