@@ -57,6 +57,7 @@ const highlighter = Shadows_Into_Light({
 const pixelify = Pixelify_Sans({
   style: "normal",
   variable: "--pixelify",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
