@@ -48,7 +48,7 @@ const page: FC<pageProps> = () => {
 
       <WhatWeDo />
 
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh snap-start ">
+      <section className="hidden items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh snap-start ">
         <BackgroundVideo
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full "
           classForVideo="object-right md:object-cover"
@@ -75,7 +75,7 @@ const page: FC<pageProps> = () => {
               <FBLButton href="/about#team" body="our team" />
             </div>
             <div className="flex items-center justify-center self-center ">
-              <div className="min-w-[320px] md:min-w-[400px] group min-h-[540px] relative rounded-2xl">
+              <div className="min-w-[220px] md:min-w-[400px] group min-h-[320px] md:min-h-[540px] relative rounded-2xl">
                 {/* Static center card */}
                 <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl z-[10]">
                   <Image
@@ -138,7 +138,7 @@ const page: FC<pageProps> = () => {
                 world!
               </AnimatedSpan>
             </AnimatedRichText>
-            <FBLButton href="/blog" body="all resources" />
+            <FBLButton className="hidden" href="/blog" body="all resources" />
           </div>
           <Icons.BlogImage className="w-full " />
         </div>

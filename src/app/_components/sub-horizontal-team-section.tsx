@@ -110,7 +110,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                     }`}
                   />
                   <div className="flex items-center justify-between gap-3.5 w-full px-2 md:px-4">
-                    <h3 className="font-paragraph text-paragraph-heading font-normal leading-tight text-foreground">
+                    <h3 className="font-paragraph lowercase text-paragraph-heading font-normal leading-tight text-foreground">
                       {item.name}
                     </h3>
 
@@ -120,9 +120,15 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                           <Icons.ArrowRight className="w-28 scale-200 stroke-foreground rotate-0 group-hover:-rotate-45 transition-transform duration-200" />
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="sm:max-w-[80vw] bg-[#32CE95] rounded-md max-h-[80vh] overflow-y-scroll md:overflow-y-auto relative ">
+                      <DialogContent
+                        className="sm:max-w-[80vw] bg-transparent rounded-md max-h-[80vh] overflow-y-scroll md:overflow-y-auto"
+                        style={{
+                          backgroundColor: item.popupContent.colors.paletteY,
+                        }}
+                      >
                         <DialogTitle className="hidden" />
-                        <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2">
+                        <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2 w-full relative z-[-2]">
+                          {/* <Icons.PixelBox className="absolute top-0 left-0 w-full h-full fill-green-600" /> */}
                           <div className="max-w-[340px] relative flex items-center justify-center bg-transparent rounded-md">
                             <Image
                               src={item.popupContent.popupImage}
@@ -142,13 +148,13 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                           </div>
                           <div className="w-full flex flex-col md:flex-row gap-6 items-center justify-between md:col-start-2 md:col-end-4">
                             <div className="flex flex-col items-start justify-center gap-2 ">
-                              <h4 className="text-tertiary-heading max-w-4xl text-foreground leading-normal font-pixelify font-bold">
+                              <h4 className="text-tertiary-heading max-w-4xl text-background lowercase leading-normal font-pixelify font-bold">
                                 {item.name}
                               </h4>
-                              <p className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-pixelify font-light">
+                              <p className="text-paragraph-heading max-w-4xl text-background lowercase leading-normal font-pixelify font-light">
                                 {item.popupContent.role}
                               </p>
-                              <ul className="text-foreground text-[17px] font-normal leading-normal font-pixelify">
+                              <ul className="text-background text-[17px] font-normal lowercase leading-normal font-pixelify">
                                 {item.popupContent.description.map(
                                   (subItem, i) => (
                                     <li key={i}>{subItem}</li>
@@ -157,17 +163,35 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                               </ul>
                             </div>
                             <ul className="flex flex-row md:flex-col gap-3 items-center w-full justify-start md:justify-center">
-                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                              <li
+                                className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
+                                style={{
+                                  backgroundColor:
+                                    item.popupContent.colors.paletteX,
+                                }}
+                              >
                                 <Link href={item.popupContent.linkedIn}>
                                   <Icons.LinkedInFBL className="w-6 h-6 " />
                                 </Link>
                               </li>
-                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                              <li
+                                className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
+                                style={{
+                                  backgroundColor:
+                                    item.popupContent.colors.paletteX,
+                                }}
+                              >
                                 <Link href={item.popupContent.phone}>
                                   <Icons.PhoneFBL className="w-6 h-6 " />
                                 </Link>
                               </li>
-                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                              <li
+                                className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
+                                style={{
+                                  backgroundColor:
+                                    item.popupContent.colors.paletteX,
+                                }}
+                              >
                                 <Link href={item.popupContent.mail}>
                                   <Icons.GmailFBL className="w-6 h-6 " />
                                 </Link>

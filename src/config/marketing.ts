@@ -11,13 +11,13 @@ export const teamContent = [
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXifi2fTBes3N7H0IACvRLnDxGrdJ2WiBbjywKt",
     name: "Arvind Aathreya, Founder",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
+      "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era.",
     popupContent: {
       role: "the buck stops with me",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
       description: [
-        "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era. he blends the two effortlessly - staying sharp, strategic, and always a step ahead. in 2009, he started Firebrand Labs to do high energy creative work every day and built just that. FBL is where ideas meet execution and filter kaapi meets strategy. a true believer that creativity is forever (unga appa’s wisdom meets today’s swipe culture also, ask him about A.R. Rahman, single malts, or the perfect podi dosa spot and he’ll light up.",
+        "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era. he blends the two effortlessly - staying sharp, strategic, and always a step ahead. in 2009, he started Firebrand Labs to do high energy creative work every day and built just that. FBL is where ideas meet execution and filter kaapi meets strategy. a true believer that creativity is forever (unga appa’s wisdom meets today’s swipe culture) also, ask him about A.R. Rahman, single malts, or the perfect podi dosa spot and he’ll light up.",
       ],
       linkedIn: "",
       phone: "",
@@ -28,8 +28,7 @@ export const teamContent = [
     id: "2",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7F3Vt12aHIogc9bupDymFxOGdeB6njkW5tQ0",
     name: "Arun",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
+    description: "co-founder. head of design and a silent storm.",
     popupContent: {
       role: "Co-Founder",
       popupImage:
@@ -77,7 +76,7 @@ export const subTeamContent = [
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiAqDvr4wNVk0ZBrJ3sivm7FtRybneCAqMGz2o",
       description: [
-        "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era. he blends the two effortlessly - staying sharp, strategic, and always a step ahead. in 2009, he started Firebrand Labs to do high energy creative work every day and built just that. FBL is where ideas meet execution and filter kaapi meets strategy. a true believer that creativity is forever (unga appa’s wisdom meets today’s swipe culture also, ask him about A.R. Rahman, single malts, or the perfect podi dosa spot and he’ll light up.",
+        "human sunshine with a knack for solutions. jey brings warmth, heart, and just the right amount of chaos and somehow always has a fix tucked up his sleeve. the kind of person who’ll go out of his way to help, and leave you smiling while he’s at it.",
       ],
       linkedIn: "",
       phone: "",
@@ -99,9 +98,9 @@ export const subTeamContent = [
     popupContent: {
       role: "Design",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXidymadoPkrzhSlqk7RA6bD81c3ImFGwXMnpfJ",
       description: [
-        "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era. he blends the two effortlessly - staying sharp, strategic, and always a step ahead. in 2009, he started Firebrand Labs to do high energy creative work every day and built just that. FBL is where ideas meet execution and filter kaapi meets strategy. a true believer that creativity is forever (unga appa’s wisdom meets today’s swipe culture also, ask him about A.R. Rahman, single malts, or the perfect podi dosa spot and he’ll light up.",
+        "senior designer. gamer by night, gentle genius by day. lazzo’s the kind of person who will give you the perfect font pairing and a crash course in game lore -all with the same easy smile. he’s got a sharp eye for design, a brain full of beautiful chaos, and a heart that’s basically palkova. he makes everyone feel like they belong, keeps the vibes calm, and somehow stays smiling, even when the coffee’s watery and the client wants 'just one more change.'",
       ],
       linkedIn: "",
       phone: "",
@@ -123,9 +122,9 @@ export const subTeamContent = [
     popupContent: {
       role: "Account Manager",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiGyEXv9T3MbB0KQVEsekpNuFlAhTqoIaSgt4J",
       description: [
-        "calm, clear, and always one step ahead. with over 12 years of entrepreneurial experience, mona knows what it takes to make things happen. she’s fluent in the fine print, the follow-up, and more Indian languages than we can count. A fitness buff, a curious home cook (always on the hunt for the next great vegetarian dish), and a part-time philosopher. ",
+        "calm, clear, and always one step ahead. with over 12 years of entrepreneurial experience, mona knows what it takes to make things happen. she’s fluent in the fine print, the follow-up, and more Indian languages than we can count. a fitness buff, a curious home cook (always on the hunt for the next great vegetarian dish), and a part-time philosopher.",
       ],
       linkedIn: "",
       phone: "",
@@ -139,7 +138,7 @@ export const subTeamContent = [
   },
   {
     id: "4",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXimnjUAbxnxFRDLNhCflXWv2E74VUG6OIzA1eB",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiTQvlS6KIMWgkEnv74iHl2QFSd9ARhNeBYzma",
     name: "Vimalraj M",
     role: "Tech",
     description:
@@ -147,9 +146,9 @@ export const subTeamContent = [
     popupContent: {
       role: "Tech",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXikIU9rxhjX0VC6iL3lRYcyTp4jzeJnadKImDw",
       description: [
-        "quiet on the outside, full of ideas (and item songs) on the inside. vimal’s the kind of person who’ll surprise you in the best way. curious, kind, and quietly creative, his brain’s always running in the background, cooking up “clever” solutions and unexpected visuals. he’s a mix of innocence and mischievous wit. a rescuer of animals and a lover of loud music.",
+        "quiet on the outside, full of ideas (and item songs) on the inside. vimal’s the kind of person who’ll surprise you in the best way. curious, kind, and quietly creative, his brain’s always running in the background. he’s a mix of innocence and mischievous wit. a rescuer of animals and a lover of loud music who has a tendency of diving on dry land.",
       ],
       linkedIn: "",
       phone: "",
@@ -162,8 +161,32 @@ export const subTeamContent = [
     },
   },
   {
+    id: "14",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiYWdi6haaFA1G7468OT30okvCZcSfMmXJb9Is",
+    name: "Kirtana Haridas",
+    role: "Marketing",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
+    popupContent: {
+      role: "Marketing",
+      popupImage:
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiAoDvX3NVk0ZBrJ3sivm7FtRybneCAqMGz2oN",
+      description: [
+        "creative strategist. energy editor. big believer that everything can be made more beautiful. she sees the world like one big canvas. every challenge is an opportunity to use her 'brain-power' and put things in order. nothing is mundane. no task is boring. what does she want to eat? what new campaign could she crack? every question is worth a million. loves to pet four-legged creatures and buy pretty jewellery. ignore her if you catch her saying 'if you don’t like me, just say it.'",
+      ],
+      linkedIn: "",
+      phone: "",
+      mail: "",
+      colors: {
+        paletteX: "#D89CB8",
+        paletteY: "#FFC6E0",
+        paletteZ: "#E594B9",
+      },
+    },
+  },
+  {
     id: "12",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXimnjUAbxnxFRDLNhCflXWv2E74VUG6OIzA1eB",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXivS1rCu3ckJ850SeYLr7Ej9q6hwR1AZmiuf3U",
     name: "Venkatesh S",
     role: "Tech",
     description:
@@ -171,9 +194,9 @@ export const subTeamContent = [
     popupContent: {
       role: "Tech",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKHdIXI40uc9qOMHzApnW38NDejVaClskLmrx",
       description: [
-        "full stack developer. UI enthusiast. always optimistic, always in the right place at the right time. he’s more attached to his GitHub history than his own, and has made peace with everything-except Safari. proudly from madurai, but don’t expect maduraveeran jokes or dramatic war stories.  he’ll go along with anything you throw at him-from “hi bestie” to “bye girl” without blinking.",
+        "full stack developer. UI enthusiast. always optimistic, always in the right place at the right time. he’s more attached to his GitHub history than his own, and has made peace with everything-except Safari. proudly from madurai, but don’t expect maduraveeran jokes or dramatic war stories. he’ll go along with anything you throw at him-from “hi bestie” to “bye girl” without blinking.",
       ],
       linkedIn: "",
       phone: "",
@@ -195,9 +218,9 @@ export const subTeamContent = [
     popupContent: {
       role: "Design",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXisqA4oqtVLIobTqySHNWmrU0nFD3G1uYZCv5A",
       description: [
-        "serious face, sarcastic mind. brindha is a quiet storm-shy at first, but once she opens up, you’ll wonder how to politely escape the chaos (in the best way possible). she’s a great listener-always analysing and quietly connecting the dots. her creativity is rooted in emotion and led by intuition. brindha sees the world through a lens of care, curiosity and killer eyeliner.",
+        "serious face, sarcastic mind. brindha is a quiet storm-shy at first, but once she opens up, you’ll wonder how to politely escape the chaos (in the best way possible). she’s a great listener-always analysing and quietly connecting the dots. her creativity is rooted in emotion and led by intuition. brindha sees the world through a lens of care, curiosity and killer eyeliner and  won't hesitate to ask questions that make you question reality itself.",
       ],
       linkedIn: "",
       phone: "",
@@ -209,54 +232,7 @@ export const subTeamContent = [
       },
     },
   },
-  {
-    id: "7",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi3jILKQ6dO2hSNi7wCrDRl8q0bWj5QUvsJxoM",
-    name: "Brindha Prabu",
-    role: "Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
-    popupContent: {
-      role: "Design",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
-      description: [
-        "serious face, sarcastic mind. brindha is a quiet storm-shy at first, but once she opens up, you’ll wonder how to politely escape the chaos (in the best way possible). she’s a great listener-always analysing and quietly connecting the dots. her creativity is rooted in emotion and led by intuition. brindha sees the world through a lens of care, curiosity and killer eyeliner.",
-      ],
-      linkedIn: "",
-      phone: "",
-      mail: "",
-      colors: {
-        paletteX: "#8D9ABA",
-        paletteY: "#DCE3F3",
-        paletteZ: "#ABB5DF",
-      },
-    },
-  },
-  {
-    id: "8",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi3jILKQ6dO2hSNi7wCrDRl8q0bWj5QUvsJxoM",
-    name: "Brindha Prabu",
-    role: "Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
-    popupContent: {
-      role: "Design",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
-      description: [
-        "serious face, sarcastic mind. brindha is a quiet storm-shy at first, but once she opens up, you’ll wonder how to politely escape the chaos (in the best way possible). she’s a great listener-always analysing and quietly connecting the dots. her creativity is rooted in emotion and led by intuition. brindha sees the world through a lens of care, curiosity and killer eyeliner.",
-      ],
-      linkedIn: "",
-      phone: "",
-      mail: "",
-      colors: {
-        paletteX: "#8DB7BA",
-        paletteY: "#C3E3E5",
-        paletteZ: "#A0D0D3",
-      },
-    },
-  },
+
   {
     id: "9",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXipejCElXytQXi94mwLn0Wag1vC56DZbAkOKPB",
@@ -267,7 +243,7 @@ export const subTeamContent = [
     popupContent: {
       role: "Branding",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigbKEDOA7l16tQ289KNofiDrnEuvmRbjhqdTc",
       description: [
         "the wittiest Gen Z in the room-armed with coffee, comebacks, and a stash of kinder joy. akriti does it all with affable flair and a side of chicken. she’s quick on her feet, quicker with the sarcasm, and somehow always finds time to pet every dog and cat she sees. slightly erratic, totally loveable-she runs on caffeine, chaos, and a whole lot of charm.",
       ],
@@ -291,9 +267,9 @@ export const subTeamContent = [
     popupContent: {
       role: "Design",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXibMbjrnfPrSGhD0TMiywnpFZERx7f4KaN83jt",
       description: [
-        "he’s a humble artist, the kind who lets his work speak louder than words, and when he does speak, the jokes hit after a 2-second delay and then have you in splits. always up for a good time, always gets the job done-with full josh. low volume, high impact. or as they’d say- semma build-up, but all heart. ",
+        "he’s an excellent artist, the kind who lets his work speak louder than words, and when he does speak, the jokes hit after a 2-second delay. always up for a good time, always gets the job done-with full josh. low volume, high impact. or as they’d say- semma build-up, but all heart. his story might sound similar to a certain simbu movie.",
       ],
       linkedIn: "",
       phone: "",
@@ -308,14 +284,14 @@ export const subTeamContent = [
   {
     id: "12",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXicpoZmuwVfrHgnRDTBX1y8AO9Quk740MJlmSt",
-    name: "Ritika",
+    name: "Ritika Das",
     role: "Account Manager",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Account Manager",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5E2vrpBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
       description: [
         "sweet like roshogolla and the sharpest presence in any room. ritika shows up with a smile so genuine, it could melt the crankiest monday. cheerful, driven, and always on top of her game, she has a way of getting things done that feels effortless. maybe it’s the charm, maybe it’s the energy, but people rarely say no when she asks. her positivity is contagious and her presence uplifting. you don’t just work with ritika-you walk away smiling.",
       ],
@@ -339,9 +315,9 @@ export const subTeamContent = [
     popupContent: {
       role: "Marketing",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5UMSeIBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
       description: [
-        "sweet like roshogolla and the sharpest presence in any room. ritika shows up with a smile so genuine, it could melt the crankiest monday. cheerful, driven, and always on top of her game, she has a way of getting things done that feels effortless. maybe it’s the charm, maybe it’s the energy, but people rarely say no when she asks. her positivity is contagious and her presence uplifting. you don’t just work with ritika-you walk away smiling.",
+        "idea enthusiast and full-time feeler. she’s got a soft spot for chocolate muffins and taylor swift lyrics. dhenuka reads between the lines, whether it’s a brief or a bridge in a breakup anthem. she brings heart to strategy and warmth to visuals. when she’s not obsessing over taylor swift, she’s in the kitchen baking or curled up with a rom-com, always dreaming, always creating.",
       ],
       linkedIn: "",
       phone: "",

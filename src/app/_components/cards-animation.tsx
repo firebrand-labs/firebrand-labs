@@ -145,12 +145,11 @@ const CardsAnimation = () => {
                 transformStyle: "preserve-3d",
               }}
             >
-              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
+              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading sr-only">
                 understand your business
               </h3>
-              <p className="text-subtitle-heading  tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[66.25%]">
-                Your brand has a personality just like human beings do, answer
-                the questions from your brand/business’ point of view.
+              <p className="text-tertiary-heading mt-4 md:mt-12 tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[46.25%]">
+                what did you learn from your last collaboration?
               </p>
               <div className="w-full flex items-center justify-between">
                 <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">
@@ -175,12 +174,11 @@ const CardsAnimation = () => {
                 transformStyle: "preserve-3d",
               }}
             >
-              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
+              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading sr-only">
                 understand your business
               </h3>
-              <p className="text-subtitle-heading  tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[66.25%]">
-                Your brand has a personality just like human beings do, answer
-                the questions from your brand/business’ point of view.
+              <p className="text-tertiary-heading mt-4 md:mt-12 tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[46.25%]">
+                name a person whose personality you wish you could emulate?
               </p>
               <div className="w-full flex items-center justify-between">
                 <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">
@@ -205,12 +203,11 @@ const CardsAnimation = () => {
                 transformStyle: "preserve-3d",
               }}
             >
-              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
+              <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading sr-only">
                 understand your business
               </h3>
-              <p className="text-subtitle-heading  tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[66.25%]">
-                Your brand has a personality just like human beings do, answer
-                the questions from your brand/business’ point of view.
+              <p className="text-tertiary-heading mt-4 md:mt-12   tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[46.25%]">
+                what are your non-negotiable value?
               </p>
               <div className="w-full flex items-center justify-between">
                 <span className="text-[14px] tracking-wide text-foreground/70 leading-normal font-light font-paragraph">

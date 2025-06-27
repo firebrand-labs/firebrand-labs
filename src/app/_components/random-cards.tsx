@@ -399,7 +399,7 @@ const AnimatedCardInterface: React.FC = () => {
 
   return (
     <div
-      className="w-full h-screen overflow-hidden relative bg-background"
+      className="w-full h-screen overflow-hidden relative bg-background -translate-x-12 md:translate-0"
       ref={containerRef}
     >
       {/* 3D Perspective Container */}

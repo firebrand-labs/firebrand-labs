@@ -263,9 +263,7 @@ export const Icons = {
   PixelBox: ({ ...props }: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1390"
       {...props}
-      height="689.954"
       viewBox="0 0 1390 689.954"
     >
       <g id="pixel-box" transform="translate(-14359.487 -10162.287)">

@@ -26,21 +26,12 @@ const Header: FC<HeaderProps> = () => {
   return (
     <header
       className={cn(
-        "flex flex-row items-center justify-center gap-0 z-20  fixed w-screen top-0  px-6 xl:px-14 py-6 ",
+        "flex backdrop-blur-[2px] bg-background/15 flex-row items-center justify-center gap-0 z-20  fixed w-screen top-0  px-6 xl:px-14 py-6 ",
         true && "justify-center"
       )}
     >
       <div className=" w-full flex items-center justify-between">
         <Link href={"/"}>
-          {/* <Image
-            src={
-              "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKL6L3fr40uc9qOMHzApnW38NDejVaClskLmr"
-            }
-            alt="Firebrand Labs"
-            className="w-[80px] md:w-[160px] h-auto"
-            width={70}
-            height={100}
-          /> */}
           <Icons.FBLLogo className="w-36 fill-foreground stroke-foreground" />
         </Link>
         <div className="flex items-center justify-center gap-4">
@@ -58,7 +49,7 @@ const Header: FC<HeaderProps> = () => {
               <SheetTitle />
               <div className="container flex items-center justify-center">
                 <div className="grid w-full grid-cols-1 md:grid-cols-2 items-center justify-center gap-8">
-                  <div className="grid grid-cols-1 md:grid-cols-2 items-end justify-start gap-2 h-full">
+                  <div className="grid grid-cols-1 md:grid-cols-2 items-end justify-start gap-8 md:gap-2 h-full">
                     <div className="flex items-start justify-end flex-col gap-8 md:gap-32">
                       <div className="flex flex-col items-start justify-start gap-2 w-full h-full">
                         <p className="text-extra-subtitle-heading font-light text-foreground/75 leading-normal font-paragraph">
@@ -74,7 +65,7 @@ const Header: FC<HeaderProps> = () => {
                               key={i}
                             >
                               <Link
-                                className="text-foreground lowercase font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
+                                className="text-foreground hover:underline lowercase font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
                                 href={item.href}
                               >
                                 {item.title}
@@ -95,7 +86,7 @@ const Header: FC<HeaderProps> = () => {
                             )}
                           >
                             <Link
-                              className="text-foreground font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
+                              className="text-foreground hover:underline font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
                               href={"mailto:arvind@firebrandlabs.in"}
                             >
                               arvind@firebrandlabs.in
@@ -117,7 +108,7 @@ const Header: FC<HeaderProps> = () => {
                             )}
                           >
                             <Link
-                              className="text-foreground font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
+                              className="text-foreground hover:underline font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
                               href={
                                 "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiJzCdUF1Xtk8lBi1RnmfQyYqaNL52Fzu7hpWo"
                               }
@@ -129,7 +120,7 @@ const Header: FC<HeaderProps> = () => {
                       </div>
                     </div>
                   </div>
-                  <ul className="flex flex-col items-start justify-center gap-3">
+                  <ul className="flex order-first md:order-last flex-col items-start justify-center gap-3">
                     {mainNavContents.map((item, i) => (
                       <li
                         className={cn(

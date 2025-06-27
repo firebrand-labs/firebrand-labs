@@ -148,7 +148,7 @@ const page: FC<pageProps> = () => {
 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-6">
                   <Link
-                    href={"/"}
+                    href={"/contact"}
                     className={cn(
                       buttonVariants({ variant: "outline", size: "lg" }),
                       "font-paragraph tracking-wide relative group rounded-full flex items-center justify-between text-subtitle-heading font-normal bg-yellow-level-five py-4 hover:bg-bg-yellow-level-five/70 border-yellow-level-five hover:text-foreground min-w-[246px] min-h-[48px]"
@@ -161,7 +161,7 @@ const page: FC<pageProps> = () => {
                     href={"/"}
                     className={cn(
                       buttonVariants({ variant: "outline" }),
-                      "min-w-[246px] min-h-[48px] rounded-full bg-transparent hover:bg-foreground font-paragraph text-subtitle-heading !hover:text-transparent border-foreground"
+                      "min-w-[246px] min-h-[48px] rounded-full bg-transparent hover:bg-foreground font-paragraph text-subtitle-heading !hover:text-transparent border-foreground hidden"
                     )}
                   >
                     play virtually
