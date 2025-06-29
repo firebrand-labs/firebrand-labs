@@ -177,7 +177,7 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
         >
           Let's talk about
         </Label>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-wrap flex-row gap-2">
           {["SERVICES", "JOBS", "PRODUCTS", "OTHER"].map((item: string) => (
             <Button
               key={item}

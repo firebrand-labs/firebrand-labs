@@ -50,7 +50,8 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
 
       if (isMobile) {
         // More aggressive scrolling for mobile
-        return `-${Math.max(scrollPercentage - 200, 10)}%`;
+
+        return `-${Math.max(scrollPercentage - 280, 20)}%`;
       } else if (isTablet) {
         return `-${Math.max(scrollPercentage + 10, 50)}%`;
       } else {
@@ -69,14 +70,14 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
     const x = useTransform(
       scrollYProgress,
       [0, 1],
-      [isMobile ? "100%" : "60%", scrollDistance]
+      [isMobile ? "40%" : "40%", scrollDistance]
     );
 
     return (
       <section
         ref={targetRef}
         className={`w-screen flex-col items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative ${
-          isMobile ? "h-[200vh]" : "h-[600vh]"
+          isMobile ? "h-[200vh]" : "h-[500vh]"
         }`}
       >
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] overflow-hidden">
@@ -116,7 +117,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
 
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button className="cursor-pointer group flex items-center justify-center min-w-12 text-paragraph-heading font-semibold text-foreground hover:text-foreground hover:bg-transparent p-0  text-left">
+                        <Button className="cursor-pointer group flex items-center justify-center min-w-12 text-paragraph-heading font-semibold text-foreground hover:text-foreground bg-transparent hover:bg-transparent p-0  text-left">
                           <Icons.ArrowRight className="w-28 scale-200 stroke-foreground rotate-0 group-hover:-rotate-45 transition-transform duration-200" />
                         </Button>
                       </DialogTrigger>

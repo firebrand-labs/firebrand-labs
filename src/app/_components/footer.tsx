@@ -26,7 +26,7 @@ const Footer: FC<pageProps> = ({ children, className }) => {
       </section>
       <div
         className={cn(
-          "flex items-center justify-center flex-col min-w-screen  bg-yellow-level-four overflow-x-hidden  pt-16 md:pb-8"
+          "flex items-center justify-center flex-col min-w-screen  bg-yellow-level-four overflow-x-hidden  pt-16 md:pb-8 overflow-y-hidden"
         )}
       >
         <div className="container flex flex-col items-center justify-start md:justify-center">
