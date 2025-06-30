@@ -58,7 +58,7 @@ const page: FC<pageProps> = () => {
                   </p>
                   <p className="text-extra-subtitle-heading text-foreground max-w-sm leading-normal font-paragraph tracking-wide">
                     no 12, first floor, karpagam gardens 1st cross street,
-                    adyar, chennai-200020
+                    adyar, chennai-600020
                   </p>
                 </div>
               </div>
