@@ -6,15 +6,21 @@ import { FC } from "react";
 import { Icons } from "@/app/_components/icons";
 import { AnimatedTextReveal } from "@/app/_components/animated-text";
 import FBLButton from "@/app/_components/fbl-button";
+import React from "react";
 
 interface pageProps {
   children?: React.ReactNode;
   className?: string;
 }
 
-const Footer: FC<pageProps> = ({ children, className }) => {
+export type FooterProps = React.HTMLAttributes<HTMLElement>;
+const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
   return (
-    <footer className={cn("w-full bg-background", className)}>
+    <footer
+      ref={ref}
+      {...props}
+      className={cn("w-full bg-background", props.className)}
+    >
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-[image:initial] bg-yellow-level-four py-16 md:py-36 ">
         <div className="container flex flex-col items-start justify-center gap-2">
           <AnimatedTextReveal
@@ -93,6 +99,6 @@ const Footer: FC<pageProps> = ({ children, className }) => {
       </div>
     </footer>
   );
-};
+});
 
 export default Footer;

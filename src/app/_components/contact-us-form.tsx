@@ -52,8 +52,9 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
       const res = await createContact.mutateAsync(formData);
       if (res.length) {
         toast({
-          title: "Your data has been Submitted",
-          description: "Please Check your data",
+          title: "Thank you for reaching out!",
+          description:
+            "We've received your message and will get back to you shortly.",
           variant: "default",
         });
         return reset();

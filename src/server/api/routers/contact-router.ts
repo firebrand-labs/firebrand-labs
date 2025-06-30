@@ -25,16 +25,16 @@ export const contactRouter = createTRPCRouter({
       const response = await resend.emails.create({
         from: "firebrandlabs@jeyakumarjeyaraj.in",
         to: "jeyakumar@firebrandlabs.in",
-        subject: "Thank you for contacting us",
-        text: `Thank you for contacting us. We will get back to you soon.`,
+        subject: "You Have a New Website Lead",
+        text: `You have received a new inquiry via the website contact form.`,
         html: `
-        <h2>New Contact Form Submission</h2>
+        <h2>A Visitor Has Reached Out via Contact Form</h2>
         <p><strong>Name:</strong> ${input.name}</p>
         <p><strong>Email:</strong> ${input.email}</p>
         <p><strong>Phone:</strong> ${input.phone}</p>
         <p><strong>Purpose:</strong> ${purposeMap[input.purpose]}</p>
-        <p><strong>Message:</strong></p>
-        <p style="background-color: #f5f5f5; padding: 15px; border-radius: 5px;">${input.message}</p>
+        <p><strong>Message:</strong>${input.message}</p>
+        
         <p><em>Submitted at: ${new Date().toLocaleString()}</em></p>
       `,
         headers: {
