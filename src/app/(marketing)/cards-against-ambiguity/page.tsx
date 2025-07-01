@@ -39,7 +39,7 @@ const page: FC<pageProps> = () => {
           </div>
         </section>
         <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background z-[10] bg-[image:var(--color-repeating-gradient)] min-h-svh py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi09Y3QHlw1XDjFSAfqtTI8r6nlO93vEsMkUcz')] before:bg-contain before:bg-no-repeat before:md:bg-right">
-          <div className="container flex items-start flex-col gap-4 justify-start">
+          <div className="container flex items-start flex-col gap-4 justify-start z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">
                 <AnimatedTextReveal

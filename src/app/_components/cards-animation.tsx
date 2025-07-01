@@ -7,6 +7,7 @@ import {
   AnimatedSpan,
   AnimatedTextReveal,
 } from "./animated-text";
+import { Icons } from "./icons";
 
 const CardsAnimation = () => {
   const containerRef = useRef(null);
@@ -131,7 +132,7 @@ const CardsAnimation = () => {
           >
             {/* Strategy Card (Purple) */}
             <motion.div
-              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center md:!ml-[200px] lg:!ml-[-140px] 2xl:!ml-[-160px]"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center md:!ml-[200px] lg:!ml-[-140px] 2xl:!ml-[-160px] "
               style={{
                 x: strategyCardX,
                 y: strategyCardY,
