@@ -51,7 +51,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
       if (isMobile) {
         // More aggressive scrolling for mobile
 
-        return `-${Math.max(scrollPercentage - 280, 20)}%`;
+        return `-${Math.max(scrollPercentage - 380, 20)}%`;
       } else if (isTablet) {
         return `-${Math.max(scrollPercentage + 10, 50)}%`;
       } else {
@@ -70,15 +70,13 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
     const x = useTransform(
       scrollYProgress,
       [0, 1],
-      [isMobile ? "40%" : "40%", scrollDistance]
+      [isMobile ? "20%" : "40%", scrollDistance]
     );
 
     return (
       <section
         ref={targetRef}
-        className={`w-screen flex-col items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative ${
-          isMobile ? "h-[200vh]" : "h-[500vh]"
-        }`}
+        className={`w-screen flex-col items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative h-[200vh] lg:h-[500vh] `}
       >
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] overflow-hidden">
           <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-8">
@@ -149,13 +147,13 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                           </div>
                           <div className="w-full flex flex-col md:flex-row gap-6 items-center justify-between md:col-start-2 md:col-end-4">
                             <div className="flex flex-col items-start justify-center gap-2 ">
-                              <h4 className="text-tertiary-heading max-w-4xl text-background lowercase leading-normal font-pixelify font-bold">
+                              <h4 className="text-tertiary-heading max-w-4xl text-black lowercase leading-normal font-pixelify font-bold">
                                 {item.name}
                               </h4>
-                              <p className="text-paragraph-heading max-w-4xl text-background lowercase leading-normal font-pixelify font-light">
+                              <p className="text-paragraph-heading max-w-4xl text-black lowercase leading-normal font-pixelify font-light">
                                 {item.popupContent.role}
                               </p>
-                              <ul className="text-background text-[17px] font-normal lowercase leading-normal font-pixelify">
+                              <ul className="text-black text-[17px] font-normal lowercase leading-normal font-pixelify">
                                 {item.popupContent.description.map(
                                   (subItem, i) => (
                                     <li key={i}>{subItem}</li>
@@ -164,39 +162,45 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                               </ul>
                             </div>
                             <ul className="flex flex-row md:flex-col gap-3 items-center w-full justify-start md:justify-center">
-                              <li
-                                className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
-                                style={{
-                                  backgroundColor:
-                                    item.popupContent.colors.paletteX,
-                                }}
-                              >
-                                <Link href={item.popupContent.linkedIn}>
-                                  <Icons.LinkedInFBL className="w-6 h-6 " />
-                                </Link>
-                              </li>
-                              <li
-                                className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
-                                style={{
-                                  backgroundColor:
-                                    item.popupContent.colors.paletteX,
-                                }}
-                              >
-                                <Link href={item.popupContent.phone}>
-                                  <Icons.PhoneFBL className="w-6 h-6 " />
-                                </Link>
-                              </li>
-                              <li
-                                className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
-                                style={{
-                                  backgroundColor:
-                                    item.popupContent.colors.paletteX,
-                                }}
-                              >
-                                <Link href={item.popupContent.mail}>
-                                  <Icons.GmailFBL className="w-6 h-6 " />
-                                </Link>
-                              </li>
+                              {item.popupContent.linkedIn ? (
+                                <li
+                                  className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
+                                  style={{
+                                    backgroundColor:
+                                      item.popupContent.colors.paletteX,
+                                  }}
+                                >
+                                  <Link href={item.popupContent.linkedIn}>
+                                    <Icons.LinkedInFBL className="w-6 h-6 " />
+                                  </Link>
+                                </li>
+                              ) : null}
+                              {item.popupContent.phone ? (
+                                <li
+                                  className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
+                                  style={{
+                                    backgroundColor:
+                                      item.popupContent.colors.paletteX,
+                                  }}
+                                >
+                                  <Link href={item.popupContent.phone}>
+                                    <Icons.PhoneFBL className="w-6 h-6 " />
+                                  </Link>
+                                </li>
+                              ) : null}
+                              {item.popupContent.mail ? (
+                                <li
+                                  className="flex items-center justify-center  p-2 rounded-md border-2 border-background shadow-lg"
+                                  style={{
+                                    backgroundColor:
+                                      item.popupContent.colors.paletteX,
+                                  }}
+                                >
+                                  <Link href={item.popupContent.mail}>
+                                    <Icons.GmailFBL className="w-6 h-6 " />
+                                  </Link>
+                                </li>
+                              ) : null}
                             </ul>
                           </div>
                         </div>

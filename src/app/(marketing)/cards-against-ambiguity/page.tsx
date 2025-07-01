@@ -103,16 +103,16 @@ const page: FC<pageProps> = () => {
             {cardsAgainstAmbiguityContent.map((item, i) => (
               <div
                 key={i}
-                className="max-w-[80%] bg-background flex flex-col  items-start justify-between rounded-2xl origin-center  px-3 py-6 min-h-[400px] "
+                className="max-w-[80%] bg-background flex flex-col  items-start justify-between rounded-2xl origin-center  px-3 py-6 min-h-[300px] min-w-[340px]"
               >
-                <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading">
+                <h3 className="hidden text-tertiary-heading text-foreground leading-tight font-light font-heading min-h-[40.25%]">
                   {item.title}
                 </h3>
-                <p className="text-extra-subtitle-heading tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph min-h-[66.25%]">
+                <p className="text-tertiary-heading tracking-wide text-foreground leading-normal font-light font-paragraph min-h-[28.25%]">
                   {item.description}
                 </p>
                 <div className="w-full flex items-center justify-between">
-                  <span className="text-[14px] tracking-wide text-[#E4E4E4] leading-normal font-light font-paragraph">
+                  <span className="text-[14px] tracking-wide text-foreground leading-normal font-light font-paragraph">
                     Cards Against Ambiguity
                   </span>
                 </div>

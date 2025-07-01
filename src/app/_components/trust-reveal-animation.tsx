@@ -58,10 +58,10 @@ const TrustRevealAnimation: FC<TrustRevealAnimationProps> = ({ children }) => {
                         how did we survive 16 years in this industry?
                       </p>
                       <button
-                        className="cursor-pointer"
+                        className="cursor-pointer  animate-bounce"
                         onClick={() => setClicked(true)}
                       >
-                        <Icons.QuestionMark className="w-9 h-9" />
+                        <Icons.QuestionMark className="w-9 h-9 " />
                       </button>
                     </div>
                   </div>

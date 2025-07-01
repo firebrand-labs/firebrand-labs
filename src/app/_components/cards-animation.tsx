@@ -7,6 +7,7 @@ import {
   AnimatedSpan,
   AnimatedTextReveal,
 } from "./animated-text";
+import Image from "next/image";
 import { Icons } from "./icons";
 
 const CardsAnimation = () => {
@@ -160,6 +161,7 @@ const CardsAnimation = () => {
             </motion.div>
 
             {/* Design Card (Pink) */}
+
             <motion.div
               className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center !ml-[-100px] lg:!ml-[-140px] 2xl:!ml-[-160px]"
               style={{

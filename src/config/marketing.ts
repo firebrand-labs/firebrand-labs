@@ -19,9 +19,9 @@ export const teamContent = [
       description: [
         "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era. he blends the two effortlessly - staying sharp, strategic, and always a step ahead. in 2009, he started Firebrand Labs to do high energy creative work every day and built just that. FBL is where ideas meet execution and filter kaapi meets strategy. a true believer that creativity is forever (unga appa’s wisdom meets today’s swipe culture) also, ask him about A.R. Rahman, single malts, or the perfect podi dosa spot and he’ll light up.",
       ],
-      linkedIn: "",
-      phone: "",
-      mail: "",
+      linkedIn: "https://www.linkedin.com/in/arvindaathreya/",
+      phone: "tel:+91 97899 61681",
+      mail: "mailto:arvind@firebrandlabs.in",
     },
   },
   {
@@ -36,9 +36,9 @@ export const teamContent = [
       description: [
         "co-founder. head of design and a silent storm. arun doesn’t speak much, but when he does, it’s usually a quiet truth bomb that leaves the room thinking. an introvert by nature, he saves all his loudest ideas for the canvas. his design philosophy is deeply intentional, always rooted in clarity, calm, and craft. while others debate loudly, he sketches quietly- and somehow always lands on the most elegant solution. a big sweet tooth (keep the rasmalai ready), and a bigger believer in good design that speaks without shouting.",
       ],
-      linkedIn: "",
+      linkedIn: "https://www.linkedin.com/in/arunkumar-ravi-64488527/",
       phone: "",
-      mail: "",
+      mail: "mailto:arun@firebrandlabs.in",
     },
   },
 ];
@@ -92,11 +92,11 @@ export const subTeamContent = [
     id: "2",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXihumEBH6oT9zY4RZi3mHWGrt8c6Jfu2CsDxdF",
     name: "Leander Angus",
-    role: "Design",
+    role: "Design Generalist",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Design",
+      role: "Design Generalist",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXidymadoPkrzhSlqk7RA6bD81c3ImFGwXMnpfJ",
       description: [
@@ -114,13 +114,13 @@ export const subTeamContent = [
   },
   {
     id: "3",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXimnjUAbxnxFRDLNhCflXWv2E74VUG6OIzA1eB",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiruihH5RJFRBT8aQqkgE92yd5704YtCcpPWIr",
     name: "Mona Adesara",
-    role: "Account Manager",
+    role: "Client Relationship Manager",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Account Manager",
+      role: "Client Relationship Manager",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiGyEXv9T3MbB0KQVEsekpNuFlAhTqoIaSgt4J",
       description: [
@@ -140,11 +140,11 @@ export const subTeamContent = [
     id: "4",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiTQvlS6KIMWgkEnv74iHl2QFSd9ARhNeBYzma",
     name: "Vimalraj M",
-    role: "Tech",
+    role: "Software Developer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Tech",
+      role: "Software Developer",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXikIU9rxhjX0VC6iL3lRYcyTp4jzeJnadKImDw",
       description: [
@@ -164,11 +164,11 @@ export const subTeamContent = [
     id: "14",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiYWdi6haaFA1G7468OT30okvCZcSfMmXJb9Is",
     name: "Kirtana Haridas",
-    role: "Marketing",
+    role: "Creative strategist",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Marketing",
+      role: "Creative strategist",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiAoDvX3NVk0ZBrJ3sivm7FtRybneCAqMGz2oN",
       description: [
@@ -187,12 +187,12 @@ export const subTeamContent = [
   {
     id: "12",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXivS1rCu3ckJ850SeYLr7Ej9q6hwR1AZmiuf3U",
-    name: "Venkatesh S",
-    role: "Tech",
+    name: "Venkatesh",
+    role: "Software Developer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Tech",
+      role: "Software Developer",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKHdIXI40uc9qOMHzApnW38NDejVaClskLmrx",
       description: [
@@ -212,11 +212,11 @@ export const subTeamContent = [
     id: "6",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi3jILKQ6dO2hSNi7wCrDRl8q0bWj5QUvsJxoM",
     name: "Brindha Prabu",
-    role: "Design",
+    role: "Design Generalist",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Design",
+      role: "Design Generalist",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXisqA4oqtVLIobTqySHNWmrU0nFD3G1uYZCv5A",
       description: [
@@ -237,11 +237,11 @@ export const subTeamContent = [
     id: "9",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXipejCElXytQXi94mwLn0Wag1vC56DZbAkOKPB",
     name: "Akriti Krishnamurty",
-    role: "Branding",
+    role: "Client Relationship Manager",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Branding",
+      role: "Client Relationship Manager",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigbKEDOA7l16tQ289KNofiDrnEuvmRbjhqdTc",
       description: [
@@ -260,12 +260,12 @@ export const subTeamContent = [
   {
     id: "11",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXicpoZmuwVfrHgnRDTBX1y8AO9Quk740MJlmSt",
-    name: "Santhosh S",
-    role: "Design",
+    name: "santhosh s",
+    role: "Design Generalist",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Design",
+      role: "Design Generalist",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXibMbjrnfPrSGhD0TMiywnpFZERx7f4KaN83jt",
       description: [
@@ -283,13 +283,13 @@ export const subTeamContent = [
   },
   {
     id: "12",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXicpoZmuwVfrHgnRDTBX1y8AO9Quk740MJlmSt",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXig9HhDwA7l16tQ289KNofiDrnEuvmRbjhqdTc",
     name: "Ritika Das",
-    role: "Account Manager",
+    role: "Client Relationship Manager",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Account Manager",
+      role: "Client Relationship Manager",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5E2vrpBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
       description: [
@@ -326,6 +326,54 @@ export const subTeamContent = [
         paletteX: "#D89CB8",
         paletteY: "#FFC6E0",
         paletteZ: "#E594B9",
+      },
+    },
+  },
+  {
+    id: "14",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQk8Zgd7IwFK269gvohLHr5a4VNqcYbpTnMXk",
+    name: "Manisankar S",
+    role: "Accounts & Administration",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
+    popupContent: {
+      role: "Accounts & Administration",
+      popupImage:
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5UMSeIBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
+      description: [
+        "accounts manager. silent force. lives up to his name. steady hand behind the scenes. with over four decades of experience, mani is the reason things run smoothly-even when the rest of us are in full chaos mode. when he is around, there’s no stress, all our bills are paid, and our books are balanced. quiet but razor-sharp, he’s built a reputation for keeping things in order, on time, and totally worry-free.",
+      ],
+      linkedIn: "",
+      phone: "",
+      mail: "",
+      colors: {
+        paletteX: "#8DB7BA",
+        paletteY: "#C3E3E5",
+        paletteZ: "#A0D0D3",
+      },
+    },
+  },
+  {
+    id: "15",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiYxDMsTaaFA1G7468OT30okvCZcSfMmXJb9Is",
+    name: "Vinay Varghese",
+    role: "Client Relationship Manager",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
+    popupContent: {
+      role: "Client Relationship Manager",
+      popupImage:
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXis5pTPdtVLIobTqySHNWmrU0nFD3G1uYZCv5A",
+      description: [
+        "client relationship manager. catching up on the slang, cruising on calm. vinay is quiet, unassuming, and deeply observant.born in the ’90s with a playlist that swings from opera to hard rock, he brings a wonderful mix of old soul and modern energy to every conversation.he’s thoughtful, measured, and always shows up with solutions.he does his best to keep up with Gen Z lingo and sometimes even gets it right. ",
+      ],
+      linkedIn: "",
+      phone: "",
+      mail: "",
+      colors: {
+        paletteX: "#8DB7BA",
+        paletteY: "#C3E3E5",
+        paletteZ: "#A0D0D3",
       },
     },
   },
@@ -406,18 +454,15 @@ export const firebrandLabsValuesContent = [
 export const cardsAgainstAmbiguityContent = [
   {
     title: "understand your business",
-    description:
-      "Your brand has a personality just like human beings do, answer the questions from your brand/business’ point of view. Can be played by an individual (a brand custodian) or a small group of key decision makers of the brand.",
+    description: "what did you learn from your last collaboration?",
   },
   {
     title: "understand your business",
-    description:
-      "Your brand has a personality just like human beings do, answer the questions from your brand/business’ point of view. Can be played by an individual (a brand custodian) or a small group of key decision makers of the brand.",
+    description: "name a person whose personality you wish you could emulate?",
   },
   {
     title: "understand your business",
-    description:
-      "Your brand has a personality just like human beings do, answer the questions from your brand/business’ point of view. Can be played by an individual (a brand custodian) or a small group of key decision makers of the brand.",
+    description: "what are your non-negotiable value?",
   },
 ];
 

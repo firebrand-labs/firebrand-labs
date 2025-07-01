@@ -71,7 +71,10 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
               every bold idea begins with a simple “why not?”
             </AnimatedSpan>
           </AnimatedRichText>
-          <motion.div style={{ x }} className="flex gap-12 md:gap-8">
+          <motion.div
+            style={{ x }}
+            className="flex gap-12 items-start md:gap-8"
+          >
             {Array.from([...teamContent]).map((item, i) => (
               <div
                 key={i}
@@ -130,21 +133,30 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                             </ul>
                           </div>
                           <ul className="flex flex-row md:flex-col gap-3 items-center w-full justify-start md:justify-center">
-                            <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
-                              <Link href={item.popupContent.linkedIn}>
-                                <Icons.LinkedInFBL className="w-6 h-6 " />
-                              </Link>
-                            </li>
-                            <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
-                              <Link href={item.popupContent.phone}>
-                                <Icons.PhoneFBL className="w-6 h-6 " />
-                              </Link>
-                            </li>
-                            <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
-                              <Link href={item.popupContent.mail}>
-                                <Icons.GmailFBL className="w-6 h-6 " />
-                              </Link>
-                            </li>
+                            {item.popupContent.linkedIn ? (
+                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                                <Link
+                                  target="_blank"
+                                  href={item.popupContent.linkedIn}
+                                >
+                                  <Icons.LinkedInFBL className="w-6 h-6 " />
+                                </Link>
+                              </li>
+                            ) : null}
+                            {item.popupContent.phone ? (
+                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                                <Link href={item.popupContent.phone}>
+                                  <Icons.PhoneFBL className="w-6 h-6 " />
+                                </Link>
+                              </li>
+                            ) : null}
+                            {item.popupContent.mail ? (
+                              <li className="flex items-center justify-center bg-[#ABB5DF] p-2 rounded-md border-2 border-background shadow-lg">
+                                <Link href={item.popupContent.mail}>
+                                  <Icons.GmailFBL className="w-6 h-6 " />
+                                </Link>
+                              </li>
+                            ) : null}
                           </ul>
                         </div>
                       </div>
