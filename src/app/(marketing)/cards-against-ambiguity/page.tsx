@@ -14,6 +14,20 @@ import {
   AnimatedSpan,
   AnimatedTextReveal,
 } from "@/app/_components/animated-text";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "firebrand labs - caa",
+  description: "solving business challenges using design and creativity",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon.png",
+    },
+  ],
+};
 
 interface pageProps {}
 

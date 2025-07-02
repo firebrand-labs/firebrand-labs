@@ -4,7 +4,20 @@ import Footer from "@/app/_components/footer";
 import ReactLenis from "@/app/_components/react-lenis";
 import Link from "next/link";
 import { FC } from "react";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "firebrand labs - contact",
+  description: "solving business challenges using design and creativity",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon.png",
+    },
+  ],
+};
 interface pageProps {}
 
 const page: FC<pageProps> = () => {

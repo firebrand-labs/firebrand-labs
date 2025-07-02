@@ -21,6 +21,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import RandomCards from "@/app/_components/random-cards";
 import Footer from "@/app/_components/footer";
+import { Metadata } from "next/types";
 
 function useParallax(
   value: MotionValue<number>,
@@ -89,10 +90,10 @@ const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
                       how did we survive 16 years in this industry?
                     </p>
                     <button
-                      className="cursor-pointer"
+                      className="cursor-pointer animate-bounce"
                       onClick={() => setClicked(true)}
                     >
-                      <Icons.QuestionMark className="w-9 h-9" />
+                      <Icons.QuestionMark className="w-9 h-9 " />
                     </button>
                   </div>
                 </div>
@@ -408,11 +409,14 @@ const FooterSection: React.FC<SectionProps> = ({ isActive }) => {
   const ref = useRef<HTMLElement>(null);
 
   return (
-    <Footer ref={ref} className="bg-[image:initial] bg-yellow-level-four" />
+    <Footer
+      ref={ref}
+      className="bg-[image:initial] bg-yellow-level-four 2xl:min-h-screen 2xl:flex 2xl:flex-col 2xl:justify-end"
+    />
   );
 };
 
-const page: React.FC = () => {
+const HomeSections: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ container: containerRef });
   const scaleX = useSpring(scrollYProgress, {
@@ -569,4 +573,4 @@ const page: React.FC = () => {
   );
 };
 
-export default page;
+export default HomeSections;

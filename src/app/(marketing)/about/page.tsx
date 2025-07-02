@@ -13,7 +13,21 @@ import SubHorizontalTeamSection from "@/app/_components/sub-horizontal-team-sect
 import { Switch } from "@/app/_components/ui/switch";
 
 import Image from "next/image";
+import { Metadata } from "next/types";
 import { FC, Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: "firebrand labs - about",
+  description: "solving business challenges using design and creativity",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon.png",
+    },
+  ],
+};
 
 interface pageProps {}
 
