@@ -90,7 +90,7 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                   />
                 </div>
                 <div className="flex flex-col items-start justify-end gap-3 py-2 md:py-4">
-                  <h4 className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-paragraph font-normal">
+                  <h4 className="text-paragraph-heading max-w-4xl text-foreground leading-normal lowercase font-paragraph font-normal">
                     {item.name}
                   </h4>
                   <p className="text-subtitle-heading max-w-4xl text-foreground leading-normal font-light font-paragraph">
@@ -160,6 +160,7 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                           </ul>
                         </div>
                       </div>
+
                       <DialogFooter className="hidden" />
                     </DialogContent>
                   </Dialog>

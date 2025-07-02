@@ -18,7 +18,7 @@ import { FC, Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "firebrand labs - about",
-  description: "solving business challenges using design and creativity",
+  description: "Building better brands with strategy and design.",
   icons: [
     {
       rel: "icon",
@@ -72,7 +72,7 @@ const page: FC<pageProps> = () => {
                 </AnimatedSpan>
               </AnimatedRichText>
             </div>
-            <div className="flex flex-col items-center justify-center gap-12 border border-foreground rounded-2xl w-full min-h-[75.75vh]">
+            <div className="flex flex-col items-center justify-center gap-12 md:gap-20 border border-foreground rounded-2xl w-full min-h-[75.75vh]">
               <Switch className="w-[240px] h-[120px] rounded-full" />
             </div>
           </div>
@@ -82,21 +82,21 @@ const page: FC<pageProps> = () => {
           <div className="container flex flex-col items-start justify-center gap-2">
             <div className="flex items-end gap-12 md:gap-16 justify-end ">
               <p className="text-tertiary-heading text-foreground leading-tight font-paragraph font-light">
-                <span className="font-semibold text-5xl md:text-9xl leading-tight text-yellow-level-one font-paragraph">
+                <span className="font-semibold text-5xl md:text-9xl leading-[0.6] text-yellow-level-one font-paragraph">
                   15
                 </span>
                 <br />
                 years.
               </p>
               <p className="text-tertiary-heading text-foreground leading-tight font-paragraph font-light">
-                <span className="font-semibold text-5xl md:text-9xl leading-tight text-yellow-level-one font-paragraph">
+                <span className="font-semibold text-5xl md:text-9xl leading-[0.6] text-yellow-level-one font-paragraph">
                   150+
                 </span>
                 <br />
                 clients.
               </p>
               <p className="text-tertiary-heading text-foreground leading-tight font-paragraph font-light">
-                <span className="font-semibold text-5xl md:text-9xl leading-tight text-yellow-level-one font-paragraph">
+                <span className="font-semibold text-5xl md:text-9xl leading-[0.6] text-yellow-level-one font-paragraph">
                   1
                 </span>
                 <br />

@@ -9,7 +9,7 @@ export const teamContent = [
   {
     id: "1",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXifi2fTBes3N7H0IACvRLnDxGrdJ2WiBbjywKt",
-    name: "Arvind Aathreya, Founder",
+    name: "Arvind Aathreya",
     description:
       "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era.",
     popupContent: {
@@ -339,7 +339,7 @@ export const subTeamContent = [
     popupContent: {
       role: "Accounts & Administration",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5UMSeIBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigD8nUuA7l16tQ289KNofiDrnEuvmRbjhqdTc",
       description: [
         "accounts manager. silent force. lives up to his name. steady hand behind the scenes. with over four decades of experience, mani is the reason things run smoothly-even when the rest of us are in full chaos mode. when he is around, there’s no stress, all our bills are paid, and our books are balanced. quiet but razor-sharp, he’s built a reputation for keeping things in order, on time, and totally worry-free.",
       ],

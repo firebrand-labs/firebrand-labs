@@ -18,9 +18,19 @@ const Switch = React.forwardRef<
 
   return (
     <>
-      <h2 className="text-3xl md:text-6xl text-yellow-level-five/70 leading-tight font-bold ">
-        Thinking
-      </h2>
+      <div className="flex max-w-5xl">
+        <h2 className="text-3xl md:text-6xl text-yellow-level-five leading-tight font-bold inline-flex mr-3">
+          Thinking
+        </h2>
+        <h2
+          className={cn(
+            "text-3xl md:text-6xl text-yellow-level-five leading-tight font-bold text-center opacity-0 ease-in duration-100",
+            checked && "opacity-100"
+          )}
+        >
+          + Doing
+        </h2>
+      </div>
       <SwitchPrimitives.Root
         className={cn(
           "peer  inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-foreground data-[state=unchecked]:bg-foreground",
@@ -46,15 +56,6 @@ const Switch = React.forwardRef<
           )}
         </SwitchPrimitives.Thumb>
       </SwitchPrimitives.Root>
-      <h2
-        className={cn(
-          "text-3xl md:text-6xl text-yellow-level-five leading-tight font-bold text-center opacity-0 ease-in duration-100",
-          checked && "opacity-100"
-        )}
-      >
-        + <br />
-        Doing
-      </h2>
     </>
   );
 });

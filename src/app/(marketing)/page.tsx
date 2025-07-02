@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "firebrand labs",
-  description: "solving business challenges using design and creativity",
+  description: "Building better brands with strategy and design.",
   icons: [
     {
       rel: "icon",

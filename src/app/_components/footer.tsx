@@ -25,7 +25,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
         <div className="container flex flex-col items-start justify-center gap-2">
           <AnimatedTextReveal
             text="Would you like us to be your extended marketing officers?"
-            className="text-secondary-heading  max-w-4xl text-background leading-tight tracking-wide font-normal font-heading"
+            className="text-secondary-heading  max-w-3xl 2xl:max-w-4xl text-background leading-tight tracking-wide font-normal font-heading"
           />
           <FBLButton href="/contact" body="get in touch" />
         </div>

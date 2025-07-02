@@ -42,7 +42,7 @@ const Header: FC<HeaderProps> = () => {
                 variant="outline"
                 className="bg-transparent border-none hover:bg-transparent hover:text-foreground font-paragraph cursor-pointer"
               >
-                Open
+                Menu
               </Button>
             </SheetTrigger>
             <SheetContent className="min-h-screen flex items-center bg-background bg-[image:var(--color-repeating-gradient)] justify-center w-full">

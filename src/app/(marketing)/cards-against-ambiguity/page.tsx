@@ -18,7 +18,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "firebrand labs - caa",
-  description: "solving business challenges using design and creativity",
+  description: "Building better brands with strategy and design.",
   icons: [
     {
       rel: "icon",
@@ -140,23 +140,24 @@ const page: FC<pageProps> = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">
                 <AnimatedTextReveal
-                  text="buy the entire pack"
+                  text="Explore the full set"
                   className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading"
                 />
 
                 <AnimatedRichText delay={1.6}>
                   <AnimatedSpan
-                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-semibold font-paragraph"
+                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-normal mb-2 font-paragraph"
                     delay={1.8}
                   >
                     The complete pack consists of 54 unique question cards.
+                    Designed to help you make sense of things, get unstuck and
+                    think a little deeper.
                   </AnimatedSpan>
                   <AnimatedSpan
                     className="text-subtitle-heading tracking-wide text-foreground leading-normal font-light font-paragraph"
                     delay={1.8}
                   >
-                    Place an order for your own pack of cards to keep it handy
-                    for the next time you are overwhelmed by ambiguity.
+                    Keep the deck handy for when you need a fresh perspective.
                   </AnimatedSpan>
                 </AnimatedRichText>
 
@@ -165,10 +166,10 @@ const page: FC<pageProps> = () => {
                     href={"/contact?query=caa"}
                     className={cn(
                       buttonVariants({ variant: "outline", size: "lg" }),
-                      "font-paragraph tracking-wide relative group rounded-full flex items-center justify-between text-subtitle-heading font-normal bg-yellow-level-five py-4 hover:bg-bg-yellow-level-five/70 border-yellow-level-five hover:text-foreground min-w-[246px] min-h-[48px]"
+                      "font-paragraph tracking-wide relative group rounded-full flex items-center justify-between text-subtitle-heading font-normal bg-yellow-level-five py-4 hover:bg-bg-yellow-level-five/70 border-yellow-level-five hover:text-foreground min-w-[286px] min-h-[48px]"
                     )}
                   >
-                    place order
+                    draw your question
                     <Icons.ArrowRight className="!h-[40px] !w-[68px] absolute right-0.5 top-1/2  -translate-y-1/2 rounded-full  stroke-yellow-level-five bg-foreground group-hover:bg-foreground/80 transition-colors duration-150" />
                   </Link>
                   <Link
