@@ -163,7 +163,7 @@ const CardsAnimation = () => {
             {/* Design Card (Pink) */}
 
             <motion.div
-              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center !ml-[-100px] lg:!ml-[-140px] 2xl:!ml-[-160px]"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center !ml-[-100px] lg:!ml-[-140px] 2xl:!ml-[-160px] "
               style={{
                 x: designCardX,
                 y: designCardY,
@@ -191,8 +191,9 @@ const CardsAnimation = () => {
             </motion.div>
 
             {/* Build Card (Orange) */}
+
             <motion.div
-              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center md:!ml-[200px] lg:!ml-[-140px] 2xl:!ml-[-160px]"
+              className="absolute w-60 h-80 py-6 px-4  2xl:w-80 2xl:h-96 bg-background flex flex-col items-start justify-between rounded-2xl origin-center md:!ml-[200px] lg:!ml-[-140px] 2xl:!ml-[-160px] "
               style={{
                 x: buildCardX,
                 y: buildCardY,
@@ -209,7 +210,7 @@ const CardsAnimation = () => {
               <h3 className="text-tertiary-heading text-foreground leading-tight font-light font-heading sr-only">
                 understand your business
               </h3>
-              <p className="text-tertiary-heading mt-4 md:mt-12   tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[46.25%]">
+              <p className="text-tertiary-heading mt-4 md:mt-12   tracking-wide text-foreground/70 leading-tight font-light font-paragraph min-h-[46.25%] ">
                 what are your non-negotiable value?
               </p>
               <div className="w-full flex items-center justify-between">

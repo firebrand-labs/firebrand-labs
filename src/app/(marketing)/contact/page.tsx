@@ -3,7 +3,7 @@ import ContactUsForm from "@/app/_components/contact-us-form";
 import Footer from "@/app/_components/footer";
 import ReactLenis from "@/app/_components/react-lenis";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, Suspense } from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -80,7 +80,9 @@ const page: FC<pageProps> = () => {
                 <p className="text-extra-subtitle-heading lowercase text-foreground/75 leading-normal font-paragraph">
                   NO THANKS, I WOULD RATHER SEND A MESSAGE
                 </p>
-                <ContactUsForm />
+                <Suspense fallback={<div>Loading form...</div>}>
+                  <ContactUsForm />
+                </Suspense>
               </div>
             </div>
           </div>
