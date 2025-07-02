@@ -4,9 +4,10 @@ import { TRPCReactProvider } from "@/trpc/react";
 import type { Metadata } from "next";
 import { Shadows_Into_Light, Pixelify_Sans } from "next/font/google";
 import localFont from "next/font/local";
-import ScrollSnapHandler from "./_components/scroll-snap-handler";
+import ScrollSnapHandler from "@/app/_components/scroll-snap-handler";
 import "./globals.css";
 import { Toaster } from "@/app/_components/ui/toaster";
+import GoogleAnalytics from "@/app/_components/google-analytics";
 
 const paragraph = localFont({
   src: [
@@ -90,6 +91,7 @@ export default function RootLayout({
         <TRPCReactProvider>
           <ThemeProvider defaultTheme="dark" attribute="class">
             <ScrollSnapHandler />
+            <GoogleAnalytics />
             {children}
             <Toaster />
           </ThemeProvider>

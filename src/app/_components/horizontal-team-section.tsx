@@ -118,10 +118,10 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                         </div>
                         <div className="w-full flex flex-col md:flex-row gap-6 items-center justify-between md:col-start-2 md:col-end-4">
                           <div className="flex flex-col items-start justify-center gap-2 ">
-                            <h4 className="text-tertiary-heading max-w-4xl text-foreground leading-normal font-pixelify font-bold">
+                            <h4 className="text-tertiary-heading max-w-4xl text-foreground lowercase leading-normal font-pixelify font-bold">
                               {item.name}
                             </h4>
-                            <p className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-pixelify font-light">
+                            <p className="text-paragraph-heading max-w-4xl text-foreground lowercase leading-normal font-pixelify font-light">
                               {item.popupContent.role}
                             </p>
                             <ul className="text-foreground text-[17px] font-normal leading-normal font-pixelify">
