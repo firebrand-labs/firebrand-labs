@@ -26,57 +26,31 @@ const colors = ["#263C7B", "#322A5E", "#84357B", "#4A4A48"];
 const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
   function () {
     const targetRef = useRef(null);
+
     const isMobile = useMediaQuery({ maxWidth: 767 });
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-
-    // Calculate scroll distances based on number of items and screen size
-    const itemCount = 7;
-    const itemWidth = isMobile ? 300 : 400; // Adjust item width for mobile
-    const gap = isMobile ? 12 : 32; // Different gaps for mobile/desktop
-
-    const scrollDistance = useMemo(() => {
-      if (typeof window === "undefined") return "-80%";
-
-      const viewportWidth = window.innerWidth;
-      const containerPadding = isMobile
-        ? viewportWidth * 0.1
-        : viewportWidth * 0.2;
-      const visibleWidth = viewportWidth - containerPadding;
-
-      // Calculate how much we need to scroll to show all items
-      const totalItemWidth = itemWidth * itemCount + gap * (itemCount - 1);
-      const scrollNeeded = totalItemWidth - visibleWidth;
-      const scrollPercentage = (scrollNeeded / viewportWidth) * 100;
-
-      if (isMobile) {
-        // More aggressive scrolling for mobile
-
-        return `-${Math.max(scrollPercentage - 380, 20)}%`;
-      } else if (isTablet) {
-        return `-${Math.max(scrollPercentage + 10, 50)}%`;
-      } else {
-        return `-${Math.max(scrollPercentage, 80)}%`;
-      }
-    }, [isMobile, isTablet, itemWidth, gap, itemCount]);
+    const isTablet = useMediaQuery({ maxWidth: 1280 });
+    const [scrollDistance, setScrollDistance] = useState("-89%");
 
     const { scrollYProgress } = useScroll({
       target: targetRef,
-      // Adjust offset for better mobile experience
-      offset: isMobile
-        ? ["start end", "end start"]
-        : ["start end", "end start"],
     });
 
-    const x = useTransform(
-      scrollYProgress,
-      [0, 1],
-      [isMobile ? "20%" : "40%", scrollDistance]
-    );
+    useEffect(() => {}, []);
 
+    useEffect(() => {
+      console.log(isMobile, isTablet);
+      if (isMobile) {
+        setScrollDistance("-96%"); // Adjust this value for mobile
+      } else if (isTablet) {
+        setScrollDistance("-90%");
+      }
+    }, [isMobile, isTablet]);
+
+    const x = useTransform(scrollYProgress, [0, 1], ["5%", scrollDistance]);
     return (
       <section
         ref={targetRef}
-        className={`w-screen flex-col items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative h-[200vh] lg:h-[500vh] `}
+        className={`w-screen flex-col items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative h-[400vh] md:min-h-[1000vh] `}
       >
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] overflow-hidden">
           <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-8">

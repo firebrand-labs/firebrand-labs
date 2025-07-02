@@ -15,7 +15,7 @@ export const contactUsTable = createTable("contact-us", {
   phone: text("phone").notNull(),
   message: text("message").notNull(),
   purpose: varchar("purpose", {
-    enum: ["SERVICES", "JOBS", "PRODUCTS", "OTHER"],
+    enum: ["SERVICES", "JOBS", "PRODUCTS", "OTHER", "CAA"],
   }).notNull(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at")

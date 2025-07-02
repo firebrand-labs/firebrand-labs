@@ -1,5 +1,6 @@
 "use client";
-import { FC } from "react";
+import { FC, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { Button } from "@/app/_components/ui/button";
 import { Input } from "@/app/_components/ui/input";
 import { Label } from "@/app/_components/ui/label";
@@ -17,11 +18,14 @@ import { api } from "@/trpc/react";
 import { useToast } from "@/app/_components/ui/use-toast";
 import axios, { AxiosError } from "axios";
 import { z } from "zod";
+
 interface ContactUsFormProps {}
 
-type Purpose = "SERVICES" | "JOBS" | "PRODUCTS" | "OTHER";
+type Purpose = "SERVICES" | "JOBS" | "PRODUCTS" | "OTHER" | "CAA";
 
 const ContactUsForm: FC<ContactUsFormProps> = () => {
+  const searchParams = useSearchParams();
+
   const {
     handleSubmit,
     setValue,
@@ -36,6 +40,25 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
   });
 
   const { toast } = useToast();
+
+  // Set purpose based on URL query parameter
+  useEffect(() => {
+    const queryPurpose = searchParams.get("query");
+    if (queryPurpose) {
+      const normalizedPurpose = queryPurpose.toUpperCase();
+      const validPurposes: Purpose[] = [
+        "SERVICES",
+        "JOBS",
+        "PRODUCTS",
+        "CAA",
+        "OTHER",
+      ];
+
+      if (validPurposes.includes(normalizedPurpose as Purpose)) {
+        setValue("purpose", normalizedPurpose as Purpose);
+      }
+    }
+  }, [searchParams, setValue]);
 
   const createContact = api.contact.contactHandler.useMutation({
     onSuccess: async (data) => {
@@ -82,6 +105,7 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
       });
     }
   };
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -179,21 +203,23 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
           Let's talk about
         </Label>
         <div className="flex flex-wrap flex-row gap-2">
-          {["SERVICES", "JOBS", "PRODUCTS", "OTHER"].map((item: string) => (
-            <Button
-              key={item}
-              type="button"
-              onClick={() => setValue("purpose", item as Purpose)}
-              className={cn(
-                "uppercase rounded-full flex items-center justify-center bg-transparent text-background cursor-pointer border-background border hover:bg-background hover:text-foreground active:bg-background active:text-foreground",
-                watch("purpose") === item
-                  ? "bg-background text-foreground"
-                  : "text-background bg-transparent"
-              )}
-            >
-              {item}
-            </Button>
-          ))}
+          {["SERVICES", "JOBS", "PRODUCTS", "CAA", "OTHER"].map(
+            (item: string) => (
+              <Button
+                key={item}
+                type="button"
+                onClick={() => setValue("purpose", item as Purpose)}
+                className={cn(
+                  "uppercase rounded-full flex items-center justify-center bg-transparent text-background cursor-pointer border-background border hover:bg-background hover:text-foreground active:bg-background active:text-foreground",
+                  watch("purpose") === item
+                    ? "bg-background text-foreground"
+                    : "text-background bg-transparent"
+                )}
+              >
+                {item}
+              </Button>
+            )
+          )}
         </div>
       </div>
 

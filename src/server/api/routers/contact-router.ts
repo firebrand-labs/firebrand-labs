@@ -19,6 +19,7 @@ export const contactRouter = createTRPCRouter({
         JOBS: "Job Application",
         PRODUCTS: "Product Inquiry",
         OTHER: "Other",
+        CAA: "Cards Against Ambiguity",
       };
 
       const resend = new Resend(env.RESEND_KEY);
@@ -28,7 +29,6 @@ export const contactRouter = createTRPCRouter({
         subject: "You Have a New Website Lead",
         text: `You have received a new inquiry via the website contact form.`,
         html: `
-        <h2>A Visitor Has Reached Out via Contact Form</h2>
         <p><strong>Name:</strong> ${input.name}</p>
         <p><strong>Email:</strong> ${input.email}</p>
         <p><strong>Phone:</strong> ${input.phone}</p>
@@ -42,7 +42,7 @@ export const contactRouter = createTRPCRouter({
         },
       });
 
-      console.log(response);
+      console.log(response, input);
 
       if (!result) {
         throw new Error("Something went wrong, please try again later");
