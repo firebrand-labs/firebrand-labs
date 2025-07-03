@@ -236,7 +236,7 @@ export const subTeamContent = [
   {
     id: "9",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXipejCElXytQXi94mwLn0Wag1vC56DZbAkOKPB",
-    name: "Akriti Krishnamurty",
+    name: "AKRITI KRISHNAMURTHY",
     role: "Client Relationship Manager",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
@@ -245,7 +245,7 @@ export const subTeamContent = [
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigbKEDOA7l16tQ289KNofiDrnEuvmRbjhqdTc",
       description: [
-        "the wittiest Gen Z in the room-armed with coffee, comebacks, and a stash of kinder joy. akriti does it all with affable flair and a side of chicken. she’s quick on her feet, quicker with the sarcasm, and somehow always finds time to pet every dog and cat she sees. slightly erratic, totally loveable-she runs on caffeine, chaos, and a whole lot of charm.",
+        "the wittiest Gen Z in the room-armed with coffee, comebacks, and a stash of kinder joy. akriti does it all with affable flair and a side of judgement. she’s quick on her feet, quicker with the sarcasm, and somehow always finds time to pet every dog and cat she sees. slightly erratic, totally loveable-she runs on caffeine, chaos, and a whole lot of charm.",
       ],
       linkedIn: "",
       phone: "",

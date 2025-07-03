@@ -110,7 +110,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                             alt={item.name}
                             width={200}
                             height={300}
-                            className="max-w-[200px] max-h-[560px] object-contain md:w-full md:max-w-[260px]"
+                            className="max-w-[200px] max-h-[460px] object-contain md:w-full md:max-w-[260px]"
                           />
                           <Icons.ProfileBackdrop
                             className={cn(
