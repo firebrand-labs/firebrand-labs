@@ -3,18 +3,24 @@ import {
   AnimatedSpan,
   AnimatedTextReveal,
 } from "@/app/_components/animated-text";
+import CaaPopupForm from "@/app/_components/caa-popup-form";
 import FBLButton from "@/app/_components/fbl-button";
 import FirebrandValues from "@/app/_components/firebrand-values";
 import Footer from "@/app/_components/footer";
 import HorizontalTeamSection from "@/app/_components/horizontal-team-section";
+import { Icons } from "@/app/_components/icons";
 import ReactLenis from "@/app/_components/react-lenis";
 import { ScrollToHash } from "@/app/_components/scroll-to-hash";
 import SubHorizontalTeamSection from "@/app/_components/sub-horizontal-team-section";
+import { Button, buttonVariants } from "@/app/_components/ui/button";
 import { Switch } from "@/app/_components/ui/switch";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 import Image from "next/image";
 import { Metadata } from "next/types";
 import { FC, Suspense } from "react";
+import ReadTheBook from "@/app/_components/read-the-book";
 
 export const metadata: Metadata = {
   title: "firebrand labs - about",
@@ -199,11 +205,7 @@ const page: FC<pageProps> = () => {
                   approach of singularly focusing on one idea, and making it
                   your life, is indeed worthy of celebration.
                 </p>
-                <FBLButton
-                  body="read the book"
-                  target="_blank"
-                  href="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiJzCdUF1Xtk8lBi1RnmfQyYqaNL52Fzu7hpWo"
-                />
+                <ReadTheBook />
               </div>
 
               <div className="flex items-center justify-center">

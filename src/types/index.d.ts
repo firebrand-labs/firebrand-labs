@@ -10,3 +10,16 @@ export type NavItem = SubNavItem & {
 };
 
 export type MainNavItems = NavItem[];
+
+export type CountryData = {
+  name: {
+    common: string;
+    official: string;
+    nativeName: {
+      [languageCode: string]: {
+        official: string;
+        common: string;
+      };
+    };
+  };
+};

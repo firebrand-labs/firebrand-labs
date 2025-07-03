@@ -22,3 +22,16 @@ export const contactUsTable = createTable("contact-us", {
     .notNull()
     .$onUpdate(() => new Date()),
 });
+
+export const registerBookShema = createTable("read-the-book-form", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  email: text("email").notNull(),
+  phone: text("phone").notNull(),
+  city: text("city").notNull(),
+  country: text("country").notNull(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at")
+    .notNull()
+    .$onUpdate(() => new Date()),
+});

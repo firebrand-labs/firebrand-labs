@@ -166,7 +166,7 @@ const page: FC<pageProps> = () => {
                     href={"/contact?query=caa"}
                     className={cn(
                       buttonVariants({ variant: "outline", size: "lg" }),
-                      "font-paragraph tracking-wide relative group rounded-full flex items-center justify-between text-subtitle-heading font-normal bg-yellow-level-five py-4 hover:bg-bg-yellow-level-five/70 border-yellow-level-five hover:text-foreground min-w-[286px] min-h-[48px]"
+                      "font-paragraph tracking-wide relative group rounded-full flex items-center justify-between text-subtitle-heading font-normal bg-yellow-level-five py-4 hover:bg-bg-yellow-level-five/70 border-yellow-level-five hover:text-foreground min-w-[296px] min-h-[48px]"
                     )}
                   >
                     draw your question
