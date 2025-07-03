@@ -186,7 +186,10 @@ const page: FC<pageProps> = () => {
         <HorizontalTeamSection />
         <SubHorizontalTeamSection />
 
-        <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 pb-0 md:py-16">
+        <section
+          id="book"
+          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 pb-0 md:py-16"
+        >
           <div className="container flex flex-col items-start justify-center gap-8">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center">
