@@ -112,8 +112,9 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent>
+      <DialogContent className="max-w-[80vh] md:max-w-[35vw]">
         <DialogHeader className="hidden" />
+        <DialogTitle className="hidden" />
         <div className="flex flex-col items-center justify-center gap-6">
           <h3 className="font-paragraph text-tertiary-heading leading-normal text-foreground w-full">
             can we get to know you?

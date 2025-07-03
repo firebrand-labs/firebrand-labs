@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/app/_components/ui/button";
+import { Button, buttonVariants } from "@/app/_components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -14,6 +14,7 @@ import Link from "next/link";
 import { FC, useState } from "react";
 import { Icons } from "@/app/_components/icons";
 import { ModeToggle } from "@/app/_components/toggle-theme";
+import CaaPopupForm from "@/app/_components//caa-popup-form";
 
 interface HeaderProps {}
 
@@ -107,14 +108,11 @@ const Header: FC<HeaderProps> = () => {
                               //   i % 2 === 0 ? "text-right" : "text-left"
                             )}
                           >
-                            <Link
-                              className="text-foreground hover:underline font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
-                              href={
-                                "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiJzCdUF1Xtk8lBi1RnmfQyYqaNL52Fzu7hpWo"
-                              }
-                            >
-                              read the book
-                            </Link>
+                            <CaaPopupForm>
+                              <Button className="text-foreground hover:underline p-0 font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground">
+                                read the book
+                              </Button>
+                            </CaaPopupForm>
                           </li>
                         </ul>
                       </div>
