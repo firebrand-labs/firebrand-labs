@@ -166,7 +166,7 @@ export const Icons = {
         id="Mask_Group_8"
         data-name="Mask Group 8"
         transform="translate(-20341 -3195)"
-        clip-path="url(#clip-path)"
+        clipPath="url(#clip-path)"
       >
         <path
           id="Path_1454"

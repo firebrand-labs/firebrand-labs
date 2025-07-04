@@ -54,7 +54,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
             {Array.from({ length: 8 }).map((_, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 text-7xl relative md:text-7xl xl:text-9xl ml-8 pb-12  3xl:max-w-5xl font-normal font-paragraph text-background "
+                className="flex-shrink-0 text-7xl relative md:text-7xl xl:text-9xl ml-8 pb-12   font-normal font-paragraph text-background "
               >
                 we live in the space between chaos and clarity.
               </div>

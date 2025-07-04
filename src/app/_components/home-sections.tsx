@@ -139,7 +139,8 @@ const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
             )}
             // delay={1.5}
           >
-            Brand Design, Tech & Beyond. Marketing that is real.
+            Brand, Design, Tech & Beyond. <br />
+            Marketing that is real.
           </span>
         </div>
       </div>
@@ -431,6 +432,7 @@ const HomeSections: React.FC = () => {
   const [currentSection, setCurrentSection] = useState<number>(0);
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isApple, setIsApple] = useState<boolean>(false);
   const controls: AnimationControls = useAnimation();
 
   // Touch handling state
@@ -439,6 +441,10 @@ const HomeSections: React.FC = () => {
     startTime: 0,
     isScrolling: false,
   });
+
+  // Scroll accumulation for better control
+  const scrollAccumulator = useRef<number>(0);
+  const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
 
   const sections = [
     { component: HeroSection, name: "Hero" },
@@ -449,15 +455,25 @@ const HomeSections: React.FC = () => {
     { component: FooterSection, name: "Contact" },
   ];
 
-  // Check if device is mobile
+  // Check if device is mobile and if it's Apple
   useEffect(() => {
-    const checkMobile = () => {
+    const checkDevice = () => {
       setIsMobile(window.innerWidth < 1280); // md breakpoint in Tailwind
+
+      // Detect Apple devices
+      const userAgent = navigator.userAgent.toLowerCase();
+      const platform = navigator.platform.toLowerCase();
+      setIsApple(
+        userAgent.includes("mac") ||
+          platform.includes("mac") ||
+          userAgent.includes("iphone") ||
+          userAgent.includes("ipad")
+      );
     };
 
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
+    return () => window.removeEventListener("resize", checkDevice);
   }, []);
 
   const snapToSection = (sectionIndex: number): void => {
@@ -475,8 +491,16 @@ const HomeSections: React.FC = () => {
         })
         .then(() => {
           setCurrentSection(sectionIndex);
-          setTimeout(() => setIsScrolling(false), 100);
+          setTimeout(() => setIsScrolling(false), 150);
         });
+    }
+  };
+
+  const handleScrollDecision = (direction: "up" | "down") => {
+    if (direction === "down" && currentSection < sections.length - 1) {
+      snapToSection(currentSection + 1);
+    } else if (direction === "up" && currentSection > 0) {
+      snapToSection(currentSection - 1);
     }
   };
 
@@ -484,7 +508,7 @@ const HomeSections: React.FC = () => {
     // Only apply viewport scrolling on desktop
     if (isMobile) return;
 
-    // Desktop wheel handling
+    // Desktop wheel handling with improved Apple device support
     const handleWheel = (e: WheelEvent): void => {
       if (isScrolling) {
         e.preventDefault();
@@ -493,10 +517,48 @@ const HomeSections: React.FC = () => {
 
       e.preventDefault();
 
-      if (e.deltaY > 0 && currentSection < sections.length - 1) {
-        snapToSection(currentSection + 1);
-      } else if (e.deltaY < 0 && currentSection > 0) {
-        snapToSection(currentSection - 1);
+      // Different handling for Apple devices
+      if (isApple) {
+        // For Apple devices, use a more sophisticated approach
+        const delta = e.deltaY;
+        const absDelta = Math.abs(delta);
+
+        // Ignore very small scroll values (common on Apple devices)
+        if (absDelta < 5) return;
+
+        // Accumulate scroll values
+        scrollAccumulator.current += delta;
+
+        // Clear existing timeout
+        if (scrollTimeout.current) {
+          clearTimeout(scrollTimeout.current);
+        }
+
+        // Set a timeout to process the accumulated scroll
+        scrollTimeout.current = setTimeout(() => {
+          const threshold = 50; // Adjust this value to change sensitivity
+
+          if (Math.abs(scrollAccumulator.current) > threshold) {
+            if (scrollAccumulator.current > 0) {
+              handleScrollDecision("down");
+            } else {
+              handleScrollDecision("up");
+            }
+          }
+
+          scrollAccumulator.current = 0;
+        }, 50); // 50ms delay to accumulate scroll events
+      } else {
+        // For non-Apple devices, use the original logic
+        const threshold = 30; // Minimum scroll amount to trigger section change
+
+        if (Math.abs(e.deltaY) > threshold) {
+          if (e.deltaY > 0) {
+            handleScrollDecision("down");
+          } else {
+            handleScrollDecision("up");
+          }
+        }
       }
     };
 
@@ -504,10 +566,10 @@ const HomeSections: React.FC = () => {
     const handleKeyDown = (e: KeyboardEvent): void => {
       if (isScrolling) return;
 
-      if (e.key === "ArrowDown" && currentSection < sections.length - 1) {
-        snapToSection(currentSection + 1);
-      } else if (e.key === "ArrowUp" && currentSection > 0) {
-        snapToSection(currentSection - 1);
+      if (e.key === "ArrowDown") {
+        handleScrollDecision("down");
+      } else if (e.key === "ArrowUp") {
+        handleScrollDecision("up");
       }
     };
 
@@ -524,8 +586,13 @@ const HomeSections: React.FC = () => {
         container.removeEventListener("wheel", handleWheel);
       }
       window.removeEventListener("keydown", handleKeyDown);
+
+      // Clean up timeout
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
     };
-  }, [currentSection, isScrolling, sections.length, isMobile]);
+  }, [currentSection, isScrolling, sections.length, isMobile, isApple]);
 
   // Mobile: Normal scroll behavior
   if (isMobile) {

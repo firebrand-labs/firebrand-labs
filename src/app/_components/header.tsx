@@ -41,9 +41,9 @@ const Header: FC<HeaderProps> = () => {
             <SheetTrigger asChild>
               <Button
                 variant="outline"
-                className="bg-transparent border-none hover:bg-transparent hover:text-foreground font-paragraph cursor-pointer"
+                className="bg-transparent border-none hover:bg-transparent hover:text-foreground font-paragraph cursor-pointer w-12 h-12 p-2 group"
               >
-                Menu
+                <Icons.Menu className="!w-full !h-full stroke-foreground stroke-1 group-hover:stroke-foreground/80" />
               </Button>
             </SheetTrigger>
             <SheetContent className="min-h-screen flex items-center bg-background bg-[image:var(--color-repeating-gradient)] justify-center w-full">
@@ -109,7 +109,7 @@ const Header: FC<HeaderProps> = () => {
                             )}
                           >
                             <CaaPopupForm>
-                              <Button className="text-foreground hover:underline p-0 font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground">
+                              <Button className="text-foreground bg-transparent hover:underline p-0 font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground">
                                 read the book
                               </Button>
                             </CaaPopupForm>

@@ -86,7 +86,7 @@ const page: FC<pageProps> = () => {
 
         <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 md:py-16">
           <div className="container flex flex-col items-start justify-center gap-2">
-            <div className="flex items-end gap-12 md:gap-16 justify-end ">
+            <div className="flex items-end gap-12 md:gap-16 2xl:gap-28 justify-end ">
               <p className="text-tertiary-heading text-foreground leading-tight font-paragraph font-light">
                 <span className="font-semibold text-5xl md:text-9xl leading-[0.6] text-yellow-level-one font-paragraph">
                   15
@@ -135,9 +135,9 @@ const page: FC<pageProps> = () => {
           </div>
         </section>
 
-        <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background min-h-[60vh] md:min-h-screen bg-[image:var(--color-repeating-gradient)] py-16 relative">
+        <section className="flex items-center justify-start flex-col w-screen overflow-x-hidden bg-background min-h-[60vh] md:min-h-screen bg-[image:var(--color-repeating-gradient)] py-16 md:py-32 relative">
           <div className="container flex flex-col items-start justify-center gap-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5 items-start">
               <div className="flex items-start md:col-start-1 md:col-end-3 gap-5 flex-col justify-center">
                 <Image
                   src={

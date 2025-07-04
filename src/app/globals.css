@@ -164,6 +164,8 @@
   --text-extra-paragraph-heading: var(--extra-paragraph-heading);
   --text-special-heading: var(--special-heading);
 
+  --breakpoint-3xl: 1680px;
+
   --font-heading: var(--heading);
   --font-paragraph: var(--paragraph);
   --font-highlighter: var(--highlighter);

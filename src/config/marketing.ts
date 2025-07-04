@@ -68,11 +68,11 @@ export const subTeamContent = [
     id: "1",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXimnjUAbxnxFRDLNhCflXWv2E74VUG6OIzA1eB",
     name: "Jeya Kumar J",
-    role: "Senior Software Developer",
+    role: "Technology Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Senior Software Developer",
+      role: "Technology Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiAqDvr4wNVk0ZBrJ3sivm7FtRybneCAqMGz2o",
       description: [
@@ -92,11 +92,11 @@ export const subTeamContent = [
     id: "2",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXihumEBH6oT9zY4RZi3mHWGrt8c6Jfu2CsDxdF",
     name: "Leander Angus",
-    role: "Design Generalist",
+    role: "Design Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Design Generalist",
+      role: "Design Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXidymadoPkrzhSlqk7RA6bD81c3ImFGwXMnpfJ",
       description: [
@@ -116,11 +116,11 @@ export const subTeamContent = [
     id: "3",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiruihH5RJFRBT8aQqkgE92yd5704YtCcpPWIr",
     name: "Mona Adesara",
-    role: "Client Relationship Manager",
+    role: "Client Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Client Relationship Manager",
+      role: "Client Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiGyEXv9T3MbB0KQVEsekpNuFlAhTqoIaSgt4J",
       description: [
@@ -164,11 +164,11 @@ export const subTeamContent = [
     id: "14",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiYWdi6haaFA1G7468OT30okvCZcSfMmXJb9Is",
     name: "Kirtana Haridas",
-    role: "Creative strategist",
+    role: "Creative Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Creative strategist",
+      role: "Creative Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiAoDvX3NVk0ZBrJ3sivm7FtRybneCAqMGz2oN",
       description: [
@@ -212,11 +212,11 @@ export const subTeamContent = [
     id: "6",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi3jILKQ6dO2hSNi7wCrDRl8q0bWj5QUvsJxoM",
     name: "Brindha Prabu",
-    role: "Design Generalist",
+    role: "Design Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Design Generalist",
+      role: "Design Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXisqA4oqtVLIobTqySHNWmrU0nFD3G1uYZCv5A",
       description: [
@@ -237,11 +237,11 @@ export const subTeamContent = [
     id: "9",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXipejCElXytQXi94mwLn0Wag1vC56DZbAkOKPB",
     name: "AKRITI KRISHNAMURTHY",
-    role: "Client Relationship Manager",
+    role: "Client Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Client Relationship Manager",
+      role: "Client Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigbKEDOA7l16tQ289KNofiDrnEuvmRbjhqdTc",
       description: [
@@ -261,11 +261,11 @@ export const subTeamContent = [
     id: "11",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXicpoZmuwVfrHgnRDTBX1y8AO9Quk740MJlmSt",
     name: "santhosh s",
-    role: "Design Generalist",
+    role: "Designer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Design Generalist",
+      role: "Designer",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXibMbjrnfPrSGhD0TMiywnpFZERx7f4KaN83jt",
       description: [
@@ -285,11 +285,11 @@ export const subTeamContent = [
     id: "12",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXig9HhDwA7l16tQ289KNofiDrnEuvmRbjhqdTc",
     name: "Ritika Das",
-    role: "Client Relationship Manager",
+    role: "Client Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Client Relationship Manager",
+      role: "Client Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5E2vrpBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
       description: [
@@ -309,11 +309,11 @@ export const subTeamContent = [
     id: "13",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiMlbVkMGXGBSx43fU9vzmiOt07prKJAkesclg",
     name: "Dhenuka R",
-    role: "Marketing",
+    role: "Associate",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Marketing",
+      role: "Associate",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5UMSeIBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
       description: [
@@ -342,30 +342,6 @@ export const subTeamContent = [
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigD8nUuA7l16tQ289KNofiDrnEuvmRbjhqdTc",
       description: [
         "accounts manager. silent force. lives up to his name. steady hand behind the scenes. with over four decades of experience, mani is the reason things run smoothly-even when the rest of us are in full chaos mode. when he is around, there’s no stress, all our bills are paid, and our books are balanced. quiet but razor-sharp, he’s built a reputation for keeping things in order, on time, and totally worry-free.",
-      ],
-      linkedIn: "",
-      phone: "",
-      mail: "",
-      colors: {
-        paletteX: "#8DB7BA",
-        paletteY: "#C3E3E5",
-        paletteZ: "#A0D0D3",
-      },
-    },
-  },
-  {
-    id: "15",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiYxDMsTaaFA1G7468OT30okvCZcSfMmXJb9Is",
-    name: "Vinay Varghese",
-    role: "Client Relationship Manager",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
-    popupContent: {
-      role: "Client Relationship Manager",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXis5pTPdtVLIobTqySHNWmrU0nFD3G1uYZCv5A",
-      description: [
-        "client relationship manager. catching up on the slang, cruising on calm. vinay is quiet, unassuming, and deeply observant.born in the ’90s with a playlist that swings from opera to hard rock, he brings a wonderful mix of old soul and modern energy to every conversation.he’s thoughtful, measured, and always shows up with solutions.he does his best to keep up with Gen Z lingo and sometimes even gets it right. ",
       ],
       linkedIn: "",
       phone: "",

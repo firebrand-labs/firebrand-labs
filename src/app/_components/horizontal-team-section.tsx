@@ -64,7 +64,7 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
 
           <AnimatedRichText delay={1.6}>
             <AnimatedSpan
-              className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-light font-paragraph"
+              className="text-paragraph-heading max-w-4xl text-foreground leading-normal font-light font-paragraph 3xl:mb-16"
               delay={1.8}
             >
               born from the belief that design moves business forward — and that
@@ -84,9 +84,9 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                   <Image
                     src={item.url}
                     alt={item.name}
-                    width={200}
-                    height={300}
-                    className="w-[380px] h-[380px] object-cover md:w-full md:max-w-md md:h-auto"
+                    width={600}
+                    height={600}
+                    className="w-[380px] h-[380px] object-cover md:w-full md:max-w-md md:h-auto 3xl:min-w-xl"
                   />
                 </div>
                 <div className="flex flex-col items-start justify-end gap-3 py-2 md:py-4">

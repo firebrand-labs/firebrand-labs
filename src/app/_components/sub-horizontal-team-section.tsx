@@ -61,14 +61,14 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
             <motion.div
               style={{ x }}
               className={`flex ${
-                isMobile ? "gap-6 md:gap-3" : "gap-8 md:gap-12"
+                isMobile ? "gap-6 md:gap-3" : "gap-8 md:gap-12 3xl:gap-24"
               }`}
             >
               {Array.from(subTeamContent).map((item, i) => (
                 <div
                   key={i}
                   className={`flex items-start flex-col gap-3 justify-center group ${
-                    isMobile ? "min-w-[280px]" : "min-w-[400px]"
+                    isMobile ? "min-w-[280px]" : "min-w-[400px] 3xl:min-w-xl"
                   }`}
                 >
                   <Dialog>
@@ -77,12 +77,12 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                         <Image
                           src={item.url}
                           alt={item.name}
-                          width={200}
-                          height={300}
+                          width={600}
+                          height={600}
                           className={`object-cover ${
                             isMobile
                               ? "w-[360px] h-[360px]"
-                              : "w-[380px] h-[380px] md:w-full md:max-w-md md:h-auto"
+                              : "w-[380px] h-[380px] md:w-full md:max-w-md md:h-auto 3xl:min-w-xl"
                           }`}
                         />
                         <div className="flex items-center justify-between gap-3.5 w-full px-2 md:px-4">
