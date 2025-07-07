@@ -78,9 +78,8 @@ const page: FC<pageProps> = () => {
                 </AnimatedSpan>
               </AnimatedRichText>
             </div>
-            <div className="flex flex-col items-center justify-center gap-12 md:gap-20 border border-foreground rounded-2xl w-full min-h-[75.75vh]">
-              <Switch className="w-[240px] h-[120px] rounded-full" />
-            </div>
+
+            <Switch className="w-[240px] h-[120px] rounded-full" />
           </div>
         </section>
 
@@ -141,12 +140,21 @@ const page: FC<pageProps> = () => {
               <div className="flex items-start md:col-start-1 md:col-end-3 gap-5 flex-col justify-center">
                 <Image
                   src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi74MuTv2aHIogc9bupDymFxOGdeB6njkW5tQ0"
+                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiCBM5cYlWlPmUtW4ZvzoY1BwsJc3TSOd2XFAG"
                   }
                   alt="Yellove"
-                  className="w-[200px] md:w-[320px] h-auto"
-                  width={100}
-                  height={100}
+                  className="w-[200px] md:w-[320px] h-auto block dark:hidden"
+                  width={300}
+                  height={140}
+                />
+                <Image
+                  src={
+                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXilpJp1Dg9nIqauFmQgOLp1GNDB6VjAPYMhz4o"
+                  }
+                  alt="Yellove"
+                  className="w-[200px] md:w-[320px] h-auto hidden dark:block"
+                  width={300}
+                  height={140}
                 />
                 <p className="text-subtitle-heading tracking-wide text-foreground max-w-2xl leading-normal font-light font-paragraph">
                   life at firebrand labs lives behind the yellow door: quietly

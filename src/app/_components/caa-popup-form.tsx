@@ -50,6 +50,9 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
     formState: { errors, isSubmitting },
   } = useForm<BookDonwloadFormType>({
     resolver: zodResolver(bookDownloadFormSchema),
+    defaultValues: {
+      country: "India",
+    },
   });
 
   useEffect(() => {
@@ -132,7 +135,7 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
                 autoCapitalize="none"
                 autoComplete="none"
                 placeholder=" "
-                className="w-full p-0 text-foreground bg-transparent border-1 border-foreground appearance-none focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-transparent rounded-none  peer"
+                className="w-full  px-1.5 text-foreground bg-transparent border-1 border-foreground appearance-none focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-transparent rounded-none  peer"
                 type="text"
                 {...register("name")}
                 disabled={isSubmitting}
@@ -160,7 +163,7 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
                 autoCapitalize="none"
                 autoComplete="none"
                 placeholder=" "
-                className="w-full p-0 text-foreground bg-transparent border-1 border-foreground appearance-none focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-transparent rounded-none  peer"
+                className="w-full px-1.5 text-foreground bg-transparent border-1 border-foreground appearance-none focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-transparent rounded-none  peer"
                 type="tel"
                 required
                 {...register("phone")}
@@ -187,7 +190,7 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
                 autoCapitalize="none"
                 autoComplete="none"
                 placeholder=" "
-                className="w-full p-0 text-foreground bg-transparent border-1 border-foreground appearance-none focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-transparent rounded-none  peer"
+                className="w-full  px-1.5 text-foreground bg-transparent border-1 border-foreground appearance-none focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-transparent rounded-none  peer"
                 type="email"
                 required
                 {...register("email")}
@@ -215,7 +218,7 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
                 autoCapitalize="none"
                 autoComplete="none"
                 placeholder=" "
-                className="w-full p-0 text-foreground bg-transparent border-1 border-foreground appearance-none focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-transparent rounded-none  peer"
+                className="w-full  px-1.5 text-foreground bg-transparent border-1 border-foreground appearance-none focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-transparent rounded-none  peer"
                 type="text"
                 {...register("city")}
                 disabled={isSubmitting}

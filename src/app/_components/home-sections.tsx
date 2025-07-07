@@ -241,7 +241,7 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
               >
                 we are your EMOs{" "}
                 <span className="absolute top-0 right-0 translate-x-[10px] md:translate-x-[20px] flex  w-10 h-10">
-                  <Icons.ArrowRight className="translate-x-7 -rotate-45 w-full h-full stroke-yellow-level-three" />
+                  <Icons.ArrowRight className="translate-x-7 hidden -rotate-45 w-full h-full stroke-yellow-level-three" />
                 </span>
               </AnimatedSpan>
               <motion.div
@@ -271,11 +271,11 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
                 <motion.div
                   variants={lineVariants}
                   style={{ originX: 0 }}
-                  className="absolute w-[200px] md:w-[300px] top-[-80px] right-[-50px] md:top-[-100px] md:right-[-170px] rotate-0"
+                  className="absolute w-[200px] md:w-[300px] top-[-180px] right-[-50px] md:top-[-140px] md:right-[-170px] rotate-0"
                 >
                   <Image
                     src={
-                      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiCBTZxAMWlPmUtW4ZvzoY1BwsJc3TSOd2XFAG"
+                      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXis7vE32ktVLIobTqySHNWmrU0nFD3G1uYZCv5"
                     }
                     alt="Firebrand Labs Logo"
                     className="w-[220px] md:w-[700px]"
@@ -547,7 +547,7 @@ const HomeSections: React.FC = () => {
           }
 
           scrollAccumulator.current = 0;
-        }, 50); // 50ms delay to accumulate scroll events
+        }, 25); // 50ms delay to accumulate scroll events
       } else {
         // For non-Apple devices, use the original logic
         const threshold = 30; // Minimum scroll amount to trigger section change
