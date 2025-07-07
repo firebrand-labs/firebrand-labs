@@ -15,11 +15,31 @@ import { FC, useState } from "react";
 import { Icons } from "@/app/_components/icons";
 import { ModeToggle } from "@/app/_components/toggle-theme";
 import CaaPopupForm from "@/app/_components//caa-popup-form";
+import { useSelectedLayoutSegment } from "next/navigation";
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const segment = useSelectedLayoutSegment();
+
+  const isActiveNavItem = (href: string, currentSegment: string | null) => {
+    // Handle homepage
+    if (href === "/" && currentSegment === null) {
+      return true;
+    }
+
+    // Handle other pages - exact match for segments
+    if (href.startsWith("/") && currentSegment) {
+      console.log(currentSegment);
+      const pathSegment = href.split("/")[1].split("#")[1];
+      console.log(pathSegment);
+      return pathSegment === currentSegment;
+    }
+
+    return false;
+  };
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -66,7 +86,9 @@ const Header: FC<HeaderProps> = () => {
                               key={i}
                             >
                               <Link
-                                className="text-foreground hover:underline lowercase font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
+                                className={cn(
+                                  "text-foreground hover:underline lowercase font-paragraph font-normal text-subtitle-heading no-underline hover:text-foreground"
+                                )}
                                 href={item.href}
                               >
                                 {item.title}
@@ -87,7 +109,7 @@ const Header: FC<HeaderProps> = () => {
                             )}
                           >
                             <Link
-                              className="text-foreground hover:underline font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground"
+                              className="text-foreground hover:underline font-paragraph font-normal text-subtitle-heading no-underline hover:text-foreground"
                               href={"mailto:arvind@firebrandlabs.in"}
                             >
                               arvind@firebrandlabs.in
@@ -109,7 +131,7 @@ const Header: FC<HeaderProps> = () => {
                             )}
                           >
                             <CaaPopupForm>
-                              <Button className="text-foreground bg-transparent hover:underline p-0 font-paragraph font-light text-subtitle-heading no-underline hover:text-foreground">
+                              <Button className="text-foreground h-[initial] bg-transparent hover:underline p-0 font-paragraph text-subtitle-heading no-underline hover:text-foreground font-normal">
                                 read the book
                               </Button>
                             </CaaPopupForm>
@@ -127,7 +149,12 @@ const Header: FC<HeaderProps> = () => {
                         key={i}
                       >
                         <Link
-                          className="text-foreground lowercase text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl no-underline font-paragraph font-light italic  hover:text-foreground/60"
+                          className={cn(
+                            "text-foreground lowercase text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl no-underline font-paragraph font-light italic  hover:text-foreground/60",
+                            isActiveNavItem(item.href, segment)
+                              ? "text-secondary-foreground font-bold"
+                              : "text-foreground"
+                          )}
                           href={item.href}
                           onClick={handleLinkClick}
                         >

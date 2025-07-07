@@ -114,7 +114,9 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
   };
   return (
     <Dialog>
-      <DialogTrigger asChild>{children}</DialogTrigger>
+      <DialogTrigger className="" asChild>
+        {children}
+      </DialogTrigger>
       <DialogContent className="max-w-[80vh] md:max-w-[35vw]">
         <DialogHeader className="hidden" />
         <DialogTitle className="hidden" />

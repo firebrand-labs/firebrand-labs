@@ -326,7 +326,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
             </AnimatedRichText>
             <FBLButton href="/about#team" body="our team" />
           </div>
-          <div className="flex items-center justify-center self-center ">
+          <div className="flex items-center justify-center self-center">
             <div className="min-w-[220px] md:min-w-[400px] group min-h-[320px] md:min-h-[540px] relative rounded-2xl">
               {/* Static center card */}
               <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl z-[10]">
