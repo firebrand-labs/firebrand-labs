@@ -132,7 +132,7 @@ const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
 
           <span
             className={cn(
-              "text-paragraph-heading tracking-wide text-foreground leading-normal text-center font-paragraph duration-350 ease opacity-0",
+              "!text-paragraph-heading tracking-wide text-foreground leading-normal text-center font-paragraph duration-350 ease opacity-0",
               !clicked
                 ? "!opacity-0 translate-y-2"
                 : "opacity-100 translate-y-0"
@@ -167,18 +167,15 @@ const AboutSection: React.FC<SectionProps> = ({ isActive }) => {
           ABOUT
         </p>
         <AnimatedRichText
-          className="text-secondary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
+          className="text-secondary-heading max-w-5xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
           delay={5}
         >
-          <AnimatedSpan className="font-bold" delay={0.8}>
+          <AnimatedSpan className="font-bold mb-2 3xl:mb-4" delay={0.8}>
             we are curiously minded, bold hearted, and restlessly creative.
           </AnimatedSpan>
-          <AnimatedSpan className="pt-2" delay={0.8}>
+          <AnimatedSpan className="pt-2 mb-2.5 3xl:mb-4" delay={0.8}>
             we believe in asking better questions, pushing past the obvious, and
-            showing up with{" "}
-          </AnimatedSpan>
-          <AnimatedSpan className="pb-2" delay={0.8}>
-            purpose.{" "}
+            showing up with purpose.{" "}
           </AnimatedSpan>
           <AnimatedSpan delay={0.8}>
             {" "}
@@ -318,7 +315,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
             />
             <AnimatedRichText delay={1.6}>
               <AnimatedSpan
-                className="text-extra-subtitle-heading tracking-wide text-foreground leading-normal font-paragraph"
+                className="text-paragraph-heading tracking-wide text-foreground leading-normal font-paragraph"
                 delay={1.8}
               >
                 Meet our lovable people.
@@ -448,8 +445,8 @@ const HomeSections: React.FC = () => {
 
   const sections = [
     { component: HeroSection, name: "Hero" },
-    { component: AboutSection, name: "About" },
     { component: WhatWeDoSection, name: "What We Do" },
+    { component: AboutSection, name: "About" },
     { component: TeamSection, name: "Team" },
     { component: BlogSection, name: "Blog" },
     { component: FooterSection, name: "Contact" },

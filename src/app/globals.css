@@ -48,7 +48,7 @@
     rgba(255, 255, 255, 0.1) 161px
   );
 
-  --paragraph-heading: clamp(16px, 1.4vw, 24px);
+  --paragraph-heading: clamp(20px, 1.5vw, 28px);
   --our_text-heading: clamp(28px, 2.4vw, 36px);
   --secondary-heading: clamp(28px, 2.4vw, 44px);
   --primary-heading: clamp(36px, 7.2vw, 68px);

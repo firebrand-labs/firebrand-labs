@@ -358,26 +358,31 @@ export const subTeamContent = [
 export const mainNavContents: MainNavItems = [
   {
     href: "/",
+    target: "/",
     title: "Home",
     subItems: [],
   },
   {
     href: "/about",
+    target: "/about",
     title: "About",
     subItems: [],
   },
   {
     href: "/about#team",
+    target: "/team",
     title: "Team",
     subItems: [],
   },
   {
     href: "/cards-against-ambiguity",
+    target: "/cards-against-ambiguity",
     title: "CAA",
     subItems: [],
   },
   {
     href: "/contact",
+    target: "/contact",
     title: "Contact",
     subItems: [],
   },

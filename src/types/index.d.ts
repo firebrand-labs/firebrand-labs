@@ -1,6 +1,7 @@
 export type SubNavItem = {
   title: string;
   href: string;
+  target: string;
   disabled?: boolean;
   type?: string;
 };

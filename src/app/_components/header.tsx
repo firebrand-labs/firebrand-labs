@@ -11,7 +11,7 @@ import { mainNavContents, socialMediaIcons } from "@/config/marketing";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import { Icons } from "@/app/_components/icons";
 import { ModeToggle } from "@/app/_components/toggle-theme";
 import CaaPopupForm from "@/app/_components//caa-popup-form";
@@ -21,21 +21,78 @@ interface HeaderProps {}
 
 const Header: FC<HeaderProps> = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentHash, setCurrentHash] = useState("");
 
   const segment = useSelectedLayoutSegment();
 
-  const isActiveNavItem = (href: string, currentSegment: string | null) => {
-    // Handle homepage
-    if (href === "/" && currentSegment === null) {
+  // Track hash changes
+  useEffect(() => {
+    const updateHash = () => {
+      const newHash = window.location.hash;
+      console.log("Hash changed to:", newHash); // Debug log
+      setCurrentHash(newHash);
+    };
+
+    // Set initial hash
+    updateHash();
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", updateHash);
+
+    // Also listen for route changes that might update the hash
+    const handleRouteChange = () => {
+      setTimeout(updateHash, 100); // Slightly longer delay to ensure DOM is updated
+    };
+
+    window.addEventListener("popstate", handleRouteChange);
+
+    // Also listen for Link clicks that might change the hash
+    const handleLinkClick = () => {
+      setTimeout(updateHash, 50);
+    };
+
+    document.addEventListener("click", handleLinkClick);
+
+    return () => {
+      window.removeEventListener("hashchange", updateHash);
+      window.removeEventListener("popstate", handleRouteChange);
+      document.removeEventListener("click", handleLinkClick);
+    };
+  }, []);
+
+  // Additional effect to ensure hash is updated when segment changes
+  useEffect(() => {
+    const updateHash = () => {
+      const newHash = window.location.hash;
+      setCurrentHash(newHash);
+    };
+
+    // Update hash when segment changes
+    setTimeout(updateHash, 100);
+  }, [segment]);
+
+  // Helper function to determine if a nav item should be active
+  const isActiveNavItem = (href: string) => {
+    const currentPath = segment ? `/${segment}` : "/";
+    const currentFullPath = currentPath + currentHash;
+
+    // For homepage
+    if (href === "/" && segment === null) {
       return true;
     }
 
-    // Handle other pages - exact match for segments
-    if (href.startsWith("/") && currentSegment) {
-      console.log(currentSegment);
-      const pathSegment = href.split("/")[1].split("#")[1];
-      console.log(pathSegment);
-      return pathSegment === currentSegment;
+    // For hash-based navigation (like /about#team)
+    if (href.includes("#")) {
+      return currentFullPath === href;
+    }
+
+    // For regular pages - only match if there's no hash or if this is the exact segment
+    if (href === currentPath) {
+      // Don't highlight "About" if we're on "About#team"
+      if (href === "/about" && currentHash === "#team") {
+        return false;
+      }
+      return true;
     }
 
     return false;
@@ -44,6 +101,7 @@ const Header: FC<HeaderProps> = () => {
   const handleLinkClick = () => {
     setIsOpen(false);
   };
+
   return (
     <header
       className={cn(
@@ -81,7 +139,6 @@ const Header: FC<HeaderProps> = () => {
                             <li
                               className={cn(
                                 "flex items-start justify-start text-left text-foreground"
-                                //   i % 2 === 0 ? "text-right" : "text-left"
                               )}
                               key={i}
                             >
@@ -105,7 +162,6 @@ const Header: FC<HeaderProps> = () => {
                           <li
                             className={cn(
                               "flex items-start justify-start text-left text-foreground"
-                              //   i % 2 === 0 ? "text-right" : "text-left"
                             )}
                           >
                             <Link
@@ -127,7 +183,6 @@ const Header: FC<HeaderProps> = () => {
                           <li
                             className={cn(
                               "flex items-start justify-start text-left text-foreground"
-                              //   i % 2 === 0 ? "text-right" : "text-left"
                             )}
                           >
                             <CaaPopupForm>
@@ -151,8 +206,8 @@ const Header: FC<HeaderProps> = () => {
                         <Link
                           className={cn(
                             "text-foreground lowercase text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl no-underline font-paragraph font-light italic  hover:text-foreground/60",
-                            isActiveNavItem(item.href, segment)
-                              ? "text-secondary-foreground font-bold"
+                            isActiveNavItem(item.href)
+                              ? "text-yellow-level-four/90  font-normal"
                               : "text-foreground"
                           )}
                           href={item.href}
