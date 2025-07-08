@@ -54,18 +54,18 @@ const page: FC<pageProps> = () => {
               />
 
               <AnimatedRichText
-                className="text-subtitle-heading text-foreground max-w-2xl leading-normal tracking-wide font-light font-paragraph"
+                className="text-paragraph-heading text-foreground max-w-xl 2xl:max-w-2xl leading-normal tracking-wide font-light font-paragraph"
                 delay={5}
               >
                 <AnimatedSpan className="" delay={1.8}>
                   we are not everything to everyone. brands don’t need more
                   noise. they need clarity. speed. guts.
                 </AnimatedSpan>
-                <AnimatedSpan className="py-7" delay={1.8}>
+                <AnimatedSpan className="py-6 xl:py-5 2xl:py-7" delay={1.8}>
                   add a dollop of storytelling.
                 </AnimatedSpan>
                 <br />
-                <AnimatedSpan className="pb-7" delay={1.8}>
+                <AnimatedSpan className="pb-6 xl:pb-5 2xl:pb-7" delay={1.8}>
                   and above all, trust.
                 </AnimatedSpan>
                 <br />
@@ -73,7 +73,7 @@ const page: FC<pageProps> = () => {
                   firebrand labs
                 </AnimatedSpan>
                 <br />
-                <AnimatedSpan className="pb-7" delay={1.8}>
+                <AnimatedSpan className="pb-6 xl:pb-5 2xl:pb-7" delay={1.8}>
                   composers of ideas. of clarity. of credibility
                 </AnimatedSpan>
               </AnimatedRichText>
@@ -114,7 +114,7 @@ const page: FC<pageProps> = () => {
             />
             <AnimatedRichText delay={1.6}>
               <AnimatedSpan
-                className="text-subtitle-heading tracking-wide text-foreground max-w-4xl font-light leading-normal font-paragraph"
+                className="text-paragraph-heading tracking-wide text-foreground max-w-4xl font-light leading-normal font-paragraph"
                 delay={1.8}
               >
                 that mindset fuels our spark. It’s why we show up with energy,
@@ -156,7 +156,7 @@ const page: FC<pageProps> = () => {
                   width={300}
                   height={140}
                 />
-                <p className="text-subtitle-heading tracking-wide text-foreground max-w-2xl leading-normal font-light font-paragraph">
+                <p className="text-paragraph-heading tracking-wide text-foreground max-w-2xl leading-normal font-light font-paragraph">
                   life at firebrand labs lives behind the yellow door: quietly
                   chaotic and always worth it.
                 </p>
@@ -191,12 +191,12 @@ const page: FC<pageProps> = () => {
           />
         </section>
 
-        <HorizontalTeamSection />
+        {/* <HorizontalTeamSection /> */}
         <SubHorizontalTeamSection />
 
         <section
           id="book"
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 pb-0 md:py-16"
+          className="hidden items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 pb-0 md:py-16"
         >
           <div className="container flex flex-col items-start justify-center gap-8">
             <div className="grid grid-cols-1 md:grid-cols-3">

@@ -43,7 +43,7 @@ const page: FC<pageProps> = () => {
             />
 
             <AnimatedRichText
-              className="text-extra-subtitle-heading tracking-wide font-light text-foreground leading-normal font-paragraph"
+              className="text-paragraph-heading tracking-wide font-light text-foreground leading-normal font-paragraph"
               delay={1.8}
             >
               <AnimatedSpan className="" delay={1.8}>
@@ -68,14 +68,14 @@ const page: FC<pageProps> = () => {
 
                 <AnimatedRichText delay={1.6}>
                   <AnimatedSpan
-                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-semibold font-paragraph mb-2.5"
+                    className="text-paragraph-heading tracking-wide text-foreground leading-normal font-semibold font-paragraph mb-2.5"
                     delay={1.8}
                   >
                     A creative tool to enable introspection and drive clarity in
                     a volatile, uncertain, complex and ambiguous world.
                   </AnimatedSpan>
                   <AnimatedSpan
-                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-light font-paragraph"
+                    className="text-paragraph-heading tracking-wide text-foreground leading-normal font-light font-paragraph"
                     delay={1.8}
                   >
                     Designed for entrepreneurs, professionals, CxOs and Business
@@ -99,9 +99,9 @@ const page: FC<pageProps> = () => {
               className="text-secondary-heading  max-w-3xl text-background leading-tight tracking-wide font-normal font-heading"
             />
 
-            <AnimatedRichText delay={1.6}>
+            <AnimatedRichText delay={1.6} className="text-paragraph-heading">
               <AnimatedSpan
-                className="text-subtitle-heading tracking-wide text-background max-w-3xl leading-normal font-light font-paragraph"
+                className="text-paragraph-heading tracking-wide text-background max-w-3xl leading-normal font-light font-paragraph"
                 delay={1.8}
               >
                 keep scrolling to understand exactly how cards against ambiguity
@@ -135,7 +135,7 @@ const page: FC<pageProps> = () => {
           </div>
         </section>
 
-        <section className="flex items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary bg-[image:var(--color-repeating-gradient)] min-h-screen overflow-y-hidden py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] before:bg-contain before:bg-no-repeat before:md:bg-right">
+        <section className="hidden items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary bg-[image:var(--color-repeating-gradient)] min-h-screen overflow-y-hidden py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] before:bg-contain before:bg-no-repeat before:md:bg-right">
           <div className="container flex items-start flex-col gap-4 justify-start md:mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">

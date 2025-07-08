@@ -66,6 +66,51 @@ export const colors = [
 export const subTeamContent = [
   {
     id: "1",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXifi2fTBes3N7H0IACvRLnDxGrdJ2WiBbjywKt",
+    name: "Arvind Aathreya",
+    description:
+      "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era.",
+    popupContent: {
+      role: "the buck stops with me",
+      popupImage:
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+      description: [
+        "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era. he blends the two effortlessly - staying sharp, strategic, and always a step ahead. in 2009, he started Firebrand Labs to do high energy creative work every day and built just that. FBL is where ideas meet execution and filter kaapi meets strategy. a true believer that creativity is forever (unga appa’s wisdom meets today’s swipe culture) also, ask him about A.R. Rahman, single malts, or the perfect podi dosa spot and he’ll light up.",
+      ],
+      linkedIn: "https://www.linkedin.com/in/arvindaathreya/",
+      phone: "tel:+91 97899 61681",
+      mail: "mailto:arvind@firebrandlabs.in",
+      colors: {
+        paletteX: "#8D9ABA",
+        paletteY: "#DCE3F3",
+        paletteZ: "#ABB5DF",
+      },
+    },
+  },
+  {
+    id: "2",
+    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7F3Vt12aHIogc9bupDymFxOGdeB6njkW5tQ0",
+    name: "Arun",
+    description: "co-founder. head of design and a silent storm.",
+    popupContent: {
+      role: "Co-Founder",
+      popupImage:
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi2HFSG2pnuibeaGhgO1K2vToxWEmt8Al0JHID",
+      description: [
+        "co-founder. head of design and a silent storm. arun doesn’t speak much, but when he does, it’s usually a quiet truth bomb that leaves the room thinking. an introvert by nature, he saves all his loudest ideas for the canvas. his design philosophy is deeply intentional, always rooted in clarity, calm, and craft. while others debate loudly, he sketches quietly- and somehow always lands on the most elegant solution. a big sweet tooth (keep the rasmalai ready), and a bigger believer in good design that speaks without shouting.",
+      ],
+      linkedIn: "https://www.linkedin.com/in/arunkumar-ravi-64488527/",
+      phone: "",
+      mail: "mailto:arun@firebrandlabs.in",
+      colors: {
+        paletteX: "#8DB7BA",
+        paletteY: "#C3E3E5",
+        paletteZ: "#A0D0D3",
+      },
+    },
+  },
+  {
+    id: "1",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXimnjUAbxnxFRDLNhCflXWv2E74VUG6OIzA1eB",
     name: "Jeya Kumar J",
     role: "Technology Partner",
@@ -333,13 +378,13 @@ export const subTeamContent = [
     id: "14",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQk8Zgd7IwFK269gvohLHr5a4VNqcYbpTnMXk",
     name: "Manisankar S",
-    role: "Accounts & Administration",
+    role: "Accounts & Administration Associate",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Accounts & Administration",
+      role: "Accounts & Administration Associate",
       popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigD8nUuA7l16tQ289KNofiDrnEuvmRbjhqdTc",
+        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiwyC7xmZT0PRFypUYDJzkC8H4lSsci7I5OxvQ",
       description: [
         "accounts manager. silent force. lives up to his name. steady hand behind the scenes. with over four decades of experience, mani is the reason things run smoothly-even when the rest of us are in full chaos mode. when he is around, there’s no stress, all our bills are paid, and our books are balanced. quiet but razor-sharp, he’s built a reputation for keeping things in order, on time, and totally worry-free.",
       ],
@@ -372,6 +417,12 @@ export const mainNavContents: MainNavItems = [
     href: "/about#team",
     target: "/team",
     title: "Team",
+    subItems: [],
+  },
+  {
+    href: "/resources",
+    target: "/resources",
+    title: "Resources",
     subItems: [],
   },
   {

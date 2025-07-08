@@ -35,7 +35,7 @@ const page: FC<pageProps> = () => {
               <div className="flex flex-col items-start justify-between gap-6 md:gap-8 h-full">
                 <div className="flex flex-col items-start justify-center gap-6 md:gap-8">
                   <div className="flex flex-col items-start justify-center gap-2">
-                    <p className="text-extra-subtitle-heading font-light lowercase text-foreground/75 leading-normal font-paragraph">
+                    <p className="text-paragraph-heading font-light lowercase text-foreground/75 leading-normal font-paragraph">
                       EMAIL US
                     </p>
                     <Link
@@ -46,7 +46,7 @@ const page: FC<pageProps> = () => {
                     </Link>
                   </div>
                   <div className="flex flex-col items-start justify-center gap-2">
-                    <p className="text-extra-subtitle-heading font-light lowercase text-foreground/75 leading-normal font-paragraph">
+                    <p className="text-paragraph-heading font-light lowercase text-foreground/75 leading-normal font-paragraph">
                       Social Media
                     </p>
                     <Link
@@ -67,10 +67,10 @@ const page: FC<pageProps> = () => {
                 </div>
                 {/* Address */}
                 <div className="flex flex-col items-start justify-center gap-2">
-                  <p className="text-extra-subtitle-heading font-light lowercase text-foreground/75 leading-normal font-paragraph">
+                  <p className="text-paragraph-heading font-light lowercase text-foreground/75 leading-normal font-paragraph">
                     Visit us
                   </p>
-                  <p className="text-extra-subtitle-heading text-foreground max-w-sm leading-normal font-paragraph tracking-wide">
+                  <p className="text-paragraph-heading text-foreground max-w-sm leading-normal font-paragraph tracking-wide">
                     no 12, first floor, karpagam gardens 1st cross street,
                     adyar, chennai-600020
                   </p>
@@ -78,7 +78,7 @@ const page: FC<pageProps> = () => {
               </div>
               {/* Contact Us Form */}
               <div className="flex flex-col items-start justify-center gap-3 md:gap-3">
-                <p className="text-extra-subtitle-heading lowercase text-foreground/75 leading-normal font-paragraph">
+                <p className="text-paragraph-heading lowercase text-foreground/75 leading-normal font-paragraph">
                   NO THANKS, I WOULD RATHER SEND A MESSAGE
                 </p>
                 <Suspense fallback={<div>Loading form...</div>}>

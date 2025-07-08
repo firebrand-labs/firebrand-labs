@@ -17,8 +17,7 @@ export const contactRouter = createTRPCRouter({
 
       const purposeMap = {
         SERVICES: "Services Inquiry",
-        JOBS: "Job Application",
-        PRODUCTS: "Product Inquiry",
+        CAREERS: "Job Application",
         OTHER: "Other",
         CAA: "Cards Against Ambiguity",
       };

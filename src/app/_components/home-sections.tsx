@@ -67,9 +67,9 @@ const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
       )}
     >
       <div className="container flex items-center justify-center">
-        <div className="relative flex flex-col items-center justify-center gap-4">
+        <div className="relative flex flex-col items-center justify-center gap-2">
           <AnimatedRichText
-            className="text-2xl relative md:text-5xl xl:text-8xl  3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading "
+            className="text-3xl relative md:text-5xl xl:text-8xl  3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading "
             delay={5}
           >
             <AnimatedSpan className="font-bold" delay={0.8}>
@@ -163,27 +163,30 @@ const AboutSection: React.FC<SectionProps> = ({ isActive }) => {
       className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh py-16 "
     >
       <div className="container flex flex-col items-start justify-center gap-3">
-        <p className="text-extra-subtitle-heading  uppercase text-foreground/40 leading-normal font-paragraph">
+        <p className="text-paragraph-heading  uppercase text-foreground/40 leading-normal font-paragraph">
           ABOUT
         </p>
         <AnimatedRichText
-          className="text-secondary-heading max-w-5xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
+          className="text-secondary-heading max-w-3xl lg:max-w-3xl xl:max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
           delay={5}
         >
-          <AnimatedSpan className="font-bold mb-2 3xl:mb-4" delay={0.8}>
-            we are curiously minded, bold hearted, and restlessly creative.
+          <AnimatedSpan
+            className="font-bold mb-2 2xl:mb-4 3xl:mb-4"
+            delay={0.8}
+          >
+            We make marketing that is original, authentic, and real—with people
+            who care.
           </AnimatedSpan>
-          <AnimatedSpan className="pt-2 mb-2.5 3xl:mb-4" delay={0.8}>
-            we believe in asking better questions, pushing past the obvious, and
-            showing up with purpose.{" "}
+          <AnimatedSpan className="pt-2 mb-2.5 2xl:mb-4 3xl:mb-4" delay={0.8}>
+            We are curiously minded, bold-hearted, and restlessly creative.
           </AnimatedSpan>
           <AnimatedSpan delay={0.8}>
             {" "}
-            what drives us? making marketing original, authentic and real, with
-            people who care.{" "}
+            We believe in asking better questions, pushing past the obvious, and
+            showing up with purpose.
           </AnimatedSpan>
         </AnimatedRichText>
-        <FBLButton href="/about" body="know more" />
+        <FBLButton className="mt-3 3xl:mt-5" href="/about" body="know more" />
       </div>
     </section>
   );
@@ -224,19 +227,20 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
       ref={ref}
       className="flex items-center justify-center relative flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh md:min-h-svh"
     >
-      <div className="flex relative items-center justify-center w-full h-full">
+      <div className="flex relative items-center justify-center w-full h-full ">
         <RandomCards />
-        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:h-screen flex items-center justify-center flex-col gap-8 py-16 ">
-          <div className=" flex-col items-center justify-center flex bg-lime-0">
+        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:h-screen flex items-center justify-center flex-col gap-8 py-16  w-full">
+          <div className=" flex-col items-center justify-center flex ">
             <AnimatedRichText
-              className="relative text-secondary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
+              className="relative text-secondary-heading  max-w-4xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
               delay={1.4}
             >
               <AnimatedSpan
-                className="text-3xl md:text-4xl lg:text-6xl text-foreground leading-tight tracking-wide font-extrabold font-heading text-center mb-3 md:mb-0 relative"
+                className="text-3xl md:text-3xl  lg:text-5xl text-foreground leading-tight w-full tracking-wide font-extrabold font-heading text-center mb-3 md:mb-3 relative"
                 delay={1.4}
               >
-                we are your EMOs{" "}
+                we run your marketing <br />
+                end to end.
                 <span className="absolute top-0 right-0 translate-x-[10px] md:translate-x-[20px] flex  w-10 h-10">
                   <Icons.ArrowRight className="translate-x-7 hidden -rotate-45 w-full h-full stroke-yellow-level-three" />
                 </span>
@@ -268,7 +272,7 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
                 <motion.div
                   variants={lineVariants}
                   style={{ originX: 0 }}
-                  className="absolute w-[200px] md:w-[300px] top-[-180px] right-[-50px] md:top-[-140px] md:right-[-170px] rotate-0"
+                  className="absolute w-[200px] md:w-[300px] top-[-130px] right-[-5px] md:top-[-180px] md:right-[-170px] rotate-0"
                 >
                   <Image
                     src={
@@ -283,7 +287,7 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
               </motion.div>
             </AnimatedRichText>
             <AnimatedRichText
-              className="text-secondary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
+              className="text-tertiary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
               delay={1.6}
             >
               <AnimatedSpan className="text-center" delay={1.6}>
@@ -304,11 +308,11 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
   return (
     <section
       ref={ref}
-      className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 md:py-0 md:min-h-svh "
+      className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 xl:py-4  md:min-h-svh "
     >
       <div className="container flex items-center justify-center ">
         <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
-          <div className="flex flex-col items-start justify-start h-full  gap-3">
+          <div className="flex flex-col items-start justify-start h-full  gap-3 xl:pt-16 2xl:pt-0">
             <AnimatedTextReveal
               text="doers. misfits. firebrands."
               className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading"
@@ -324,7 +328,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
             <FBLButton href="/about#team" body="our team" />
           </div>
           <div className="flex items-center justify-center self-center">
-            <div className="min-w-[220px] md:min-w-[400px] group min-h-[320px] md:min-h-[540px] relative rounded-2xl">
+            <div className="min-w-[220px] md:min-w-[350px] xl:min-w-[300px] 2xl:min-w-[400px] group min-h-[320px] md:min-h-[540px] relative rounded-2xl">
               {/* Static center card */}
               <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl z-[10]">
                 <Image
@@ -384,12 +388,12 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
         <div className="flex flex-col items-start justify-start h-full  gap-3 max-w-4xl">
           <AnimatedTextReveal
             text="thoughts, insights and analysis"
-            className="text-secondary-heading  max-w-4xl text-foreground leading-tight tracking-wide font-normal font-heading"
+            className="text-secondary-heading  max-w-4xl text-foreground leading-tight tracking-wide font-normal font-heading xl:pt-16 2xl:pt-8"
           />
 
           <AnimatedRichText delay={1.6}>
             <AnimatedSpan
-              className="text-extra-subtitle-heading max-w-2xl text-foreground leading-normal font-paragraph tracking-wide"
+              className="text-paragraph-heading max-w-2xl  text-foreground leading-normal font-paragraph tracking-wide"
               delay={1.8}
             >
               wondering how to blog? what are sonic identities, can you think of
@@ -399,7 +403,7 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
           </AnimatedRichText>
           <FBLButton className="hidden" href="/blog" body="all resources" />
         </div>
-        <Icons.BlogImage className="w-full " />
+        <Icons.BlogImage className="w-[80%] self-center" />
       </div>
     </section>
   );

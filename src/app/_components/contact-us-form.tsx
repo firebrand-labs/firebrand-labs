@@ -21,7 +21,7 @@ import { z } from "zod";
 
 interface ContactUsFormProps {}
 
-type Purpose = "SERVICES" | "JOBS" | "PRODUCTS" | "OTHER" | "CAA";
+type Purpose = "SERVICES" | "CAREERS" | "OTHER" | "CAA";
 
 const ContactUsForm: FC<ContactUsFormProps> = () => {
   const searchParams = useSearchParams();
@@ -46,13 +46,7 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
     const queryPurpose = searchParams.get("query");
     if (queryPurpose) {
       const normalizedPurpose = queryPurpose.toUpperCase();
-      const validPurposes: Purpose[] = [
-        "SERVICES",
-        "JOBS",
-        "PRODUCTS",
-        "CAA",
-        "OTHER",
-      ];
+      const validPurposes: Purpose[] = ["SERVICES", "CAREERS", "CAA", "OTHER"];
 
       if (validPurposes.includes(normalizedPurpose as Purpose)) {
         setValue("purpose", normalizedPurpose as Purpose);
@@ -203,23 +197,21 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
           Let's talk about
         </Label>
         <div className="flex flex-wrap flex-row gap-2">
-          {["SERVICES", "JOBS", "PRODUCTS", "CAA", "OTHER"].map(
-            (item: string) => (
-              <Button
-                key={item}
-                type="button"
-                onClick={() => setValue("purpose", item as Purpose)}
-                className={cn(
-                  "uppercase rounded-full flex items-center justify-center bg-transparent text-background cursor-pointer border-background border hover:bg-background hover:text-foreground active:bg-background active:text-foreground",
-                  watch("purpose") === item
-                    ? "bg-background text-foreground"
-                    : "text-background bg-transparent"
-                )}
-              >
-                {item}
-              </Button>
-            )
-          )}
+          {["SERVICES", "CAREERS", "CAA", "OTHER"].map((item: string) => (
+            <Button
+              key={item}
+              type="button"
+              onClick={() => setValue("purpose", item as Purpose)}
+              className={cn(
+                "uppercase rounded-full flex items-center justify-center bg-transparent text-background cursor-pointer border-background border hover:bg-background hover:text-foreground active:bg-background active:text-foreground",
+                watch("purpose") === item
+                  ? "bg-background text-foreground"
+                  : "text-background bg-transparent"
+              )}
+            >
+              {item}
+            </Button>
+          ))}
         </div>
       </div>
 

@@ -15,7 +15,11 @@ import {
   DialogClose,
   DialogTrigger,
 } from "@/app/_components/ui/dialog";
-import { AnimatedTextReveal } from "@/app/_components/animated-text";
+import {
+  AnimatedRichText,
+  AnimatedSpan,
+  AnimatedTextReveal,
+} from "@/app/_components/animated-text";
 import { Icons } from "@/app/_components/icons";
 import { cn } from "@/lib/utils";
 
@@ -49,15 +53,17 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
     const x = useTransform(scrollYProgress, [0, 1], ["5%", scrollDistance]);
     return (
       <section
+        id="team"
         ref={targetRef}
         className={`w-screen flex-col items-center justify-center bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-24 relative h-[400vh] md:min-h-[1000vh] `}
       >
         <div className="sticky w-full top-0 flex flex-col items-center justify-center h-[100vh] overflow-hidden">
           <div className="container overflow-hidden flex flex-col items-start justify-center gap-8 md:gap-8">
             <AnimatedTextReveal
-              text="and then came the rest of us"
-              className="text-secondary-heading text-foreground leading-tight font-normal font-heading"
+              text="the ones who set it in motion"
+              className="text-secondary-heading  text-foreground leading-tight font-normal font-heading"
             />
+
             <motion.div
               style={{ x }}
               className={`flex ${

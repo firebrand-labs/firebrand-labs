@@ -60,13 +60,6 @@ const AnimatedCardInterface: React.FC = () => {
       delay: 0,
     },
     {
-      id: 2,
-      title: "engineering strategic brand narratives",
-      position: { xPercent: 87.5, yPercent: 17.5 }, // ~1050px/1200px, ~140px/800px
-      arcType: "low",
-      delay: 0.4,
-    },
-    {
       id: 3,
       title: "strategic vision one",
       position: { xPercent: 37.5, yPercent: 22.5 }, // ~450px/1200px, ~180px/800px
@@ -79,13 +72,6 @@ const AnimatedCardInterface: React.FC = () => {
       position: { xPercent: 66.7, yPercent: 27.5 }, // ~800px/1200px, ~220px/800px
       arcType: "high",
       delay: 1.2,
-    },
-    {
-      id: 5,
-      title: "embedding brand advocacy within organizations",
-      position: { xPercent: 16.7, yPercent: 40 }, // ~200px/1200px, ~320px/800px
-      arcType: "low",
-      delay: 1.6,
     },
     {
       id: 6,
@@ -109,32 +95,11 @@ const AnimatedCardInterface: React.FC = () => {
       delay: 2.8,
     },
     {
-      id: 9,
-      title: "data-driven user insights",
-      position: { xPercent: 62.5, yPercent: 47.5 }, // ~750px/1200px, ~380px/800px
-      arcType: "medium",
-      delay: 3.2,
-    },
-    {
       id: 10,
       title: "agile development methodologies",
       position: { xPercent: 91.7, yPercent: 45 }, // ~1100px/1200px, ~360px/800px
       arcType: "high",
       delay: 3.6,
-    },
-    {
-      id: 11,
-      title: "cross-platform integration",
-      position: { xPercent: 12.5, yPercent: 65 }, // ~150px/1200px, ~520px/800px
-      arcType: "low",
-      delay: 4.0,
-    },
-    {
-      id: 12,
-      title: "scalable architecture solutions",
-      position: { xPercent: 41.7, yPercent: 60 }, // ~500px/1200px, ~480px/800px
-      arcType: "medium",
-      delay: 4.4,
     },
     {
       id: 13,
@@ -165,39 +130,11 @@ const AnimatedCardInterface: React.FC = () => {
       delay: 6.0,
     },
     {
-      id: 17,
-      title: "machine learning integration",
-      position: { xPercent: 20.8, yPercent: 85 }, // ~250px/1200px, ~680px/800px
-      arcType: "low",
-      delay: 6.4,
-    },
-    {
-      id: 18,
-      title: "cloud infrastructure optimization",
-      position: { xPercent: 50, yPercent: 80 }, // ~600px/1200px, ~640px/800px
-      arcType: "medium",
-      delay: 6.8,
-    },
-    {
       id: 19,
       title: "sustainable development practices",
       position: { xPercent: 100, yPercent: 80 }, // ~1200px/1200px, ~640px/800px
       arcType: "high",
       delay: 6.0,
-    },
-    {
-      id: 20,
-      title: "machine learning integration",
-      position: { xPercent: 104.2, yPercent: 60 }, // ~1250px/1200px, ~480px/800px
-      arcType: "low",
-      delay: 6.4,
-    },
-    {
-      id: 21,
-      title: "cloud infrastructure optimization",
-      position: { xPercent: 108.3, yPercent: 30 }, // ~1300px/1200px, ~240px/800px
-      arcType: "medium",
-      delay: 6.8,
     },
   ];
 
@@ -226,7 +163,7 @@ const AnimatedCardInterface: React.FC = () => {
   const getArcVariants = (arcType: ArcType, delay: number, cardId: number) => {
     // Add randomness to duration and timing for each card
     const baseDuration: number =
-      arcType === "high" ? 4.2 : arcType === "medium" ? 3.8 : 3.2;
+      arcType === "high" ? 10 : arcType === "medium" ? 8 : 6;
     const duration: number = baseDuration + Math.sin(cardId * 0.7) * 0.8; // Varied duration
     const startDelay: number = delay + Math.cos(cardId * 0.5) * 0.3; // Varied start
 
@@ -460,21 +397,21 @@ const AnimatedCardInterface: React.FC = () => {
                 onHoverEnd={() => setActiveCard(null)}
               >
                 {/* Card Container */}
-                <div className="relative">
+                <div className="relative opacity-20">
                   {/* Main Card */}
                   <div
                     className="bg-background/50 backdrop-blur-sm border border-background rounded-lg px-4 py-3 
-                                hover:border-yellow-level-five transition-all duration-300 
-                                shadow-lg hover:shadow-yellow-level-five"
+                                hover:border-yellow-level-five transition-all duration-600 
+                                shadow-lg hover:shadow-yellow-level-five max-w-fit"
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-foreground text-sm font-medium whitespace-nowrap max-w-xs">
+                      <span className="text-foreground text-extra-subtitle-heading text-sm font-medium whitespace-nowrap max-w-xs">
                         {card.title}
                       </span>
 
                       {/* Red Circle with Arrow */}
                       <motion.div
-                        className="w-8 h-8 bg-yellow-level-five rounded-full flex items-center justify-center flex-shrink-0"
+                        className="w-8 h-8 bg-yellow-level-five/80 rounded-full flex items-center justify-center flex-shrink-0"
                         whileHover={{
                           scale: 1.1,
                           boxShadow: "0 0 20px rgba(239, 68, 68, 0.6)",
