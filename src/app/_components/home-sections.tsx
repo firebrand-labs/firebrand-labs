@@ -22,6 +22,7 @@ import Image from "next/image";
 import RandomCards from "@/app/_components/random-cards";
 import Footer from "@/app/_components/footer";
 import { Metadata } from "next/types";
+import CharacterCardCarousel from "./character-card-carousel";
 
 function useParallax(
   value: MotionValue<number>,
@@ -328,46 +329,8 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
             <FBLButton href="/about#team" body="our team" />
           </div>
           <div className="flex items-center justify-center self-center">
-            <div className="min-w-[220px] md:min-w-[350px] xl:min-w-[300px] 2xl:min-w-[400px] group min-h-[320px] md:min-h-[540px] relative rounded-2xl">
-              {/* Static center card */}
-              <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl z-[10]">
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1JA7huD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
-                  }
-                  alt="doers. misfits. firebrands. "
-                  className="w-full"
-                  width={300}
-                  height={700}
-                />
-              </div>
-
-              {/* Card that moves right on hover */}
-              <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl transition-transform ease-in duration-200 group-hover:translate-x-6 group-hover:rotate-[20deg] origin-bottom">
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl"
-                  }
-                  alt="doers. misfits. firebrands. "
-                  className="w-full"
-                  width={400}
-                  height={700}
-                />
-              </div>
-
-              {/* Card that moves left on hover */}
-              <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl transition-transform ease-in duration-200 group-hover:-translate-x-6 group-hover:-rotate-[20deg] origin-bottom">
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQVNEx6scTnmCMBktVKZO5ofSazG3yJAgPeI"
-                  }
-                  alt="doers. misfits. firebrands. "
-                  className="w-full"
-                  width={300}
-                  height={700}
-                />
-              </div>
-            </div>
+            {/* Static center card */}
+            <CharacterCardCarousel />
           </div>
         </div>
       </div>

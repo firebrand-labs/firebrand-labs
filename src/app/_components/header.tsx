@@ -205,7 +205,7 @@ const Header: FC<HeaderProps> = () => {
                       >
                         <Link
                           className={cn(
-                            "text-foreground lowercase text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl no-underline font-paragraph font-light italic  hover:text-foreground/60",
+                            "text-foreground lowercase text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl no-underline font-paragraph font-light italic  hover:text-foreground/60",
                             isActiveNavItem(item.href)
                               ? "text-yellow-level-four/90  font-normal"
                               : "text-foreground"
