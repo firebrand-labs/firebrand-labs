@@ -59,7 +59,7 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
         plugins={[]}
         className="py-4 md:py-0"
       >
-        <CarouselContent className="pl-0 ml-0">
+        <CarouselContent className="pl-0 ml-0 max-h-[530px] md:max-h-fit">
           {carouselImages.map((item, index) => (
             <CarouselItem key={index} className="pl-0">
               <div className="justify-center gap-4">
