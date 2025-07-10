@@ -1,0 +1,29 @@
+{
+  "cacheItemsMap": {
+    "our-work/veda-corp.mdx": {
+      "document": {
+        "title": "Tech Startup Digital Transformation",
+        "description": "How we helped MedTech Inc. scale from 10K to 1M users in 6 months",
+        "date": "2024-01-15T00:00:00.000Z",
+        "body": {
+          "raw": "\r\n## The Challenge\r\n\r\nMedTech Inc. was struggling with an outdated platform that couldn't handle their growing user base.\r\n",
+          "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),T=(e,t)=>{for(var o in t)a(e,o,{get:t[o],enumerable:!0})},c=(e,t,o,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of m(t))!f.call(e,r)&&r!==o&&a(e,r,{get:()=>t[r],enumerable:!(s=g(t,r))||s.enumerable});return e};var w=(e,t,o)=>(o=e!=null?u(p(e)):{},c(t||!e||!e.__esModule?a(o,\"default\",{value:e,enumerable:!0}):o,e)),D=e=>c(a({},\"__esModule\",{value:!0}),e);var h=x((y,i)=>{i.exports=_jsx_runtime});var _={};T(_,{default:()=>d,frontmatter:()=>M});var n=w(h()),M={title:\"Tech Startup Digital Transformation\",description:\"How we helped MedTech Inc. scale from 10K to 1M users in 6 months\",image:\"/placeholder.svg?height=400&width=800\",date:\"2024-01-15\",category:\"Digital Transformation\",client:\"MedTech Inc.\",industry:\"Healthcare Technology\",duration:\"6 months\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],featured:!0};function l(e){let t={h2:\"h2\",p:\"p\",...e.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t.h2,{children:\"The Challenge\"}),`\n`,(0,n.jsx)(t.p,{children:\"MedTech Inc. was struggling with an outdated platform that couldn't handle their growing user base.\"})]})}function d(e={}){let{wrapper:t}=e.components||{};return t?(0,n.jsx)(t,{...e,children:(0,n.jsx)(l,{...e})}):l(e)}return D(_);})();\n;return Component;"
+        },
+        "_id": "our-work/veda-corp.mdx",
+        "_raw": {
+          "sourceFilePath": "our-work/veda-corp.mdx",
+          "sourceFileName": "veda-corp.mdx",
+          "sourceFileDir": "our-work",
+          "contentType": "mdx",
+          "flattenedPath": "our-work/veda-corp"
+        },
+        "type": "OurWork",
+        "slug": "/our-work/veda-corp",
+        "slugAsParams": "veda-corp"
+      },
+      "documentHash": "1752152748763",
+      "hasWarnings": true,
+      "documentTypeName": "OurWork"
+    }
+  }
+}

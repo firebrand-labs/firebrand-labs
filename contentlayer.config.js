@@ -1,93 +1,53 @@
-// contentlayer.config.ts
-import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypePrettyCode from "rehype-pretty-code";
-import rehypeSlug from "rehype-slug";
-import remarkGfm from "remark-gfm";
+import { defineDocumentType, makeSource } from "contentlayer2/source-files";
 
-/**
- * Case‑study MDX files live under:
- *   content/case-studies/**\/*.mdx
- * Adjust `filePathPattern` or `contentDirPath`
- * if your folder structure is different.
- */
-export const CaseStudy = defineDocumentType(() => ({
-  name: "CaseStudy",
-  filePathPattern: "case-studies/**/*.mdx",
+/** @type {import('contentlayer/source-files').ComputedFields} */
+const computedFields = {
+  slug: {
+    type: "string",
+    resolve: (doc) => {
+      console.log("✅ Contentlayer found:", doc._raw.sourceFilePath);
+      return `/${doc._raw.flattenedPath}`;
+    },
+  },
+  slugAsParams: {
+    type: "string",
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+  },
+};
+
+export const OurWork = defineDocumentType(() => ({
+  name: "OurWork",
+  filePathPattern: `our-work/**/*.mdx`,
   contentType: "mdx",
-
-  /** ─────────── Front‑matter fields ─────────── */
   fields: {
-    title: { type: "string", required: true },
-    description: { type: "string" },
-    image: { type: "string" },
-    date: { type: "date", required: true },
-
-    client: { type: "string" },
-    industry: { type: "string" },
-    duration: { type: "string" },
-
-    featured: { type: "boolean", default: false },
-  },
-
-  /** ─────────── Derived values ─────────── */
-  computedFields: {
-    url: {
+    title: {
       type: "string",
-      resolve: (doc) =>
-        `/case-studies/${doc._raw.flattenedPath.replace("case-studies/", "")}`,
+      required: true,
     },
-    slugAsParams: {
+    description: {
       type: "string",
-      resolve: (doc) =>
-        doc._raw.flattenedPath // e.g. "case-studies/design/awesome‑project"
-          .split("/") // -> ["case-studies", "design", "awesome‑project"]
-          .slice(1) // remove the top‑level folder
-          .join("/"), // -> "design/awesome‑project"
+    },
+    industry: {
+      type: "string",
+    },
+    client: {
+      type: "string",
+    },
+    duration: {
+      type: "string",
+    },
+    featured: {
+      type: "boolean",
+    },
+    date: {
+      type: "date",
+      required: true,
     },
   },
+  computedFields,
 }));
 
-/**
- * Export the Contentlayer source definition.
- * Add remark/rehype plugins here if you need them.
- */
 export default makeSource({
   contentDirPath: "./content",
-  disableImportAliasWarning: true,
-  documentTypes: [CaseStudy],
-  mdx: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypePrettyCode,
-        {
-          theme: "github-dark",
-          onVisitLine(node) {
-            // Prevent lines from collapsing in `display: grid` mode, and allow empty
-            // lines to be copy/pasted
-            if (node.children.length === 0) {
-              node.children = [{ type: "text", value: " " }];
-            }
-          },
-          onVisitHighlightedLine(node) {
-            node.properties.className.push("line--highlighted");
-          },
-          onVisitHighlightedWord(node) {
-            node.properties.className = ["word--highlighted"];
-          },
-        },
-      ],
-      [
-        rehypeAutolinkHeadings,
-        {
-          properties: {
-            className: ["subheading-anchor"],
-            ariaLabel: "Link to section",
-          },
-        },
-      ],
-    ],
-  },
+  documentTypes: [OurWork],
 });
