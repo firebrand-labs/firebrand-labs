@@ -420,9 +420,9 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
-    href: "/resources",
-    target: "/resources",
-    title: "Resources",
+    href: "/thebook",
+    target: "/thebook",
+    title: "the book",
     subItems: [],
   },
   {

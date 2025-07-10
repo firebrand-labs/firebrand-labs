@@ -135,7 +135,7 @@ const page: FC<pageProps> = () => {
           </div>
         </section>
 
-        <section className="hidden items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary bg-[image:var(--color-repeating-gradient)] min-h-screen overflow-y-hidden py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] before:bg-contain before:bg-no-repeat before:md:bg-right">
+        <section className="flex items-center justify-start flex-col w-screen overflow-x-hidden relative bg-primary bg-[image:var(--color-repeating-gradient)] min-h-screen overflow-y-hidden py-16 before:w-full before:h-full before:content-[''] before:bg-bottom  before:absolute before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX65Lf0scTnmCMBktVKZO5ofSazG3yJAgPeIu')] before:bg-contain before:bg-no-repeat before:md:bg-right">
           <div className="container flex items-start flex-col gap-4 justify-start md:mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">

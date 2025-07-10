@@ -196,7 +196,7 @@ const page: FC<pageProps> = () => {
 
         <section
           id="book"
-          className="hidden items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 pb-0 md:py-16"
+          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 pb-0 md:py-16"
         >
           <div className="container flex flex-col items-start justify-center gap-8">
             <div className="grid grid-cols-1 md:grid-cols-3">
@@ -205,7 +205,7 @@ const page: FC<pageProps> = () => {
                   text="want to learn more about us?"
                   className="text-secondary-heading tracking-wide text-foreground leading-tight font-normal font-heading"
                 />
-                <p className="text-paragraph-heading tracking-wide italic mt-8 font-extrabold text-foreground leading-normal font-paragraph">
+                <p className="text-paragraph-heading tracking-wide italic mt-4 3xl:mt-8 font-extrabold text-foreground leading-normal font-paragraph">
                   fabulous ideas. brilliant execution. loveable people.
                 </p>
                 <p className="text-paragraph-heading tracking-wide text-foreground max-w-4xl leading-normal font-light font-paragraph">
