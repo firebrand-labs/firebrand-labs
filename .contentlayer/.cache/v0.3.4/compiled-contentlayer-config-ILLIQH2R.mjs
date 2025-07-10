@@ -1,61 +1,36 @@
-// contentlayer.config.ts
+// contentlayer.config.js
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypePrettyCode from "rehype-pretty-code";
-import rehypeSlug from "rehype-slug";
-import remarkGfm from "remark-gfm";
-
-/**
- * Case‑study MDX files live under:
- *   content/case-studies/**\/*.mdx
- * Adjust `filePathPattern` or `contentDirPath`
- * if your folder structure is different.
- */
-export const CaseStudy = defineDocumentType(() => ({
+var CaseStudy = defineDocumentType(() => ({
   name: "CaseStudy",
   filePathPattern: "case-studies/**/*.mdx",
   contentType: "mdx",
-
   /** ─────────── Front‑matter fields ─────────── */
   fields: {
     title: { type: "string", required: true },
     description: { type: "string" },
     image: { type: "string" },
     date: { type: "date", required: true },
-
     client: { type: "string" },
     industry: { type: "string" },
     duration: { type: "string" },
-
-    featured: { type: "boolean", default: false },
+    featured: { type: "boolean", default: false }
   },
-
   /** ─────────── Derived values ─────────── */
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) =>
-        `/case-studies/${doc._raw.flattenedPath.replace("case-studies/", "")}`,
+      resolve: (doc) => `/case-studies/${doc._raw.flattenedPath.replace("case-studies/", "")}`
     },
     slugAsParams: {
       type: "string",
-      resolve: (doc) =>
-        doc._raw.flattenedPath // e.g. "case-studies/design/awesome‑project"
-          .split("/") // -> ["case-studies", "design", "awesome‑project"]
-          .slice(1) // remove the top‑level folder
-          .join("/"), // -> "design/awesome‑project"
-    },
-  },
+      resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/")
+      // -> "design/awesome‑project"
+    }
+  }
 }));
-
-/**
- * Export the Contentlayer source definition.
- * Add remark/rehype plugins here if you need them.
- */
-export default makeSource({
+var contentlayer_config_default = makeSource({
   contentDirPath: "./content",
-  disableImportAliasWarning: true,
-  documentTypes: [CaseStudy],
+  documentTypes: [Page, Doc, Guide, Post, Author],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
@@ -65,8 +40,6 @@ export default makeSource({
         {
           theme: "github-dark",
           onVisitLine(node) {
-            // Prevent lines from collapsing in `display: grid` mode, and allow empty
-            // lines to be copy/pasted
             if (node.children.length === 0) {
               node.children = [{ type: "text", value: " " }];
             }
@@ -76,18 +49,23 @@ export default makeSource({
           },
           onVisitHighlightedWord(node) {
             node.properties.className = ["word--highlighted"];
-          },
-        },
+          }
+        }
       ],
       [
         rehypeAutolinkHeadings,
         {
           properties: {
             className: ["subheading-anchor"],
-            ariaLabel: "Link to section",
-          },
-        },
-      ],
-    ],
-  },
+            ariaLabel: "Link to section"
+          }
+        }
+      ]
+    ]
+  }
 });
+export {
+  CaseStudy,
+  contentlayer_config_default as default
+};
+//# sourceMappingURL=compiled-contentlayer-config-ILLIQH2R.mjs.map
