@@ -117,14 +117,28 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
       <DialogTrigger className="" asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="max-w-[80vh] md:max-w-[35vw]">
+      <DialogContent className="max-w-[80vh] md:max-w-[65vw]">
         <DialogHeader className="hidden" />
         <DialogTitle className="hidden" />
-        <div className="flex flex-col items-center justify-center gap-6">
-          <h3 className="font-paragraph text-tertiary-heading leading-normal text-foreground w-full">
-            can we get to know you?
-          </h3>
-          <form onSubmit={handleSubmit(onSubmit)} className="w-full">
+        <div className="flex flex-col items-start justify-center gap-6 md:gap-12">
+          <div className="flex items-start justify-center gap-4 flex-col">
+            <h3 className="font-paragraph text-tertiary-heading leading-normal text-foreground w-full">
+              can we get to know you?
+            </h3>
+            <p className="text-subtitle-heading font-normal leading-tight text-foreground ">
+              we want to know who read our book. was it a friend? a former
+              employee? or a client? or a well-wisher? hence, we ask, no,
+              request you if you can share basic information about yourself.
+            </p>
+            <p className="text-subtitle-heading font-normal leading-tight text-foreground ">
+              apart from dropping you a “thank you” note, we promise never to
+              spam you on anything.
+            </p>
+          </div>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="w-full grid grid-cols-1 md:grid-cols-2 items-center gap-4"
+          >
             <div className="flex  items-start flex-col justify-start gap-2 w-full group relative">
               <Label
                 htmlFor="Name"
@@ -254,15 +268,16 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
                 <p className="h-4"></p>
               )}
             </div>
+
             <Button
               variant={"outline"}
               type="submit"
               size={"lg"}
-              className="border-1 border-foreground text-yellow-level-four rounded-full cursor-pointer hover:bg-foreground/10 hover:text-yellow-level-four"
+              className="border-1 border-foreground bg-yellow-level-three text-foreground rounded-full cursor-pointer hover:text-foreground hover:bg-yellow-level-three/85 max-w-[300px] self-center justify-self-start"
               disabled={isSubmitting}
             >
               Submit
-              <Icons.ArrowRight className="stroke-yellow-level-four" />
+              <Icons.ArrowRight className="" />
             </Button>
           </form>
         </div>
