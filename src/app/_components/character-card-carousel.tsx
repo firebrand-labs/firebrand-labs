@@ -48,7 +48,7 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
   };
 
   return (
-    <div className="w-full max-w-sm 3xl:max-w-lg">
+    <div className="w-full max-w-sm 3xl:max-w-lg max-h-[530px]">
       <Carousel
         opts={{
           align: "start",
@@ -64,6 +64,7 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
             <CarouselItem key={index} className="pl-0">
               <div className="justify-center gap-4">
                 <Image
+                  draggable={false}
                   src={item || "/placeholder.svg"}
                   alt="doers. misfits. firebrands."
                   className="w-full"
