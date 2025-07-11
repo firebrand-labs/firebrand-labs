@@ -8,6 +8,36 @@ interface MdxComponentsProps {
   code: string;
 }
 
+export const OverviewSection = function ({}) {
+  return (
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh py-16 pt-32 md:pt-40 md:pb-24">
+      <div className="container flex flex-col items-start justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-1 gap-2 w-full items-start justify-center">
+          <ul className="flex flex-col items-start justify-center gap-2">
+            <li className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
+              We built our transport platform with a simple goal: to help people
+              movie better, every day.
+            </li>
+            <li className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
+              We built our transport platform with a simple goal: to help people
+              movie better, every day.
+            </li>
+            <li className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
+              We built our transport platform with a simple goal: to help people
+              movie better, every day.
+            </li>
+            <li className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
+              We built our transport platform with a simple goal: to help people
+              movie better, every day.
+            </li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+    </section>
+  );
+};
+
 const components = {
   h1: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
     <h1

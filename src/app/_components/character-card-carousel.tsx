@@ -11,7 +11,7 @@ import {
 
 const carouselImages = [
   "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1JA7huD7g3autyIcM42eqsf6Vb5PvXwEiWU0",
-  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl",
+  // "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl",
   "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQVNEx6scTnmCMBktVKZO5ofSazG3yJAgPeI",
 ];
 
@@ -48,7 +48,7 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
   };
 
   return (
-    <div className="w-full max-w-sm 3xl:max-w-lg">
+    <div className="w-full max-w-sm 3xl:max-w-lg max-h-[530px]">
       <Carousel
         opts={{
           align: "start",
@@ -59,11 +59,12 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
         plugins={[]}
         className="py-4 md:py-0"
       >
-        <CarouselContent className="pl-0 ml-0">
+        <CarouselContent className="pl-0 ml-0 max-h-[530px] md:max-h-fit">
           {carouselImages.map((item, index) => (
             <CarouselItem key={index} className="pl-0">
               <div className="justify-center gap-4">
                 <Image
+                  draggable={false}
                   src={item || "/placeholder.svg"}
                   alt="doers. misfits. firebrands."
                   className="w-full"
