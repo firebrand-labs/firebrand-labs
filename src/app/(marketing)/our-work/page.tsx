@@ -24,8 +24,8 @@ const page: FC<pageProps> = () => {
         <div className="container flex flex-col items-start justify-center gap-16">
           <div className="flex flex-col items-start justify-center max-w-5xl gap-4">
             <AnimatedTextReveal
-              text="a dash of fire, a lot of hunger, and an unshakeable need to get things done. for your marketing."
-              className="text-secondary-heading text-foreground leading-tight tracking-wide font-normal font-heading"
+              text="Built with you, not just around you."
+              className="text-secondary-heading text-foreground leading-tight tracking-wide font-normal font-heading mb-2.5"
             />
 
             <AnimatedRichText
@@ -33,8 +33,11 @@ const page: FC<pageProps> = () => {
               delay={5}
             >
               <AnimatedSpan className="" delay={1.8}>
-                we are not everything to everyone. brands don’t need more noise.
-                they need clarity. speed. guts.
+                The best ideas don’t happen in isolation-they’re built together,
+                with curiosity and care. Every project is personal. We ask the
+                right questions, challenge what needs to be challenged, and
+                bring clear, thoughtful thinking to the table. From first idea
+                to final execution, we’re here as creative partners.
               </AnimatedSpan>
             </AnimatedRichText>
           </div>
