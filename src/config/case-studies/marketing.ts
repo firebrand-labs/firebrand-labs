@@ -29,6 +29,20 @@ export const svaphileOverviewContent: VedaCorpOverviewContent = {
     developmentStack: "WordPress",
   },
 };
+export const tyoOverviewContent: VedaCorpOverviewContent = {
+  overview: [
+    "We built our transport platform with a simple goal: to help people move better, every day.",
+    "Designed as both a service and an app, it brings together cabs and auto-rickshaws to make getting around Chennai easier, faster, and more reliable.",
+    "Every detail comes from our desire to make your day a little smoother—from the easy-to-use interface to real-time tracking and pricing that plays fair.We’ve designed the experience to feel effortless, because we know commuting shouldn’t be the hardest part of your day.",
+    "More than just a ride aggregator, it’s our way of saying: we’re here for the city, ready to help people get where they need to be—easily, affordably, and with a little less stress.",
+  ],
+  details: {
+    timeline: "March - June 2024",
+    client: "Veda Corporate Advisors Pvt. Ltd.",
+    industry: "Investment Banking",
+    developmentStack: "WordPress",
+  },
+};
 
 export const vedaCorpCarouselContent: VedacorpCarouselContent = [
   {
@@ -58,6 +72,41 @@ export const vedaCorpCarouselContent: VedacorpCarouselContent = [
   {
     image:
       "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX9ZzTYscTnmCMBktVKZO5ofSazG3yJAgPeIu",
+    title: "A Seamless Reading Experience",
+    description: [
+      "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
+    ],
+  },
+];
+
+export const tyoCarouselContent: VedacorpCarouselContent = [
+  {
+    image:
+      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXir4FM5sRJFRBT8aQqkgE92yd5704YtCcpPWIr",
+    title: "A Seamless Reading Experience",
+    description: [
+      "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
+    ],
+  },
+  {
+    image:
+      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXir4FM5sRJFRBT8aQqkgE92yd5704YtCcpPWIr",
+    title: "A Seamless Reading Experience",
+    description: [
+      "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
+    ],
+  },
+  {
+    image:
+      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXir4FM5sRJFRBT8aQqkgE92yd5704YtCcpPWIr",
+    title: "A Seamless Reading Experience",
+    description: [
+      "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
+    ],
+  },
+  {
+    image:
+      "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXir4FM5sRJFRBT8aQqkgE92yd5704YtCcpPWIr",
     title: "A Seamless Reading Experience",
     description: [
       "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
