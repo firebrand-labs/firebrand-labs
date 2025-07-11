@@ -366,7 +366,7 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
           </AnimatedRichText>
           <FBLButton className="hidden" href="/blog" body="all resources" />
         </div>
-        <Icons.BlogImage className="w-[80%] self-center" />
+        <Icons.BlogImage className="w-full md:w-[80%] self-center" />
       </div>
     </section>
   );
