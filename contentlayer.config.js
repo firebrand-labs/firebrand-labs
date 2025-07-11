@@ -37,7 +37,7 @@ export const OurWork = defineDocumentType(() => ({
       type: "string",
     },
     featured: {
-      type: "boolean",
+      type: "string",
     },
     date: {
       type: "date",

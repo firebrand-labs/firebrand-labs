@@ -15,6 +15,10 @@ export type OurWork = {
   type: 'OurWork'
   title: string
   description?: string | undefined
+  industry?: string | undefined
+  client?: string | undefined
+  duration?: string | undefined
+  featured?: string | undefined
   date: IsoDateTimeString
   /** MDX file body */
   body: MDX

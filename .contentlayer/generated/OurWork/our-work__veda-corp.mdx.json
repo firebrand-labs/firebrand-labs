@@ -1,6 +1,10 @@
 {
   "title": "Tech Startup Digital Transformation",
   "description": "How we helped MedTech Inc. scale from 10K to 1M users in 6 months",
+  "industry": "Healthcare Technology",
+  "client": "MedTech Inc.",
+  "duration": "6 months",
+  "featured": "true\r",
   "date": "2024-01-15T00:00:00.000Z",
   "body": {
     "raw": "\r\n## The Challenge\r\n\r\nMedTech Inc. was struggling with an outdated platform that couldn't handle their growing user base.\r\n",

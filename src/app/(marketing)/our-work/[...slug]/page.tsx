@@ -10,9 +10,9 @@ interface PostProps {
   };
 }
 
-async function getPostFromParams(params: PostProps["params"]) {
-  const slug = params?.slug?.join("/");
-  const post = allOurWorks.find((post) => post.slugAsParams === slug);
+function getPostFromParams(slug: string[]) {
+  const [data] = slug;
+  const post = allOurWorks.find((post) => post.slugAsParams === data);
 
   if (!post) {
     null;
@@ -21,29 +21,32 @@ async function getPostFromParams(params: PostProps["params"]) {
   return post;
 }
 
-export async function generateMetadata({
-  params,
-}: PostProps): Promise<Metadata> {
-  const post = await getPostFromParams(params);
+// export async function generateMetadata({
+//   params,
+// }: PostProps): Promise<Metadata> {
+//   const post = await getPostFromParams(params);
 
-  if (!post) {
-    return {};
-  }
+//   if (!post) {
+//     return {};
+//   }
 
-  return {
-    title: post.title,
-    description: post.description,
-  };
-}
+//   return {
+//     title: post.title,
+//     description: post.description,
+//   };
+// }
 
-export async function generateStaticParams(): Promise<PostProps["params"][]> {
-  return allOurWorks.map((post) => ({
-    slug: post.slugAsParams.split("/"),
-  }));
-}
+// export async function generateStaticParams(): Promise<PostProps["params"][]> {
+//   return allOurWorks.map((post) => ({
+//     slug: post.slugAsParams.split("/"),
+//   }));
+// }
 
 export default async function PostPage({ params }: PostProps) {
-  const post = await getPostFromParams(params);
+  const param = await params;
+
+  const post = allOurWorks.find((post) => post.slugAsParams === param.slug[0]);
+  console.log(post);
 
   if (!post) {
     notFound();

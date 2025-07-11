@@ -32,7 +32,16 @@ export const OverviewSection = function ({}) {
             </li>
           </ul>
         </div>
-        <div></div>
+        <div className="flex flex-col items-start justify-between border-t border-foreground w-full">
+          <div className="flex flex-col items-start justify-center gap-1.5">
+            <p className="text-foreground text-subtitle-heading leading-tight tracking-tight font-paragraph">
+              Timeline
+            </p>
+            <p className="text-foreground text-subtitle-heading uppercase">
+              Decemeber 2023 - January 2024
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
