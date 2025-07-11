@@ -1,15 +1,91 @@
 [
   {
-    "title": "Tech Startup Digital Transformation",
-    "description": "How we helped MedTech Inc. scale from 10K to 1M users in 6 months",
-    "industry": "Healthcare Technology",
-    "client": "MedTech Inc.",
-    "duration": "6 months",
-    "featured": "true\r",
-    "date": "2024-01-15T00:00:00.000Z",
+    "title": "Pampered Paws",
+    "description": "Pampered Paws is more than just a pet grooming service, it’s a pawridise for pets and the people who love them.",
+    "image": "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXHIvBDscTnmCMBktVKZO5ofSazG3yJAgPeIu",
+    "industry": "Consumer Goods, Pet Food and Accessories",
+    "client": "Take Your Own - Transport Aggregate App",
+    "duration": "Retainer Client",
+    "tech": "HTML",
+    "date": "2001-01-20T18:30:00.000Z",
     "body": {
-      "raw": "\r\n## The Challenge\r\n\r\nMedTech Inc. was struggling with an outdated platform that couldn't handle their growing user base.\r\n",
-      "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),T=(e,t)=>{for(var o in t)a(e,o,{get:t[o],enumerable:!0})},c=(e,t,o,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of m(t))!f.call(e,r)&&r!==o&&a(e,r,{get:()=>t[r],enumerable:!(s=g(t,r))||s.enumerable});return e};var w=(e,t,o)=>(o=e!=null?u(p(e)):{},c(t||!e||!e.__esModule?a(o,\"default\",{value:e,enumerable:!0}):o,e)),D=e=>c(a({},\"__esModule\",{value:!0}),e);var h=x((y,i)=>{i.exports=_jsx_runtime});var _={};T(_,{default:()=>d,frontmatter:()=>M});var n=w(h()),M={title:\"Tech Startup Digital Transformation\",description:\"How we helped MedTech Inc. scale from 10K to 1M users in 6 months\",image:\"/placeholder.svg?height=400&width=800\",date:\"2024-01-15\",category:\"Digital Transformation\",client:\"MedTech Inc.\",industry:\"Healthcare Technology\",duration:\"6 months\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],featured:!0};function l(e){let t={h2:\"h2\",p:\"p\",...e.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t.h2,{children:\"The Challenge\"}),`\n`,(0,n.jsx)(t.p,{children:\"MedTech Inc. was struggling with an outdated platform that couldn't handle their growing user base.\"})]})}function d(e={}){let{wrapper:t}=e.components||{};return t?(0,n.jsx)(t,{...e,children:(0,n.jsx)(l,{...e})}):l(e)}return D(_);})();\n;return Component;"
+      "raw": "\n<PamperedPaws />\n",
+      "code": "var Component=(()=>{var u=Object.create;var n=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,P=Object.prototype.hasOwnProperty;var w=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),x=(e,t)=>{for(var o in t)n(e,o,{get:t[o],enumerable:!0})},i=(e,t,o,a)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of l(t))!P.call(e,r)&&r!==o&&n(e,r,{get:()=>t[r],enumerable:!(a=f(t,r))||a.enumerable});return e};var h=(e,t,o)=>(o=e!=null?u(g(e)):{},i(t||!e||!e.__esModule?n(o,\"default\",{value:e,enumerable:!0}):o,e)),j=e=>i(n({},\"__esModule\",{value:!0}),e);var d=w((A,c)=>{c.exports=_jsx_runtime});var D={};x(D,{default:()=>m,frontmatter:()=>y});var s=h(d()),y={title:\"Pampered Paws\",description:\"Pampered Paws is more than just a pet grooming service, it\\u2019s a pawridise for pets and the people who love them.\",image:\"https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXHIvBDscTnmCMBktVKZO5ofSazG3yJAgPeIu\",date:\"21 January\",category:\"Product Development\",client:\"Take Your Own - Transport Aggregate App\",industry:\"Consumer Goods, Pet Food and Accessories\",duration:\"Retainer Client\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"HTML\"};function p(e){let{PamperedPaws:t}=e.components||{};return t||v(\"PamperedPaws\",!0),(0,s.jsx)(t,{})}function m(e={}){let{wrapper:t}=e.components||{};return t?(0,s.jsx)(t,{...e,children:(0,s.jsx)(p,{...e})}):p(e)}function v(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return j(D);})();\n;return Component;"
+    },
+    "_id": "our-work/pampered-paws.mdx",
+    "_raw": {
+      "sourceFilePath": "our-work/pampered-paws.mdx",
+      "sourceFileName": "pampered-paws.mdx",
+      "sourceFileDir": "our-work",
+      "contentType": "mdx",
+      "flattenedPath": "our-work/pampered-paws"
+    },
+    "type": "OurWork",
+    "slug": "/our-work/pampered-paws",
+    "slugAsParams": "pampered-paws"
+  },
+  {
+    "title": "Svaphile",
+    "description": "We shaped Svaphile’s digital presence with a focus on clarity, ease, and trust.",
+    "image": "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQuh9Hu7IwFK269gvohLHr5a4VNqcYbpTnMXk",
+    "industry": "Health-tech, Digital Health",
+    "client": "Svaphile",
+    "duration": "December 2023 - January 2024",
+    "tech": "In-Progress",
+    "date": "2001-01-20T18:30:00.000Z",
+    "body": {
+      "raw": "\n<Svaphile />\n",
+      "code": "var Component=(()=>{var d=Object.create;var r=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var v=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),x=(e,t)=>{for(var n in t)r(e,n,{get:t[n],enumerable:!0})},s=(e,t,n,i)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of m(t))!g.call(e,o)&&o!==n&&r(e,o,{get:()=>t[o],enumerable:!(i=h(t,o))||i.enumerable});return e};var y=(e,t,n)=>(n=e!=null?d(f(e)):{},s(t||!e||!e.__esModule?r(n,\"default\",{value:e,enumerable:!0}):n,e)),D=e=>s(r({},\"__esModule\",{value:!0}),e);var u=v((w,c)=>{c.exports=_jsx_runtime});var M={};x(M,{default:()=>p,frontmatter:()=>S});var a=y(u()),S={title:\"Svaphile\",description:\"We shaped Svaphile\\u2019s digital presence with a focus on clarity, ease, and trust.\",image:\"https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQuh9Hu7IwFK269gvohLHr5a4VNqcYbpTnMXk\",date:\"21 January\",category:\"Product Development\",client:\"Svaphile\",industry:\"Health-tech, Digital Health\",duration:\"December 2023 - January 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"In-Progress\"};function l(e){let{Svaphile:t}=e.components||{};return t||j(\"Svaphile\",!0),(0,a.jsx)(t,{})}function p(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,{...e,children:(0,a.jsx)(l,{...e})}):l(e)}function j(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return D(M);})();\n;return Component;"
+    },
+    "_id": "our-work/svaphile.mdx",
+    "_raw": {
+      "sourceFilePath": "our-work/svaphile.mdx",
+      "sourceFileName": "svaphile.mdx",
+      "sourceFileDir": "our-work",
+      "contentType": "mdx",
+      "flattenedPath": "our-work/svaphile"
+    },
+    "type": "OurWork",
+    "slug": "/our-work/svaphile",
+    "slugAsParams": "svaphile"
+  },
+  {
+    "title": "Take Your Own - Transport Aggregate App",
+    "description": "We built our transport platform with a simple goal: to help people move better, every day.",
+    "image": "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXHIvBDscTnmCMBktVKZO5ofSazG3yJAgPeIu",
+    "industry": "Logistics",
+    "client": "Take Your Own - Transport Aggregate App",
+    "duration": "December 2023 - January 2024",
+    "tech": "In-Progress",
+    "date": "2001-01-20T18:30:00.000Z",
+    "body": {
+      "raw": "\n<TYO />\n",
+      "code": "var Component=(()=>{var d=Object.create;var n=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),D=(e,t)=>{for(var o in t)n(e,o,{get:t[o],enumerable:!0})},i=(e,t,o,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of l(t))!y.call(e,r)&&r!==o&&n(e,r,{get:()=>t[r],enumerable:!(s=g(t,r))||s.enumerable});return e};var T=(e,t,o)=>(o=e!=null?d(f(e)):{},i(t||!e||!e.__esModule?n(o,\"default\",{value:e,enumerable:!0}):o,e)),h=e=>i(n({},\"__esModule\",{value:!0}),e);var p=x((A,c)=>{c.exports=_jsx_runtime});var b={};D(b,{default:()=>m,frontmatter:()=>j});var a=T(p()),j={title:\"Take Your Own - Transport Aggregate App\",description:\"We built our transport platform with a simple goal: to help people move better, every day.\",image:\"https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXHIvBDscTnmCMBktVKZO5ofSazG3yJAgPeIu\",date:\"21 January\",category:\"Product Development\",client:\"Take Your Own - Transport Aggregate App\",industry:\"Logistics\",duration:\"December 2023 - January 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"In-Progress\"};function u(e){let{TYO:t}=e.components||{};return t||v(\"TYO\",!0),(0,a.jsx)(t,{})}function m(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,{...e,children:(0,a.jsx)(u,{...e})}):u(e)}function v(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return h(b);})();\n;return Component;"
+    },
+    "_id": "our-work/tyo.mdx",
+    "_raw": {
+      "sourceFilePath": "our-work/tyo.mdx",
+      "sourceFileName": "tyo.mdx",
+      "sourceFileDir": "our-work",
+      "contentType": "mdx",
+      "flattenedPath": "our-work/tyo"
+    },
+    "type": "OurWork",
+    "slug": "/our-work/tyo",
+    "slugAsParams": "tyo"
+  },
+  {
+    "title": "Vedacorp",
+    "description": "Revamping the visual identity for an independent investment bank to reflect its credibility, support clarity, and enable long-term scalability.",
+    "image": "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXHIvBDscTnmCMBktVKZO5ofSazG3yJAgPeIu",
+    "industry": "Investment Banking",
+    "client": "Veda Corporate Advisors Pvt. Ltd.",
+    "duration": "March - June 2024",
+    "tech": "Wordpress",
+    "date": "2001-03-20T18:30:00.000Z",
+    "body": {
+      "raw": "\n<VedaCorp />\n",
+      "code": "var Component=(()=>{var l=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var v=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),x=(t,e)=>{for(var n in e)r(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!y.call(t,o)&&o!==n&&r(t,o,{get:()=>e[o],enumerable:!(a=m(e,o))||a.enumerable});return t};var b=(t,e,n)=>(n=t!=null?l(g(t)):{},s(e||!t||!t.__esModule?r(n,\"default\",{value:t,enumerable:!0}):n,t)),h=t=>s(r({},\"__esModule\",{value:!0}),t);var d=v((k,c)=>{c.exports=_jsx_runtime});var C={};x(C,{default:()=>u,frontmatter:()=>M});var i=b(d()),M={title:\"Vedacorp\",description:\"Revamping the visual identity for an independent investment bank to reflect its credibility, support clarity, and enable long-term scalability.\",image:\"https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXHIvBDscTnmCMBktVKZO5ofSazG3yJAgPeIu\",date:\"21 March\",category:\"Website Rewamp\",client:\"Veda Corporate Advisors Pvt. Ltd.\",industry:\"Investment Banking\",duration:\"March - June 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"Wordpress\"};function p(t){let{VedaCorp:e}=t.components||{};return e||j(\"VedaCorp\",!0),(0,i.jsx)(e,{})}function u(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,{...t,children:(0,i.jsx)(p,{...t})}):p(t)}function j(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return h(C);})();\n;return Component;"
     },
     "_id": "our-work/veda-corp.mdx",
     "_raw": {

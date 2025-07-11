@@ -28,6 +28,7 @@ import {
   Linkedin,
   MoveDown,
   Instagram,
+  Globe,
   LucideProps,
 } from "lucide-react";
 
@@ -35,6 +36,7 @@ export const Icons = {
   User,
   Snail,
   ChevronRight,
+  Globe,
   UserRoundCog,
   Instagram,
   MoveDown,

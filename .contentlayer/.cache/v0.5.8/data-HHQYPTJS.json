@@ -1,0 +1,32 @@
+{
+  "cacheItemsMap": {
+    "our-work/veda-corp.mdx": {
+      "document": {
+        "title": "Tech Startup Digital Transformation",
+        "description": "How we helped MedTech Inc. scale from 10K to 1M users in 6 months",
+        "industry": "Healthcare Technology",
+        "client": "MedTech Inc.",
+        "duration": "6 months",
+        "date": "2024-01-15T00:00:00.000Z",
+        "body": {
+          "raw": "\n<VedaCorp />\n",
+          "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),D=(e,t)=>{for(var o in t)r(e,o,{get:t[o],enumerable:!0})},a=(e,t,o,c)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let n of h(t))!g.call(e,n)&&n!==o&&r(e,n,{get:()=>t[n],enumerable:!(c=p(t,n))||c.enumerable});return e};var M=(e,t,o)=>(o=e!=null?u(f(e)):{},a(t||!e||!e.__esModule?r(o,\"default\",{value:e,enumerable:!0}):o,e)),w=e=>a(r({},\"__esModule\",{value:!0}),e);var d=x((v,s)=>{s.exports=_jsx_runtime});var j={};D(j,{default:()=>m,frontmatter:()=>y});var i=M(d()),y={title:\"Tech Startup Digital Transformation\",description:\"How we helped MedTech Inc. scale from 10K to 1M users in 6 months\",image:\"/placeholder.svg?height=400&width=800\",date:\"2024-01-15\",category:\"Digital Transformation\",client:\"MedTech Inc.\",industry:\"Healthcare Technology\",duration:\"6 months\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"]};function l(e){let{VedaCorp:t}=e.components||{};return t||T(\"VedaCorp\",!0),(0,i.jsx)(t,{})}function m(e={}){let{wrapper:t}=e.components||{};return t?(0,i.jsx)(t,{...e,children:(0,i.jsx)(l,{...e})}):l(e)}function T(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return w(j);})();\n;return Component;"
+        },
+        "_id": "our-work/veda-corp.mdx",
+        "_raw": {
+          "sourceFilePath": "our-work/veda-corp.mdx",
+          "sourceFileName": "veda-corp.mdx",
+          "sourceFileDir": "our-work",
+          "contentType": "mdx",
+          "flattenedPath": "our-work/veda-corp"
+        },
+        "type": "OurWork",
+        "slug": "/our-work/veda-corp",
+        "slugAsParams": "veda-corp"
+      },
+      "documentHash": "1752218247501",
+      "hasWarnings": true,
+      "documentTypeName": "OurWork"
+    }
+  }
+}

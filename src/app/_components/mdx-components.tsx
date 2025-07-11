@@ -3,49 +3,17 @@ import { cn } from "@/lib/utils";
 import { useMDXComponent } from "next-contentlayer2/hooks";
 
 import type { HTMLAttributes, ImgHTMLAttributes } from "react";
+import VedaCorp from "@/app/_components/case-studies/veda-corp";
+import Footer from "@/app/_components/footer";
+import Svaphile from "@/app/_components/case-studies/svaphile";
+import { OurWork } from ".contentlayer/generated/types";
+import TYO from "@/app/_components/case-studies/tyo";
+import PamperedPaws from "@/app/_components/case-studies/pampered-paws";
 
 interface MdxComponentsProps {
   code: string;
+  frontmatter?: OurWork;
 }
-
-export const OverviewSection = function ({}) {
-  return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh py-16 pt-32 md:pt-40 md:pb-24">
-      <div className="container flex flex-col items-start justify-center">
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-2 w-full items-start justify-center">
-          <ul className="flex flex-col items-start justify-center gap-2">
-            <li className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
-              We built our transport platform with a simple goal: to help people
-              movie better, every day.
-            </li>
-            <li className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
-              We built our transport platform with a simple goal: to help people
-              movie better, every day.
-            </li>
-            <li className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
-              We built our transport platform with a simple goal: to help people
-              movie better, every day.
-            </li>
-            <li className="text-paragraph-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
-              We built our transport platform with a simple goal: to help people
-              movie better, every day.
-            </li>
-          </ul>
-        </div>
-        <div className="flex flex-col items-start justify-between border-t border-foreground w-full">
-          <div className="flex flex-col items-start justify-center gap-1.5">
-            <p className="text-foreground text-subtitle-heading leading-tight tracking-tight font-paragraph">
-              Timeline
-            </p>
-            <p className="text-foreground text-subtitle-heading uppercase">
-              Decemeber 2023 - January 2024
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const components = {
   h1: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
@@ -188,11 +156,22 @@ const components = {
   ),
 };
 
-const MdxComponents: FC<MdxComponentsProps> = ({ code }) => {
+const MdxComponents: FC<MdxComponentsProps> = ({ code, frontmatter }) => {
   const Component = useMDXComponent(code);
+
+  const enhancedComponents = {
+    ...components,
+    VedaCorp: (props: any) => <VedaCorp {...props} frontmatter={frontmatter} />,
+    Svaphile: (props: any) => <Svaphile {...props} frontmatter={frontmatter} />,
+    TYO: (props: any) => <TYO {...props} frontmatter={frontmatter} />,
+    PamperedPaws: (props: any) => (
+      <PamperedPaws {...props} frontmatter={frontmatter} />
+    ),
+  };
   return (
     <div className="mdx">
-      <Component components={components} />
+      <Component components={enhancedComponents} frontmatter={code} />
+      <Footer />
     </div>
   );
 };

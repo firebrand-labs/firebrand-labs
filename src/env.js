@@ -6,9 +6,10 @@ export const env = createEnv({
     DATABASE_URL: z.string().min(1),
     NODE_ENV: z.enum(["development", "production"]).default("development"),
     RESEND_KEY: z.string().min(1),
+  },
+  client: {
     NEXT_PUBLIC_APP_URL: z.string().min(1),
   },
-  client: {},
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,

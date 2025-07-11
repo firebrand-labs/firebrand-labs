@@ -34,39 +34,167 @@ const page: FC<pageProps> = () => {
     <ReactLenis>
       <section
         id="book"
-        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-28 pb-0 md:py-28"
+        className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-28 pb-16 md:py-28 min-h-svh"
       >
         <div className="container flex flex-col items-start justify-center gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center">
-              <AnimatedTextReveal
-                text="want to learn more about us?"
-                className="text-secondary-heading tracking-wide text-foreground leading-tight font-normal font-heading"
-              />
-              <p className="text-paragraph-heading tracking-wide italic mt-4 3xl:mt-8 font-extrabold text-foreground leading-normal font-paragraph">
-                fabulous ideas. brilliant execution. loveable people.
-              </p>
-              <p className="text-paragraph-heading tracking-wide text-foreground max-w-4xl leading-normal font-light font-paragraph">
-                arvind and firebrand labs have been around for 14 years! This
-                conviction to stay on the path is truly exemplary; it must be
-                celebrated. This is the story of how FBL has made execution
-                excellence its mantra – for growth and value creation. This
-                approach of singularly focusing on one idea, and making it your
-                life, is indeed worthy of celebration.
-              </p>
-              <ReadTheBook />
-            </div>
-
-            <div className="flex items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex items-start justify-center">
               <Image
                 src={
-                  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXitD5vdMQy8dYGkW7LiuezHjnCqUf4xgBcb0wo"
+                  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXgVVjMscTnmCMBktVKZO5ofSazG3yJAgPeIu"
                 }
                 alt="hello"
-                className="w-[280px] h-auto"
+                className="w-full h-auto"
                 width={500}
                 height={800}
               />
+            </div>
+            <div className="flex items-start md:col-start-2 md:col-end-4 gap-6 md:gap-12 flex-col justify-center">
+              <AnimatedRichText
+                className="text-paragraph-heading text-foreground max-w-xl 2xl:max-w-2xl leading-normal tracking-wide font-light font-paragraph"
+                delay={2}
+              >
+                <AnimatedSpan
+                  className="text-secondary-heading font-heading text-foreground  leading-tight"
+                  delay={1}
+                >
+                  fabulous{" "}
+                  <strong className="text-yellow-level-one">ideas.</strong>
+                </AnimatedSpan>
+                <br />
+                <AnimatedSpan
+                  className="text-secondary-heading font-heading text-foreground  leading-tight"
+                  delay={2}
+                >
+                  brilliant{" "}
+                  <strong className="text-yellow-level-one">execution.</strong>
+                </AnimatedSpan>
+                <br />
+                <AnimatedSpan
+                  className="text-secondary-heading font-heading text-foreground  leading-tight"
+                  delay={2.2}
+                >
+                  loveable{" "}
+                  <strong className="text-yellow-level-one">people.</strong>
+                </AnimatedSpan>
+              </AnimatedRichText>
+              <div className="flex flex-col items-start justify-center gap-2.5 w-full ">
+                <AnimatedTextReveal
+                  text="why this book?"
+                  delay={2.4}
+                  className="text-tertiary-heading tracking-wide text-foreground leading-normal font-semibold italic font-paragraph"
+                />
+                <AnimatedRichText
+                  className="text-paragraph-heading text-foreground  leading-normal tracking-wide font-light font-paragraph"
+                  delay={2}
+                >
+                  <AnimatedSpan
+                    delay={2.8}
+                    className="text-paragraph-heading tracking-wide text-foreground leading-light font-light font-paragraph"
+                  >
+                    arvind and firebrand labs have been around for 14 years!
+                    This conviction to stay on the path is truly exemplary; it
+                    must be celebrated. This is the story of how FBL has made
+                    execution excellence its mantra – for growth and value
+                    creation. This approach of singularly focusing on one idea,
+                    and making it your life, is indeed worthy of celebration.
+                  </AnimatedSpan>
+                </AnimatedRichText>
+              </div>
+              <div className="flex flex-col items-start justify-center gap-2.5 w-full ">
+                <AnimatedRichText
+                  className="text-paragraph-heading text-foreground  leading-normal tracking-wide font-light font-paragraph"
+                  delay={2}
+                >
+                  <AnimatedSpan
+                    delay={2.8}
+                    className="text-subtitle-heading italic tracking-wide text-foreground leading-light font-light font-paragraph md:px-16"
+                  >
+                    " i find this book to be indeed fabulous, brilliant and
+                    loveable! just like the boutique entity that arvind has
+                    built with hunger, passion, commitment and conviction, while
+                    facing challenges, uncertainties and many hurdles – both on
+                    the business side and personal side of life. "
+                  </AnimatedSpan>
+                </AnimatedRichText>
+                <div className="w-full flex flex-col items-end justify-center gap-3 mt-6 md:px-16">
+                  <AnimatedRichText
+                    className="text-paragraph-heading text-foreground w-full leading-normal tracking-wide font-light font-paragraph flex flex-col"
+                    delay={2}
+                  >
+                    <AnimatedSpan
+                      delay={2.8}
+                      className="text-subtitle-heading text-right tracking-wide text-foreground leading-light w-full  font-light font-paragraph md:px-16"
+                    >
+                      p c balasubramanian
+                    </AnimatedSpan>
+                    <AnimatedSpan
+                      delay={2.8}
+                      className="text-subtitle-heading text-right tracking-wide text-foreground leading-light w-full  font-light font-paragraph md:px-16"
+                    >
+                      executive director, uds group
+                    </AnimatedSpan>
+                    <AnimatedSpan
+                      delay={2.8}
+                      className="text-subtitle-heading text-right tracking-wide text-foreground leading-light w-full  font-light font-paragraph md:px-16"
+                    >
+                      <strong className="hidden">
+                        executive director, uds group
+                      </strong>
+                      <div className="flex flex-row items-center justify-end  w-full gap-2.5 mt-2">
+                        <Link
+                          href={"https://www.linkedin.com/in/pcbala/"}
+                          target="_blank"
+                          className=""
+                        >
+                          <Icons.Linkedin className="w-6 h-6 stroke-foreground stroke-1 " />
+                        </Link>
+                        <Link
+                          href={"https://pcbala.com/"}
+                          target="_blank"
+                          className=""
+                        >
+                          <Icons.Globe className="w-6 h-6 stroke-foreground stroke-1 " />
+                        </Link>
+                      </div>
+                    </AnimatedSpan>
+                  </AnimatedRichText>
+                </div>
+              </div>
+              <div className="flex flex-col items-start justify-center gap-2.5 w-full mt-4">
+                <AnimatedRichText
+                  delay={2.4}
+                  className="text-tertiary-heading tracking-wide text-foreground leading-normal font-semibold italic font-paragraph"
+                >
+                  <AnimatedSpan
+                    delay={2.8}
+                    className="text-tertiary-heading tracking-wide text-foreground leading-normal font-semibold italic font-paragraph"
+                  >
+                    about the authors
+                  </AnimatedSpan>
+                </AnimatedRichText>
+                <AnimatedRichText
+                  className="text-paragraph-heading text-foreground w-full leading-normal tracking-wide font-light font-paragraph"
+                  delay={2}
+                >
+                  <AnimatedSpan
+                    delay={2.8}
+                    className="text-subtitle-heading  tracking-wide text-foreground leading-light w-full  font-light font-paragraph"
+                  >
+                    avis viswanathan and vaani anand are the{" "}
+                    <Link
+                      href={"https://www.thehappynesswalas.com/"}
+                      target="_blank"
+                      className="italic text-yellow-level-three"
+                    >
+                      happynesswalas™.
+                    </Link>{" "}
+                    their Life’s purpose is Inspiring 'Happyness'™
+                  </AnimatedSpan>
+                </AnimatedRichText>
+              </div>
+
+              <ReadTheBook />
             </div>
           </div>
         </div>

@@ -27,6 +27,9 @@ export const OurWork = defineDocumentType(() => ({
     description: {
       type: "string",
     },
+    image: {
+      type: "string",
+    },
     industry: {
       type: "string",
     },
@@ -36,7 +39,7 @@ export const OurWork = defineDocumentType(() => ({
     duration: {
       type: "string",
     },
-    featured: {
+    tech: {
       type: "string",
     },
     date: {
