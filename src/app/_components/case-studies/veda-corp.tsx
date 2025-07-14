@@ -12,6 +12,7 @@ import Link from "next/link";
 import { Icons } from "@/app/_components/icons";
 import CaseStudiesCarousel from "@/app/_components/case-studies-carousel";
 import { OurWork } from "contentlayer/generated";
+import BackgroundVideo from "@/app/_components/background-video";
 
 export const OverviewSection = function ({
   overviewContent,
@@ -21,9 +22,12 @@ export const OverviewSection = function ({
   frontmatter: OurWork;
 }) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  bg-[image:var(--color-repeating-gradient)] py-16 pt-32 md:pt-40 md:pb-8">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  bg-[image:var(--color-repeating-gradient)] py-16 pt-16 md:pt-24 md:pb-8">
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-start justify-center">
+          <h3 id="overview" className="sr-only">
+            Overview
+          </h3>
           <ul className="flex flex-col items-start justify-center gap-3.5 md:col-start-1 md:col-end-3">
             {overviewContent.overview.length
               ? overviewContent.overview.map((item, i) => (
@@ -53,7 +57,7 @@ export const OverviewSection = function ({
                   Client
                 </p>
                 <p className="text-foreground font-bold font-paragraph text-extra-subtitle-heading uppercase">
-                  {frontmatter.duration}
+                  {frontmatter.client}
                 </p>
               </div>
             ) : null}
@@ -224,11 +228,14 @@ export const OutcomesAndTeamSection = function ({}) {
 
 export const ProjectTeamSection = function () {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pb-8 md:pt-6 md:pb-16">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pb-8 md:pt-8 md:pb-0">
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
-            <h3 className="font-paragraph text-tertiary-heading text-foreground font-semibold">
+            <h3
+              id="project-team"
+              className="font-paragraph text-secondary-heading text-foreground font-semibold"
+            >
               Project Team
             </h3>
             <div className="flex flex-col items-start justify-center gap-1">

@@ -94,11 +94,18 @@ const page: FC<pageProps> = () => {
                   >
                     Because staying on one path for 16 years takes guts. Arvind
                     and Firebrand Labs didn’t chase trends, they built slowly,
-                    stayed sharp, and kept showing up. This book is about that
-                    journey. About choosing execution over noise, and going deep
-                    instead of wide. It’s a reminder that doing one thing really
-                    well - and doing it every day is still worth something. And
-                    worth celebrating.
+                    stayed sharp, and kept showing up.
+                  </AnimatedSpan>
+                  <AnimatedSpan
+                    delay={2.8}
+                    className="text-paragraph-heading tracking-wide text-foreground leading-light font-light font-paragraph"
+                  >
+                    This book is following that journey. It’s about choosing
+                    execution over noise - doing the real work instead of just
+                    talking about it. It’s about showing up, shipping ideas, and
+                    letting the craft speak louder than the hype. Because in the
+                    end, what matters isn’t how loud you are - it’s what you
+                    actually build.
                   </AnimatedSpan>
                 </AnimatedRichText>
               </div>

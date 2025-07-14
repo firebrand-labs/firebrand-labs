@@ -179,12 +179,14 @@ const AboutSection: React.FC<SectionProps> = ({ isActive }) => {
             who care.
           </AnimatedSpan>
           <AnimatedSpan className="pt-2 mb-2.5 2xl:mb-4 3xl:mb-4" delay={0.8}>
-            We are curiously minded, bold-hearted, and restlessly creative.
+            We are curiously minded, bold-hearted, and restlessly creative. We
+            believe in asking better questions, pushing past the obvious, and
+            showing up with purpose.
           </AnimatedSpan>
           <AnimatedSpan delay={0.8}>
             {" "}
-            We believe in asking better questions, pushing past the obvious, and
-            showing up with purpose.
+            And we’re here to use our craft for good-building ideas that move
+            people, shift mindsets, and leave the world better than we found it.
           </AnimatedSpan>
         </AnimatedRichText>
         <FBLButton className="mt-3 3xl:mt-5" href="/about" body="know more" />

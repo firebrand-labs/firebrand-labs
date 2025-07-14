@@ -127,7 +127,7 @@ const page: FC<pageProps> = () => {
         <section className="flex items-center justify-center flex-col w-screen min-h-screen md:min-h-fit overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-16">
           <div className="container flex flex-col items-start justify-center gap-8">
             <AnimatedTextReveal
-              text="the firebrand values"
+              text="our values"
               className="text-tertiary-heading tracking-wide text-foreground leading-tight font-semibold font-heading"
             />
             <FirebrandValues />

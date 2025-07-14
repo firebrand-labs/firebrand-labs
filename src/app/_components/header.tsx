@@ -186,7 +186,7 @@ const Header: FC<HeaderProps> = () => {
                             )}
                           >
                             <CaaPopupForm>
-                              <Button className="text-foreground h-[initial] bg-transparent hover:underline p-0 font-paragraph text-subtitle-heading no-underline hover:text-foreground font-normal">
+                              <Button className="text-foreground h-[initial] bg-transparent hover:underline p-0 font-paragraph text-subtitle-heading no-underline hover:text-foreground hover:bg-transparent hover:cursor-pointer font-normal">
                                 read the book
                               </Button>
                             </CaaPopupForm>

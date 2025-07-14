@@ -5,6 +5,17 @@ import { contactUsTable, registerBookShema } from "@/server/db/schema";
 import { z } from "zod";
 import { Resend } from "resend";
 import { bookDownloadFormSchema } from "@/lib/validation/book-download";
+import { google } from "googleapis";
+
+const auth = new google.auth.GoogleAuth({
+  credentials: {
+    client_email: env.GOOGLE_CLIENT_EMAIL,
+    private_key: env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+  },
+  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+});
+
+const sheets = google.sheets({ version: "v4", auth });
 
 export const contactRouter = createTRPCRouter({
   contactHandler: publicProcedure
@@ -65,6 +76,28 @@ export const contactRouter = createTRPCRouter({
         OTHER: "Other",
         CAA: "Cards Against Ambiguity",
       };
+
+      try {
+        await sheets.spreadsheets.values.append({
+          spreadsheetId: env.GOOGLE_SHEET_ID,
+          range: "Sheet1!A:F",
+          valueInputOption: "RAW",
+          requestBody: {
+            values: [
+              [
+                new Date().toLocaleString(), // Timestamp
+                input.name,
+                input.email,
+                input.phone,
+                input.city,
+                input.country,
+              ],
+            ],
+          },
+        });
+      } catch (err) {
+        console.log("Failed to add to Google Sheets:", err);
+      }
 
       const resend = new Resend(env.RESEND_KEY);
       const response = await resend.emails.create({

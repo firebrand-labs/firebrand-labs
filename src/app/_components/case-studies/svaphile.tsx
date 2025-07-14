@@ -11,6 +11,8 @@ import {
 } from "@/config/case-studies/marketing";
 import { OurWork } from ".contentlayer/generated/types";
 import SvaphileCarouselSection from "@/app/_components/svaphile-carousel-section";
+import BackgroundVideo from "@/app/_components/background-video";
+import NotionHoverMenuItems from "@/app/_components/notion-hover-menu-items";
 interface SvaphileProps {
   frontmatter: OurWork;
 }
@@ -21,7 +23,10 @@ export const SvaphileChallengeSection = function ({}) {
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
-            <h3 className="font-paragraph text-tertiary-heading text-foreground font-semibold">
+            <h3
+              id="challenge"
+              className="font-paragraph text-secondary-heading text-foreground font-semibold"
+            >
               Challenge
             </h3>
             <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
@@ -61,7 +66,10 @@ export const SvaphileSolutionsSection = function ({}) {
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-3 md:col-start-1 md:col-end-3">
-            <h3 className="font-paragraph text-tertiary-heading text-foreground font-semibold">
+            <h3
+              id="solution"
+              className="font-paragraph text-secondary-heading text-foreground font-semibold"
+            >
               Solution
             </h3>
             <p className="text-paragraph-heading mt-1 text-foreground leading-tight tracking-wide font-normal font-paragraph">
@@ -134,7 +142,10 @@ export const SvaphileOutcomesTeamSection = function ({}) {
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
-            <h3 className="font-paragraph text-tertiary-heading text-foreground font-semibold">
+            <h3
+              id="the-outcome"
+              className="font-paragraph text-secondary-heading text-foreground font-semibold"
+            >
               The Outcome
             </h3>
             <p className="text-subtitle-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
@@ -158,6 +169,24 @@ export const SvaphileOutcomesTeamSection = function ({}) {
 const Svaphile: FC<SvaphileProps> = ({ frontmatter }) => {
   return (
     <>
+      <NotionHoverMenuItems />
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] h-screen">
+        <BackgroundVideo
+          className="absolute left-0 top-0 w-full h-full z-0"
+          classForVideo="object-right md:object-cover"
+          videoSrc="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1fqpOlD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
+        />
+        <div className="flex container flex-col items-start justify-center gap-4 z-10">
+          <h2 className="font-heading font-normal w-full text-secondary-heading max-w-xl text-[#04767E] leading-tight">
+            Write the story behind the numbers.
+          </h2>
+          <p className="text-[#04767E] font-paragraph font-light w-full max-w-xl text-paragraph-heading leading-normal tracking-tight">
+            Revamping the visual identity for an independent investment bank to
+            reflect its credibility, support clarity and engage long-term
+            scalability.
+          </p>
+        </div>
+      </section>
       <OverviewSection
         overviewContent={svaphileOverviewContent}
         frontmatter={frontmatter}
