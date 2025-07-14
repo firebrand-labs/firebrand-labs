@@ -92,12 +92,13 @@ const page: FC<pageProps> = () => {
                     delay={2.8}
                     className="text-paragraph-heading tracking-wide text-foreground leading-light font-light font-paragraph"
                   >
-                    arvind and firebrand labs have been around for 14 years!
-                    This conviction to stay on the path is truly exemplary; it
-                    must be celebrated. This is the story of how FBL has made
-                    execution excellence its mantra – for growth and value
-                    creation. This approach of singularly focusing on one idea,
-                    and making it your life, is indeed worthy of celebration.
+                    Because staying on one path for 16 years takes guts. Arvind
+                    and Firebrand Labs didn’t chase trends, they built slowly,
+                    stayed sharp, and kept showing up. This book is about that
+                    journey. About choosing execution over noise, and going deep
+                    instead of wide. It’s a reminder that doing one thing really
+                    well - and doing it every day is still worth something. And
+                    worth celebrating.
                   </AnimatedSpan>
                 </AnimatedRichText>
               </div>

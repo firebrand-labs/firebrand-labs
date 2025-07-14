@@ -185,11 +185,11 @@ export const subTeamContent = [
     id: "4",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiTQvlS6KIMWgkEnv74iHl2QFSd9ARhNeBYzma",
     name: "Vimalraj M",
-    role: "Software Developer",
+    role: "Technology Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Software Developer",
+      role: "Technology Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXikIU9rxhjX0VC6iL3lRYcyTp4jzeJnadKImDw",
       description: [
@@ -233,11 +233,11 @@ export const subTeamContent = [
     id: "12",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXivS1rCu3ckJ850SeYLr7Ej9q6hwR1AZmiuf3U",
     name: "Venkatesh",
-    role: "Software Developer",
+    role: "Technology Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Software Developer",
+      role: "Technology Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKHdIXI40uc9qOMHzApnW38NDejVaClskLmrx",
       description: [
@@ -306,11 +306,11 @@ export const subTeamContent = [
     id: "11",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXicpoZmuwVfrHgnRDTBX1y8AO9Quk740MJlmSt",
     name: "santhosh s",
-    role: "Designer",
+    role: "Designe Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Designer",
+      role: "Designe Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXibMbjrnfPrSGhD0TMiywnpFZERx7f4KaN83jt",
       description: [
@@ -354,7 +354,7 @@ export const subTeamContent = [
     id: "13",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiMlbVkMGXGBSx43fU9vzmiOt07prKJAkesclg",
     name: "Dhenuka R",
-    role: "Associate",
+    role: "Associate Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
@@ -378,11 +378,11 @@ export const subTeamContent = [
     id: "14",
     url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQk8Zgd7IwFK269gvohLHr5a4VNqcYbpTnMXk",
     name: "Manisankar S",
-    role: "Accounts & Administration Associate",
+    role: "Accounts & HR Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
-      role: "Accounts & Administration Associate",
+      role: "Accounts & HR Partner",
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiwyC7xmZT0PRFypUYDJzkC8H4lSsci7I5OxvQ",
       description: [
