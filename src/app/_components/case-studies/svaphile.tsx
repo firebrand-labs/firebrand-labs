@@ -3,8 +3,8 @@ import {
   FullWidthImage,
   OverviewSection,
   ParallelImageSection,
-  ProjectTeamSection,
 } from "@/app/_components/case-studies/veda-corp";
+import { ProjectTeamSection } from "@/app/_components/case-studies/svaphile-one";
 import {
   svaphileCarouselContent,
   svaphileOverviewContent,

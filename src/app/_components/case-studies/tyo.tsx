@@ -4,8 +4,8 @@ import {
   CarouselSection,
   FullWidthImage,
   OverviewSection,
-  ProjectTeamSection,
 } from "@/app/_components/case-studies/veda-corp";
+import { ProjectTeamSection } from "@/app/_components/case-studies/svaphile-one";
 import {
   tyoCarouselContent,
   tyoOverviewContent,
@@ -69,18 +69,43 @@ export const DriverDataSection = function ({}) {
   );
 };
 
+export const TYOChallengeSectionOne = function ({}) {
+  return (
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 pt-24 md:pb-8 md:pt-24">
+      <div className="container flex flex-col items-start justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
+          <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
+            <h3
+              id="overview"
+              className="font-paragraph text-secondary-heading text-foreground font-light"
+            >
+              How do you make care feel instinctive in a world built for speed,
+              not sensitivity? Our <strong>challenge?</strong> To build a brand
+              that could simplify the complex, soften the clinical and speak
+              human in a world of healthcare jargon. Our{" "}
+              <strong>solution?</strong> An identity built on clarity and
+              calm-where every detail is designed to feel like care.
+            </h3>
+          </div>
+          <div className="flex flex-col self-end justify-end gap-4" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const TYO: FC<TYOProps> = ({ frontmatter }) => {
   return (
     <>
-      <OverviewSection
-        overviewContent={tyoOverviewContent}
-        frontmatter={frontmatter}
-      />
+      <TYOChallengeSectionOne />
       <FullWidthImage
         src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiIZa8kf5ctJU8RrDyI1bafz3MZcsFvO2Ah6CQ"
         alt="Svaphile"
       />
-      <DriverDataSection />
+      <FullWidthImage
+        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXIrWgKscTnmCMBktVKZO5ofSazG3yJAgPeIu"
+        alt="Svaphile"
+      />
       <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} />
       <ProjectTeamSection />
     </>

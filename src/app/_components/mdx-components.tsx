@@ -163,7 +163,9 @@ const MdxComponents: FC<MdxComponentsProps> = ({ code, frontmatter }) => {
   const enhancedComponents = {
     ...components,
     VedaCorp: (props: any) => <VedaCorp {...props} frontmatter={frontmatter} />,
-    Svaphile: (props: any) => <Svaphile {...props} frontmatter={frontmatter} />,
+    Svaphile: (props: any) => (
+      <SvaphileOne {...props} frontmatter={frontmatter} />
+    ),
     SvaphileOne: (props: any) => (
       <SvaphileOne {...props} frontmatter={frontmatter} />
     ),

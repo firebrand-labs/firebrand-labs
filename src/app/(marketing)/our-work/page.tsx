@@ -45,15 +45,15 @@ const page: FC<pageProps> = () => {
       </section>
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 min-h-svh">
         <div className="container flex flex-col items-start justify-center gap-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-2 md:gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 md:gap-10">
             {allOurWorks.map((item, i) => (
               <article
                 key={i}
-                className="flex items-center justify-center w-full "
+                className="flex items-start justify-center w-full "
               >
                 <Link
                   href={`${env.NEXT_PUBLIC_APP_URL}${item.slug}`}
-                  className="w-full h-fit items-center justify-center flex relative"
+                  className="w-full h-fit flex-col items-center justify-center flex relative gap-3"
                 >
                   {item.image ? (
                     <Image
@@ -63,6 +63,11 @@ const page: FC<pageProps> = () => {
                       height={480}
                       className="w-full  rounded-2xl h-[480px] object-cover"
                     />
+                  ) : null}
+                  {item.client ? (
+                    <h2 className="font-heading font-normal text-center w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
+                      {item.client}
+                    </h2>
                   ) : null}
                 </Link>
               </article>

@@ -21,6 +21,8 @@ const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
         loop
         muted
         playsInline
+        preload="auto" // Add this
+        webkit-playsinline="true" // Add this for older iOS
         className={cn(
           "absolute top-0 left-0 w-full h-full object-cover object-center z-0",
           classForVideo

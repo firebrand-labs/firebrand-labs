@@ -58,7 +58,7 @@ const CaseStudiesCarousel: FC<CaseStudiesCarouselProps> = ({
         }}
         setApi={setApi}
         plugins={[]}
-        className="py-4 md:py-0"
+        className="py-0 md:py-0"
       >
         <CarouselContent className="pl-0 ml-0">
           {vedaCorpCarouselContent.map((item, index) => (

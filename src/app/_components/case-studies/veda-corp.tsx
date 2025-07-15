@@ -96,14 +96,14 @@ export const FullWidthImage = function ({
   alt: string;
 }) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] md:py-8">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
       <div className="container flex flex-col items-start justify-center">
         <Image
           src={src}
           width={1180}
           height={700}
           alt={alt}
-          className="w-full h-auto"
+          className="w-full h-auto rounded-2xl"
         />
       </div>
     </section>
@@ -118,8 +118,8 @@ export const ParallelImageSection = function ({
   alt: string[];
 }) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background  bg-[image:var(--color-repeating-gradient)] md:py-8">
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-start justify-center">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background  bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 items-start justify-center">
         <Image
           src={images[0]}
           width={780}
@@ -145,7 +145,7 @@ export const CarouselSection = function ({
   vedaCorpCarouselContent: VedacorpCarouselContent;
 }) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-8">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4">
       <div className="container flex flex-col items-start justify-center">
         <CaseStudiesCarousel
           vedaCorpCarouselContent={vedaCorpCarouselContent}
@@ -226,29 +226,92 @@ export const OutcomesAndTeamSection = function ({}) {
   );
 };
 
-export const ProjectTeamSection = function () {
+export const VedacorpProjectTeamSection = function () {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pb-8 md:pt-8 md:pb-0">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:pt-8 md:pb-8">
       <div className="container flex flex-col items-start justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-center justify-center">
-          <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-center justify-center w-full">
+          <div className="flex items-start justify-center flex-col gap-2 md:gap-6 md:col-start-1 md:col-end-3">
             <h3
               id="project-team"
               className="font-paragraph text-secondary-heading text-foreground font-semibold"
             >
               Project Team
             </h3>
-            <div className="flex flex-col items-start justify-center gap-1">
-              <p className="text-foreground font-paragraph font-bold leading-normal text-subtitle-heading">
-                Sai Smrithi
-              </p>
-              <p className="text-foreground/80 font-paragraph font-light leading-normal text-extra-subtitle-heading">
-                UI/UX Designer
-              </p>
-              <p className="text-foreground/80 font-paragraph font-light leading-normal text-extra-subtitle-heading">
-                Client Relationship Manager
-              </p>
+            <div className="w-full flex flex-col md:flex-row items-start justify-between gap-4">
+              <div className="flex flex-col items-start justify-center gap-1">
+                <p className="text-foreground font-paragraph font-bold leading-normal text-subtitle-heading">
+                  Sai Smrithi
+                </p>
+                <p className="text-foreground/80 font-paragraph font-light leading-normal text-extra-subtitle-heading">
+                  UI/UX Designer
+                </p>
+                <p className="text-foreground/80 font-paragraph font-light leading-normal text-extra-subtitle-heading">
+                  Client Relationship Manager
+                </p>
+              </div>
+              <div className="flex flex-col items-start justify-center gap-1">
+                <p className="text-foreground font-paragraph font-bold leading-normal text-subtitle-heading">
+                  Venkatesh Sundarasan
+                </p>
+                <p className="text-foreground/80 font-paragraph font-light leading-normal text-extra-subtitle-heading">
+                  Front-End Developer
+                </p>
+                <p className="text-foreground/80 hidden font-paragraph font-light leading-normal text-extra-subtitle-heading">
+                  Client Relationship Manager
+                </p>
+              </div>
+              <div className="flex flex-col items-start justify-center gap-1">
+                <p className="text-foreground font-paragraph font-bold leading-normal text-subtitle-heading">
+                  Vimalraj Murugan
+                </p>
+                <p className="text-foreground/80 font-paragraph font-light leading-normal text-extra-subtitle-heading">
+                  Front-End Developer
+                </p>
+                <p className="text-foreground/80 font-paragraph font-light leading-normal text-extra-subtitle-heading">
+                  Animator
+                </p>
+              </div>
             </div>
+            <div className="w-full  flex flex-col md:flex-row items-start justify-between gap-4">
+              <div className="flex flex-col items-start justify-center gap-1">
+                <p className="text-foreground font-paragraph font-bold leading-normal text-subtitle-heading">
+                  Jeyakumar Jeyaraj
+                </p>
+                <p className="text-foreground/80 font-paragraph font-light leading-normal text-extra-subtitle-heading">
+                  Back-End Developer
+                </p>
+                <p className="text-foreground/80 hidden font-paragraph font-light leading-normal text-extra-subtitle-heading">
+                  Client Relationship Manager
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col self-end justify-end gap-4" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const VedacorpChallengeSectionOne = function ({}) {
+  return (
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-8 pt-24 md:pb-8 md:pt-24">
+      <div className="container flex flex-col items-start justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
+          <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
+            <h3
+              id="overview"
+              className="font-paragraph text-secondary-heading text-foreground font-light"
+            >
+              How do you make care feel instinctive in a world built for speed,
+              not sensitivity? Our <strong>challenge?</strong> To build a brand
+              that could simplify the complex, soften the clinical and speak
+              human in a world of healthcare jargon. Our{" "}
+              <strong>solution?</strong> An identity built on clarity and
+              calm-where every detail is designed to feel like care.
+            </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />
         </div>
@@ -256,6 +319,7 @@ export const ProjectTeamSection = function () {
     </section>
   );
 };
+
 interface VedaCorpProps {
   frontmatter: OurWork;
 }
@@ -264,10 +328,29 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
   console.log(frontmatter);
   return (
     <>
-      <OverviewSection
-        overviewContent={vedaCorpOverviewContent}
-        frontmatter={frontmatter}
-      />
+      <VedacorpChallengeSectionOne />
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
+        <div className="container">
+          <div className="relative min-h-[300px] md:min-h-[700px] rounded-2xl overflow-hidden">
+            <BackgroundVideo
+              className="absolute left-0 top-0 w-full h-full z-0 overflow-hidden"
+              classForVideo="object-right md:object-cover"
+              videoSrc="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi0Y5M5zlw1XDjFSAfqtTI8r6nlO93vEsMkUcz"
+            />
+            <div className="hidden container flex-col items-start justify-center gap-4 z-10 ">
+              <h2 className="font-heading font-normal w-full text-secondary-heading max-w-xl text-[#04767E] leading-tight">
+                Write the story behind the numbers.
+              </h2>
+              <p className="text-[#04767E] font-paragraph font-light w-full max-w-xl text-paragraph-heading leading-normal tracking-tight">
+                Revamping the visual identity for an independent investment bank
+                to reflect its credibility, support clarity and engage long-term
+                scalability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ParallelImageSection
         images={[
           "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX9ZzTYscTnmCMBktVKZO5ofSazG3yJAgPeIu",
@@ -275,15 +358,13 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
         ]}
         alt={["pattern", "pattern"]}
       />
-
-      <TestimonialSection />
       <CarouselSection vedaCorpCarouselContent={vedaCorpCarouselContent} />
       <FullWidthImage
         src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXinvuiKYQVwhOJ7TEdmoR6uY0eA3fScrGMWDl9"
         alt="Vedacorp"
       />
-      <OutcomesAndTeamSection />
-      <ProjectTeamSection />
+
+      <VedacorpProjectTeamSection />
     </>
   );
 };
