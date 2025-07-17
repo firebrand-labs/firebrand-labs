@@ -13,6 +13,7 @@ import { Icons } from "@/app/_components/icons";
 import CaseStudiesCarousel from "@/app/_components/case-studies-carousel";
 import { OurWork } from "contentlayer/generated";
 import BackgroundVideo from "@/app/_components/background-video";
+import { ProjectLogoSection } from "@/app/_components/case-studies/pampered-paws";
 
 export const OverviewSection = function ({
   overviewContent,
@@ -387,6 +388,7 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
   console.log(frontmatter);
   return (
     <>
+      <ProjectLogoSection src="FBLLogo" />
       <VedacorpChallengeSectionOne />
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
         <div className="container">

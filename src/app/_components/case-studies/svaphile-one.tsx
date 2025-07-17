@@ -10,6 +10,7 @@ import {
   svaphileOverviewContent,
 } from "@/config/case-studies/marketing";
 import SvaphileCarouselSection from "@/app/_components/svaphile-carousel-section";
+import { ProjectLogoSection } from "@/app/_components/case-studies/pampered-paws";
 
 interface SvaphileOneProps {}
 
@@ -135,6 +136,7 @@ export const ProjectTeamSection = function () {
 const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
   return (
     <>
+      <ProjectLogoSection src="FBLLogo" />
       <SvaphileChallengeSectionOne />
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
         <div className="container">

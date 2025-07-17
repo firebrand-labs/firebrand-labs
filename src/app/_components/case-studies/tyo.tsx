@@ -1,4 +1,5 @@
 import { OurWork } from ".contentlayer/generated/types";
+import { ProjectLogoSection } from "@/app/_components/case-studies/pampered-paws";
 import { FC } from "react";
 import {
   CarouselSection,
@@ -162,6 +163,7 @@ export const TYOStorySection = function ({}) {
 const TYO: FC<TYOProps> = ({ frontmatter }) => {
   return (
     <>
+      <ProjectLogoSection src="FBLLogo" />
       <TYOChallengeSectionOne />
       <FullWidthImage
         src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiIZa8kf5ctJU8RrDyI1bafz3MZcsFvO2Ah6CQ"

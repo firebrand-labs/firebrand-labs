@@ -13,6 +13,7 @@ import {
   vedaCorpCarouselContent,
 } from "@/config/case-studies/marketing";
 import Image from "next/image";
+import { Icon, Icons } from "@/app/_components/icons";
 
 interface PamperedPawsProps {
   frontmatter: OurWork;
@@ -167,9 +168,28 @@ export const PamperedPawsStorySection = function ({}) {
   );
 };
 
+export const ProjectLogoSection = function ({ src }: { src: string }) {
+  const Logo = Icons[src as Icon];
+  return (
+    <section className="flex items-center justify-center flex-col w-screen h-[50vh] lg:h-[77vh] xl:h-[55vh] 2xl:h-[55vh] 3xl:h-[50vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-24 pb-8 md:pb-16 md:pt-40">
+      <div className="container flex flex-col items-center justify-center">
+        {/* <Image
+          src={src}
+          alt="Banner Section"
+          width={800}
+          height={300}
+          className="w-[300px] lg:w-[360px] xl:w-[440px] 2xl:w-[520px] 3xl:w-[660px] h-auto"
+        /> */}
+        <Logo className="w-36 md:w-2xl xl:w-3xl 3xl:w-5xl fill-foreground stroke-foreground" />
+      </div>
+    </section>
+  );
+};
+
 const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
   return (
     <>
+      <ProjectLogoSection src="FBLLogo" />
       <TYOChallengeSectionOne />
       <FullWidthImage
         src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiMnYyPTGXGBSx43fU9vzmiOt07prKJAkesclg"
