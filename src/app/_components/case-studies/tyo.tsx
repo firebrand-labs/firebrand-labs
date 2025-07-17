@@ -79,15 +79,80 @@ export const TYOChallengeSectionOne = function ({}) {
               id="overview"
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
-              How do you make care feel instinctive in a world built for speed,
-              not sensitivity? Our <strong>challenge?</strong> To build a brand
-              that could simplify the complex, soften the clinical and speak
-              human in a world of healthcare jargon. Our{" "}
-              <strong>solution?</strong> An identity built on clarity and
-              calm-where every detail is designed to feel like care.
+              What if getting around the city didn’t have to feel like the
+              hardest part of your day? <strong>Our challenge?</strong> To build
+              a platform that could bring order to the everyday
+              commute-simplifying the complex, making rides more reliable, and
+              turning wasted time into a smoother, fairer experience.{" "}
+              <strong>Our solution?</strong> A transport service and app
+              designed for ease. Bringing cabs and auto-rickshaws together with
+              an intuitive interface, real-time tracking, and pricing that plays
+              fair.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const TYOStorySection = function ({}) {
+  return (
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
+      <div className="container flex flex-col items-start justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
+          <div className="flex items-start justify-center flex-col gap-3.5 md:col-start-1 md:col-end-3">
+            <h3
+              id="the-story"
+              className="font-paragraph text-secondary-heading text-foreground font-semibold"
+            >
+              The Story
+            </h3>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Made for the Way Cities Move
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                In a city where commuting often feels unpredictable and
+                exhausting, we set out to make it simple. This platform connects
+                cabs and autos into one seamless network that brings fairness,
+                reliability, and ease to everyday travel.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Clarity in Motion
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                No hidden charges. No second-guessing. Just real-time tracking,
+                transparent pricing, and intuitive design. For passengers, it
+                takes the stress out of finding a ride. For drivers, it’s a
+                smart partner that helps them drive better and earn more.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Designed Around People
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                Every feature is built with care, clear cost parameters, live
+                updates, and a clean interface that removes the noise. It’s more
+                than an app; it’s a system that supports every journey, every
+                time.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Commuting, Reimagined
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                No haggling. No waiting. Just predictable, fair rides that make
+                getting around the city easier. Because travel shouldn’t be the
+                hardest part of your day-it should simply work.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -108,6 +173,7 @@ const TYO: FC<TYOProps> = ({ frontmatter }) => {
       />
       <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} />
       <ProjectTeamSection />
+      <TYOStorySection />
     </>
   );
 };

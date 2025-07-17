@@ -305,15 +305,74 @@ export const VedacorpChallengeSectionOne = function ({}) {
               id="overview"
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
-              How do you make care feel instinctive in a world built for speed,
-              not sensitivity? Our <strong>challenge?</strong> To build a brand
-              that could simplify the complex, soften the clinical and speak
-              human in a world of healthcare jargon. Our{" "}
-              <strong>solution?</strong> An identity built on clarity and
-              calm-where every detail is designed to feel like care.
+              What if a bank’s website could build trust as seamlessly as it
+              shares numbers? <strong>Our challenge?</strong> To turn Vedacorp’s
+              dated digital presence into a platform that reflects its ambition:
+              clear, credible, and built to scale. <strong>Our solution</strong>
+              ? A modern design system that simplifies the complex, sharpens
+              clarity, and elevates the firm’s identity without losing its
+              authority.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const VedacorpStorySection = function ({}) {
+  return (
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
+      <div className="container flex flex-col items-start justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
+          <div className="flex items-start justify-center flex-col gap-3.5 md:col-start-1 md:col-end-3">
+            <h3
+              id="the-story"
+              className="font-paragraph text-secondary-heading text-foreground font-semibold"
+            >
+              The Story
+            </h3>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Bringing Clarity to Capital
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                Finance doesn’t have to feel distant or complex. Vedacorp needed
+                a digital presence that matched its expertise: credible, modern,
+                and ready for growth.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Simplifying the Complex
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                No jargon. No clutter. Just intuitive design and dynamic visuals
+                that make intricate financial services easy to understand and
+                trust.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Precision by Design
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                Every detail-colors, layouts, icons are crafted for seamless
+                reading and effortless usability, keeping focus where it
+                belongs.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Built to Last
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                Fast, scalable, and timeless. A platform designed for today’s
+                needs and tomorrow’s growth without losing its edge. New boost
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -350,7 +409,6 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
           </div>
         </div>
       </section>
-
       <ParallelImageSection
         images={[
           "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX9ZzTYscTnmCMBktVKZO5ofSazG3yJAgPeIu",
@@ -363,8 +421,8 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
         src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXinvuiKYQVwhOJ7TEdmoR6uY0eA3fScrGMWDl9"
         alt="Vedacorp"
       />
-
       <VedacorpProjectTeamSection />
+      <VedacorpStorySection />
     </>
   );
 };

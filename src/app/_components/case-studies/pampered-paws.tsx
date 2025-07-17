@@ -80,15 +80,87 @@ export const TYOChallengeSectionOne = function ({}) {
               id="overview"
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
-              How do you make care feel instinctive in a world built for speed,
-              not sensitivity? Our <strong>challenge?</strong> To build a brand
-              that could simplify the complex, soften the clinical and speak
-              human in a world of healthcare jargon. Our{" "}
-              <strong>solution?</strong> An identity built on clarity and
-              calm-where every detail is designed to feel like care.
+              What if a pet care brand could look as premium as it feels
+              personal? Pampered Paws isn’t just about grooming.It’s about the
+              love we share with the pets we call family.{" "}
+              <strong>Our challenge?</strong> To turn Pampered Paws into more
+              than a service-into a trusted, go-to brand for pet parents. One
+              that reflects care, warmth, and credibility at every touchpoint.{" "}
+              <strong>Our solution?</strong> A cohesive brand identity, social
+              presence, and visual language that’s clean, playful, and deeply
+              personal. Inspired by real pet-parent moments, we built a brand
+              that feels joyful, modern, and full of heart, making Pampered Paws
+              not just seen, but felt.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const PamperedPawsStorySection = function ({}) {
+  return (
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
+      <div className="container flex flex-col items-start justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
+          <div className="flex items-start justify-center flex-col gap-3.5 md:col-start-1 md:col-end-3">
+            <h3
+              id="the-story"
+              className="font-paragraph text-secondary-heading text-foreground font-semibold"
+            >
+              The Story
+            </h3>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Built for Pet Parents Who Love Like Family
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                In a city where pet care often feels either clinical or chaotic,
+                Pampered Paws set out to offer something different, a space
+                where pets feel at home and pet parents feel heard. Born from a
+                desire to treat pets as part of the human family, the brand was
+                created to go above and beyond for the ones who give us
+                unconditional love.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                A Place Where Care Feels Natural
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                From grooming and spa treatments to curated essentials, every
+                detail was designed to make pet care seamless, warm, and
+                thoughtful. The first store opened with a full-service spa and a
+                vision: to become the go-to destination where quality meets
+                comfort- for paws, tails, and everything in between.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                Visuals That Feel Like Home
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                We crafted a brand identity that’s bright, playful, and full of
+                personality-just like the pets it’s built around. With cheerful
+                colors, friendly fonts, and a tone that’s both premium and
+                personal, Pampered Paws speaks the same language pet lovers do:
+                one of care, trust, and joy.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
+              <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
+                A Pawradise, Made Real
+              </p>
+              <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
+                More than just a service, Pampered Paws has become a trusted
+                experience. A complete family for pet parents. A brand that
+                remembers what truly matters:love, bonding, and a whole lot of
+                tail wags.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -124,6 +196,7 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
       />
       <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} />
       <ProjectTeamSection />
+      <PamperedPawsStorySection />
     </>
   );
 };

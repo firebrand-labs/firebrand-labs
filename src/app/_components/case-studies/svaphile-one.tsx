@@ -24,10 +24,10 @@ export const SvaphileChallengeSectionOne = function ({}) {
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
               How do you make care feel instinctive in a world built for speed,
-              not sensitivity? Our <strong>challenge?</strong> To build a brand
+              not sensitivity? <strong>Our challenge?</strong> To build a brand
               that could simplify the complex, soften the clinical and speak
-              human in a world of healthcare jargon. Our{" "}
-              <strong>solution?</strong> An identity built on clarity and
+              human in a world of healthcare jargon.{" "}
+              <strong>Our solution?</strong> An identity built on clarity and
               calm-where every detail is designed to feel like care.
             </h3>
           </div>
