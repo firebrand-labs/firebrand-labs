@@ -171,11 +171,11 @@ const page: FC<pageProps> = () => {
               </div>
               <div className="flex flex-col items-start justify-center gap-2.5 w-full mt-4">
                 <AnimatedRichText
-                  delay={2.4}
+                  delay={1}
                   className="text-tertiary-heading tracking-wide text-foreground leading-normal font-semibold italic font-paragraph"
                 >
                   <AnimatedSpan
-                    delay={2.8}
+                    delay={1}
                     className="text-tertiary-heading tracking-wide text-foreground leading-normal font-semibold italic font-paragraph"
                   >
                     about the authors
@@ -183,10 +183,10 @@ const page: FC<pageProps> = () => {
                 </AnimatedRichText>
                 <AnimatedRichText
                   className="text-paragraph-heading text-foreground w-full leading-normal tracking-wide font-light font-paragraph"
-                  delay={2}
+                  delay={1}
                 >
                   <AnimatedSpan
-                    delay={2.8}
+                    delay={1}
                     className="text-subtitle-heading  tracking-wide text-foreground leading-light w-full  font-light font-paragraph"
                   >
                     avis viswanathan and vaani anand are the{" "}

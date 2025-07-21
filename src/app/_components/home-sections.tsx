@@ -315,7 +315,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
     >
       <div className="container flex items-center justify-center ">
         <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
-          <div className="flex flex-col items-start justify-start h-full  gap-3 xl:pt-16 2xl:pt-0">
+          <div className="flex flex-col items-start justify-start md:justify-center h-full  gap-3 xl:pt-16 2xl:pt-0">
             <AnimatedTextReveal
               text="doers. misfits. firebrands."
               className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading"

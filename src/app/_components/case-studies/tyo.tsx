@@ -81,14 +81,13 @@ export const TYOChallengeSectionOne = function ({}) {
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
               What if getting around the city didn’t have to feel like the
-              hardest part of your day? <strong>Our challenge?</strong> To build
-              a platform that could bring order to the everyday
-              commute-simplifying the complex, making rides more reliable, and
-              turning wasted time into a smoother, fairer experience.{" "}
-              <strong>Our solution?</strong> A transport service and app
-              designed for ease. Bringing cabs and auto-rickshaws together with
-              an intuitive interface, real-time tracking, and pricing that plays
-              fair.
+              hardest part of your day? Our challenge? To build a platform that
+              could bring order to the everyday commute-simplifying the complex,
+              making rides more reliable, and turning wasted time into a
+              smoother, fairer experience. Our solution? A transport service and
+              app designed for ease. Bringing cabs and auto-rickshaws together
+              with an intuitive interface, real-time tracking, and pricing that
+              plays fair.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />

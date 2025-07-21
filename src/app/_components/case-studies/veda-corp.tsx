@@ -307,12 +307,11 @@ export const VedacorpChallengeSectionOne = function ({}) {
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
               What if a bank’s website could build trust as seamlessly as it
-              shares numbers? <strong>Our challenge?</strong> To turn Vedacorp’s
-              dated digital presence into a platform that reflects its ambition:
-              clear, credible, and built to scale. <strong>Our solution</strong>
-              ? A modern design system that simplifies the complex, sharpens
-              clarity, and elevates the firm’s identity without losing its
-              authority.
+              shares numbers? Our challenge? To turn Vedacorp’s dated digital
+              presence into a platform that reflects its ambition: clear,
+              credible, and built to scale. Our solution ? A modern design
+              system that simplifies the complex, sharpens clarity, and elevates
+              the firm’s identity without losing its authority.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />

@@ -50,7 +50,33 @@ export const OurWork = defineDocumentType(() => ({
   computedFields,
 }));
 
+export const OurBlogs = defineDocumentType(() => ({
+  name: "OurBlogs",
+  filePathPattern: `our-blogs/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+    description: {
+      type: "string",
+    },
+    image: {
+      type: "string",
+    },
+    category: {
+      type: "string",
+    },
+    date: {
+      type: "date",
+      required: true,
+    },
+  },
+  computedFields,
+}));
+
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [OurWork],
+  documentTypes: [OurWork, OurBlogs],
 });

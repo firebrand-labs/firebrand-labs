@@ -6,14 +6,14 @@ import type { HTMLAttributes, ImgHTMLAttributes } from "react";
 import VedaCorp from "@/app/_components/case-studies/veda-corp";
 import Footer from "@/app/_components/footer";
 import Svaphile from "@/app/_components/case-studies/svaphile";
-import { OurWork } from ".contentlayer/generated/types";
+import { OurBlogs, OurWork } from ".contentlayer/generated/types";
 import TYO from "@/app/_components/case-studies/tyo";
 import PamperedPaws from "@/app/_components/case-studies/pampered-paws";
 import SvaphileOne from "@/app/_components/case-studies/svaphile-one";
 
 interface MdxComponentsProps {
   code: string;
-  frontmatter?: OurWork;
+  frontmatter?: OurWork | OurBlogs;
 }
 
 const components = {
@@ -79,7 +79,10 @@ const components = {
   ),
   p: ({ className, ...props }: HTMLAttributes<HTMLParagraphElement>) => (
     <p
-      className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}
+      className={cn(
+        " [&:not(:first-child)]:mt-6 text-paragraph-heading font-paragraph tracking-wide font-light leading-normal",
+        className
+      )}
       {...props}
     />
   ),
@@ -177,7 +180,6 @@ const MdxComponents: FC<MdxComponentsProps> = ({ code, frontmatter }) => {
   return (
     <>
       <Component components={enhancedComponents} frontmatter={code} />
-      <Footer />
     </>
   );
 };

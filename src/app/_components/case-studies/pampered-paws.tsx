@@ -83,15 +83,14 @@ export const TYOChallengeSectionOne = function ({}) {
             >
               What if a pet care brand could look as premium as it feels
               personal? Pampered Paws isn’t just about grooming.It’s about the
-              love we share with the pets we call family.{" "}
-              <strong>Our challenge?</strong> To turn Pampered Paws into more
-              than a service-into a trusted, go-to brand for pet parents. One
-              that reflects care, warmth, and credibility at every touchpoint.{" "}
-              <strong>Our solution?</strong> A cohesive brand identity, social
-              presence, and visual language that’s clean, playful, and deeply
-              personal. Inspired by real pet-parent moments, we built a brand
-              that feels joyful, modern, and full of heart, making Pampered Paws
-              not just seen, but felt.
+              love we share with the pets we call family. Our challenge? To turn
+              Pampered Paws into more than a service-into a trusted, go-to brand
+              for pet parents. One that reflects care, warmth, and credibility
+              at every touchpoint. Our solution? A cohesive brand identity,
+              social presence, and visual language that’s clean, playful, and
+              deeply personal. Inspired by real pet-parent moments, we built a
+              brand that feels joyful, modern, and full of heart, making
+              Pampered Paws not just seen, but felt.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />
@@ -171,7 +170,7 @@ export const PamperedPawsStorySection = function ({}) {
 export const ProjectLogoSection = function ({ src }: { src: string }) {
   const Logo = Icons[src as Icon];
   return (
-    <section className="flex items-center justify-center flex-col w-screen h-[50vh] lg:h-[77vh] xl:h-[55vh] 2xl:h-[55vh] 3xl:h-[50vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-24 pb-8 md:pb-16 md:pt-40">
+    <section className="flex items-center justify-center  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[55vh] 2xl:h-[55vh] 3xl:h-[50vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-24 pb-8 md:pb-16 md:pt-40">
       <div className="container flex flex-col items-center justify-center">
         {/* <Image
           src={src}
@@ -202,10 +201,6 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
         ]}
         alt={["pattern", "pattern"]}
       />
-      <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXUu6bWscTnmCMBktVKZO5ofSazG3yJAgPeIu"
-        alt="Svaphile"
-      />
 
       <ParallelImageSection
         images={[
@@ -214,7 +209,7 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
         ]}
         alt={["pattern", "pattern"]}
       />
-      <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} />
+      {/* <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} /> */}
       <ProjectTeamSection />
       <PamperedPawsStorySection />
     </>
