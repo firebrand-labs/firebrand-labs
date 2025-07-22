@@ -6,11 +6,13 @@ interface BackgroundVideoProps {
   children?: React.ReactNode;
   className: string;
   classForVideo?: string;
+  muted?: boolean;
 }
 
 const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
   videoSrc,
   children,
+  muted,
   className,
   classForVideo,
 }) => {
@@ -19,7 +21,7 @@ const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
       <video
         autoPlay
         loop
-        muted
+        muted={muted || true}
         playsInline
         preload="auto" // Add this
         webkit-playsinline="true" // Add this for older iOS

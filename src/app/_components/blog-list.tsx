@@ -9,12 +9,12 @@ interface BlogListProps {}
 
 const BlogList: FC<BlogListProps> = () => {
   return (
-    <ul className="w-full grid grid-cols-1 md:grid-cols-3 items-start justify-center gap-5">
+    <ul className="w-full grid grid-cols-1 md:grid-cols-3 items-start justify-center gap-5 3xl:mt-12">
       {allOurBlogs.length ? (
         allOurBlogs.slice(2, 5).map((item, i) => (
           <li
             key={i}
-            className="flex items-center p-3 flex-col justify-center gap-2 group bg-foreground/20 rounded-2xl hover:bg-foreground/15 transition-all duration-100"
+            className="flex items-center p-3 flex-col justify-center gap-2 group bg-foreground/20 rounded-2xl hover:bg-foreground/15 transition-all duration-100 3xl:min-h-[360px] 3xl:justify-start"
           >
             <Link
               className="flex items-center flex-col justify-center gap-2"
@@ -29,7 +29,7 @@ const BlogList: FC<BlogListProps> = () => {
                   height={340}
                 />
               ) : null}
-              <p className="text-subtitle-heading font-paragraph font-light w-full leading-normal tracking-normal text-foreground min-h-[65px] text-center flex items-center justify-center gap-4">
+              <p className="text-subtitle-heading font-paragraph font-light w-full leading-normal tracking-normal text-foreground  min-h-[65px] 3xl:min-h-[120px] text-center flex items-center justify-center 3xl:items-start 3xl:mt-4 gap-4">
                 {item.title}
               </p>
 

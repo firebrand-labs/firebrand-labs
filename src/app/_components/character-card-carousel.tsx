@@ -10,9 +10,10 @@ import {
 } from "@/app/_components/ui/carousel";
 
 const carouselImages = [
-  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1JA7huD7g3autyIcM42eqsf6Vb5PvXwEiWU0",
   // "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl",
   "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQVNEx6scTnmCMBktVKZO5ofSazG3yJAgPeI",
+  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1JA7huD7g3autyIcM42eqsf6Vb5PvXwEiWU0",
+  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiflNRkxes3N7H0IACvRLnDxGrdJ2WiBbjywKt",
 ];
 
 type CharacterCardCarouselProps = {};
@@ -48,7 +49,7 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
   };
 
   return (
-    <div className="w-full max-w-sm 3xl:max-w-lg max-h-[530px]">
+    <div className="w-full max-w-sm 3xl:max-w-lg max-h-[530px] 2xl:max-h-[530px] 3xl:min-h-[800px]">
       <Carousel
         opts={{
           align: "start",
@@ -59,7 +60,7 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
         plugins={[]}
         className="py-4 md:py-0"
       >
-        <CarouselContent className="pl-0 ml-0 max-h-[530px] md:max-h-fit">
+        <CarouselContent className="pl-0 ml-0 max-h-[530px] 2xl:max-h-[530px] 3xl:min-h-[800px]">
           {carouselImages.map((item, index) => (
             <CarouselItem key={index} className="pl-0">
               <div className="justify-center gap-4">
@@ -68,8 +69,8 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
                   src={item || "/placeholder.svg"}
                   alt="doers. misfits. firebrands."
                   className="w-full"
-                  width={300}
-                  height={700}
+                  width={500}
+                  height={900}
                 />
               </div>
             </CarouselItem>

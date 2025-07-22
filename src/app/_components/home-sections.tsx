@@ -179,7 +179,10 @@ const AboutSection: React.FC<SectionProps> = ({ isActive }) => {
             We make marketing that is original, authentic, and real—with people
             who care.
           </AnimatedSpan>
-          <AnimatedSpan className="pt-2 mb-2.5 2xl:mb-4 3xl:mb-4" delay={0.8}>
+          <AnimatedSpan
+            className="pt-2 mb-2.5 md:mb-2.5 lg:mb-3.5 2xl:mb-4 3xl:mb-4"
+            delay={0.8}
+          >
             We are curiously minded, bold-hearted, and restlessly creative. We
             believe in asking better questions, pushing past the obvious, and
             showing up with purpose.
@@ -341,6 +344,25 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
   );
 };
 
+const ShowReelSection: React.FC<SectionProps> = function () {
+  const ref = useRef<HTMLElement>(null);
+  return (
+    <section
+      ref={ref}
+      className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh "
+    >
+      <div className="container flex flex-col items-start justify-center gap-8 relative h-[80vh] rounded-2xl overflow-hidden ">
+        <BackgroundVideo
+          muted
+          className="absolute left-0 top-0 w-full h-full z-10 "
+          classForVideo="object-right md:object-cover"
+          videoSrc="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi74f71e2aHIogc9bupDymFxOGdeB6njkW5tQ0"
+        />
+      </div>
+    </section>
+  );
+};
+
 // Blog Section
 const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
   const ref = useRef<HTMLElement>(null);
@@ -418,6 +440,7 @@ const HomeSections: React.FC = () => {
     { component: HeroSection, name: "Hero" },
     { component: WhatWeDoSection, name: "What We Do" },
     { component: AboutSection, name: "About" },
+    { component: ShowReelSection, name: "ShowReelSection" },
     { component: TeamSection, name: "Team" },
     { component: BlogSection, name: "Blog" },
     { component: FooterSection, name: "Contact" },

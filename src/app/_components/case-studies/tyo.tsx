@@ -72,7 +72,7 @@ export const DriverDataSection = function ({}) {
 
 export const TYOChallengeSectionOne = function ({}) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 pt-24 md:pb-8 md:pt-24">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 pt-24 md:pb-8 md:pt-8">
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
@@ -80,14 +80,11 @@ export const TYOChallengeSectionOne = function ({}) {
               id="overview"
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
-              What if getting around the city didn’t have to feel like the
-              hardest part of your day? Our challenge? To build a platform that
-              could bring order to the everyday commute-simplifying the complex,
-              making rides more reliable, and turning wasted time into a
-              smoother, fairer experience. Our solution? A transport service and
-              app designed for ease. Bringing cabs and auto-rickshaws together
-              with an intuitive interface, real-time tracking, and pricing that
-              plays fair.
+              What if getting around the city didn’t have to be the hardest part
+              of your day? We set out to simplify the everyday commute- making
+              rides reliable, time better spent, and pricing fair. The result? A
+              seamless transport app that brings cabs and autos together with
+              real-time tracking and an interface built for ease.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />

@@ -9,7 +9,7 @@ import {
 } from "@/types/case-studies";
 import Image from "next/image";
 import Link from "next/link";
-import { Icons } from "@/app/_components/icons";
+import { Icon, Icons } from "@/app/_components/icons";
 import CaseStudiesCarousel from "@/app/_components/case-studies-carousel";
 import { OurWork } from "contentlayer/generated";
 import BackgroundVideo from "@/app/_components/background-video";
@@ -298,7 +298,7 @@ export const VedacorpProjectTeamSection = function () {
 
 export const VedacorpChallengeSectionOne = function ({}) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-8 pt-24 md:pb-8 md:pt-24">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-8 pt-24 md:pb-8 md:pt-8">
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
@@ -379,6 +379,24 @@ export const VedacorpStorySection = function ({}) {
   );
 };
 
+export const VedacorpProjectLogoSection = function ({ src }: { src: string }) {
+  const Logo = Icons[src as Icon];
+  return (
+    <section className="flex items-center justify-center  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQkqQIjscTnmCMBktVKZO5ofSazG3yJAgPeI')] before:bg-center  before:bg-size-[500px_auto] 3xl:before:bg-size-[600px_auto]">
+      <div className="container flex flex-col items-center justify-center">
+        {/* <Image
+          src={src}
+          alt="Banner Section"
+          width={800}
+          height={300}
+          className="w-[300px] lg:w-[360px] xl:w-[440px] 2xl:w-[520px] 3xl:w-[660px] h-auto"
+        /> */}
+        {/* <Logo className="w-36 md:w-2xl xl:w-3xl 3xl:w-5xl fill-foreground stroke-foreground" /> */}
+      </div>
+    </section>
+  );
+};
+
 interface VedaCorpProps {
   frontmatter: OurWork;
 }
@@ -387,7 +405,7 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
   console.log(frontmatter);
   return (
     <>
-      <ProjectLogoSection src="FBLLogo" />
+      <VedacorpProjectLogoSection src="FBLLogo" />
       <VedacorpChallengeSectionOne />
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
         <div className="container">

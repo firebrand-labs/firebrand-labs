@@ -73,7 +73,7 @@ export const DriverDataSection = function ({}) {
 
 export const TYOChallengeSectionOne = function ({}) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 pt-24 md:pb-8 md:pt-24">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 pt-24 md:pb-8 md:pt-8">
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
@@ -81,16 +81,12 @@ export const TYOChallengeSectionOne = function ({}) {
               id="overview"
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
-              What if a pet care brand could look as premium as it feels
-              personal? Pampered Paws isn’t just about grooming.It’s about the
-              love we share with the pets we call family. Our challenge? To turn
-              Pampered Paws into more than a service-into a trusted, go-to brand
-              for pet parents. One that reflects care, warmth, and credibility
-              at every touchpoint. Our solution? A cohesive brand identity,
-              social presence, and visual language that’s clean, playful, and
-              deeply personal. Inspired by real pet-parent moments, we built a
-              brand that feels joyful, modern, and full of heart, making
-              Pampered Paws not just seen, but felt.
+              What if a pet care brand could feel as personal as it is premium?
+              Pampered Paws goes beyond grooming, it's about the bond we share
+              with our pets. Our challenge? build trust and warmth into every
+              touchpoint. Our solution? a clean, playful brand identity inspired
+              by real pet-parent moments: modern, heartfelt, and made to be
+              felt.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />
@@ -170,7 +166,7 @@ export const PamperedPawsStorySection = function ({}) {
 export const ProjectLogoSection = function ({ src }: { src: string }) {
   const Logo = Icons[src as Icon];
   return (
-    <section className="flex items-center justify-center  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[55vh] 2xl:h-[55vh] 3xl:h-[50vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-24 pb-8 md:pb-16 md:pt-40">
+    <section className="flex items-center justify-center  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiwPHkUiZT0PRFypUYDJzkC8H4lSsci7I5OxvQ')] before:bg-center  before:bg-size-[300px_auto] 3xl:before:bg-size-[400px_auto]">
       <div className="container flex flex-col items-center justify-center">
         {/* <Image
           src={src}
@@ -179,7 +175,7 @@ export const ProjectLogoSection = function ({ src }: { src: string }) {
           height={300}
           className="w-[300px] lg:w-[360px] xl:w-[440px] 2xl:w-[520px] 3xl:w-[660px] h-auto"
         /> */}
-        <Logo className="w-36 md:w-2xl xl:w-3xl 3xl:w-5xl fill-foreground stroke-foreground" />
+        {/* <Logo className="w-36 md:w-2xl xl:w-3xl 3xl:w-5xl fill-foreground stroke-foreground" /> */}
       </div>
     </section>
   );

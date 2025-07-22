@@ -21,7 +21,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
       {...props}
       className={cn("w-full bg-background", props.className)}
     >
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-[image:initial] bg-yellow-level-four py-16 md:py-36 ">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-[image:initial] bg-yellow-level-four py-16 2xl:py-36 ">
         <div className="container flex flex-col items-start justify-center gap-2">
           <AnimatedTextReveal
             text="Would you like us to be your extended marketing officers?"
@@ -32,7 +32,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
       </section>
       <div
         className={cn(
-          "flex items-center justify-center flex-col min-w-screen  bg-yellow-level-four overflow-x-hidden  pt-16 md:pb-8 overflow-y-hidden"
+          "flex items-center justify-center flex-col min-w-screen  bg-yellow-level-four overflow-x-hidden  pt-16 md:pt-8 md:pb-16 3xl:pb-16 overflow-y-hidden"
         )}
       >
         <div className="container flex flex-col items-center justify-start md:justify-center">
@@ -54,17 +54,22 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
             {Array.from({ length: 8 }).map((_, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 text-7xl relative md:text-7xl xl:text-9xl ml-8 pb-12   font-normal font-paragraph text-background "
+                className="flex-shrink-0 text-7xl relative md:text-7xl xl:text-9xl ml-8 pb-12 md:pb-6 3xl:pb-12  font-normal font-paragraph text-background "
               >
                 we live in the space between chaos and clarity.
               </div>
             ))}
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full pb-8 md:pb-0">
-            <h2 className="text-subtitle-heading text-background leading-tight tracking-wide font-normal font-heading">
-              16 Years of Fabulous Ideas, Brilliant Execution, and Lovable
-              People.
-            </h2>
+            <div className="flex flex-col items-start justify-center gap-1.5">
+              <h2 className="text-subtitle-heading text-background leading-tight tracking-wide font-normal font-heading">
+                16 Years of Fabulous Ideas, Brilliant Execution, and Lovable
+                People.
+              </h2>
+              <p className="text-extra-subtitle-heading  text-background leading-tight tracking-wide font-normal font-heading">
+                This magic’s made for widescreens-switch to a bigger view.
+              </p>
+            </div>
 
             <div className="flex flex-col items-center justify-center gap-3 w-full h-full ">
               <ul className="flex flex-row items-end justify-start md:justify-end gap-4 list-none  w-full h-full">
