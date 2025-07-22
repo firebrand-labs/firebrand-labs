@@ -17,7 +17,7 @@ const BlogSearchContainer: FC<BlogSearchContainerProps> = ({ blogs }) => {
     <div className="flex flex-col items-center justify-center">
       <div
         className={cn(
-          "flex items-center justify-between gap-4 min-w-full md:min-w-[400px] xl:min-w-[440px] 3xl:min-w-[600px] px-8 py-3.5  bg-foreground/20",
+          "flex items-center justify-between gap-4 min-w-full md:max-w-[400px] xl:max-w-[440px] 3xl:max-w-[600px] px-8 py-3.5  bg-foreground/20",
           !clicked ? "rounded-full delay-150" : "rounded-tr-3xl rounded-tl-3xl"
         )}
       >
@@ -28,7 +28,7 @@ const BlogSearchContainer: FC<BlogSearchContainerProps> = ({ blogs }) => {
       </div>
       <ul
         className={cn(
-          "min-w-full flex flex-col items-start justify-start py-1.5 gap-4 overflow-y-scroll md:min-w-[400px] xl:min-w-[440px] 3xl:min-w-[600px] transition-all duration-200 bg-foreground/20 scrollbar-hide",
+          "min-w-full flex flex-col items-start justify-start py-1.5 gap-4 overflow-y-scroll md:max-w-[400px] xl:max-w-[440px] 3xl:max-w-[600px] transition-all duration-200 bg-foreground/20 scrollbar-hide",
           clicked ? "h-[273px] opacity-100 py-2 md:py-8" : "h-0 opacity-0"
         )}
       >

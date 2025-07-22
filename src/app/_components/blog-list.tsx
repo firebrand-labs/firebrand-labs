@@ -29,13 +29,11 @@ const BlogList: FC<BlogListProps> = () => {
                   height={340}
                 />
               ) : null}
-              <p className="text-paragraph-heading font-paragraph font-light w-full leading-tight tracking-tight text-foreground min-h-[65px] text-center">
+              <p className="text-subtitle-heading font-paragraph font-light w-full leading-normal tracking-normal text-foreground min-h-[65px] text-center flex items-center justify-center gap-4">
                 {item.title}
               </p>
-              <p className="text-extra-subtitle-heading font-paragraph font-light w-full leading-normal tracking-tight text-foreground flex items-center justify-center gap-2">
-                read
-                <Icons.ArrowRight className="w-6  stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-three transition-transform duration-200" />
-              </p>
+
+              <Icons.ArrowRight className="w-8 self-end h-8 stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-five transition-transform duration-200 group-hover:shadow-2xl" />
             </Link>
           </li>
         ))
