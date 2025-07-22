@@ -64,9 +64,9 @@ const page: FC<pageProps> = () => {
                       className="w-full  rounded-2xl h-[480px] object-cover"
                     />
                   ) : null}
-                  {item.client ? (
+                  {item.title ? (
                     <h2 className="font-heading font-normal text-center w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
-                      {item.client}
+                      {item.title}
                     </h2>
                   ) : null}
                 </Link>
