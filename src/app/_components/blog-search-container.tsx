@@ -12,7 +12,6 @@ interface BlogSearchContainerProps {
 }
 
 const BlogSearchContainer: FC<BlogSearchContainerProps> = ({ blogs }) => {
-  console.log(blogs);
   const [clicked, setClicked] = useState<boolean>(false);
   return (
     <div className="flex flex-col items-center justify-center">
@@ -29,20 +28,20 @@ const BlogSearchContainer: FC<BlogSearchContainerProps> = ({ blogs }) => {
       </div>
       <ul
         className={cn(
-          "min-w-full flex flex-col items-start justify-start py-1.5 gap-2 overflow-y-scroll md:min-w-[400px] xl:min-w-[440px] 3xl:min-w-[600px] px-4 transition-all duration-200 bg-foreground/20",
-          clicked ? "h-[273px] opacity-100" : "h-0 opacity-0"
+          "min-w-full flex flex-col items-start justify-start py-1.5 gap-4 overflow-y-scroll md:min-w-[400px] xl:min-w-[440px] 3xl:min-w-[600px] transition-all duration-200 bg-foreground/20 scrollbar-hide",
+          clicked ? "h-[273px] opacity-100 py-2 md:py-8" : "h-0 opacity-0"
         )}
       >
         {Array.from(blogs).map((item, i) => (
           <li
             key={i}
             className={cn(
-              "font-paragraph text-paragraph-heading leading-normal tracking-tight text-foreground/70"
+              "font-paragraph text-paragraph-heading leading-normal tracking-tight text-foreground/90 hover:text-foreground/70  max-w-[80%] ps-2"
               // clicked ? "opacity-100" : "opacity-0"
             )}
           >
             <Link
-              className="cursor-pointer"
+              className="cursor-pointer leading-tight"
               href={`${env.NEXT_PUBLIC_APP_URL}${item.slug}`}
             >
               {item.title}
@@ -54,7 +53,7 @@ const BlogSearchContainer: FC<BlogSearchContainerProps> = ({ blogs }) => {
         onClick={() => setClicked((prev) => !prev)}
         className={cn(
           buttonVariants({ variant: "default" }),
-          "mt-4 p-0 min-w-[80px] h-6 bg-foreground/20 hover:bg-foreground/20 cursor-pointer"
+          "mt-4 p-0 min-w-[80px] h-6 bg-foreground/20 hover:bg-foreground/15 cursor-pointer "
         )}
       >
         <Icons.ChevronUp

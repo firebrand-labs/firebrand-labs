@@ -93,7 +93,13 @@ const components = {
     <ol className={cn("my-6 ml-6 list-decimal", className)} {...props} />
   ),
   li: ({ className, ...props }: HTMLAttributes<HTMLLIElement>) => (
-    <li className={cn("mt-2", className)} {...props} />
+    <li
+      className={cn(
+        "mt-2 text-paragraph-heading font-paragraph tracking-wide font-light leading-normal",
+        className
+      )}
+      {...props}
+    />
   ),
   blockquote: ({ className, ...props }: HTMLAttributes<HTMLElement>) => (
     <blockquote

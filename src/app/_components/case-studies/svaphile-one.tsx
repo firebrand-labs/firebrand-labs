@@ -137,7 +137,7 @@ const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
     <>
       <ProjectLogoSection src="FBLLogo" />
       <SvaphileChallengeSectionOne />
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
+      <section className="hidden items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
         <div className="container">
           <div className="relative min-h-[300px] md:min-h-[700px] rounded-2xl overflow-hidden">
             <BackgroundVideo

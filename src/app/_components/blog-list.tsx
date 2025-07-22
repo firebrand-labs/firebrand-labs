@@ -1,0 +1,51 @@
+import { FC } from "react";
+import { allOurBlogs } from "contentlayer/generated";
+import Image from "next/image";
+import Link from "next/link";
+import { env } from "@/env";
+import { Icons } from "@/app/_components/icons";
+
+interface BlogListProps {}
+
+const BlogList: FC<BlogListProps> = () => {
+  return (
+    <ul className="w-full grid grid-cols-1 md:grid-cols-3 items-start justify-center gap-5">
+      {allOurBlogs.length ? (
+        allOurBlogs.slice(2, 5).map((item, i) => (
+          <li
+            key={i}
+            className="flex items-center p-3 flex-col justify-center gap-2 group bg-foreground/20 rounded-2xl hover:bg-foreground/15 transition-all duration-100"
+          >
+            <Link
+              className="flex items-center flex-col justify-center gap-2"
+              href={`${env.NEXT_PUBLIC_APP_URL}${item.slug}`}
+            >
+              {item.image ? (
+                <Image
+                  className="max-w-sm w-full"
+                  alt={item.title}
+                  src={item.image}
+                  width={340}
+                  height={340}
+                />
+              ) : null}
+              <p className="text-paragraph-heading font-paragraph font-light w-full leading-tight tracking-tight text-foreground min-h-[65px] text-center">
+                {item.title}
+              </p>
+              <p className="text-extra-subtitle-heading font-paragraph font-light w-full leading-normal tracking-tight text-foreground flex items-center justify-center gap-2">
+                read
+                <Icons.ArrowRight className="w-6  stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-three transition-transform duration-200" />
+              </p>
+            </Link>
+          </li>
+        ))
+      ) : (
+        <p className="text-tertiary-heading font-paragraph font-normal leading-normal tracking-tight text-foreground">
+          No Blogs were found.{" "}
+        </p>
+      )}
+    </ul>
+  );
+};
+
+export default BlogList;

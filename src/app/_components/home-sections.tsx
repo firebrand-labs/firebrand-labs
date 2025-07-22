@@ -22,7 +22,8 @@ import Image from "next/image";
 import RandomCards from "@/app/_components/random-cards";
 import Footer from "@/app/_components/footer";
 import { Metadata } from "next/types";
-import CharacterCardCarousel from "./character-card-carousel";
+import CharacterCardCarousel from "@/app/_components/character-card-carousel";
+import BlogList from "@/app/_components/blog-list";
 
 function useParallax(
   value: MotionValue<number>,
@@ -168,7 +169,7 @@ const AboutSection: React.FC<SectionProps> = ({ isActive }) => {
           ABOUT
         </p>
         <AnimatedRichText
-          className="text-secondary-heading max-w-3xl lg:max-w-3xl xl:max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
+          className="text-secondary-heading max-w-3xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
           delay={5}
         >
           <AnimatedSpan
@@ -368,6 +369,7 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
           </AnimatedRichText>
           <FBLButton className="hidden" href="/blog" body="all resources" />
         </div>
+        {/* <BlogList /> */}
         <Icons.BlogImage className="w-full md:w-[80%] self-center" />
       </div>
     </section>
