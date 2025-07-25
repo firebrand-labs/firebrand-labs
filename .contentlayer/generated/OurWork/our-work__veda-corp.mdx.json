@@ -21,5 +21,12 @@
   },
   "type": "OurWork",
   "slug": "/our-work/veda-corp",
-  "slugAsParams": "veda-corp"
+  "slugAsParams": "veda-corp",
+  "readTime": {
+    "sourceFilePath": "our-work/veda-corp.mdx",
+    "sourceFileName": "veda-corp.mdx",
+    "sourceFileDir": "our-work",
+    "contentType": "mdx",
+    "flattenedPath": "our-work/veda-corp"
+  }
 }

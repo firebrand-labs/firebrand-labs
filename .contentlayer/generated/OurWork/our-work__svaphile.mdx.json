@@ -21,5 +21,12 @@
   },
   "type": "OurWork",
   "slug": "/our-work/svaphile",
-  "slugAsParams": "svaphile"
+  "slugAsParams": "svaphile",
+  "readTime": {
+    "sourceFilePath": "our-work/svaphile.mdx",
+    "sourceFileName": "svaphile.mdx",
+    "sourceFileDir": "our-work",
+    "contentType": "mdx",
+    "flattenedPath": "our-work/svaphile"
+  }
 }

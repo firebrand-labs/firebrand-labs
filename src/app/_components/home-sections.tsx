@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useEffect, useState, RefObject } from "react";
+import { useMediaQuery } from "react-responsive";
 import {
   motion,
   useScroll,
@@ -24,6 +25,8 @@ import Footer from "@/app/_components/footer";
 import { Metadata } from "next/types";
 import CharacterCardCarousel from "@/app/_components/character-card-carousel";
 import BlogList from "@/app/_components/blog-list";
+import { toast } from "@/app/_components/ui/use-toast";
+import YoutubePlayerWithAPI from "./youtube-player-with-api";
 
 function useParallax(
   value: MotionValue<number>,
@@ -53,9 +56,17 @@ interface SectionProps {
 const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
   const [clicked, setClicked] = useState(false);
 
+  const mobile = useMediaQuery({ query: "(max-width:676px)" });
+
   useEffect(() => {
-    console.log(clicked, window.innerHeight);
-  }, []);
+    if (mobile) {
+      toast({
+        title:
+          "This web-experience is made for widescreens - switch to a bigger view.",
+      });
+    }
+  }, [mobile]);
+
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 300);
@@ -286,7 +297,7 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
                       "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXis7vE32ktVLIobTqySHNWmrU0nFD3G1uYZCv5"
                     }
                     alt="Firebrand Labs Logo"
-                    className="w-[220px] md:w-[700px]"
+                    className="w-[220px] md:w-[700px] hidden"
                     width={300}
                     height={200}
                   />
@@ -294,10 +305,10 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
               </motion.div>
             </AnimatedRichText>
             <AnimatedRichText
-              className="text-tertiary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
+              className="text-tertiary-heading max-w-3xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading hidden"
               delay={1.6}
             >
-              <AnimatedSpan className="text-center" delay={1.6}>
+              <AnimatedSpan className="text-center hidden" delay={1.6}>
                 O = Officers, not Office. we are humans.
               </AnimatedSpan>
             </AnimatedRichText>
@@ -322,7 +333,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
           <div className="flex flex-col items-start justify-start md:justify-center h-full  gap-3 xl:pt-16 2xl:pt-0">
             <AnimatedTextReveal
               text="doers. misfits. firebrands."
-              className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading"
+              className="text-secondary-heading max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading"
             />
             <AnimatedRichText delay={1.6}>
               <AnimatedSpan
@@ -351,10 +362,18 @@ const ShowReelSection: React.FC<SectionProps> = function () {
       ref={ref}
       className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh "
     >
-      <div className="container flex flex-col items-start justify-center gap-8 relative h-[80vh] rounded-2xl overflow-hidden ">
+      <div className="container flex flex-col items-center justify-center gap-8 relative  rounded-2xl overflow-hidden md:max-h-vh h-[80vh] md:overflow-y-hidden">
+        {/* <iframe
+          width="1200"
+          className="w-full h-auto aspect-[1920/1080] rounded-2xl overflow-hidden scale-90 shadow-2xl pointer-events-none"
+          height="315"
+          src="https://www.youtube.com/embed/12aaVh4bVBs?si=r2rFfIviQR3xmTt2showinfo=0&playlist=12aaVh4bVBs&modestbranding=1&loop=1&rel=0&autoplay=0&controls=0&mute=0&videoId=12aaVh4bVBs&cc_load_policy=0&fs=0&iv_load_policy=3&playsinline=1&branding=0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe> */}
+        {/* <YoutubePlayerWithAPI /> */}
         <BackgroundVideo
-          muted
-          className="absolute left-0 top-0 w-full h-full z-10 "
+          className="absolute left-0 top-0 w-full h-full z-0"
           classForVideo="object-right md:object-cover"
           videoSrc="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi74f71e2aHIogc9bupDymFxOGdeB6njkW5tQ0"
         />

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import HomeSections from "@/app/_components/home-sections";
 import { Metadata } from "next";
+import { Toaster } from "@/app/_components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "firebrand labs",

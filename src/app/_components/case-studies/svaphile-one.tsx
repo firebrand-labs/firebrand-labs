@@ -175,7 +175,7 @@ const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
         ]}
         alt={["pattern", "pattern"]}
       />
-      <ProjectTeamSection />
+      {/* <ProjectTeamSection /> */}
       <OurStorySection />
     </>
   );

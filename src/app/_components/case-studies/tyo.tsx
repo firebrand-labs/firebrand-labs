@@ -170,7 +170,7 @@ const TYO: FC<TYOProps> = ({ frontmatter }) => {
         alt="Svaphile"
       />
       <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} />
-      <ProjectTeamSection />
+      {/* <ProjectTeamSection /> */}
       <TYOStorySection />
     </>
   );

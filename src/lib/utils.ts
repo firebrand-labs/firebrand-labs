@@ -17,3 +17,19 @@ export const slugify = function (title: string): string {
     .trim() // Trim leading and trailing spaces/hyphens
     .replace(/^-+|-+$/g, "");
 };
+
+export const calculateTime = function (content: string) {
+  const wordsPerMinute = 200;
+  const cleanContent = content
+    .replace(/\\r\\n/g, " ")
+    .replace(/\\_\\_\\_\\_/g, "")
+    .replace(/[^\w\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const wordCount = cleanContent
+    .split(" ")
+    .filter((word) => word.length > 0).length;
+
+  return Math.max(1, Math.ceil(wordCount / wordsPerMinute));
+};

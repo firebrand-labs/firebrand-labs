@@ -440,7 +440,7 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
         src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXinvuiKYQVwhOJ7TEdmoR6uY0eA3fScrGMWDl9"
         alt="Vedacorp"
       />
-      <VedacorpProjectTeamSection />
+      {/* <VedacorpProjectTeamSection /> */}
       <VedacorpStorySection />
     </>
   );

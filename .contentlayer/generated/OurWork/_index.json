@@ -22,7 +22,14 @@
     },
     "type": "OurWork",
     "slug": "/our-work/pampered-paws",
-    "slugAsParams": "pampered-paws"
+    "slugAsParams": "pampered-paws",
+    "readTime": {
+      "sourceFilePath": "our-work/pampered-paws.mdx",
+      "sourceFileName": "pampered-paws.mdx",
+      "sourceFileDir": "our-work",
+      "contentType": "mdx",
+      "flattenedPath": "our-work/pampered-paws"
+    }
   },
   {
     "title": "Svaphile",
@@ -47,7 +54,14 @@
     },
     "type": "OurWork",
     "slug": "/our-work/svaphile",
-    "slugAsParams": "svaphile"
+    "slugAsParams": "svaphile",
+    "readTime": {
+      "sourceFilePath": "our-work/svaphile.mdx",
+      "sourceFileName": "svaphile.mdx",
+      "sourceFileDir": "our-work",
+      "contentType": "mdx",
+      "flattenedPath": "our-work/svaphile"
+    }
   },
   {
     "title": "TYO App",
@@ -72,7 +86,14 @@
     },
     "type": "OurWork",
     "slug": "/our-work/tyo",
-    "slugAsParams": "tyo"
+    "slugAsParams": "tyo",
+    "readTime": {
+      "sourceFilePath": "our-work/tyo.mdx",
+      "sourceFileName": "tyo.mdx",
+      "sourceFileDir": "our-work",
+      "contentType": "mdx",
+      "flattenedPath": "our-work/tyo"
+    }
   },
   {
     "title": "Vedacorp",
@@ -97,6 +118,13 @@
     },
     "type": "OurWork",
     "slug": "/our-work/veda-corp",
-    "slugAsParams": "veda-corp"
+    "slugAsParams": "veda-corp",
+    "readTime": {
+      "sourceFilePath": "our-work/veda-corp.mdx",
+      "sourceFileName": "veda-corp.mdx",
+      "sourceFileDir": "our-work",
+      "contentType": "mdx",
+      "flattenedPath": "our-work/veda-corp"
+    }
   }
 ]

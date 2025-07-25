@@ -17,11 +17,13 @@ export type OurBlogs = {
   description?: string | undefined
   image?: string | undefined
   category?: string | undefined
+  author?: string | undefined
   date: IsoDateTimeString
   /** MDX file body */
   body: MDX
   slug: string
   slugAsParams: string
+  readTime: number
 }
 
 export type OurWork = {
@@ -41,6 +43,7 @@ export type OurWork = {
   body: MDX
   slug: string
   slugAsParams: string
+  readTime: number
 }  
 
 /** Nested types */

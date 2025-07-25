@@ -21,5 +21,12 @@
   },
   "type": "OurWork",
   "slug": "/our-work/tyo",
-  "slugAsParams": "tyo"
+  "slugAsParams": "tyo",
+  "readTime": {
+    "sourceFilePath": "our-work/tyo.mdx",
+    "sourceFileName": "tyo.mdx",
+    "sourceFileDir": "our-work",
+    "contentType": "mdx",
+    "flattenedPath": "our-work/tyo"
+  }
 }

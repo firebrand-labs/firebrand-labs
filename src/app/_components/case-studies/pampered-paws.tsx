@@ -206,7 +206,7 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
         alt={["pattern", "pattern"]}
       />
       {/* <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} /> */}
-      <ProjectTeamSection />
+      {/* <ProjectTeamSection /> */}
       <PamperedPawsStorySection />
     </>
   );

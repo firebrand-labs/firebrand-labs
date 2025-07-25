@@ -213,7 +213,7 @@ const Svaphile: FC<SvaphileProps> = ({ frontmatter }) => {
         alt={["pattern", "pattern"]}
       />
       <SvaphileOutcomesTeamSection />
-      <ProjectTeamSection />
+      {/* <ProjectTeamSection /> */}
     </>
   );
 };

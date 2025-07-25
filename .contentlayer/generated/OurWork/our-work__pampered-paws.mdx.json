@@ -21,5 +21,12 @@
   },
   "type": "OurWork",
   "slug": "/our-work/pampered-paws",
-  "slugAsParams": "pampered-paws"
+  "slugAsParams": "pampered-paws",
+  "readTime": {
+    "sourceFilePath": "our-work/pampered-paws.mdx",
+    "sourceFileName": "pampered-paws.mdx",
+    "sourceFileDir": "our-work",
+    "contentType": "mdx",
+    "flattenedPath": "our-work/pampered-paws"
+  }
 }
