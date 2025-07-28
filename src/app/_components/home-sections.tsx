@@ -362,7 +362,7 @@ const ShowReelSection: React.FC<SectionProps> = function () {
       ref={ref}
       className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh "
     >
-      <div className="container flex flex-col items-center justify-center gap-8 relative  rounded-2xl overflow-hidden md:max-h-vh h-[80vh] md:overflow-y-hidden">
+      <div className="container flex flex-col items-center justify-center gap-8 relative  rounded-2xl overflow-hidden md:max-h-vh md:overflow-y-hidden">
         {/* <iframe
           width="1200"
           className="w-full h-auto aspect-[1920/1080] rounded-2xl overflow-hidden scale-90 shadow-2xl pointer-events-none"
@@ -371,12 +371,12 @@ const ShowReelSection: React.FC<SectionProps> = function () {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe> */}
-        {/* <YoutubePlayerWithAPI /> */}
-        <BackgroundVideo
+        <YoutubePlayerWithAPI />
+        {/* <BackgroundVideo
           className="absolute left-0 top-0 w-full h-full z-0"
           classForVideo="object-right md:object-cover"
           videoSrc="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi74f71e2aHIogc9bupDymFxOGdeB6njkW5tQ0"
-        />
+        /> */}
       </div>
     </section>
   );

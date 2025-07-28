@@ -510,3 +510,5 @@ export const socialMediaIcons = [
     title: "Linkedin",
   },
 ];
+
+export const tileContent = ["show me"];

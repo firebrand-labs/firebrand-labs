@@ -14,6 +14,7 @@ import CaseStudiesCarousel from "@/app/_components/case-studies-carousel";
 import { OurWork } from "contentlayer/generated";
 import BackgroundVideo from "@/app/_components/background-video";
 import { ProjectLogoSection } from "@/app/_components/case-studies/pampered-paws";
+import { VedacorpProjectLogoSection } from "@/app/_components/case-studies/veda-corp";
 
 export const OverviewSection = function ({
   overviewContent,
@@ -296,7 +297,7 @@ export const VedacorpProjectTeamSection = function () {
   );
 };
 
-export const VedacorpChallengeSectionOne = function ({}) {
+export const XphenoChallengeSectionOne = function ({}) {
   return (
     <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-8 pt-24 md:pb-8 md:pt-8">
       <div className="container flex flex-col items-start justify-center">
@@ -306,12 +307,12 @@ export const VedacorpChallengeSectionOne = function ({}) {
               id="overview"
               className="font-paragraph text-secondary-heading text-foreground font-light"
             >
-              What if a bank’s website could build trust as seamlessly as it
-              shares numbers? Our challenge? To turn Vedacorp’s dated digital
-              presence into a platform that reflects its ambition: clear,
-              credible, and built to scale. Our solution ? A modern design
-              system that simplifies the complex, sharpens clarity, and elevates
-              the firm’s identity without losing its authority.
+              How do you make a challenger impossible to ignore? Our challenge?
+              To give Xpheno a voice that cuts through the noise. Building a
+              distinct digital presence while shaping a strong, trusted employer
+              brand. Our solution? Bold, insight-driven content and a sharp SEO
+              strategy that humanized the brand, amplified its reach, and turned
+              visibility into real impact.
             </h3>
           </div>
           <div className="flex flex-col self-end justify-end gap-4" />
@@ -321,7 +322,7 @@ export const VedacorpChallengeSectionOne = function ({}) {
   );
 };
 
-export const VedacorpStorySection = function ({}) {
+export const XphenoStorySection = function ({}) {
   return (
     <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
       <div className="container flex flex-col items-start justify-center">
@@ -335,41 +336,42 @@ export const VedacorpStorySection = function ({}) {
             </h3>
             <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
               <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
-                Bringing Clarity to Capital
+                Built to Break the Noise
               </p>
               <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
-                Finance doesn’t have to feel distant or complex. Vedacorp needed
-                a digital presence that matched its expertise: credible, modern,
-                and ready for growth.
+                In a space crowded with sameness, Xpheno dares to be
+                different-turning data into insight, research into action, and
+                conversations into real connections.
               </p>
             </div>
             <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
               <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
-                Simplifying the Complex
+                Bold. Sharp. Unmissable.
               </p>
               <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
-                No jargon. No clutter. Just intuitive design and dynamic visuals
-                that make intricate financial services easy to understand and
-                trust.
+                From crisp deal digests to sharp Friday Facts, every piece of
+                content cuts through clutter and speaks with authority. Designed
+                with clarity, delivered with impact.
               </p>
             </div>
             <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
               <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
-                Precision by Design
+                Fueling Curiosity, Driving Trust
               </p>
               <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
-                Every detail-colors, layouts, icons are crafted for seamless
-                reading and effortless usability, keeping focus where it
-                belongs.
+                Each campaign, visual, and story is crafted to inform, engage,
+                and stick. It’s not just content-it’s a pulse on what matters in
+                the talent and business ecosystem.
               </p>
             </div>
             <div className="flex flex-col items-start justify-center gap-1.5 max-w-4xl">
               <p className="text-paragraph-heading mt-2.5 text-foreground leading-tight tracking-wide font-normal font-paragraph">
-                Built to Last
+                Where Precision Meets Personality
               </p>
               <p className="text-paragraph-heading mt-1.5 text-foreground leading-tight tracking-wide font-light font-paragraph">
-                Fast, scalable, and timeless. A platform designed for today’s
-                needs and tomorrow’s growth without losing its edge. New boost
+                Xpheno doesn’t just show up. It shows up smart-making complex
+                markets feel accessible and building a brand that’s as credible
+                as it is memorable.
               </p>
             </div>
           </div>
@@ -379,10 +381,10 @@ export const VedacorpStorySection = function ({}) {
   );
 };
 
-export const VedacorpProjectLogoSection = function ({ src }: { src: string }) {
+export const XphenoProjectLogoSection = function ({ src }: { src: string }) {
   const Logo = Icons[src as Icon];
   return (
-    <section className="flex items-center justify-center  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQkqQIjscTnmCMBktVKZO5ofSazG3yJAgPeI')] before:bg-center  before:bg-size-[500px_auto] 3xl:before:bg-size-[600px_auto]">
+    <section className="flex items-center justify-center  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXioUVS9Vr3BrC8WbLMUZSJvVIx1DzEsYiouGkt')] before:bg-center  before:bg-size-[500px_auto] 3xl:before:bg-size-[600px_auto]">
       <div className="container flex flex-col items-center justify-center">
         {/* <Image
           src={src}
@@ -397,53 +399,33 @@ export const VedacorpProjectLogoSection = function ({ src }: { src: string }) {
   );
 };
 
-interface VedaCorpProps {
+interface XphenoProps {
   frontmatter: OurWork;
 }
 
-const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
+const Xpheno: FC<XphenoProps> = ({ frontmatter }) => {
   console.log(frontmatter);
   return (
     <>
       <VedacorpProjectLogoSection src="FBLLogo" />
-      <VedacorpChallengeSectionOne />
-      <section className="hidden items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
-        <div className="container">
-          <div className="relative min-h-[300px] md:min-h-[700px] rounded-2xl overflow-hidden">
-            <BackgroundVideo
-              className="absolute left-0 top-0 w-full h-full z-0 overflow-hidden"
-              classForVideo="object-right md:object-cover"
-              videoSrc="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi0Y5M5zlw1XDjFSAfqtTI8r6nlO93vEsMkUcz"
-            />
-            <div className="hidden container flex-col items-start justify-center gap-4 z-10 ">
-              <h2 className="font-heading font-normal w-full text-secondary-heading max-w-xl text-[#04767E] leading-tight">
-                Write the story behind the numbers.
-              </h2>
-              <p className="text-[#04767E] font-paragraph font-light w-full max-w-xl text-paragraph-heading leading-normal tracking-tight">
-                Revamping the visual identity for an independent investment bank
-                to reflect its credibility, support clarity and engage long-term
-                scalability.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <XphenoChallengeSectionOne />
+
       <ParallelImageSection
         images={[
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX9ZzTYscTnmCMBktVKZO5ofSazG3yJAgPeIu",
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7cvcuv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQnnvWIv7IwFK269gvohLHr5a4VNqcYbpTnMX",
+          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQZM1Ba7IwFK269gvohLHr5a4VNqcYbpTnMXk",
         ]}
         alt={["pattern", "pattern"]}
       />
       <CarouselSection vedaCorpCarouselContent={vedaCorpCarouselContent} />
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXinvuiKYQVwhOJ7TEdmoR6uY0eA3fScrGMWDl9"
-        alt="Vedacorp"
+        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQnnvWIv7IwFK269gvohLHr5a4VNqcYbpTnMX"
+        alt="Xpheno"
       />
       {/* <VedacorpProjectTeamSection /> */}
-      <VedacorpStorySection />
+      <XphenoStorySection />
     </>
   );
 };
 
-export default VedaCorp;
+export default Xpheno;

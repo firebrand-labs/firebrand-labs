@@ -9,6 +9,7 @@ import Svaphile from "@/app/_components/case-studies/svaphile";
 import { OurBlogs, OurWork } from ".contentlayer/generated/types";
 import TYO from "@/app/_components/case-studies/tyo";
 import PamperedPaws from "@/app/_components/case-studies/pampered-paws";
+import Xpheno from "@/app/_components/case-studies/xpheno";
 import SvaphileOne from "@/app/_components/case-studies/svaphile-one";
 
 interface MdxComponentsProps {
@@ -179,6 +180,7 @@ const MdxComponents: FC<MdxComponentsProps> = ({ code, frontmatter }) => {
       <SvaphileOne {...props} frontmatter={frontmatter} />
     ),
     TYO: (props: any) => <TYO {...props} frontmatter={frontmatter} />,
+    Xpheno: (props: any) => <Xpheno {...props} frontmatter={frontmatter} />,
     PamperedPaws: (props: any) => (
       <PamperedPaws {...props} frontmatter={frontmatter} />
     ),

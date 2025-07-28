@@ -1,6 +1,10 @@
 "use client";
 
+import { useIsMac } from "@/hooks/use-mac";
+import { cn } from "@/lib/utils";
 import { FC, useEffect, useRef, useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import { Icons } from "./icons";
 
 declare global {
   interface Window {
@@ -11,12 +15,35 @@ declare global {
 
 interface YoutubePlayerWithAPIProps {}
 
+const videoSize = {
+  width: "1920",
+  height: "751",
+};
+
 const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
   const [isReady, setIsReady] = useState<boolean>(false);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isMuted, setIsMuted] = useState<boolean>(true);
   const [volume, setVolumeState] = useState<number>(0);
   const playerRef = useRef<any>(null);
+
+  const isLargeMobile = useMediaQuery({ minWidth: 300, maxWidth: 768 });
+  const isSmallTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
+
+  useEffect(() => {
+    console.log(isLargeMobile, isSmallTablet);
+    const updateValue = function () {
+      if (isLargeMobile) {
+        videoSize.width = "1920";
+        videoSize.height = "226";
+      }
+      if (isSmallTablet) {
+        videoSize.width = "1920";
+        videoSize.height = "540";
+      }
+    };
+    updateValue();
+  }, []);
 
   useEffect(() => {
     if (!window.YT) {
@@ -28,8 +55,8 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
 
     window.onYouTubeIframeAPIReady = () => {
       playerRef.current = new window.YT.Player("youtube-id", {
-        height: "751",
-        width: "1920",
+        height: videoSize.height,
+        width: videoSize.width,
         videoId: "12aaVh4bVBs",
         playerVars: {
           autoplay: 1,
@@ -68,6 +95,16 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
     }
   }, []);
 
+  const togglePlayPause = () => {
+    if (!playerRef.current || !isReady) return;
+
+    if (isPlaying) {
+      playerRef.current.pauseVideo();
+    } else {
+      playerRef.current.playVideo();
+    }
+  };
+
   const toggleMute = () => {
     if (!playerRef.current || !isReady) return;
 
@@ -90,25 +127,45 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
   };
 
   return (
-    <>
+    <div className="w-full relative">
       <div
         id="youtube-id"
-        className="w-full rounded-2xl overflow-hidden shadow-2xl scale-90 pointer-events-none"
+        className={cn(
+          "w-full rounded-2xl overflow-hidden shadow-sm 2xl:scale-90 relative",
+          useIsMac() ? "pointer-events-auto" : "pointer-events-none"
+        )}
       />
-      <div className="flex flex-row">
+
+      <div
+        className={cn(
+          "flex flex-row absolute items-center justify-center z-20 right-[15%] gap-4 bottom-[15%]",
+          useIsMac() ? "hidden" : "flex"
+        )}
+      >
+        <button
+          onClick={togglePlayPause}
+          disabled={!isReady}
+          className={`w-10 h-10 border border-foreground rounded-full flex items-center justify-center disabled:opacity-50 bg-background hover:bg-background/90 cursor-pointer `}
+        >
+          {isPlaying ? (
+            <Icons.Pause className="w-4 h-4 stroke-foreground bg-transparent hover:" />
+          ) : (
+            <Icons.Play className="w-4 h-4 stroke-foreground bg-transparent hover:" />
+          )}
+        </button>
         <button
           onClick={toggleMute}
           disabled={!isReady}
-          className={`px-6 py-2 text-white rounded-lg transition-colors hidden disabled:opacity-50 ${
-            isMuted
-              ? "bg-red-600 hover:bg-red-700"
-              : "bg-green-600 hover:bg-green-700"
-          }`}
+          className={`w-10 h-10 border border-foreground rounded-full flex items-center justify-center disabled:opacity-50 bg-background hover:bg-background/90 cursor-pointer `}
         >
-          {isMuted ? "Unmute" : "Mute"}
+          {isMuted ? (
+            <Icons.VolumeOff className="w-4 h-4 stroke-foreground bg-transparent hover:" />
+          ) : (
+            <Icons.Volume2 className="w-4 h-4 stroke-foreground bg-transparent hover:" />
+          )}
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

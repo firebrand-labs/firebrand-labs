@@ -4,5 +4,6 @@ import ourWork__pamperedPawsMdx from './our-work__pampered-paws.mdx.json' with {
 import ourWork__svaphileMdx from './our-work__svaphile.mdx.json' with { type: 'json' }
 import ourWork__tyoMdx from './our-work__tyo.mdx.json' with { type: 'json' }
 import ourWork__vedaCorpMdx from './our-work__veda-corp.mdx.json' with { type: 'json' }
+import ourWork__xphenoMdx from './our-work__xpheno.mdx.json' with { type: 'json' }
 
-export const allOurWorks = [ourWork__pamperedPawsMdx, ourWork__svaphileMdx, ourWork__tyoMdx, ourWork__vedaCorpMdx]
+export const allOurWorks = [ourWork__pamperedPawsMdx, ourWork__svaphileMdx, ourWork__tyoMdx, ourWork__vedaCorpMdx, ourWork__xphenoMdx]

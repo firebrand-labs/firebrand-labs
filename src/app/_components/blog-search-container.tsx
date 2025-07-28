@@ -6,6 +6,8 @@ import { env } from "@/env";
 import { cn } from "@/lib/utils";
 import { OurBlogs } from "contentlayer/generated";
 import Link from "next/link";
+import TypingAnimation from "@/app/_components/typing-animation";
+import { tileContent } from "@/config/marketing";
 
 interface BlogSearchContainerProps {
   blogs: OurBlogs[];
@@ -21,9 +23,10 @@ const BlogSearchContainer: FC<BlogSearchContainerProps> = ({ blogs }) => {
           !clicked ? "rounded-full delay-150" : "rounded-tr-3xl rounded-tl-3xl"
         )}
       >
-        <span className="font-paragraph text-subtitle-heading leading-normal tracking-tight flex">
+        {/* <span className="font-paragraph text-subtitle-heading leading-normal tracking-tight flex">
           show me
-        </span>
+        </span> */}
+        <TypingAnimation className="bg-transparent" tileContent={tileContent} />
         <Icons.BlogEnter className="w-8 h-8 p-1.5 rounded-full bg-foreground/20 stroke-foreground" />
       </div>
       <ul

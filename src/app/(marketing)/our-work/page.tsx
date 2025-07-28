@@ -10,6 +10,8 @@ import { Switch } from "@radix-ui/react-switch";
 import Image from "next/image";
 import Link from "next/link";
 import { env } from "@/env";
+import Footer from "@/app/_components/footer";
+import ReactLenis from "@/app/_components/react-lenis";
 
 interface pageProps {}
 
@@ -19,25 +21,34 @@ const page: FC<pageProps> = () => {
     notFound();
   }
   return (
-    <>
+    <ReactLenis>
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 pt-32 md:pt-40 md:pb-16">
         <div className="container flex flex-col items-start justify-center gap-16">
           <div className="flex flex-col items-start justify-center max-w-5xl gap-4">
             <AnimatedTextReveal
-              text="Built with you, not just around you."
+              text="Built with you, for what matters."
               className="text-secondary-heading text-foreground leading-tight tracking-wide font-normal font-heading mb-2.5"
             />
 
             <AnimatedRichText
-              className="text-paragraph-heading text-foreground max-w-xl 2xl:max-w-2xl leading-normal tracking-wide font-light font-paragraph"
+              className="text-paragraph-heading text-foreground max-w-xl 2xl:max-w-4xl leading-normal tracking-wide font-light font-paragraph"
               delay={5}
             >
+              <AnimatedSpan className="mb-2.5" delay={1.8}>
+                The best ideas don’t happen in silos-they grow when people care
+                enough to dig deeper. We’re here to help shape work that
+                contributes, that stands for something bigger than just “getting
+                it done.”
+              </AnimatedSpan>
+              <AnimatedSpan className="mb-2.5" delay={1.8}>
+                We ask the right questions, challenge what needs to change, and
+                bring clarity to every step. From the first spark of curiosity
+                to the final execution, we stay hands-on, thoughtful, and
+                intentional.
+              </AnimatedSpan>
               <AnimatedSpan className="" delay={1.8}>
-                The best ideas don’t happen in isolation-they’re built together,
-                with curiosity and care. Every project is personal. We ask the
-                right questions, challenge what needs to be challenged, and
-                bring clear, thoughtful thinking to the table. From first idea
-                to final execution, we’re here as creative partners.
+                Because every project is personal. And every outcome should make
+                a difference.
               </AnimatedSpan>
             </AnimatedRichText>
           </div>
@@ -75,7 +86,8 @@ const page: FC<pageProps> = () => {
           </div>
         </div>
       </section>
-    </>
+      <Footer />
+    </ReactLenis>
   );
 };
 
