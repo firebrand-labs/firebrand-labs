@@ -235,3 +235,21 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+.animate-infinite-scroll {
+  animation: infiniteScroll 100s linear infinite;
+  width: calc(2 * (10 * (200px + 16px)));
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * (10 * (200px + 16px))));
+  }
+}
