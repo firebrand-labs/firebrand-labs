@@ -11,6 +11,7 @@ import TYO from "@/app/_components/case-studies/tyo";
 import PamperedPaws from "@/app/_components/case-studies/pampered-paws";
 import Xpheno from "@/app/_components/case-studies/xpheno";
 import SvaphileOne from "@/app/_components/case-studies/svaphile-one";
+import Image from "next/image";
 
 interface MdxComponentsProps {
   code: string;
