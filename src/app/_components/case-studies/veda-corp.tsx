@@ -97,14 +97,14 @@ export const FullWidthImage = function ({
   alt: string;
 }) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
+    <section className="flex items-center  justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
       <div className="container flex flex-col items-start justify-center">
         <Image
           src={src}
           width={1180}
           height={700}
           alt={alt}
-          className="w-full h-auto rounded-2xl"
+          className="w-full h-auto max-h-screen rounded-2xl object-cover"
         />
       </div>
     </section>
@@ -131,9 +131,9 @@ export const ParallelImageSection = function ({
         <Image
           src={images[1]}
           width={480}
-          height={400}
+          height={600}
           alt={alt[1]}
-          className="w-full max-h-[400px] lg:max-h-[480px] xl:max-h-[520px] 2xl:max-h-[560px] 3xl:max-h-[600px] object-cover rounded-3xl bg-white"
+          className="w-full h-[400px] md:h-full object-cover rounded-3xl bg-white"
         />
       </div>
     </section>
@@ -146,8 +146,8 @@ export const CarouselSection = function ({
   vedaCorpCarouselContent: VedacorpCarouselContent;
 }) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4">
-      <div className="container flex flex-col items-start justify-center">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pb-24 md:py-4">
+      <div className="container flex flex-col items-start justify-center ">
         <CaseStudiesCarousel
           vedaCorpCarouselContent={vedaCorpCarouselContent}
         />
@@ -382,7 +382,7 @@ export const VedacorpStorySection = function ({}) {
 export const VedacorpProjectLogoSection = function ({ src }: { src: string }) {
   const Logo = Icons[src as Icon];
   return (
-    <section className="flex items-center justify-center  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQkqQIjscTnmCMBktVKZO5ofSazG3yJAgPeI')] before:bg-center  before:bg-size-[500px_auto] 3xl:before:bg-size-[600px_auto]">
+    <section className="flex items-center justify-center mt-16 md:0 flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQkqQIjscTnmCMBktVKZO5ofSazG3yJAgPeI')] before:bg-center before:bg-size-[340px_auto]  xl:before:bg-size-[600px_auto] 3xl:before:bg-size-[700px_auto]">
       <div className="container flex flex-col items-center justify-center">
         {/* <Image
           src={src}

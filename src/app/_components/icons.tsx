@@ -32,6 +32,7 @@ import {
   LucideProps,
   Pause,
   ChevronUp,
+  Monitor,
   Volume2,
   VolumeOff,
 } from "lucide-react";
@@ -40,6 +41,7 @@ export const Icons = {
   User,
   Volume2,
   VolumeOff,
+  Monitor,
   Pause,
   Snail,
   ChevronRight,

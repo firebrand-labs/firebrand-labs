@@ -12,6 +12,7 @@ import { calculateTime, cn } from "@/lib/utils";
 import Link from "next/link";
 import { format, parseISO } from "date-fns";
 import ReactLenis from "@/app/_components/react-lenis";
+import BlogList from "@/app/_components/blog-list";
 
 interface PostProps {
   params: {
@@ -87,7 +88,12 @@ export default async function PostPage({ params }: PostProps) {
                 alt={post.title}
                 width={1400}
                 height={800}
+                priority
+                quality={85}
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 className="w-full mb-16"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1400px"
               />
               <Link
                 aria-label="Back to blogs"
@@ -153,6 +159,12 @@ export default async function PostPage({ params }: PostProps) {
             ) : (
               <div className="" />
             )}
+          </div>
+          <div className="flex items-start flex-col justify-center gap-6 md:gap-8 2xl:gap-12 w-full mt-8 2xl:mt-12">
+            <h3 className="text-foreground text-secondary-heading leading-normal text-left w-full pt-2 pb-1 font-heading">
+              Latest Blogs
+            </h3>
+            <BlogList allOurBlogs={allOurBlogs.slice(0, 3)} />
           </div>
         </div>
         <Footer />

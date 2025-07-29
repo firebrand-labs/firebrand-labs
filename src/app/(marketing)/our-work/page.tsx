@@ -12,6 +12,7 @@ import Link from "next/link";
 import { env } from "@/env";
 import Footer from "@/app/_components/footer";
 import ReactLenis from "@/app/_components/react-lenis";
+import { Icons } from "@/app/_components/icons";
 
 interface pageProps {}
 
@@ -27,14 +28,14 @@ const page: FC<pageProps> = () => {
           <div className="flex flex-col items-start justify-center max-w-5xl gap-4">
             <AnimatedTextReveal
               text="Built with you, for what matters."
-              className="text-secondary-heading text-foreground leading-tight tracking-wide font-normal font-heading mb-2.5"
+              className="text-secondary-heading lowercase text-foreground leading-tight tracking-wide font-normal font-heading mb-2.5"
             />
 
             <AnimatedRichText
-              className="text-paragraph-heading text-foreground max-w-xl 2xl:max-w-4xl leading-normal tracking-wide font-light font-paragraph"
+              className="text-paragraph-heading lowercase text-foreground max-w-xl 2xl:max-w-4xl leading-normal tracking-wide font-light font-paragraph"
               delay={5}
             >
-              <AnimatedSpan className="mb-2.5" delay={1.8}>
+              <AnimatedSpan className="mb-2.5 " delay={1.8}>
                 The best ideas don’t happen in silos-they grow when people care
                 enough to dig deeper. We’re here to help shape work that
                 contributes, that stands for something bigger than just “getting
@@ -64,7 +65,7 @@ const page: FC<pageProps> = () => {
               >
                 <Link
                   href={`${env.NEXT_PUBLIC_APP_URL}${item.slug}`}
-                  className="w-full h-fit flex-col items-center justify-center flex relative gap-3"
+                  className="w-full h-fit flex-col items-center justify-center flex relative gap-3 bg-foreground/20 group rounded-2xl overflow-hidden"
                 >
                   {item.image ? (
                     <Image
@@ -72,14 +73,17 @@ const page: FC<pageProps> = () => {
                       alt={item.title}
                       width={340}
                       height={480}
-                      className="w-full  rounded-2xl h-[480px] object-cover"
+                      className="w-full group-hover:scale-105 transition-all duration-300  h-[480px] object-cover"
                     />
                   ) : null}
-                  {item.title ? (
-                    <h2 className="font-heading font-normal text-center w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
-                      {item.title}
-                    </h2>
-                  ) : null}
+                  <div className="flex flex-row items-center justify-between w-full py-3 px-3">
+                    {item.title ? (
+                      <h2 className="font-heading font-normal w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
+                        {item.title}
+                      </h2>
+                    ) : null}
+                    <Icons.ArrowRight className="w-8 self-end h-8 stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-five transition-transform duration-200 group-hover:shadow-2xl" />
+                  </div>
                 </Link>
               </article>
             ))}

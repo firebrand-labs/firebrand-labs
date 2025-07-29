@@ -73,7 +73,7 @@ export const DriverDataSection = function ({}) {
 
 export const TYOChallengeSectionOne = function ({}) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 pt-24 md:pb-8 md:pt-8">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 pt-4 md:pb-8 md:pt-8">
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
@@ -166,7 +166,7 @@ export const PamperedPawsStorySection = function ({}) {
 export const ProjectLogoSection = function ({ src }: { src: string }) {
   const Logo = Icons[src as Icon];
   return (
-    <section className="flex items-center justify-center  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiwPHkUiZT0PRFypUYDJzkC8H4lSsci7I5OxvQ')] before:bg-center  before:bg-size-[300px_auto] 3xl:before:bg-size-[400px_auto]">
+    <section className="flex items-center justify-center mt-16 md:0  flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiwPHkUiZT0PRFypUYDJzkC8H4lSsci7I5OxvQ')] before:bg-center  before:bg-size-[340px_auto]  xl:before:bg-size-[400px_auto] 3xl:before:bg-size-[700px_auto]">
       <div className="container flex flex-col items-center justify-center">
         {/* <Image
           src={src}
@@ -188,14 +188,18 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
       <TYOChallengeSectionOne />
       <FullWidthImage
         src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiMnYyPTGXGBSx43fU9vzmiOt07prKJAkesclg"
-        alt="Svaphile"
+        alt="Pampered Paws"
       />
       <ParallelImageSection
         images={[
           "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXia1OW30bBbI90DhnVovxN1HetpOz4c6gSqZdU",
           "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiLgXghPz0Q0hqRaHUEyIt3wdnJjrkN6TGb147",
         ]}
-        alt={["pattern", "pattern"]}
+        alt={["Pampered Paws", "Pampered Paws"]}
+      />
+      <FullWidthImage
+        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi4RuEaNP6VTuZEvh1OLWzqXU8eYrjcfN4Fbkg"
+        alt="Pampered Paws"
       />
 
       <ParallelImageSection
@@ -203,7 +207,28 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
           "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXit2ckopiQy8dYGkW7LiuezHjnCqUf4xgBcb0w",
           "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQkjbiS7IwFK269gvohLHr5a4VNqcYbpTnMXk",
         ]}
-        alt={["pattern", "pattern"]}
+        alt={["Pampered Paws", "Pampered Paws"]}
+      />
+
+      <FullWidthImage
+        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKf6DES40uc9qOMHzApnW38NDejVaClskLmrx"
+        alt="Pampered Paws"
+      />
+
+      <ParallelImageSection
+        images={[
+          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXicuUS0MfwVfrHgnRDTBX1y8AO9Quk740MJlmS",
+          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQFkevf7IwFK269gvohLHr5a4VNqcYbpTnMXk",
+        ]}
+        alt={["Pampered Paws", "Pampered Paws"]}
+      />
+      <FullWidthImage
+        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiRFr6nsC0gz4JX9n7EWPfH6cDtuoisTMQBZN3"
+        alt="Pampered Paws"
+      />
+      <FullWidthImage
+        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX5nHYXscTnmCMBktVKZO5ofSazG3yJAgPeIu"
+        alt="Pampered Paws"
       />
       {/* <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} /> */}
       {/* <ProjectTeamSection /> */}

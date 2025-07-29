@@ -49,7 +49,7 @@ const CaseStudiesCarousel: FC<CaseStudiesCarouselProps> = ({
   };
 
   return (
-    <div className="w-full min-h-screen md:min-h-fit">
+    <div className="w-full min-h-fit md:min-h-fit">
       <Carousel
         opts={{
           align: "start",

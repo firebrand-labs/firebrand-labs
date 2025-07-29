@@ -31,14 +31,14 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
         )}
       >
         {/* First set of cards */}
-        {allOurBlogs.map((card, i) => (
+        {allOurBlogs.slice(0, 20).map((card, i) => (
           <div
             key={`first-${i}`}
             className={cn(
-              "flex-shrink-0 mx-8 gap-3 scale-95  flex w-[300px] h-[300px]",
+              "flex-shrink-0 mx-8 gap-3  flex w-[300px] h-[150px]  overflow-visible",
               i % 2 == 0
-                ? "items-center scale-150 justify-center"
-                : "items-start scale-75 justify-start"
+                ? "items-start justify-center"
+                : "items-center justify-start"
             )}
           >
             {card.image ? (
@@ -49,17 +49,27 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
                   alt={card.title}
                   width={160}
                   height={120}
-                  className="opacity-80 hover:opacity-100 shadow-xl border "
+                  className={cn(
+                    "opacity-80 hover:opacity-100   w-full h-full object-contain",
+                    i % 2 == 0
+                      ? "items-start scale-75 justify-center"
+                      : "items-center scale-125 justify-center"
+                  )}
                 />
               </Link>
             ) : null}
           </div>
         ))}
         {/* Duplicate set for seamless loop */}
-        {allOurBlogs.map((card, i) => (
+        {allOurBlogs.slice(20, 40).map((card, i) => (
           <div
             key={`second-${i}`}
-            className="flex-shrink-0 mx-8 gap-3 scale-95 bg-green-500 w-[300px] h-[300px]"
+            className={cn(
+              "flex-shrink-0 mx-8 gap-3  w-[150px] h-[300px] overflow-visible items-center justify-center",
+              i % 2 == 0
+                ? "items-start justify-center"
+                : "items-center justify-start"
+            )}
           >
             {card.image ? (
               <Link href={`${env.NEXT_PUBLIC_APP_URL}${card.slug}`}>
@@ -69,7 +79,12 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
                   alt={card.title}
                   width={160}
                   height={120}
-                  className="opacity-80 hover:opacity-100 shadow-xl border "
+                  className={cn(
+                    "opacity-80 hover:opacity-100  border w-full h-full object-contain",
+                    i % 2 == 0
+                      ? "items-start scale-75 justify-center"
+                      : "items-center scale-125 justify-center"
+                  )}
                 />
               </Link>
             ) : null}

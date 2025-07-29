@@ -21,7 +21,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
       {...props}
       className={cn("w-full bg-background", props.className)}
     >
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-[image:initial] bg-yellow-level-four py-16 2xl:py-36 ">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-[image:initial] bg-yellow-level-four py-16 xl:py-12 2xl:py-32 ">
         <div className="container flex flex-col items-start justify-center gap-2">
           <AnimatedTextReveal
             text="Would you like us to be your extended marketing officers?"

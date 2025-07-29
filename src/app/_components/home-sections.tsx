@@ -61,8 +61,16 @@ const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
   useEffect(() => {
     if (mobile) {
       toast({
-        title:
-          "This web-experience is made for widescreens - switch to a bigger view.",
+        title: "",
+        description: (
+          <div className="flex items-center gap-5 w-full p-0">
+            <Icons.Monitor className="h-8 w-8" />
+            <span className="text-[14px] font-paragraph text-foreground font-light leading-normal tracking-normal">
+              This web-experience is made for widescreens - switch to a bigger
+              view.
+            </span>
+          </div>
+        ),
       });
     }
   }, [mobile]);
@@ -251,16 +259,25 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
           <div className=" flex-col items-center justify-center flex ">
             <AnimatedRichText
               className="relative text-secondary-heading  max-w-4xl 2xl:max-w-[53.25vw] 3xl:max-w-5xl text-foreground leading-tight tracking-wide font-light font-heading"
-              delay={1.4}
+              delay={0.6}
             >
               <AnimatedSpan
                 className="text-3xl md:text-3xl  lg:text-5xl text-foreground leading-tight w-full tracking-wide font-extrabold font-heading text-center mb-3 md:mb-3 relative"
-                delay={1.4}
+                delay={0.6}
               >
                 we run your marketing <br />
                 end to end.
                 <span className="absolute top-0 right-0 translate-x-[10px] md:translate-x-[20px] flex  w-10 h-10">
                   <Icons.ArrowRight className="translate-x-7 hidden -rotate-45 w-full h-full stroke-yellow-level-three" />
+                </span>
+              </AnimatedSpan>
+              <AnimatedSpan
+                className="text-tertiary-heading text-foreground leading-tight w-full tracking-wide font-normal font-heading text-center mb-3 md:mb-3 relative"
+                delay={0.6}
+              >
+                call us your{" "}
+                <span className="text-yellow-level-three">
+                  extended marketing officers.
                 </span>
               </AnimatedSpan>
               <motion.div
@@ -411,7 +428,7 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
           <FBLButton className="hidden" href="/blog" body="all resources" />
         </div>
         {/* <BlogList /> */}
-        <Icons.BlogImage className="w-full md:w-[80%] self-center" />
+        <Icons.BlogImage className="w-full md:w-[60%] self-center" />
       </div>
     </section>
   );
@@ -424,7 +441,7 @@ const FooterSection: React.FC<SectionProps> = ({ isActive }) => {
   return (
     <Footer
       ref={ref}
-      className="bg-[image:initial] bg-yellow-level-four 2xl:min-h-screen 2xl:flex 2xl:flex-col 2xl:justify-end"
+      className="bg-[image:initial] bg-yellow-level-four xl:min-h-screen 2xl:flex 2xl:flex-col 2xl:justify-end"
     />
   );
 };

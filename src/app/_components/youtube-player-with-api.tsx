@@ -29,6 +29,7 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
 
   const isLargeMobile = useMediaQuery({ minWidth: 300, maxWidth: 768 });
   const isSmallTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
+  const isSmallLaptop = useMediaQuery({ minWidth: 1280, maxWidth: 1535 });
 
   useEffect(() => {
     console.log(isLargeMobile, isSmallTablet);
@@ -40,6 +41,10 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
       if (isSmallTablet) {
         videoSize.width = "1920";
         videoSize.height = "540";
+      }
+      if (isSmallLaptop) {
+        videoSize.width = "1920";
+        videoSize.height = "600";
       }
     };
     updateValue();
@@ -131,7 +136,7 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
       <div
         id="youtube-id"
         className={cn(
-          "w-full rounded-2xl overflow-hidden shadow-sm 2xl:scale-90 relative",
+          "w-full rounded-2xl overflow-hidden shadow-sm 2xl:scale-90 3xl:scale-100 relative",
           useIsMac() ? "pointer-events-auto" : "pointer-events-none"
         )}
       />
