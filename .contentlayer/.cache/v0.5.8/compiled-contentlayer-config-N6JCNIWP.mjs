@@ -1,97 +1,99 @@
+// contentlayer.config.js
 import { defineDocumentType, makeSource } from "contentlayer2/source-files";
 import { type } from "os";
 import { resolve } from "path";
-
-/** @type {import('contentlayer/source-files').ComputedFields} */
-const computedFields = {
+var computedFields = {
   slug: {
     type: "string",
     resolve: (doc) => {
-      console.log("✅ Contentlayer found:", doc._raw.sourceFilePath);
+      console.log("\u2705 Contentlayer found:", doc._raw.sourceFilePath);
       return `/${doc._raw.flattenedPath}`;
-    },
+    }
   },
   slugAsParams: {
     type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/")
   },
   readTime: {
     type: "number",
     resolve: (doc) => {
       const textContent = doc._raw;
       return textContent;
-    },
-  },
+    }
+  }
 };
-
-export const OurWork = defineDocumentType(() => ({
+var OurWork = defineDocumentType(() => ({
   name: "OurWork",
   filePathPattern: `our-work/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
+      type: "string"
     },
     image: {
-      type: "string",
+      type: "string"
     },
     industry: {
-      type: "string",
+      type: "string"
     },
     client: {
-      type: "string",
+      type: "string"
     },
     duration: {
-      type: "string",
+      type: "string"
     },
     tech: {
-      type: "string",
+      type: "string"
     },
     date: {
       type: "date",
-      required: true,
-    },
+      required: true
+    }
   },
-  computedFields,
+  computedFields
 }));
-
-export const OurBlogs = defineDocumentType(() => ({
+var OurBlogs = defineDocumentType(() => ({
   name: "OurBlogs",
   filePathPattern: `our-blogs/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
+      type: "string"
     },
     image: {
-      type: "string",
+      type: "string"
     },
     category: {
-      type: "string",
+      type: "string"
     },
     categoryType: {
-      type: "string",
+      type: "string"
     },
     author: {
-      type: "string",
+      type: "string"
     },
     date: {
       type: "date",
-      required: true,
-    },
+      required: true
+    }
   },
-  computedFields,
+  computedFields
 }));
-
-export default makeSource({
+var contentlayer_config_default = makeSource({
   contentDirPath: "./content",
-  documentTypes: [OurWork, OurBlogs],
+  documentTypes: [OurWork, OurBlogs]
 });
+export {
+  OurBlogs,
+  OurWork,
+  contentlayer_config_default as default
+};
+//# sourceMappingURL=compiled-contentlayer-config-N6JCNIWP.mjs.map

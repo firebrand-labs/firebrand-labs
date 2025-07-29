@@ -17,6 +17,7 @@ export type OurBlogs = {
   description?: string | undefined
   image?: string | undefined
   category?: string | undefined
+  categoryType?: string | undefined
   author?: string | undefined
   date: IsoDateTimeString
   /** MDX file body */

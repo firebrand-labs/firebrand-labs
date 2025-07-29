@@ -21,9 +21,9 @@ interface PostProps {
 }
 
 export const identifyAdjacentBlogs = function (slug: string[]) {
-  const postIndex = allOurBlogs.findIndex(
-    (post) => post.slugAsParams === slug[0]
-  );
+  const postIndex = allOurBlogs
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .findIndex((post) => post.slugAsParams === slug[0]);
 
   if (postIndex === -1) {
     return { previousBlog: null, nextBlog: null };
@@ -54,7 +54,7 @@ export async function generateMetadata({
   if (!post) {
     return {};
   }
-
+  console.log(post);
   return {
     title: post.title,
     description: post.description,
