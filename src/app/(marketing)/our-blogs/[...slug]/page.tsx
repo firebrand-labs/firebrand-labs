@@ -92,9 +92,9 @@ export default async function PostPage({ params }: PostProps) {
               <Link
                 aria-label="Back to blogs"
                 href={"/our-blogs"}
-                className="w-12 h-12 flex items-center justify-center border-2 rounded-full border-foreground absolute top-6 left-6 group hover:bg-foreground/10 transition-all duration-100"
+                className="w-12 h-12 flex items-center justify-center border-2 rounded-full border-white absolute top-6 left-6 group hover:bg-white/30 transition-all duration-100"
               >
-                <Icons.ChevronLeft className="w-6 h-6 stroke-foreground" />
+                <Icons.ChevronLeft className="w-6 h-6 stroke-white" />
               </Link>
             </div>
           ) : null}
@@ -127,7 +127,7 @@ export default async function PostPage({ params }: PostProps) {
 
             <MdxComponents code={post.body.code} frontmatter={post} />
           </div>
-          <div className="w-full flex flex-row items-center justify-between py-4 pt-6 border-t border-t-foreground mt-6 md:mt-12">
+          <div className="w-full flex flex-row items-center justify-between py-4 pt-6 border-t border-t-foreground mt-6 md:mt-8">
             {adjacentBlogs.previousBlog ? (
               <Link
                 href={`${env.NEXT_PUBLIC_APP_URL}${adjacentBlogs.previousBlog.slug}`}

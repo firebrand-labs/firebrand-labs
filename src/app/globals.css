@@ -236,10 +236,6 @@
   scrollbar-width: none; /* Firefox */
 }
 
-.animate-infinite-scroll:hover {
-  animation-play-state: paused;
-}
-
 .animate-infinite-scroll {
   animation: infiniteScroll 100s linear infinite;
   width: calc(2 * (10 * (200px + 16px)));

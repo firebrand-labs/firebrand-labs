@@ -89,8 +89,8 @@ export default async function PostPage({ params }: PostProps) {
         </div>
 
         <MdxComponents code={post.body.code} frontmatter={post} />
-        <div className="container mb-6">
-          <div className="w-full flex flex-row items-center justify-between py-4 pt-6 border-t border-t-foreground mt-6 md:mt-12">
+        <div className="container mb-6 self-center">
+          <div className="w-full flex flex-row items-center justify-between py-4 pt-6 border-t border-t-foreground mt-6 md:mt-3">
             {adjacentWorks.previousBlog ? (
               <Link
                 href={`${env.NEXT_PUBLIC_APP_URL}${adjacentWorks.previousBlog.slug}`}

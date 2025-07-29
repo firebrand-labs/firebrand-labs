@@ -32,7 +32,15 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
       >
         {/* First set of cards */}
         {allOurBlogs.map((card, i) => (
-          <div key={`first-${i}`} className="flex-shrink-0 mx-8 gap-3 scale-95">
+          <div
+            key={`first-${i}`}
+            className={cn(
+              "flex-shrink-0 mx-8 gap-3 scale-95  flex w-[300px] h-[300px]",
+              i % 2 == 0
+                ? "items-center scale-150 justify-center"
+                : "items-start scale-75 justify-start"
+            )}
+          >
             {card.image ? (
               <Link href={`${env.NEXT_PUBLIC_APP_URL}${card.slug}`}>
                 <Image
@@ -41,7 +49,7 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
                   alt={card.title}
                   width={160}
                   height={120}
-                  className="opacity-40 hover:opacity-100 shadow-xl border "
+                  className="opacity-80 hover:opacity-100 shadow-xl border "
                 />
               </Link>
             ) : null}
@@ -49,7 +57,10 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
         ))}
         {/* Duplicate set for seamless loop */}
         {allOurBlogs.map((card, i) => (
-          <div key={`first-${i}`} className="flex-shrink-0 mx-8 gap-3 scale-95">
+          <div
+            key={`second-${i}`}
+            className="flex-shrink-0 mx-8 gap-3 scale-95 bg-green-500 w-[300px] h-[300px]"
+          >
             {card.image ? (
               <Link href={`${env.NEXT_PUBLIC_APP_URL}${card.slug}`}>
                 <Image
@@ -58,7 +69,7 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
                   alt={card.title}
                   width={160}
                   height={120}
-                  className="opacity-40 hover:opacity-100 shadow-xl border "
+                  className="opacity-80 hover:opacity-100 shadow-xl border "
                 />
               </Link>
             ) : null}

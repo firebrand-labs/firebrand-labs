@@ -1,3 +1,4 @@
+import BlogList from "@/app/_components/blog-list";
 import BlogSearchContainer from "@/app/_components/blog-search-container";
 import Footer from "@/app/_components/footer";
 import InfiniteScroll from "@/app/_components/infinite-scroll";
@@ -16,13 +17,21 @@ const page: FC<pageProps> = () => {
     <ReactLenis>
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-screen">
         <div className="container flex items-center justify-center h-full ">
-          <BlogSearchContainer blogs={allOurBlogs} />
+          {/* <BlogSearchContainer blogs={allOurBlogs} /> */}
+          <h1 className="font-heading text-primary-heading hidden  text-foreground leading-normal tracking-tight z-10">
+            Our Blogs
+          </h1>
         </div>
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-around">
           <InfiniteScroll className="" />
           <InfiniteScroll className="" reverseRow={true} />
           <InfiniteScroll className="" />
           <InfiniteScroll className="" reverseRow={true} />
+        </div>
+      </section>
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-screen py-16 md:py-24">
+        <div className="container">
+          <BlogList allOurBlogs={allOurBlogs} />
         </div>
       </section>
       <Footer />

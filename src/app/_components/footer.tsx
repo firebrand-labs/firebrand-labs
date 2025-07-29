@@ -60,7 +60,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
               </div>
             ))}
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full pb-8 md:pb-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full pb-8 md:pb-0 mt-5">
             <div className="flex flex-col items-start justify-center gap-1.5">
               <h2 className="text-subtitle-heading text-background leading-tight tracking-wide font-normal font-heading">
                 16 Years of Fabulous Ideas, Brilliant Execution, and Lovable
@@ -72,7 +72,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
               </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-3 w-full h-full ">
+            <div className="flex flex-col items-center justify-center gap-3 w-full">
               <ul className="flex flex-row items-end justify-start md:justify-end gap-4 list-none  w-full h-full">
                 <li>
                   <Link
