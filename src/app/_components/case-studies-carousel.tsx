@@ -70,6 +70,8 @@ const CaseStudiesCarousel: FC<CaseStudiesCarouselProps> = ({
                   alt="doers. misfits. firebrands."
                   className="w-full md:col-start-1 md:col-end-3 max-h-[400px] lg:max-h-[480px] xl:max-h-[520px] 2xl:max-h-[560px] 3xl:max-h-[600px] object-cover rounded-2xl"
                   width={700}
+                  quality={75}
+                  priority
                   height={700}
                 />
                 <div className="flex flex-col items-start justify-end gap-4 self-end py-8 md:py-24">

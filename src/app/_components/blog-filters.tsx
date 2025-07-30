@@ -41,13 +41,13 @@ const BlogFilters: FC<BlogFiltersProps> = () => {
   };
 
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-screen py-16 md:py-24">
+    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-screen py-16 md:py-24 2xl:py-28">
       <div className="container flex flex-col items-center justify-center gap-8 md:gap-16">
-        <ul className="w-full items-center justify-center flex flex-col md:flex-row flex-wrap gap-x-5 gap-y-5 md:gap-y-8 md:gap-x-10 2xl:gap-x-12 3xl:gap-x-16 max-w-4xl">
-          <li className="list-none">
+        <ul className="w-full items-center justify-center flex flex-col md:flex-row flex-wrap gap-x-5 gap-y-5 md:gap-y-8 md:gap-x-10 2xl:gap-x-12 3xl:gap-x-16 max-w-5xl">
+          <li className="list-none text-paragraph-heading">
             <button
               onClick={() => selectCategory("All")}
-              className={`flex items-center cursor-pointer justify-center text-subtitle-heading leading-normal tracking-tight hover:text-yellow-level-three ${
+              className={`flex items-center cursor-pointer lowercase justify-center text-paragraph-heading font-light font-paragraph leading-normal tracking-normal hover:text-yellow-level-three ${
                 selectedCategory === "All"
                   ? "text-yellow-level-three border-b-2 border-yellow-level-three"
                   : "text-foreground"
@@ -58,11 +58,11 @@ const BlogFilters: FC<BlogFiltersProps> = () => {
           </li>
           {uniqueCategories.length
             ? uniqueCategories.map((item, i) => (
-                <li className="list-none" key={i}>
+                <li className="list-none text-paragraph-heading" key={i}>
                   <button
                     onClick={() => selectCategory(item)}
                     className={cn(
-                      "flex items-center cursor-pointer justify-center text-subtitle-heading text-foreground leading-normal tracking-tight hover:text-yellow-level-three",
+                      "flex items-center cursor-pointer justify-center lowercase text-paragraph-heading font-light font-paragraph text-foreground leading-normal tracking-normal hover:text-yellow-level-three",
                       selectedCategory === item
                         ? "text-yellow-level-three border-b-2 border-yellow-level-three"
                         : "text-foreground"

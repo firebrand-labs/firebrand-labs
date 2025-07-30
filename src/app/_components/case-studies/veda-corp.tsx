@@ -104,6 +104,8 @@ export const FullWidthImage = function ({
           width={1180}
           height={700}
           alt={alt}
+          priority
+          quality={75}
           className="w-full h-auto max-h-screen rounded-2xl object-cover"
         />
       </div>
@@ -125,6 +127,8 @@ export const ParallelImageSection = function ({
           src={images[0]}
           width={780}
           height={400}
+          quality={75}
+          priority
           alt={alt[0]}
           className="w-full md:col-start-1 h-full md:col-end-3 md:h-[400px] lg:h-[480px] xl:h-[520px] 2xl:h-[560px] 3xl:h-[600px] object-cover rounded-3xl"
         />
@@ -132,6 +136,7 @@ export const ParallelImageSection = function ({
           src={images[1]}
           width={480}
           height={400}
+          quality={75}
           alt={alt[1]}
           className="w-full object-cover md:h-[400px] lg:h-[480px] xl:h-[520px] 2xl:h-[560px] 3xl:h-[600px] h-full rounded-3xl bg-white"
         />

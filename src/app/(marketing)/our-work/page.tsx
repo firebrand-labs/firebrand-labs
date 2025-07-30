@@ -72,6 +72,8 @@ const page: FC<pageProps> = () => {
                       src={item.image}
                       alt={item.title}
                       width={340}
+                      priority
+                      quality={75}
                       height={480}
                       className="w-full group-hover:scale-105 transition-all duration-300  h-[480px] object-cover"
                     />
