@@ -164,7 +164,14 @@ export default async function PostPage({ params }: PostProps) {
             <h3 className="text-foreground text-secondary-heading leading-normal text-left w-full pt-2 pb-1 font-heading">
               Latest Blogs
             </h3>
-            <BlogList allOurBlogs={allOurBlogs.slice(0, 3)} />
+            <BlogList
+              allOurBlogs={allOurBlogs
+                .sort(
+                  (a, b) =>
+                    new Date(b.date).getTime() - new Date(a.date).getTime()
+                )
+                .slice(0, 3)}
+            />
           </div>
         </div>
         <Footer />

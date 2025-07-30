@@ -41,9 +41,10 @@ const page: FC<pageProps> = () => {
             <div className="flex items-start justify-center">
               <Image
                 src={
-                  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXgVVjMscTnmCMBktVKZO5ofSazG3yJAgPeIu"
+                  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi0cncsZlw1XDjFSAfqtTI8r6nlO93vEsMkUcz"
                 }
                 alt="hello"
+                quality={75}
                 className="w-full h-auto"
                 width={500}
                 height={800}

@@ -1,3 +1,4 @@
+import BlogFilters from "@/app/_components/blog-filters";
 import BlogList from "@/app/_components/blog-list";
 import BlogSearchContainer from "@/app/_components/blog-search-container";
 import Footer from "@/app/_components/footer";
@@ -29,15 +30,7 @@ const page: FC<pageProps> = () => {
           <InfiniteScroll className="" reverseRow={true} />
         </div>
       </section>
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-screen py-16 md:py-24">
-        <div className="container">
-          <BlogList
-            allOurBlogs={allOurBlogs.sort(
-              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-            )}
-          />
-        </div>
-      </section>
+      <BlogFilters />
       <Footer />
     </ReactLenis>
   );

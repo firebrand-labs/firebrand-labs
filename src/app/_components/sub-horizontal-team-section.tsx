@@ -85,6 +85,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                           alt={item.name}
                           width={600}
                           height={600}
+                          quality={75}
                           className={`object-cover ${
                             isMobile
                               ? "w-[360px] h-[360px]"
@@ -116,6 +117,7 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                             alt={item.name}
                             width={200}
                             height={300}
+                            quality={75}
                             className="max-w-[200px] max-h-[460px] object-contain md:w-full md:max-w-[260px]"
                           />
                           <Icons.ProfileBackdrop

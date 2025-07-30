@@ -225,6 +225,7 @@ const page: FC<pageProps> = () => {
                     "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXitD5vdMQy8dYGkW7LiuezHjnCqUf4xgBcb0wo"
                   }
                   alt="hello"
+                  quality={75}
                   className="w-[280px] h-auto"
                   width={100}
                   height={100}

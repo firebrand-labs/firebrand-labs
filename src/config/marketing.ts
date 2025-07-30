@@ -193,7 +193,7 @@ export const subTeamContent = [
       popupImage:
         "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXikIU9rxhjX0VC6iL3lRYcyTp4jzeJnadKImDw",
       description: [
-        "quiet on the outside, full of ideas (and item songs) on the inside. vimal’s the kind of person who’ll surprise you in the best way. curious, kind, and quietly creative, his brain’s always running in the background. he’s a mix of innocence and mischievous wit. a rescuer of animals and a lover of loud music who has a tendency of diving on dry land.",
+        "quiet on the outside, full of ideas on the inside. vimal’s the kind of person who’ll surprise you in the best way. curious, kind, and quietly creative, his brain’s always running in the background. he’s a mix of innocence and mischievous wit. a lover of loud music who has a tendency of diving on dry land.",
       ],
       linkedIn: "",
       phone: "",
