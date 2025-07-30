@@ -120,20 +120,20 @@ export const ParallelImageSection = function ({
 }) {
   return (
     <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background  bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 items-start justify-center">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 items-start justify-center ">
         <Image
           src={images[0]}
           width={780}
           height={400}
           alt={alt[0]}
-          className="w-full md:col-start-1 md:col-end-3 max-h-[400px] lg:max-h-[480px] xl:max-h-[520px] 2xl:max-h-[560px] 3xl:max-h-[600px] object-cover rounded-3xl"
+          className="w-full md:col-start-1 h-full md:col-end-3 md:h-[400px] lg:h-[480px] xl:h-[520px] 2xl:h-[560px] 3xl:h-[600px] object-cover rounded-3xl"
         />
         <Image
           src={images[1]}
           width={480}
-          height={600}
+          height={400}
           alt={alt[1]}
-          className="w-full h-[400px] md:h-full object-cover rounded-3xl bg-white"
+          className="w-full object-cover md:h-[400px] lg:h-[480px] xl:h-[520px] 2xl:h-[560px] 3xl:h-[600px] h-full rounded-3xl bg-white"
         />
       </div>
     </section>
