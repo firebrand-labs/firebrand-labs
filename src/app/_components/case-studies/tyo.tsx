@@ -1,5 +1,5 @@
 import { OurWork } from ".contentlayer/generated/types";
-import { ProjectLogoSection } from "@/app/_components/case-studies/pampered-paws";
+import { ProjectLogoSection } from "@/app/_components/case-studies/xpheno";
 import { FC } from "react";
 import {
   CarouselSection,
@@ -24,7 +24,7 @@ export const DriverDataSection = function ({}) {
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
-            <Image
+            <img
               src={
                 "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXIrWgKscTnmCMBktVKZO5ofSazG3yJAgPeIu"
               }
@@ -159,16 +159,10 @@ export const TYOStorySection = function ({}) {
 const TYO: FC<TYOProps> = ({ frontmatter }) => {
   return (
     <>
-      <ProjectLogoSection src="FBLLogo" />
+      <ProjectLogoSection src="/case-studies/vedacorp/veda-corp.png" />
       <TYOChallengeSectionOne />
-      <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiIZa8kf5ctJU8RrDyI1bafz3MZcsFvO2Ah6CQ"
-        alt="Svaphile"
-      />
-      <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXIrWgKscTnmCMBktVKZO5ofSazG3yJAgPeIu"
-        alt="Svaphile"
-      />
+      <FullWidthImage src="/case-studies/tyo/tyo-cs-1.webp" alt="Svaphile" />
+
       <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} />
       {/* <ProjectTeamSection /> */}
       <TYOStorySection />

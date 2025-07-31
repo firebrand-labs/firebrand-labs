@@ -57,7 +57,7 @@ const page: FC<pageProps> = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <Image
+              <img
                 src={
                   "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXitD5vdMQy8dYGkW7LiuezHjnCqUf4xgBcb0wo"
                 }

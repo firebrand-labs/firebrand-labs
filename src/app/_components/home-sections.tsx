@@ -307,7 +307,7 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
                   style={{ originX: 0 }}
                   className="absolute w-[200px] md:w-[300px] top-[-130px] right-[-5px] md:top-[-180px] md:right-[-170px] rotate-0"
                 >
-                  <Image
+                  <img
                     src={
                       "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXis7vE32ktVLIobTqySHNWmrU0nFD3G1uYZCv5"
                     }

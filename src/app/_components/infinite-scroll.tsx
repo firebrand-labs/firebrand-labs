@@ -26,7 +26,7 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
     >
       <div
         className={cn(
-          "flex animate-infinite-scroll",
+          "flex animate-infinite-scroll gap-3 md:gap-6 ",
           reverseRow ? "flex-row-reverse" : null
         )}
       >
@@ -43,21 +43,17 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
           >
             {card.image ? (
               <Link href={`${env.NEXT_PUBLIC_APP_URL}${card.slug}`}>
-                <Image
+                <img
                   draggable={false}
                   src={card.image}
                   alt={card.title}
                   width={130}
                   height={80}
-                  priority
-                  quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                   className={cn(
-                    "opacity-60 hover:opacity-100   w-full h-full object-contain",
+                    "opacity-60 hover:opacity-100   w-full  object-contain",
                     i % 2 == 0
-                      ? "items-start scale-75 justify-center"
-                      : "items-center scale-125 justify-center"
+                      ? "items-start scale-50 justify-center"
+                      : "items-center scale-75 justify-center"
                   )}
                 />
               </Link>
@@ -69,7 +65,7 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
           <div
             key={`second-${i}`}
             className={cn(
-              "flex-shrink-0 mx-8 gap-3  w-[150px] h-[300px] overflow-visible items-center justify-center",
+              "flex-shrink-0 mx-8 gap-3 md:gap-6  w-[150px] h-[300px] overflow-visible items-center justify-center flex-row-reverse",
               i % 2 == 0
                 ? "items-start justify-center"
                 : "items-center justify-start"
@@ -77,17 +73,17 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
           >
             {card.image ? (
               <Link href={`${env.NEXT_PUBLIC_APP_URL}${card.slug}`}>
-                <Image
+                <img
                   draggable={false}
                   src={card.image}
                   alt={card.title}
                   width={160}
                   height={120}
                   className={cn(
-                    "opacity-80 hover:opacity-100  border w-full h-full object-contain",
+                    "opacity-80 hover:opacity-100  border w-full  object-contain",
                     i % 2 == 0
                       ? "items-start scale-75 justify-center"
-                      : "items-center scale-125 justify-center"
+                      : "items-center scale-100 justify-center"
                   )}
                 />
               </Link>

@@ -81,7 +81,7 @@ const TrustRevealAnimation: FC<TrustRevealAnimationProps> = ({ children }) => {
                 className="text-paragraph-heading absolute tracking-wide text-foreground leading-normal font-paragraph  top-0 right-0"
                 delay={1.8}
               >
-                <Image
+                <img
                   src={
                     "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1lSMHpD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
                   }

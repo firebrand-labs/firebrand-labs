@@ -190,7 +190,7 @@ const page: FC<pageProps> = () => {
             src={"the-book/caa-deck.png"}
             width={400}
             height={600}
-            className="absolute bottom-0 right-0 w-[300px] xl:w-[600px] 2xl:w-[660px]"
+            className="absolute bottom-0 right-0 w-[300px] md:w-[600px] 2xl:w-[660px]"
           />
         </section>
         <Footer />

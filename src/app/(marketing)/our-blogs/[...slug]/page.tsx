@@ -83,15 +83,12 @@ export default async function PostPage({ params }: PostProps) {
         <div className="container flex flex-col items-start justify-center py-16 pt-24 xl:pt-24 2xl:pt-28 3xl:pt-32">
           {post.image ? (
             <div className="relative w-full">
-              <Image
+              <img
                 src={post.image}
                 alt={post.title}
                 width={1400}
                 height={800}
-                priority
-                quality={75}
                 className="w-full mb-16"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1400px"
               />
               <Link
                 aria-label="Back to blogs"

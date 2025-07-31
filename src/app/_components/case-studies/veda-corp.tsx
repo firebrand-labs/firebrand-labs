@@ -13,7 +13,7 @@ import { Icon, Icons } from "@/app/_components/icons";
 import CaseStudiesCarousel from "@/app/_components/case-studies-carousel";
 import { OurWork } from "contentlayer/generated";
 import BackgroundVideo from "@/app/_components/background-video";
-import { ProjectLogoSection } from "@/app/_components/case-studies/pampered-paws";
+import { ProjectLogoSection } from "@/app/_components/case-studies/xpheno";
 
 export const OverviewSection = function ({
   overviewContent,
@@ -99,13 +99,11 @@ export const FullWidthImage = function ({
   return (
     <section className="flex items-center  justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
       <div className="container flex flex-col items-start justify-center">
-        <Image
+        <img
           src={src}
           width={1180}
           height={700}
           alt={alt}
-          priority
-          quality={75}
           className="w-full h-auto max-h-screen rounded-2xl object-cover"
         />
       </div>
@@ -123,20 +121,17 @@ export const ParallelImageSection = function ({
   return (
     <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background  bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 items-start justify-center ">
-        <Image
+        <img
           src={images[0]}
           width={780}
           height={400}
-          quality={75}
-          priority
           alt={alt[0]}
           className="w-full md:col-start-1 h-full md:col-end-3 md:h-[400px] lg:h-[480px] xl:h-[520px] 2xl:h-[560px] 3xl:h-[600px] object-cover rounded-3xl"
         />
-        <Image
+        <img
           src={images[1]}
           width={480}
           height={400}
-          quality={75}
           alt={alt[1]}
           className="w-full object-cover md:h-[400px] lg:h-[480px] xl:h-[520px] 2xl:h-[560px] 3xl:h-[600px] h-full rounded-3xl bg-white"
         />
@@ -410,7 +405,7 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
   console.log(frontmatter);
   return (
     <>
-      <VedacorpProjectLogoSection src="FBLLogo" />
+      <ProjectLogoSection src="/case-studies/vedacorp/veda-corp.png" />
       <VedacorpChallengeSectionOne />
       <section className="hidden items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
         <div className="container">
@@ -435,14 +430,14 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
       </section>
       <ParallelImageSection
         images={[
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX9ZzTYscTnmCMBktVKZO5ofSazG3yJAgPeIu",
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7cvcuv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+          "/case-studies/vedacorp/vedacorp-cs-1.webp",
+          "/case-studies/vedacorp/vedacorp-cs-2.png",
         ]}
         alt={["pattern", "pattern"]}
       />
       <CarouselSection vedaCorpCarouselContent={vedaCorpCarouselContent} />
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXinvuiKYQVwhOJ7TEdmoR6uY0eA3fScrGMWDl9"
+        src="/case-studies/vedacorp/vedacorp-cs-4.webp"
         alt="Vedacorp"
       />
       {/* <VedacorpProjectTeamSection /> */}

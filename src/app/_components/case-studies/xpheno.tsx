@@ -13,8 +13,12 @@ import { Icon, Icons } from "@/app/_components/icons";
 import CaseStudiesCarousel from "@/app/_components/case-studies-carousel";
 import { OurWork } from "contentlayer/generated";
 import BackgroundVideo from "@/app/_components/background-video";
-import { ProjectLogoSection } from "@/app/_components/case-studies/pampered-paws";
+
 import { VedacorpProjectLogoSection } from "@/app/_components/case-studies/veda-corp";
+import {
+  ParallelImageSection,
+  FullWidthImage,
+} from "@/app/_components/case-studies/veda-corp";
 
 export const OverviewSection = function ({
   overviewContent,
@@ -85,57 +89,6 @@ export const OverviewSection = function ({
             ) : null}
           </div>
         </div>
-      </div>
-    </section>
-  );
-};
-
-export const FullWidthImage = function ({
-  src,
-  alt,
-}: {
-  src: string;
-  alt: string;
-}) {
-  return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
-      <div className="container flex flex-col items-start justify-center">
-        <Image
-          src={src}
-          width={1180}
-          height={700}
-          alt={alt}
-          className="w-full h-auto rounded-2xl"
-        />
-      </div>
-    </section>
-  );
-};
-
-export const ParallelImageSection = function ({
-  images,
-  alt,
-}: {
-  images: string[];
-  alt: string[];
-}) {
-  return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background  bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 items-start justify-center">
-        <Image
-          src={images[0]}
-          width={780}
-          height={400}
-          alt={alt[0]}
-          className="w-full md:col-start-1 md:col-end-3 max-h-[400px] lg:max-h-[480px] xl:max-h-[520px] 2xl:max-h-[560px] 3xl:max-h-[600px] object-cover rounded-3xl"
-        />
-        <Image
-          src={images[1]}
-          width={480}
-          height={400}
-          alt={alt[1]}
-          className="w-full max-h-[400px] lg:max-h-[480px] xl:max-h-[520px] 2xl:max-h-[560px] 3xl:max-h-[600px] object-cover rounded-3xl bg-white"
-        />
       </div>
     </section>
   );
@@ -381,18 +334,18 @@ export const XphenoStorySection = function ({}) {
   );
 };
 
-export const XphenoProjectLogoSection = function ({ src }: { src: string }) {
+export const ProjectLogoSection = function ({ src }: { src: string }) {
   const Logo = Icons[src as Icon];
   return (
-    <section className="flex items-center justify-center mt-16 md:0 flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-transparent bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative before:content-[''] before:w-full before:h-full before:inset-0 before:bg-[url('https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXin5DqyhVwhOJ7TEdmoR6uY0eA3fScrGMWDl94')] before:bg-center before:bg-size-[340px_auto]  xl:before:bg-size-[600px_auto] 3xl:before:bg-size-[700px_auto]">
+    <section className="flex items-center justify-center mt-16 md:0 flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-transparent bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative ">
       <div className="container flex flex-col items-center justify-center">
-        {/* <Image
+        <img
           src={src}
           alt="Banner Section"
           width={800}
           height={300}
           className="w-[300px] lg:w-[360px] xl:w-[440px] 2xl:w-[520px] 3xl:w-[660px] h-auto"
-        /> */}
+        />
         {/* <Logo className="w-36 md:w-2xl xl:w-3xl 3xl:w-5xl fill-foreground stroke-foreground" /> */}
       </div>
     </section>
@@ -407,21 +360,27 @@ const Xpheno: FC<XphenoProps> = ({ frontmatter }) => {
   console.log(frontmatter);
   return (
     <>
-      <XphenoProjectLogoSection src="FBLLogo" />
+      <ProjectLogoSection src="/case-studies/xpheno/xpheno-log.png" />
       <XphenoChallengeSectionOne />
 
       <ParallelImageSection
         images={[
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQnnvWIv7IwFK269gvohLHr5a4VNqcYbpTnMX",
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQZM1Ba7IwFK269gvohLHr5a4VNqcYbpTnMXk",
+          "/case-studies/xpheno/xpheno-cs-1.webp",
+          "/case-studies/xpheno/xpheno-cs-2.webp",
         ]}
         alt={["pattern", "pattern"]}
       />
       <CarouselSection vedaCorpCarouselContent={vedaCorpCarouselContent} />
-      <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQnnvWIv7IwFK269gvohLHr5a4VNqcYbpTnMX"
-        alt="Xpheno"
+      <FullWidthImage src="/case-studies/xpheno/xpheno-cs-8.jpg" alt="Xpheno" />
+      <ParallelImageSection
+        images={[
+          "/case-studies/xpheno/xpheno-cs-7.jpg",
+          "/case-studies/xpheno/xpheno-cs-6.jpg",
+        ]}
+        alt={["pattern", "pattern"]}
       />
+      <FullWidthImage src="/case-studies/xpheno/xpheno-cs-5.jpg" alt="Xpheno" />
+
       {/* <VedacorpProjectTeamSection /> */}
       <XphenoStorySection />
     </>

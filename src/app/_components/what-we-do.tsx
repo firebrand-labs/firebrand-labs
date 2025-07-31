@@ -85,7 +85,7 @@ const WhatWeDo: FC<WhatWeDoProps> = () => {
                   style={{ originX: 0 }}
                   className="absolute  w-[300px] top-[-80px] right-[-100px] md:top-[-100px] md:right-[-170px] rotate-0"
                 >
-                  <Image
+                  <img
                     src={
                       "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiCBTZxAMWlPmUtW4ZvzoY1BwsJc3TSOd2XFAG"
                     }

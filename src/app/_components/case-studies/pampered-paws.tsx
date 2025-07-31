@@ -25,7 +25,7 @@ export const DriverDataSection = function ({}) {
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
-            <Image
+            <img
               src={
                 "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXIrWgKscTnmCMBktVKZO5ofSazG3yJAgPeIu"
               }
@@ -184,53 +184,53 @@ export const ProjectLogoSection = function ({ src }: { src: string }) {
 const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
   return (
     <>
-      <ProjectLogoSection src="FBLLogo" />
+      <ProjectLogoSection src="/case-studies/pampered-paws/Pampered-paws.png" />
       <TYOChallengeSectionOne />
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiMnYyPTGXGBSx43fU9vzmiOt07prKJAkesclg"
+        src="/case-studies/pampered-paws/pamper-paws-cs-1.webp"
         alt="Pampered Paws"
       />
       <ParallelImageSection
         images={[
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXia1OW30bBbI90DhnVovxN1HetpOz4c6gSqZdU",
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiLgXghPz0Q0hqRaHUEyIt3wdnJjrkN6TGb147",
+          "/case-studies/pampered-paws/pamper-paws-cs-2.webp",
+          "/case-studies/pampered-paws/pamper-paws-cs-3.webp",
         ]}
         alt={["Pampered Paws", "Pampered Paws"]}
       />
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi4RuEaNP6VTuZEvh1OLWzqXU8eYrjcfN4Fbkg"
+        src="/case-studies/pampered-paws/pamper-paws-cs-4.jpg"
         alt="Pampered Paws"
       />
 
       <ParallelImageSection
         images={[
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXit2ckopiQy8dYGkW7LiuezHjnCqUf4xgBcb0w",
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQkjbiS7IwFK269gvohLHr5a4VNqcYbpTnMXk",
+          "/case-studies/pampered-paws/pamper-paws-cs-5.webp",
+          "/case-studies/pampered-paws/pamper-paws-cs-6.png",
         ]}
         alt={["Pampered Paws", "Pampered Paws"]}
       />
 
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKf6DES40uc9qOMHzApnW38NDejVaClskLmrx"
+        src="/case-studies/pampered-paws/pamper-paws-cs-7.jpg"
         alt="Pampered Paws"
       />
 
       <ParallelImageSection
         images={[
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXicuUS0MfwVfrHgnRDTBX1y8AO9Quk740MJlmS",
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQFkevf7IwFK269gvohLHr5a4VNqcYbpTnMXk",
+          "/case-studies/pampered-paws/pamper-paws-cs-8.webp",
+          "/case-studies/pampered-paws/pamper-paws-cs-9.jpg",
         ]}
         alt={["Pampered Paws", "Pampered Paws"]}
       />
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiRFr6nsC0gz4JX9n7EWPfH6cDtuoisTMQBZN3"
+        src="/case-studies/pampered-paws/pamper-paws-cs-10.webp"
         alt="Pampered Paws"
       />
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiX5nHYXscTnmCMBktVKZO5ofSazG3yJAgPeIu"
+        src="/case-studies/pampered-paws/pamper-paws-cs-11.webp"
         alt="Pampered Paws"
       />
-      {/* <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} /> */}
+      {/* <CarouselSection pampered-pawsCarouselContent={tyoCarouselContent} /> */}
       {/* <ProjectTeamSection /> */}
       <PamperedPawsStorySection />
     </>

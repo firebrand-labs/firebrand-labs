@@ -112,7 +112,7 @@ const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
               className="text-paragraph-heading absolute tracking-wide text-foreground leading-normal font-paragraph  top-0 right-0"
               delay={1.8}
             >
-              <Image
+              <img
                 src={
                   "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1lSMHpD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
                 }
@@ -268,7 +268,7 @@ const WhatWeDoSection: React.FC<SectionProps> = ({ isActive }) => {
                   style={{ originX: 0 }}
                   className="absolute  w-[300px] top-[-80px] right-[-100px] md:top-[-100px] md:right-[-170px] rotate-0"
                 >
-                  <Image
+                  <img
                     src={
                       "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiCBTZxAMWlPmUtW4ZvzoY1BwsJc3TSOd2XFAG"
                     }
@@ -325,7 +325,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
             <div className="min-w-[220px] md:min-w-[400px] group min-h-[320px] md:min-h-[540px] relative rounded-2xl">
               {/* Static center card */}
               <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl z-[10]">
-                <Image
+                <img
                   src={
                     "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1JA7huD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
                   }
@@ -338,7 +338,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
 
               {/* Card that moves right on hover */}
               <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl transition-transform ease-in duration-200 group-hover:translate-x-6 group-hover:rotate-[20deg] origin-bottom">
-                <Image
+                <img
                   src={
                     "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl"
                   }
@@ -351,7 +351,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
 
               {/* Card that moves left on hover */}
               <div className="absolute w-full h-full  flex items-center justify-center rounded-2xl transition-transform ease-in duration-200 group-hover:-translate-x-6 group-hover:-rotate-[20deg] origin-bottom">
-                <Image
+                <img
                   src={
                     "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQVNEx6scTnmCMBktVKZO5ofSazG3yJAgPeI"
                   }

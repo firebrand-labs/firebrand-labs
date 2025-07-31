@@ -73,12 +73,10 @@ const page: FC<pageProps> = () => {
                     className="w-full h-fit flex-col items-center justify-center flex relative gap-3 bg-foreground/20 group rounded-2xl overflow-hidden"
                   >
                     {item.image ? (
-                      <Image
+                      <img
                         src={item.image}
                         alt={item.title}
                         width={340}
-                        priority
-                        quality={75}
                         height={480}
                         className="w-full group-hover:scale-105 transition-all duration-300  h-[480px] object-cover"
                       />
@@ -113,12 +111,10 @@ const page: FC<pageProps> = () => {
                     className="w-full h-fit flex-col items-center justify-center flex relative gap-3 bg-foreground/20 group rounded-2xl overflow-hidden"
                   >
                     {item.image ? (
-                      <Image
+                      <img
                         src={item.image}
                         alt={item.title}
                         width={340}
-                        priority
-                        quality={75}
                         height={480}
                         className="w-full group-hover:scale-105 transition-all duration-300  h-[480px] object-cover"
                       />

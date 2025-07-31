@@ -10,7 +10,7 @@ import {
   svaphileOverviewContent,
 } from "@/config/case-studies/marketing";
 import SvaphileCarouselSection from "@/app/_components/svaphile-carousel-section";
-import { ProjectLogoSection } from "@/app/_components/case-studies/pampered-paws";
+import { ProjectLogoSection } from "@/app/_components/case-studies/xpheno";
 
 interface SvaphileOneProps {}
 
@@ -135,7 +135,7 @@ export const ProjectTeamSection = function () {
 const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
   return (
     <>
-      <ProjectLogoSection src="FBLLogo" />
+      <ProjectLogoSection src="/case-studies/vedacorp/veda-corp.png" />
       <SvaphileChallengeSectionOne />
       <section className="hidden items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
         <div className="container">
@@ -159,19 +159,19 @@ const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
         </div>
       </section>
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1yBP5kD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
+        src="/case-studies/svaphile/svaphile-cs-1.webp"
         alt="Svaphile"
       />
 
       <CarouselSection vedaCorpCarouselContent={svaphileCarouselContent} />
       <FullWidthImage
-        src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiIGdMEVctJU8RrDyI1bafz3MZcsFvO2Ah6CQX"
+        src="/case-studies/svaphile/svaphile-cs-3.png"
         alt="Svaphile"
       />
       <ParallelImageSection
         images={[
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1yBP5kD7g3autyIcM42eqsf6Vb5PvXwEiWU0",
-          "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiTYatwCKIMWgkEnv74iHl2QFSd9ARhNeBYzma",
+          "/case-studies/svaphile/svaphile-cs-4.png",
+          "/case-studies/svaphile/svaphile-cs-5.webp",
         ]}
         alt={["pattern", "pattern"]}
       />

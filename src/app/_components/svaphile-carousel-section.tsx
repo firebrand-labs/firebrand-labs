@@ -50,7 +50,7 @@ const SvaphileCarouselSection: FC<SvaphileCarouselSectionProps> = ({
   return (
     <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background  bg-[image:var(--color-repeating-gradient)] md:py-8 relative">
       <div className="container flex items-center justify-center">
-        <Image
+        <img
           src={
             "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXipqDohmXytQXi94mwLn0Wag1vC56DZbAkOKPB"
           }

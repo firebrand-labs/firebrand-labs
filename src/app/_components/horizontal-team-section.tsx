@@ -81,7 +81,7 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                 className="grid grid-cols-1 md:grid-cols-2 min-w-screen md:min-w-[68vw]  gap-4"
               >
                 <div className="flex items-center justify-start md:justify-center">
-                  <Image
+                  <img
                     src={item.url}
                     alt={item.name}
                     width={600}
@@ -108,7 +108,7 @@ const HorizontalTeamSection: FC<HorizontalTeamSectionProps> = function () {
                       <DialogTitle className="hidden" />
                       <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2">
                         <div className="max-w-[300px] flex items-center justify-center bg-[#ABB5DF] rounded-md">
-                          <Image
+                          <img
                             src={item.popupContent.popupImage}
                             alt={item.name}
                             width={200}

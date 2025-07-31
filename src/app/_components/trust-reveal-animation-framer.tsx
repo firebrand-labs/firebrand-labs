@@ -152,7 +152,7 @@ const TrustRevealAnimation: FC<TrustRevealAnimationProps> = ({ children }) => {
                   }
                   transition={{ duration: 0.3, delay: clicked ? 0.2 : 0 }}
                 >
-                  <Image
+                  <img
                     src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1lSMHpD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
                     width={25}
                     className="w-[25px] md:w-[50px] h-[25px] md:h-[50px] !-translate-y-[30px] translate-x-1/2 md:-translate-y-1/2 md:translate-x-1/4"
