@@ -213,7 +213,7 @@ const page: FC<pageProps> = () => {
 
               <div className="flex items-center justify-center">
                 <img
-                  src={"about/hand-book.webp"}
+                  src={"about/hand-book.png"}
                   alt="hello"
                   className="w-[280px] h-auto"
                   width={100}
