@@ -19,7 +19,7 @@ const page: FC<pageProps> = () => {
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-screen">
         <div className="container flex items-center justify-center h-full ">
           {/* <BlogSearchContainer blogs={allOurBlogs} /> */}
-          <h1 className="font-highlighter text-primary-heading font-bold 2xl:text-[120px] opacity-100 flex text-yellow-level-three leading-normal tracking-tight z-10">
+          <h1 className="font-heading text-primary-heading font-bold 2xl:text-[120px] opacity-100 flex text-foreground leading-normal tracking-tight z-10">
             welcome to the lab notes.
           </h1>
         </div>

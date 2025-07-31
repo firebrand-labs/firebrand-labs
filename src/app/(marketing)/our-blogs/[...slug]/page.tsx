@@ -158,7 +158,7 @@ export default async function PostPage({ params }: PostProps) {
               <div className="" />
             )}
           </div>
-          <div className="flex items-start flex-col justify-center gap-6 md:gap-8 2xl:gap-12 w-full mt-8 2xl:mt-12">
+          <div className="flex items-start flex-col justify-center gap-6 md:gap-8 2xl:gap-2 w-full mt-8 2xl:mt-8">
             <h3 className="text-foreground text-secondary-heading leading-normal text-left w-full pt-2 pb-1 font-heading">
               Latest Blogs
             </h3>

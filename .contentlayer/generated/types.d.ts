@@ -34,6 +34,7 @@ export type OurWork = {
   type: 'OurWork'
   title: string
   description?: string | undefined
+  guidelines?: boolean | undefined
   image?: string | undefined
   industry?: string | undefined
   client?: string | undefined

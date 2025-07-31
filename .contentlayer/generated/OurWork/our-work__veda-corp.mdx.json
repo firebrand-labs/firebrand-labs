@@ -5,10 +5,10 @@
   "industry": "Investment Banking",
   "client": "Veda Corporate Advisors Pvt. Ltd.",
   "duration": "March - June 2024",
-  "tech": "Wordpress\r",
+  "tech": "Wordpress",
   "date": "2001-03-20T18:30:00.000Z",
   "body": {
-    "raw": "\r\n<VedaCorp />\r\n",
+    "raw": "\n<VedaCorp />\n",
     "code": "var Component=(()=>{var l=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var x=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var n in e)r(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!v.call(t,o)&&o!==n&&r(t,o,{get:()=>e[o],enumerable:!(a=m(e,o))||a.enumerable});return t};var h=(t,e,n)=>(n=t!=null?l(g(t)):{},s(e||!t||!t.__esModule?r(n,\"default\",{value:t,enumerable:!0}):n,t)),b=t=>s(r({},\"__esModule\",{value:!0}),t);var d=x((C,c)=>{c.exports=_jsx_runtime});var D={};y(D,{default:()=>u,frontmatter:()=>M});var i=h(d()),M={title:\"Vedacorp\",description:\"Revamping the visual identity for an independent investment bank to reflect its credibility, support clarity, and enable long-term scalability.\",image:\"https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXinvuiKYQVwhOJ7TEdmoR6uY0eA3fScrGMWDl9\",date:\"21 March\",category:\"Website Rewamp\",client:\"Veda Corporate Advisors Pvt. Ltd.\",industry:\"Investment Banking\",duration:\"March - June 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"Wordpress\"};function p(t){let{VedaCorp:e}=t.components||{};return e||j(\"VedaCorp\",!0),(0,i.jsx)(e,{})}function u(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,{...t,children:(0,i.jsx)(p,{...t})}):p(t)}function j(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(D);})();\n;return Component;"
   },
   "_id": "our-work/veda-corp.mdx",

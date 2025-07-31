@@ -43,7 +43,7 @@ const BlogFilters: FC<BlogFiltersProps> = () => {
   return (
     <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden  relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-screen py-16 md:py-24 2xl:py-28">
       <div className="container flex flex-col items-center justify-center gap-8 md:gap-16">
-        <ul className="w-full items-center justify-center flex flex-col md:flex-row flex-wrap gap-x-5 gap-y-5 md:gap-y-8 md:gap-x-10 2xl:gap-x-12 3xl:gap-x-16 max-w-5xl">
+        <ul className="w-full items-center justify-center flex flex-col md:flex-row flex-wrap gap-x-5 gap-y-5 md:gap-y-8 md:gap-x-10 2xl:gap-x-12 3xl:gap-x-16 max-w-5xl 2xl:max-w-7xl">
           <li className="list-none text-paragraph-heading">
             <button
               onClick={() => selectCategory("All")}
