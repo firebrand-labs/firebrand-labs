@@ -55,40 +55,85 @@ const page: FC<pageProps> = () => {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 min-h-svh">
-        <div className="container flex flex-col items-start justify-center gap-16">
+      <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 min-h-svh gap-12 2xl:gap-20">
+        <div className="container flex flex-col items-start justify-center gap-8">
+          <h2 className="font-heading lowercase text-foreground font-normal text-secondary-heading leading-normal tracking-tight">
+            Case studies
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 md:gap-10">
-            {allOurWorks.map((item, i) => (
-              <article
-                key={i}
-                className="flex items-start justify-center w-full "
-              >
-                <Link
-                  href={`${env.NEXT_PUBLIC_APP_URL}${item.slug}`}
-                  className="w-full h-fit flex-col items-center justify-center flex relative gap-3 bg-foreground/20 group rounded-2xl overflow-hidden"
+            {allOurWorks
+              .filter((item) => !item.guidelines)
+              .map((item, i) => (
+                <article
+                  key={i}
+                  className="flex items-start justify-center w-full "
                 >
-                  {item.image ? (
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={340}
-                      priority
-                      quality={75}
-                      height={480}
-                      className="w-full group-hover:scale-105 transition-all duration-300  h-[480px] object-cover"
-                    />
-                  ) : null}
-                  <div className="flex flex-row items-center justify-between w-full py-3 px-3">
-                    {item.title ? (
-                      <h2 className="font-heading font-normal w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
-                        {item.title}
-                      </h2>
+                  <Link
+                    href={`${env.NEXT_PUBLIC_APP_URL}${item.slug}`}
+                    className="w-full h-fit flex-col items-center justify-center flex relative gap-3 bg-foreground/20 group rounded-2xl overflow-hidden"
+                  >
+                    {item.image ? (
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={340}
+                        priority
+                        quality={75}
+                        height={480}
+                        className="w-full group-hover:scale-105 transition-all duration-300  h-[480px] object-cover"
+                      />
                     ) : null}
-                    <Icons.ArrowRight className="w-8 self-end h-8 stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-five transition-transform duration-200 group-hover:shadow-2xl" />
-                  </div>
-                </Link>
-              </article>
-            ))}
+                    <div className="flex flex-row items-center justify-between w-full py-3 px-3">
+                      {item.title ? (
+                        <h2 className="font-heading lowercase font-normal w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
+                          {item.title}
+                        </h2>
+                      ) : null}
+                      <Icons.ArrowRight className="w-8 self-end h-8 stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-five transition-transform duration-200 group-hover:shadow-2xl" />
+                    </div>
+                  </Link>
+                </article>
+              ))}
+          </div>
+        </div>
+        <div className="container  flex-col items-start justify-center gap-8 hidden">
+          <h2 className="font-heading lowercase text-foreground font-normal text-secondary-heading leading-normal tracking-tight">
+            Brand Identity
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 md:gap-10">
+            {allOurWorks
+              .filter((item) => item.guidelines)
+              .map((item, i) => (
+                <article
+                  key={i}
+                  className="flex items-start justify-center w-full "
+                >
+                  <Link
+                    href={`${env.NEXT_PUBLIC_APP_URL}${item.slug}`}
+                    className="w-full h-fit flex-col items-center justify-center flex relative gap-3 bg-foreground/20 group rounded-2xl overflow-hidden"
+                  >
+                    {item.image ? (
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={340}
+                        priority
+                        quality={75}
+                        height={480}
+                        className="w-full group-hover:scale-105 transition-all duration-300  h-[480px] object-cover"
+                      />
+                    ) : null}
+                    <div className="flex flex-row items-center justify-between w-full py-3 px-3">
+                      {item.title ? (
+                        <h2 className="font-heading lowercase font-normal w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
+                          {item.title}
+                        </h2>
+                      ) : null}
+                      <Icons.ArrowRight className="w-8 self-end h-8 stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-five transition-transform duration-200 group-hover:shadow-2xl" />
+                    </div>
+                  </Link>
+                </article>
+              ))}
           </div>
         </div>
       </section>

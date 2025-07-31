@@ -11,9 +11,9 @@ import {
 
 const carouselImages = [
   // "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl",
-  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiXQVNEx6scTnmCMBktVKZO5ofSazG3yJAgPeI",
-  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1JA7huD7g3autyIcM42eqsf6Vb5PvXwEiWU0",
-  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiflNRkxes3N7H0IACvRLnDxGrdJ2WiBbjywKt",
+  "/homepage/character-cards-1.png",
+  "/homepage/character-cards-2.png",
+  "/homepage/character-cards-3.png",
 ];
 
 type CharacterCardCarouselProps = {};
@@ -64,12 +64,8 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
           {carouselImages.map((item, index) => (
             <CarouselItem key={index} className="pl-0">
               <div className="justify-center gap-4">
-                <Image
+                <img
                   draggable={false}
-                  priority
-                  quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                   src={item || "/placeholder.svg"}
                   alt="doers. misfits. firebrands."
                   className="w-full"

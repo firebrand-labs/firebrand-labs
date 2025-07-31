@@ -138,21 +138,17 @@ const page: FC<pageProps> = () => {
           <div className="container flex flex-col items-start justify-center gap-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5 items-start">
               <div className="flex items-start md:col-start-1 md:col-end-3 gap-5 flex-col justify-center">
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiCBM5cYlWlPmUtW4ZvzoY1BwsJc3TSOd2XFAG"
-                  }
+                <img
+                  src={"about/yellove-black.png"}
                   alt="Yellove"
-                  className="w-[200px] md:w-[320px] h-auto block dark:hidden"
+                  className="w-[200px] md:w-[320px] h-auto hidden dark:block"
                   width={300}
                   height={140}
                 />
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXilpJp1Dg9nIqauFmQgOLp1GNDB6VjAPYMhz4o"
-                  }
+                <img
+                  src={"about/yellove-white.png"}
                   alt="Yellove"
-                  className="w-[200px] md:w-[320px] h-auto hidden dark:block"
+                  className="w-[200px] md:w-[320px] h-auto block dark:hidden"
                   width={300}
                   height={140}
                 />
@@ -168,10 +164,8 @@ const page: FC<pageProps> = () => {
               </div>
 
               <div className="flex items-center justify-end">
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKxF5BU40uc9qOMHzApnW38NDejVaClskLmrx"
-                  }
+                <img
+                  src={"about/yellow-lamp.png"}
                   alt="Yellove"
                   className="w-[60%] md:w-[40%] h-auto block md:hidden"
                   width={100}
@@ -180,10 +174,8 @@ const page: FC<pageProps> = () => {
               </div>
             </div>
           </div>
-          <Image
-            src={
-              "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKxF5BU40uc9qOMHzApnW38NDejVaClskLmrx"
-            }
+          <img
+            src={"about/yellow-lamp.png"}
             alt="Yellove"
             className="w-[60%] md:w-[40%] h-auto absolute bottom-0 right-0 mb-10 hidden md:block"
             width={100}
@@ -220,12 +212,9 @@ const page: FC<pageProps> = () => {
               </div>
 
               <div className="flex items-center justify-center">
-                <Image
-                  src={
-                    "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXitD5vdMQy8dYGkW7LiuezHjnCqUf4xgBcb0wo"
-                  }
+                <img
+                  src={"about/hand-book.webp"}
                   alt="hello"
-                  quality={75}
                   className="w-[280px] h-auto"
                   width={100}
                   height={100}

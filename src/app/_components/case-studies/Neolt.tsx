@@ -42,7 +42,7 @@ const Neolt: FC<NeoltProps> = ({}) => {
     <>
       <ProjectLogoSection src="FBLLogo" />
       <div className="container self-center">
-        <Image
+        {/* <Image
           width={1800}
           className="w-full h-auto object-cover"
           height={8000}
@@ -55,7 +55,7 @@ const Neolt: FC<NeoltProps> = ({}) => {
           className="w-full h-auto object-cover mb-16 2xl:mb-24"
           src="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXikdy2AijX0VC6iL3lRYcyTp4jzeJnadKImDw1"
           alt="Pampered Paws"
-        />
+        /> */}
       </div>
     </>
   );

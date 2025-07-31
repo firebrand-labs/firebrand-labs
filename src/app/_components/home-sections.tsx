@@ -134,10 +134,8 @@ const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
               className="text-paragraph-heading absolute tracking-wide text-foreground leading-normal font-paragraph  top-0 right-0"
               delay={1.8}
             >
-              <Image
-                src={
-                  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi1lSMHpD7g3autyIcM42eqsf6Vb5PvXwEiWU0"
-                }
+              <img
+                src={"/homepage/fbl-love.png"}
                 width={25}
                 className={cn(
                   "w-[25px] md:w-[50px] h-[25px] md:h-[50px] !-translate-y-[30px] translate-x-1/2  md:-translate-y-1/2 md:translate-x-1/4 transition-transform duration-150 ease",

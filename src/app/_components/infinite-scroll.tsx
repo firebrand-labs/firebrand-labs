@@ -31,7 +31,7 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
         )}
       >
         {/* First set of cards */}
-        {allOurBlogs.slice(0, 20).map((card, i) => (
+        {allOurBlogs.slice(0, 8).map((card, i) => (
           <div
             key={`first-${i}`}
             className={cn(
@@ -65,7 +65,7 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, reverseRow }) => {
           </div>
         ))}
         {/* Duplicate set for seamless loop */}
-        {allOurBlogs.slice(20, 40).map((card, i) => (
+        {allOurBlogs.slice(8, 16).map((card, i) => (
           <div
             key={`second-${i}`}
             className={cn(

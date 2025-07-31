@@ -80,12 +80,11 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                   <Dialog>
                     <DialogTrigger asChild>
                       <div className="w-full h-auto cursor-pointer">
-                        <Image
+                        <img
                           src={item.url}
                           alt={item.name}
                           width={600}
                           height={600}
-                          quality={75}
                           className={`object-cover ${
                             isMobile
                               ? "w-[360px] h-[360px]"
@@ -112,12 +111,11 @@ const SubHorizontalTeamSection: FC<SubHorizontalTeamSectionProps> =
                       <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2 w-full relative z-[-2]">
                         {/* <Icons.PixelBox className="absolute top-0 left-0 w-full h-full fill-green-600" /> */}
                         <div className="max-w-[340px] relative flex items-center justify-center bg-transparent rounded-md">
-                          <Image
+                          <img
                             src={item.popupContent.popupImage}
                             alt={item.name}
                             width={200}
                             height={300}
-                            quality={75}
                             className="max-w-[200px] max-h-[460px] object-contain md:w-full md:max-w-[260px]"
                           />
                           <Icons.ProfileBackdrop

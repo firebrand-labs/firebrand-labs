@@ -39,12 +39,9 @@ const page: FC<pageProps> = () => {
         <div className="container flex flex-col items-start justify-center gap-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-start justify-center">
-              <Image
-                src={
-                  "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi0cncsZlw1XDjFSAfqtTI8r6nlO93vEsMkUcz"
-                }
+              <img
+                src={"the-book/the-book.webp"}
                 alt="hello"
-                quality={75}
                 className="w-full h-auto"
                 width={500}
                 height={800}

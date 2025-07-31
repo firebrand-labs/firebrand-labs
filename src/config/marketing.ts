@@ -66,14 +66,13 @@ export const colors = [
 export const subTeamContent = [
   {
     id: "1",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXifi2fTBes3N7H0IACvRLnDxGrdJ2WiBbjywKt",
+    url: "about/arvind.png",
     name: "Arvind Aathreya",
     description:
       "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era.",
     popupContent: {
       role: "the buck stops with me",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7LVGkv2aHIogc9bupDymFxOGdeB6njkW5tQ0",
+      popupImage: "about/arvind-am.png",
       description: [
         "with close to 30 years in the marketing world, arvind has lived through both sides of the marketing coin: the old-school ad days of jingles and josh, and today’s tech driven, insight heavy era. he blends the two effortlessly - staying sharp, strategic, and always a step ahead. in 2009, he started Firebrand Labs to do high energy creative work every day and built just that. FBL is where ideas meet execution and filter kaapi meets strategy. a true believer that creativity is forever (unga appa’s wisdom meets today’s swipe culture) also, ask him about A.R. Rahman, single malts, or the perfect podi dosa spot and he’ll light up.",
       ],
@@ -89,13 +88,12 @@ export const subTeamContent = [
   },
   {
     id: "2",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi7F3Vt12aHIogc9bupDymFxOGdeB6njkW5tQ0",
+    url: "about/arun.png",
     name: "Arun",
     description: "co-founder. head of design and a silent storm.",
     popupContent: {
       role: "Co-Founder",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi2HFSG2pnuibeaGhgO1K2vToxWEmt8Al0JHID",
+      popupImage: "about/arun-am.png",
       description: [
         "co-founder. head of design and a silent storm. arun doesn’t speak much, but when he does, it’s usually a quiet truth bomb that leaves the room thinking. an introvert by nature, he saves all his loudest ideas for the canvas. his design philosophy is deeply intentional, always rooted in clarity, calm, and craft. while others debate loudly, he sketches quietly- and somehow always lands on the most elegant solution. a big sweet tooth (keep the rasmalai ready), and a bigger believer in good design that speaks without shouting.",
       ],
@@ -111,15 +109,14 @@ export const subTeamContent = [
   },
   {
     id: "1",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXimnjUAbxnxFRDLNhCflXWv2E74VUG6OIzA1eB",
+    url: "about/jey.png",
     name: "Jeya Kumar J",
     role: "Technology Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Technology Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiAqDvr4wNVk0ZBrJ3sivm7FtRybneCAqMGz2o",
+      popupImage: "about/jey-am.png",
       description: [
         "human sunshine with a knack for solutions. jey brings warmth, heart, and just the right amount of chaos and somehow always has a fix tucked up his sleeve. the kind of person who’ll go out of his way to help, and leave you smiling while he’s at it.",
       ],
@@ -135,15 +132,14 @@ export const subTeamContent = [
   },
   {
     id: "2",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXihumEBH6oT9zY4RZi3mHWGrt8c6Jfu2CsDxdF",
+    url: "about/lazzo.png",
     name: "Leander Angus",
     role: "Design Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Design Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXidymadoPkrzhSlqk7RA6bD81c3ImFGwXMnpfJ",
+      popupImage: "about/lazzo-am.png",
       description: [
         "senior designer. gamer by night, gentle genius by day. lazzo’s the kind of person who will give you the perfect font pairing and a crash course in game lore -all with the same easy smile. he’s got a sharp eye for design, a brain full of beautiful chaos, and a heart that’s basically palkova. he makes everyone feel like they belong, keeps the vibes calm, and somehow stays smiling, even when the coffee’s watery and the client wants 'just one more change.'",
       ],
@@ -159,15 +155,14 @@ export const subTeamContent = [
   },
   {
     id: "3",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiruihH5RJFRBT8aQqkgE92yd5704YtCcpPWIr",
+    url: "about/mona.png",
     name: "Mona Adesara",
     role: "Client Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Client Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiGyEXv9T3MbB0KQVEsekpNuFlAhTqoIaSgt4J",
+      popupImage: "about/mona-am.png",
       description: [
         "calm, clear, and always one step ahead. with over 12 years of entrepreneurial experience, mona knows what it takes to make things happen. she’s fluent in the fine print, the follow-up, and more Indian languages than we can count. a fitness buff, a curious home cook (always on the hunt for the next great vegetarian dish), and a part-time philosopher.",
       ],
@@ -183,15 +178,14 @@ export const subTeamContent = [
   },
   {
     id: "4",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiTQvlS6KIMWgkEnv74iHl2QFSd9ARhNeBYzma",
+    url: "about/vimal.png",
     name: "Vimalraj M",
     role: "Technology Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Technology Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXikIU9rxhjX0VC6iL3lRYcyTp4jzeJnadKImDw",
+      popupImage: "about/vimal-am.png",
       description: [
         "quiet on the outside, full of ideas on the inside. vimal’s the kind of person who’ll surprise you in the best way. curious, kind, and quietly creative, his brain’s always running in the background. he’s a mix of innocence and mischievous wit. a lover of loud music who has a tendency of diving on dry land.",
       ],
@@ -207,15 +201,14 @@ export const subTeamContent = [
   },
   {
     id: "14",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiYWdi6haaFA1G7468OT30okvCZcSfMmXJb9Is",
+    url: "about/kirtana.png",
     name: "Kirtana Haridas",
     role: "Creative Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Creative Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiAoDvX3NVk0ZBrJ3sivm7FtRybneCAqMGz2oN",
+      popupImage: "about/kirtana-am.png",
       description: [
         "creative strategist. energy editor. big believer that everything can be made more beautiful. she sees the world like one big canvas. every challenge is an opportunity to use her 'brain-power' and put things in order. nothing is mundane. no task is boring. what does she want to eat? what new campaign could she crack? every question is worth a million. loves to pet four-legged creatures and buy pretty jewellery. ignore her if you catch her saying 'if you don’t like me, just say it.'",
       ],
@@ -231,15 +224,14 @@ export const subTeamContent = [
   },
   {
     id: "12",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXivS1rCu3ckJ850SeYLr7Ej9q6hwR1AZmiuf3U",
+    url: "about/venkat.png",
     name: "Venkatesh",
     role: "Technology Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Technology Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiKHdIXI40uc9qOMHzApnW38NDejVaClskLmrx",
+      popupImage: "about/venkat-am.png",
       description: [
         "full stack developer. UI enthusiast. always optimistic, always in the right place at the right time. he’s more attached to his GitHub history than his own, and has made peace with everything-except Safari. proudly from madurai, but don’t expect maduraveeran jokes or dramatic war stories. he’ll go along with anything you throw at him-from “hi bestie” to “bye girl” without blinking.",
       ],
@@ -255,15 +247,14 @@ export const subTeamContent = [
   },
   {
     id: "6",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi3jILKQ6dO2hSNi7wCrDRl8q0bWj5QUvsJxoM",
+    url: "about/brindha.png",
     name: "Brindha Prabu",
     role: "Design Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Design Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXisqA4oqtVLIobTqySHNWmrU0nFD3G1uYZCv5A",
+      popupImage: "about/brindha-am.png",
       description: [
         "serious face, sarcastic mind. brindha is a quiet storm-shy at first, but once she opens up, you’ll wonder how to politely escape the chaos (in the best way possible). she’s a great listener-always analysing and quietly connecting the dots. her creativity is rooted in emotion and led by intuition. brindha sees the world through a lens of care, curiosity and killer eyeliner and  won't hesitate to ask questions that make you question reality itself.",
       ],
@@ -280,15 +271,14 @@ export const subTeamContent = [
 
   {
     id: "9",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXipejCElXytQXi94mwLn0Wag1vC56DZbAkOKPB",
+    url: "about/akriti.png",
     name: "AKRITI KRISHNAMURTHY",
     role: "Client Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Client Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXigbKEDOA7l16tQ289KNofiDrnEuvmRbjhqdTc",
+      popupImage: "about/akriti-am.png",
       description: [
         "the wittiest Gen Z in the room-armed with coffee, comebacks, and a stash of kinder joy. akriti does it all with affable flair and a side of judgement. she’s quick on her feet, quicker with the sarcasm, and somehow always finds time to pet every dog and cat she sees. slightly erratic, totally loveable-she runs on caffeine, chaos, and a whole lot of charm.",
       ],
@@ -304,15 +294,14 @@ export const subTeamContent = [
   },
   {
     id: "11",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXicpoZmuwVfrHgnRDTBX1y8AO9Quk740MJlmSt",
+    url: "about/sandy.png",
     name: "santhosh s",
     role: "Designe Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Designe Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXibMbjrnfPrSGhD0TMiywnpFZERx7f4KaN83jt",
+      popupImage: "about/sandy-am.png",
       description: [
         "he’s an excellent artist, the kind who lets his work speak louder than words, and when he does speak, the jokes hit after a 2-second delay. always up for a good time, always gets the job done-with full josh. low volume, high impact. or as they’d say- semma build-up, but all heart. his story might sound similar to a certain simbu movie.",
       ],
@@ -328,15 +317,14 @@ export const subTeamContent = [
   },
   {
     id: "12",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXig9HhDwA7l16tQ289KNofiDrnEuvmRbjhqdTc",
+    url: "about/ritika.png",
     name: "Ritika Das",
     role: "Client Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Client Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5E2vrpBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
+      popupImage: "about/ritika-am.png",
       description: [
         "sweet like roshogolla and the sharpest presence in any room. ritika shows up with a smile so genuine, it could melt the crankiest monday. cheerful, driven, and always on top of her game, she has a way of getting things done that feels effortless. maybe it’s the charm, maybe it’s the energy, but people rarely say no when she asks. her positivity is contagious and her presence uplifting. you don’t just work with ritika-you walk away smiling.",
       ],
@@ -352,15 +340,14 @@ export const subTeamContent = [
   },
   {
     id: "13",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiMlbVkMGXGBSx43fU9vzmiOt07prKJAkesclg",
+    url: "about/dhenuka.png",
     name: "Dhenuka R",
     role: "Associate Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Associate",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi5UMSeIBrybnSVsPdKFJpxXuIgtBaYMT2O3DH",
+      popupImage: "about/dhenuka-am.png",
       description: [
         "idea enthusiast and full-time feeler. she’s got a soft spot for chocolate muffins and taylor swift lyrics. dhenuka reads between the lines, whether it’s a brief or a bridge in a breakup anthem. she brings heart to strategy and warmth to visuals. when she’s not obsessing over taylor swift, she’s in the kitchen baking or curled up with a rom-com, always dreaming, always creating.",
       ],
@@ -376,15 +363,14 @@ export const subTeamContent = [
   },
   {
     id: "14",
-    url: "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQk8Zgd7IwFK269gvohLHr5a4VNqcYbpTnMXk",
+    url: "about/mani.png",
     name: "Manisankar S",
     role: "Accounts & HR Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
     popupContent: {
       role: "Accounts & HR Partner",
-      popupImage:
-        "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiwyC7xmZT0PRFypUYDJzkC8H4lSsci7I5OxvQ",
+      popupImage: "about/mani-am.png",
       description: [
         "accounts manager. silent force. lives up to his name. steady hand behind the scenes. with over four decades of experience, mani is the reason things run smoothly-even when the rest of us are in full chaos mode. when he is around, there’s no stress, all our bills are paid, and our books are balanced. quiet but razor-sharp, he’s built a reputation for keeping things in order, on time, and totally worry-free.",
       ],

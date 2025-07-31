@@ -210,7 +210,7 @@ export const OutcomesAndTeamSection = function ({}) {
             <h3 className="font-paragraph text-tertiary-heading text-foreground font-semibold">
               The Outcome
             </h3>
-            <p className="text-subtitle-heading text-foreground leading-normal tracking-wide font-light font-paragraph">
+            <p className="text-subtitle-heading lowercase text-foreground leading-normal tracking-wide font-light font-paragraph">
               The redesigned platform delivers both aesthetic longevity and
               technical performance. By integrating the FlyingPress CDN plugin,
               we significantly improved loading speed, resulting in a faster,
@@ -305,7 +305,7 @@ export const XphenoChallengeSectionOne = function ({}) {
           <div className="flex items-start justify-center flex-col gap-2 md:col-start-1 md:col-end-3">
             <h3
               id="overview"
-              className="font-paragraph text-secondary-heading text-foreground font-light"
+              className="font-paragraph lowercase text-secondary-heading text-foreground font-light"
             >
               How do you make a challenger impossible to ignore? Our challenge?
               To give Xpheno a voice that cuts through the noise. Building a
@@ -324,7 +324,7 @@ export const XphenoChallengeSectionOne = function ({}) {
 
 export const XphenoStorySection = function ({}) {
   return (
-    <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
+    <section className="flex items-center justify-center lowercase flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
       <div className="container flex flex-col items-start justify-center">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-2 md:gap-6 items-center justify-center">
           <div className="flex items-start justify-center flex-col gap-3.5 md:col-start-1 md:col-end-3">
