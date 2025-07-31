@@ -46,28 +46,28 @@ export const tyoOverviewContent: VedaCorpOverviewContent = {
 
 export const vedaCorpCarouselContent: VedacorpCarouselContent = [
   {
-    image: "/case-studies/vedacorp/vedacorp-cs-3.webp",
+    image: "/case-studies/vedacorp/vedacorp-cs-1.webp",
     title: "A Seamless Reading Experience",
     description: [
       "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
     ],
   },
   {
-    image: "/case-studies/vedacorp/vedacorp-cs-3.webp",
+    image: "/case-studies/vedacorp/vedacorp-cs-1.webp",
     title: "A Seamless Reading Experience",
     description: [
       "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
     ],
   },
   {
-    image: "/case-studies/vedacorp/vedacorp-cs-3.webp",
+    image: "/case-studies/vedacorp/vedacorp-cs-1.webp",
     title: "A Seamless Reading Experience",
     description: [
       "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
     ],
   },
   {
-    image: "/case-studies/vedacorp/vedacorp-cs-3.webp",
+    image: "/case-studies/vedacorp/vedacorp-cs-1.webp",
     title: "A Seamless Reading Experience",
     description: [
       "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
