@@ -15,13 +15,37 @@ type Direction = 1 | -1;
 
 const cards: string[] = [
   "what is the most transformational experience you have been through?",
-  "describe a moment when you completely changed your perspective on something important",
-  "what belief about yourself did you have to let go of to grow?",
-  "tell me about a time when failure led to your biggest breakthrough",
-  "what's the hardest truth you've had to accept about life?",
-  "describe a relationship that fundamentally changed who you are",
-  "what fear did you overcome that opened new possibilities for you?",
-  "when did you realize you were living someone else's expectations instead of your own?",
+  "how do you intend to make the world a better place?",
+  "which is the brand you most resonate with?",
+  "what about your business landscape breaks your heart?",
+  "if you were granted a wish, what would you wish for?",
+  "what is the biggest risk you have taken?",
+  "when was the last time you faced rejection?",
+  "what are you most optimistic about today?",
+  "in what circumstances do you shine?",
+  "what do you desperately need right now?",
+  "what is the one thing/ event that you want to change?",
+  "what drives you crazy?",
+  "what did you learn from your last collaboration?",
+  "name a person whose personality you wish you could emulate?",
+  "how did you overcome your lowest period?",
+  "what is a fact you are in denial about?",
+  "what do you envy about your most successful peer?",
+  "what are your non-negotiable values?",
+  "what is the most excruciating lesson I learnt in the recent past?",
+  "what do you want to acquire in the near future?",
+  "what is your greatest fear?",
+  "what are you second-guessing right now?",
+  "what is the most difficult news you heard in the last week?",
+  "when was the last time you experienced bliss?",
+  "when was the last time you accepted mediocrity?",
+  "what keeps you up at night?",
+  "did you learn something new about yourself recently?",
+  "what is stopping you from being more successful?",
+  "what is the one thing that no one can beat you at?",
+  "when was the last time you felt overwhelmed?",
+  "what do you feel undeserving of?",
+  "did you learn something new about yourself recently?",
 ];
 
 export default function CardsAgainstAmbiguity() {
@@ -141,7 +165,7 @@ export default function CardsAgainstAmbiguity() {
               className="absolute inset-0 bg-black rounded-2xl p-4 flex flex-col items-start justify-between cursor-grab active:cursor-grabbing "
             >
               <p
-                className="text-white text-paragraph-heading leading-normal pt-8 text-left font-light font-paragraph"
+                className="text-white text-paragraph-heading leading-normal pt-8 text-left font-light font-caafont"
                 draggable={false}
               >
                 {cards[currentIndex]}

@@ -57,6 +57,7 @@ const page: FC<pageProps> = () => {
           <CardsAgainstAmbiguity />
         </div>
       </section>
+      <Footer />
     </>
   );
 };

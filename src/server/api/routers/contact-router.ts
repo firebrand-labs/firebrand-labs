@@ -102,7 +102,7 @@ export const contactRouter = createTRPCRouter({
       const resend = new Resend(env.RESEND_KEY);
       const response = await resend.emails.create({
         from: "firebrandlabs@jeyakumarjeyaraj.in",
-        to: "venkatesh@firebrandlabs.in",
+        to: "jeyakumar@firebrandlabs.in",
         subject: "You Have a New Lead for downloading",
         text: `You have received a new inquiry via the website book registering form.`,
         html: `

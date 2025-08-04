@@ -2,7 +2,7 @@ import { ThemeProvider } from "@/app/_components/theme-provider";
 import { cn } from "@/lib/utils";
 import { TRPCReactProvider } from "@/trpc/react";
 import type { Metadata } from "next";
-import { Shadows_Into_Light, Pixelify_Sans, Raleway } from "next/font/google";
+import { Shadows_Into_Light, Pixelify_Sans, Bitter } from "next/font/google";
 import localFont from "next/font/local";
 import ScrollSnapHandler from "@/app/_components/scroll-snap-handler";
 import "./globals.css";
@@ -49,12 +49,12 @@ const heading = localFont({
   // weight: "800",
 });
 
-// const heading = Raleway({
-//   weight: ["400"],
-//   variable: "--highlighter",
-//   style: "normal",
-//   subsets: ["latin"],
-// });
+const caafont = Bitter({
+  weight: ["400"],
+  variable: "--caafont",
+  style: "normal",
+  subsets: ["latin"],
+});
 // const paragraph = Raleway({
 //   weight: ["400"],
 //   variable: "--highlighter",
@@ -96,7 +96,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          `${heading.variable} ${paragraph.variable} ${highlighter.variable} ${pixelify.variable} font-paragraph antialiased`,
+          `${heading.variable} ${paragraph.variable} ${highlighter.variable} ${pixelify.variable} ${caafont.variable} font-paragraph antialiased`,
           "antialiased grainy font-sans min-h-screen w-screen relative overflow-x-hidden"
         )}
       >
