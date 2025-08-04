@@ -60,7 +60,7 @@ const page: FC<pageProps> = () => {
       </section>
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 min-h-svh gap-12 2xl:gap-20">
         <div className="container flex flex-col items-start justify-center gap-8">
-          <h2 className="font-heading lowercase text-foreground font-normal text-secondary-heading leading-normal tracking-tight">
+          <h2 className="font-heading lowercase hidden text-foreground font-normal text-secondary-heading leading-normal tracking-tight">
             Case studies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 md:gap-10">
@@ -89,7 +89,7 @@ const page: FC<pageProps> = () => {
                     ) : null}
                     <div className="flex flex-row items-center justify-between w-full py-3 px-3">
                       {item.title ? (
-                        <h2 className="font-heading lowercase font-normal w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
+                        <h2 className="font-heading  font-normal w-full text-tertiary-heading max-w-xl text-foreground leading-tight">
                           {item.title}
                         </h2>
                       ) : null}

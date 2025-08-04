@@ -1946,7 +1946,7 @@
     },
     "our-work/neolt.mdx": {
       "document": {
-        "title": "Neolt",
+        "title": "neolt",
         "description": "We shaped Svaphile’s digital presence with a focus on clarity, ease, and trust.",
         "guidelines": true,
         "image": "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQuh9Hu7IwFK269gvohLHr5a4VNqcYbpTnMXk",
@@ -1957,7 +1957,7 @@
         "date": "2001-01-20T18:30:00.000Z",
         "body": {
           "raw": "\r\n<Neolt />\r\n",
-          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,h=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var o in t)r(e,o,{get:t[o],enumerable:!0})},a=(e,t,o,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let n of f(t))!h.call(e,n)&&n!==o&&r(e,n,{get:()=>t[n],enumerable:!(s=m(t,n))||s.enumerable});return e};var j=(e,t,o)=>(o=e!=null?p(g(e)):{},a(t||!e||!e.__esModule?r(o,\"default\",{value:e,enumerable:!0}):o,e)),v=e=>a(r({},\"__esModule\",{value:!0}),e);var u=x((N,c)=>{c.exports=_jsx_runtime});var b={};y(b,{default:()=>l,frontmatter:()=>D});var i=j(u()),D={title:\"Neolt\",description:\"We shaped Svaphile\\u2019s digital presence with a focus on clarity, ease, and trust.\",image:\"https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQuh9Hu7IwFK269gvohLHr5a4VNqcYbpTnMXk\",date:\"21 January\",guidelines:!0,category:\"Product Development\",client:\"Svaphile\",industry:\"Consumer Brand\",duration:\"December 2023 - January 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"In-Progress\"};function d(e){let{Neolt:t}=e.components||{};return t||M(\"Neolt\",!0),(0,i.jsx)(t,{})}function l(e={}){let{wrapper:t}=e.components||{};return t?(0,i.jsx)(t,{...e,children:(0,i.jsx)(d,{...e})}):d(e)}function M(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(b);})();\n;return Component;"
+          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,h=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var n in t)r(e,n,{get:t[n],enumerable:!0})},a=(e,t,n,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of f(t))!h.call(e,o)&&o!==n&&r(e,o,{get:()=>t[o],enumerable:!(s=m(t,o))||s.enumerable});return e};var j=(e,t,n)=>(n=e!=null?p(g(e)):{},a(t||!e||!e.__esModule?r(n,\"default\",{value:e,enumerable:!0}):n,e)),v=e=>a(r({},\"__esModule\",{value:!0}),e);var u=x((S,c)=>{c.exports=_jsx_runtime});var b={};y(b,{default:()=>l,frontmatter:()=>D});var i=j(u()),D={title:\"neolt\",description:\"We shaped Svaphile\\u2019s digital presence with a focus on clarity, ease, and trust.\",image:\"https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXiQuh9Hu7IwFK269gvohLHr5a4VNqcYbpTnMXk\",date:\"21 January\",guidelines:!0,category:\"Product Development\",client:\"Svaphile\",industry:\"Consumer Brand\",duration:\"December 2023 - January 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"In-Progress\"};function d(e){let{Neolt:t}=e.components||{};return t||M(\"Neolt\",!0),(0,i.jsx)(t,{})}function l(e={}){let{wrapper:t}=e.components||{};return t?(0,i.jsx)(t,{...e,children:(0,i.jsx)(d,{...e})}):d(e)}function M(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(b);})();\n;return Component;"
         },
         "_id": "our-work/neolt.mdx",
         "_raw": {
@@ -1978,13 +1978,13 @@
           "flattenedPath": "our-work/neolt"
         }
       },
-      "documentHash": "1754288664423",
+      "documentHash": "1754296369071",
       "hasWarnings": true,
       "documentTypeName": "OurWork"
     },
     "our-work/pampered-paws.mdx": {
       "document": {
-        "title": "Pampered Paws",
+        "title": "pampered paws",
         "description": "Pampered Paws is more than just a pet grooming service, it’s a pawridise for pets and the people who love them.",
         "guidelines": false,
         "image": "/case-studies/pampered-paws/pamper-paws-cs-3.webp",
@@ -1995,7 +1995,7 @@
         "date": "2001-01-20T18:30:00.000Z",
         "body": {
           "raw": "\r\n<PamperedPaws />\r\n",
-          "code": "var Component=(()=>{var u=Object.create;var n=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var w=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var P=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),x=(e,t)=>{for(var r in t)n(e,r,{get:t[r],enumerable:!0})},i=(e,t,r,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of g(t))!f.call(e,o)&&o!==r&&n(e,o,{get:()=>t[o],enumerable:!(s=l(t,o))||s.enumerable});return e};var h=(e,t,r)=>(r=e!=null?u(w(e)):{},i(t||!e||!e.__esModule?n(r,\"default\",{value:e,enumerable:!0}):r,e)),j=e=>i(n({},\"__esModule\",{value:!0}),e);var c=P((_,p)=>{p.exports=_jsx_runtime});var D={};x(D,{default:()=>m,frontmatter:()=>v});var a=h(c()),v={title:\"Pampered Paws\",description:\"Pampered Paws is more than just a pet grooming service, it\\u2019s a pawridise for pets and the people who love them.\",image:\"/case-studies/pampered-paws/pamper-paws-cs-3.webp\",date:\"21 January\",category:\"Product Development\",guidelines:!1,client:\"Take Your Own - Transport Aggregate App\",industry:\"pet care\",duration:\"Retainer Client\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"HTML\"};function d(e){let{PamperedPaws:t}=e.components||{};return t||y(\"PamperedPaws\",!0),(0,a.jsx)(t,{})}function m(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,{...e,children:(0,a.jsx)(d,{...e})}):d(e)}function y(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return j(D);})();\n;return Component;"
+          "code": "var Component=(()=>{var u=Object.create;var n=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var w=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),P=(e,t)=>{for(var r in t)n(e,r,{get:t[r],enumerable:!0})},i=(e,t,r,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of g(t))!f.call(e,o)&&o!==r&&n(e,o,{get:()=>t[o],enumerable:!(s=l(t,o))||s.enumerable});return e};var h=(e,t,r)=>(r=e!=null?u(w(e)):{},i(t||!e||!e.__esModule?n(r,\"default\",{value:e,enumerable:!0}):r,e)),j=e=>i(n({},\"__esModule\",{value:!0}),e);var c=x((_,p)=>{p.exports=_jsx_runtime});var D={};P(D,{default:()=>m,frontmatter:()=>v});var a=h(c()),v={title:\"pampered paws\",description:\"Pampered Paws is more than just a pet grooming service, it\\u2019s a pawridise for pets and the people who love them.\",image:\"/case-studies/pampered-paws/pamper-paws-cs-3.webp\",date:\"21 January\",category:\"Product Development\",guidelines:!1,client:\"Take Your Own - Transport Aggregate App\",industry:\"pet care\",duration:\"Retainer Client\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"HTML\"};function d(e){let{PamperedPaws:t}=e.components||{};return t||y(\"PamperedPaws\",!0),(0,a.jsx)(t,{})}function m(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,{...e,children:(0,a.jsx)(d,{...e})}):d(e)}function y(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return j(D);})();\n;return Component;"
         },
         "_id": "our-work/pampered-paws.mdx",
         "_raw": {
@@ -2016,13 +2016,13 @@
           "flattenedPath": "our-work/pampered-paws"
         }
       },
-      "documentHash": "1754041289802",
+      "documentHash": "1754296381943",
       "hasWarnings": true,
       "documentTypeName": "OurWork"
     },
     "our-work/svaphile.mdx": {
       "document": {
-        "title": "Svaphile",
+        "title": "svaphile",
         "description": "We shaped Svaphile’s digital presence with a focus on clarity, ease, and trust.",
         "guidelines": false,
         "image": "/case-studies/svaphile/svaphile-slider-3.jpg",
@@ -2033,7 +2033,7 @@
         "date": "2001-01-20T18:30:00.000Z",
         "body": {
           "raw": "\r\n<SvaphileOne />\r\n",
-          "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var v=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),x=(e,t)=>{for(var n in t)r(e,n,{get:t[n],enumerable:!0})},s=(e,t,n,a)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of m(t))!g.call(e,o)&&o!==n&&r(e,o,{get:()=>t[o],enumerable:!(a=h(t,o))||a.enumerable});return e};var y=(e,t,n)=>(n=e!=null?u(f(e)):{},s(t||!e||!e.__esModule?r(n,\"default\",{value:e,enumerable:!0}):n,e)),S=e=>s(r({},\"__esModule\",{value:!0}),e);var l=v((M,c)=>{c.exports=_jsx_runtime});var _={};x(_,{default:()=>p,frontmatter:()=>D});var i=y(l()),D={title:\"Svaphile\",description:\"We shaped Svaphile\\u2019s digital presence with a focus on clarity, ease, and trust.\",image:\"/case-studies/svaphile/svaphile-slider-3.jpg\",date:\"21 January\",category:\"Product Development\",client:\"Svaphile\",guidelines:!1,industry:\"Health-tech\",duration:\"December 2023 - January 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"In-Progress\"};function d(e){let{SvaphileOne:t}=e.components||{};return t||j(\"SvaphileOne\",!0),(0,i.jsx)(t,{})}function p(e={}){let{wrapper:t}=e.components||{};return t?(0,i.jsx)(t,{...e,children:(0,i.jsx)(d,{...e})}):d(e)}function j(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return S(_);})();\n;return Component;"
+          "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var v=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),x=(e,t)=>{for(var n in t)r(e,n,{get:t[n],enumerable:!0})},s=(e,t,n,a)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of m(t))!g.call(e,o)&&o!==n&&r(e,o,{get:()=>t[o],enumerable:!(a=h(t,o))||a.enumerable});return e};var y=(e,t,n)=>(n=e!=null?u(f(e)):{},s(t||!e||!e.__esModule?r(n,\"default\",{value:e,enumerable:!0}):n,e)),D=e=>s(r({},\"__esModule\",{value:!0}),e);var l=v((M,c)=>{c.exports=_jsx_runtime});var _={};x(_,{default:()=>p,frontmatter:()=>S});var i=y(l()),S={title:\"svaphile\",description:\"We shaped Svaphile\\u2019s digital presence with a focus on clarity, ease, and trust.\",image:\"/case-studies/svaphile/svaphile-slider-3.jpg\",date:\"21 January\",category:\"Product Development\",client:\"Svaphile\",guidelines:!1,industry:\"Health-tech\",duration:\"December 2023 - January 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"In-Progress\"};function d(e){let{SvaphileOne:t}=e.components||{};return t||j(\"SvaphileOne\",!0),(0,i.jsx)(t,{})}function p(e={}){let{wrapper:t}=e.components||{};return t?(0,i.jsx)(t,{...e,children:(0,i.jsx)(d,{...e})}):d(e)}function j(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return D(_);})();\n;return Component;"
         },
         "_id": "our-work/svaphile.mdx",
         "_raw": {
@@ -2054,7 +2054,7 @@
           "flattenedPath": "our-work/svaphile"
         }
       },
-      "documentHash": "1754290695619",
+      "documentHash": "1754296386455",
       "hasWarnings": true,
       "documentTypeName": "OurWork"
     },
@@ -2098,7 +2098,7 @@
     },
     "our-work/veda-corp.mdx": {
       "document": {
-        "title": "Vedacorp",
+        "title": "vedacorp",
         "description": "Revamping the visual identity for an independent investment bank to reflect its credibility, support clarity, and enable long-term scalability.",
         "guidelines": false,
         "image": "/case-studies/vedacorp/vedacorp-cs-1.webp",
@@ -2109,7 +2109,7 @@
         "date": "2001-03-20T18:30:00.000Z",
         "body": {
           "raw": "\r\n<VedaCorp />\r\n",
-          "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var n in t)r(e,n,{get:t[n],enumerable:!0})},s=(e,t,n,a)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of f(t))!v.call(e,o)&&o!==n&&r(e,o,{get:()=>t[o],enumerable:!(a=m(t,o))||a.enumerable});return e};var b=(e,t,n)=>(n=e!=null?u(g(e)):{},s(t||!e||!e.__esModule?r(n,\"default\",{value:e,enumerable:!0}):n,e)),h=e=>s(r({},\"__esModule\",{value:!0}),e);var d=x((D,c)=>{c.exports=_jsx_runtime});var w={};y(w,{default:()=>l,frontmatter:()=>M});var i=b(d()),M={title:\"Vedacorp\",description:\"Revamping the visual identity for an independent investment bank to reflect its credibility, support clarity, and enable long-term scalability.\",image:\"/case-studies/vedacorp/vedacorp-cs-1.webp\",date:\"21 March\",category:\"Website Rewamp\",client:\"Veda Corporate Advisors Pvt. Ltd.\",industry:\"Finance\",duration:\"March - June 2024\",guidelines:!1,team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"Wordpress\"};function p(e){let{VedaCorp:t}=e.components||{};return t||j(\"VedaCorp\",!0),(0,i.jsx)(t,{})}function l(e={}){let{wrapper:t}=e.components||{};return t?(0,i.jsx)(t,{...e,children:(0,i.jsx)(p,{...e})}):p(e)}function j(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return h(w);})();\n;return Component;"
+          "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var v=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var n in t)r(e,n,{get:t[n],enumerable:!0})},s=(e,t,n,a)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of f(t))!g.call(e,o)&&o!==n&&r(e,o,{get:()=>t[o],enumerable:!(a=m(t,o))||a.enumerable});return e};var b=(e,t,n)=>(n=e!=null?u(v(e)):{},s(t||!e||!e.__esModule?r(n,\"default\",{value:e,enumerable:!0}):n,e)),h=e=>s(r({},\"__esModule\",{value:!0}),e);var d=x((D,c)=>{c.exports=_jsx_runtime});var w={};y(w,{default:()=>l,frontmatter:()=>M});var i=b(d()),M={title:\"vedacorp\",description:\"Revamping the visual identity for an independent investment bank to reflect its credibility, support clarity, and enable long-term scalability.\",image:\"/case-studies/vedacorp/vedacorp-cs-1.webp\",date:\"21 March\",category:\"Website Rewamp\",client:\"Veda Corporate Advisors Pvt. Ltd.\",industry:\"Finance\",duration:\"March - June 2024\",guidelines:!1,team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"Wordpress\"};function p(e){let{VedaCorp:t}=e.components||{};return t||j(\"VedaCorp\",!0),(0,i.jsx)(t,{})}function l(e={}){let{wrapper:t}=e.components||{};return t?(0,i.jsx)(t,{...e,children:(0,i.jsx)(p,{...e})}):p(e)}function j(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return h(w);})();\n;return Component;"
         },
         "_id": "our-work/veda-corp.mdx",
         "_raw": {
@@ -2130,13 +2130,13 @@
           "flattenedPath": "our-work/veda-corp"
         }
       },
-      "documentHash": "1754288647774",
+      "documentHash": "1754296394771",
       "hasWarnings": true,
       "documentTypeName": "OurWork"
     },
     "our-work/xpheno.mdx": {
       "document": {
-        "title": "Xpheno",
+        "title": "xpheno",
         "description": "Fastest-growing Specialist Staffing Solutions company offering IT Staffing, Engineering Services, Sales Staffing and Direct Hire services.",
         "guidelines": false,
         "image": "/case-studies/xpheno/xpheno-cs-6.jpg",
@@ -2147,7 +2147,7 @@
         "date": "2001-07-27T18:30:00.000Z",
         "body": {
           "raw": "\r\n<Xpheno />\r\n",
-          "code": "var Component=(()=>{var d=Object.create;var i=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var S=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),h=(e,t)=>{for(var n in t)i(e,n,{get:t[n],enumerable:!0})},c=(e,t,n,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of l(t))!x.call(e,o)&&o!==n&&i(e,o,{get:()=>t[o],enumerable:!(s=g(t,o))||s.enumerable});return e};var y=(e,t,n)=>(n=e!=null?d(m(e)):{},c(t||!e||!e.__esModule?i(n,\"default\",{value:e,enumerable:!0}):n,e)),j=e=>c(i({},\"__esModule\",{value:!0}),e);var p=S((_,a)=>{a.exports=_jsx_runtime});var M={};h(M,{default:()=>u,frontmatter:()=>v});var r=y(p()),v={title:\"Xpheno\",description:\"Fastest-growing Specialist Staffing Solutions company offering IT Staffing, Engineering Services, Sales Staffing and Direct Hire services.\",image:\"/case-studies/xpheno/xpheno-cs-6.jpg\",date:\"28 July\",category:\"Marketing\",client:\"Xpheno\",guidelines:!1,industry:\"HR Services\",duration:\"March - June 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"Wordpress\"};function f(e){let{Xpheno:t}=e.components||{};return t||D(\"Xpheno\",!0),(0,r.jsx)(t,{})}function u(e={}){let{wrapper:t}=e.components||{};return t?(0,r.jsx)(t,{...e,children:(0,r.jsx)(f,{...e})}):f(e)}function D(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return j(M);})();\n;return Component;"
+          "code": "var Component=(()=>{var d=Object.create;var i=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var S=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),h=(e,t)=>{for(var n in t)i(e,n,{get:t[n],enumerable:!0})},c=(e,t,n,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of l(t))!x.call(e,o)&&o!==n&&i(e,o,{get:()=>t[o],enumerable:!(s=g(t,o))||s.enumerable});return e};var y=(e,t,n)=>(n=e!=null?d(m(e)):{},c(t||!e||!e.__esModule?i(n,\"default\",{value:e,enumerable:!0}):n,e)),j=e=>c(i({},\"__esModule\",{value:!0}),e);var p=S((_,a)=>{a.exports=_jsx_runtime});var M={};h(M,{default:()=>u,frontmatter:()=>v});var r=y(p()),v={title:\"xpheno\",description:\"Fastest-growing Specialist Staffing Solutions company offering IT Staffing, Engineering Services, Sales Staffing and Direct Hire services.\",image:\"/case-studies/xpheno/xpheno-cs-6.jpg\",date:\"28 July\",category:\"Marketing\",client:\"Xpheno\",guidelines:!1,industry:\"HR Services\",duration:\"March - June 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"Wordpress\"};function f(e){let{Xpheno:t}=e.components||{};return t||D(\"Xpheno\",!0),(0,r.jsx)(t,{})}function u(e={}){let{wrapper:t}=e.components||{};return t?(0,r.jsx)(t,{...e,children:(0,r.jsx)(f,{...e})}):f(e)}function D(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return j(M);})();\n;return Component;"
         },
         "_id": "our-work/xpheno.mdx",
         "_raw": {
@@ -2168,7 +2168,7 @@
           "flattenedPath": "our-work/xpheno"
         }
       },
-      "documentHash": "1754288635031",
+      "documentHash": "1754296400452",
       "hasWarnings": true,
       "documentTypeName": "OurWork"
     }

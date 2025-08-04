@@ -78,7 +78,7 @@ const page: FC<pageProps> = () => {
               </div>
               {/* Contact Us Form */}
               <div className="flex flex-col items-start justify-center gap-3 md:gap-3">
-                <p className="text-paragraph-heading lowercase text-foreground/75 leading-normal font-paragraph">
+                <p className="text-paragraph-heading hidden lowercase text-foreground/75 leading-normal font-paragraph">
                   NO THANKS, I WOULD RATHER SEND A MESSAGE
                 </p>
                 <Suspense fallback={<div>Loading form...</div>}>
