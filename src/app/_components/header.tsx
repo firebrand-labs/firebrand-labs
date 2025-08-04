@@ -195,7 +195,7 @@ const Header: FC<HeaderProps> = () => {
                       </div>
                     </div>
                   </div>
-                  <ul className="flex order-first md:order-last flex-col items-start justify-center gap-3">
+                  <ul className="flex order-first md:order-last flex-col items-start justify-center gap-3 xl:gap-2.5 2xl:gap-3 3xl:gap-4">
                     {mainNavContents.map((item, i) => (
                       <li
                         className={cn(

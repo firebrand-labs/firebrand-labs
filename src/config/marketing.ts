@@ -394,6 +394,12 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
+    href: "/our-work",
+    target: "/our-work",
+    title: "Work",
+    subItems: [],
+  },
+  {
     href: "/about",
     target: "/about",
     title: "About",
@@ -412,6 +418,12 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
+    href: "/our-blogs",
+    target: "/our-blogs",
+    title: "Blog",
+    subItems: [],
+  },
+  {
     href: "/cards-against-ambiguity",
     target: "/cards-against-ambiguity",
     title: "CAA",
@@ -423,11 +435,6 @@ export const mainNavContents: MainNavItems = [
     title: "Contact",
     subItems: [],
   },
-  // {
-  //   href: "/blogs",
-  //   title: "Blogs",
-  //   subItems: [],
-  // },
 ];
 
 export const firebrandLabsValuesContent = [

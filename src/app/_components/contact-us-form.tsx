@@ -1,6 +1,6 @@
 "use client";
 import { FC, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/app/_components/ui/button";
 import { Input } from "@/app/_components/ui/input";
 import { Label } from "@/app/_components/ui/label";
@@ -40,6 +40,7 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
   });
 
   const { toast } = useToast();
+  const router = useRouter();
 
   // Set purpose based on URL query parameter
   useEffect(() => {
@@ -67,6 +68,7 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
   const onSubmit = async function (formData: contactusFormType) {
     try {
       const res = await createContact.mutateAsync(formData);
+
       if (res.length) {
         toast({
           title: "Thank you for reaching out!",
@@ -74,8 +76,13 @@ const ContactUsForm: FC<ContactUsFormProps> = () => {
             "We've received your message and will get back to you shortly.",
           variant: "default",
         });
-        return reset();
+        reset();
+
+        if (res[0].purpose === "CAA") {
+          return router.push("/caa-virtual");
+        } else return;
       }
+
       return toast({
         title: "Something Went Wrong",
         description: "Please Check your data",

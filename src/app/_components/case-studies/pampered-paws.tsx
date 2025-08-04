@@ -169,10 +169,7 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
     <>
       <ProjectLogoSection src="/case-studies/pampered-paws/Pampered-paws.png" />
       <TYOChallengeSectionOne />
-      <FullWidthImage
-        src="/case-studies/pampered-paws/pamper-paws-cs-1.webp"
-        alt="Pampered Paws"
-      />
+
       <ParallelImageSection
         images={[
           "/case-studies/pampered-paws/pamper-paws-cs-2.webp",

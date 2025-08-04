@@ -5,20 +5,21 @@ import Link from "next/link";
 import { env } from "@/env";
 import { Icons } from "@/app/_components/icons";
 import { OurBlogs } from "contentlayer/generated";
-import { calculateTime } from "@/lib/utils";
+import { calculateTime, cn } from "@/lib/utils";
 
 interface BlogListProps {
   allOurBlogs: OurBlogs[];
+  hideMeta?: boolean;
 }
 
-const BlogList: FC<BlogListProps> = ({ allOurBlogs }) => {
+const BlogList: FC<BlogListProps> = ({ allOurBlogs, hideMeta }) => {
   return (
     <ul className="w-full grid grid-cols-1 md:grid-cols-3 items-start justify-center gap-5 3xl:mt-12">
       {allOurBlogs.length ? (
         allOurBlogs.map((item, i) => (
           <li
             key={i}
-            className="flex items-center p-3 md:pt-6 flex-col justify-center gap-2 h-full group bg-foreground/20 rounded-2xl hover:bg-foreground/15 transition-all duration-100 3xl:min-h-[360px] 3xl:justify-start"
+            className="flex items-center p-3 md:pt-6 flex-col justify-center gap-2  group bg-foreground/20 rounded-2xl hover:bg-foreground/15 transition-all duration-100 3xl:min-h-[360px] 3xl:justify-start"
           >
             <Link
               className="flex items-center flex-col w-full justify-center gap-2 relative"
@@ -37,10 +38,20 @@ const BlogList: FC<BlogListProps> = ({ allOurBlogs }) => {
               <h3 className="text-subtitle-heading font-paragraph lowercase font-normal w-full leading-normal tracking-normal text-foreground  min-h-[65px]  text-center flex items-center justify-center 3xl:items-start 3xl:mt-4 gap-4">
                 {item.title}
               </h3>
-              <span className=" mb-2 lowercase bg-background/60 px-2.5 py-1 rounded-full text-[14px] text-foreground font-light font-paragraph leading-normal tracking-wide">
+              <span
+                className={cn(
+                  " mb-2 lowercase bg-background/60 px-2.5 py-1 rounded-full text-[14px] text-foreground font-light font-paragraph leading-normal tracking-wide",
+                  hideMeta && "hidden"
+                )}
+              >
                 {item.categoryType}
               </span>
-              <p className="text-foreground/45 text-[16px] leading-normal text-left  font-paragraph ">
+              <p
+                className={cn(
+                  "text-foreground/45 text-[16px] leading-normal text-left  font-paragraph ",
+                  hideMeta && "hidden"
+                )}
+              >
                 {calculateTime(item.body.raw)} {"min read"}
               </p>
 

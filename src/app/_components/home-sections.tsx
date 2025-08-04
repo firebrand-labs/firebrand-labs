@@ -407,7 +407,7 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
       ref={ref}
       className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh py-16 "
     >
-      <div className="container flex flex-col items-start justify-center gap-8">
+      <div className="container flex flex-col items-start justify-center gap-8 xl:gap-4 2xl:gap-8">
         <div className="flex flex-col items-start justify-start h-full  gap-3 max-w-4xl">
           <AnimatedTextReveal
             text="thoughts, insights and analysis"
@@ -424,9 +424,14 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
               world!
             </AnimatedSpan>
           </AnimatedRichText>
-          <FBLButton className="" href="/our-blogs" body="all resources" />
+          <FBLButton
+            className="xl:mt-1 2xl:mt-4"
+            href="/our-blogs"
+            body="all resources"
+          />
         </div>
         <BlogList
+          hideMeta={true}
           allOurBlogs={allOurBlogs
             .sort(
               (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()

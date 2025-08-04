@@ -65,7 +65,10 @@ const page: FC<pageProps> = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 md:gap-10">
             {allOurWorks
-              // .filter((item) => !item.guidelines)
+              .sort(
+                (a, b) =>
+                  new Date(a.date).getTime() - new Date(b.date).getTime()
+              )
               .map((item, i) => (
                 <article
                   key={i}

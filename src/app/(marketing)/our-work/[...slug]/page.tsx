@@ -18,9 +18,9 @@ interface PostProps {
 }
 
 export const identifyAdjacentWorks = function (slug: string[]) {
-  const postIndex = allOurWorks.findIndex(
-    (post) => post.slugAsParams === slug[0]
-  );
+  const postIndex = allOurWorks
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+    .findIndex((post) => post.slugAsParams === slug[0]);
 
   if (postIndex === -1) {
     return { previousBlog: null, nextBlog: null };

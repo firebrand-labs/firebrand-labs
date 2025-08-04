@@ -7,6 +7,9 @@ import {
   type PanInfo,
   type Variants,
 } from "framer-motion";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
 
 type Direction = 1 | -1;
 
@@ -85,10 +88,10 @@ export default function CardsAgainstAmbiguity() {
   }, []);
 
   return (
-    <div className="min-h-screen  w-full flex flex-col items-center justify-center p-4 ">
-      <div className=" bg-transparent w-[300px]  aspect-[500/696] flex items-center justify-center ">
+    <div className="min-h-screen  w-full flex flex-col items-center justify-center p-4 gap-4 xl:gap-6">
+      <div className=" bg-transparent w-[300px]  2xl:w-[320px]  aspect-[500/696] flex items-center justify-center ">
         {/* Card Container */}
-        <div className="relative w-full flex items-center justify-center h-98 mb-8">
+        <div className="relative w-full flex items-center justify-center h-full">
           {/* Background card stack */}
           <div className="absolute w-full h-full inset-0 ">
             {[1, 2, 3].map((offset: number) => {
@@ -135,16 +138,42 @@ export default function CardsAgainstAmbiguity() {
                   paginate(-1);
                 }
               }}
-              className="absolute inset-0 bg-background rounded-2xl p-8 flex items-top justify-center cursor-grab active:cursor-grabbing shadow-2xl "
+              className="absolute inset-0 bg-black rounded-2xl p-4 flex flex-col items-start justify-between cursor-grab active:cursor-grabbing "
             >
-              <p className="text-foreground text-xl md:text-2xl leading-relaxed text-left font-light font-heading">
+              <p
+                className="text-white text-paragraph-heading leading-normal pt-8 text-left font-light font-paragraph"
+                draggable={false}
+              >
                 {cards[currentIndex]}
               </p>
+              <div className="w-full flex items-center justify-between pb-3 ">
+                <span
+                  className="text-white text-[15px] leading-normal text-left font-light font-paragraph"
+                  draggable={false}
+                >
+                  cards against ambiguity
+                </span>
+                <div className="flex items-center justify-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-yellow-level-one" />
+                  <span className="w-2 h-2 rounded-full bg-yellow-level-two" />
+                  <span className="w-2 h-2 rounded-full bg-yellow-level-three" />
+                  <span className="w-2 h-2 rounded-full bg-yellow-level-five" />
+                </div>
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>
       </div>
       <img src={"/the-book/nav-2a.png"} className=" max-w-[300px]" />
+      <Link
+        className={cn(
+          buttonVariants({ variant: "default", size: "lg" }),
+          "font-paragraph !bg-transparent tracking-wide relative group rounded-full flex items-center justify-between border border-white !text-white text-[15px] font-normal mt-2 py-4 hover:bg-transparent hover:text-white min-w-[170px] md:min-w-[220px] min-h-[48px]"
+        )}
+        href={"/contact?query=caa"}
+      >
+        get the complete pack
+      </Link>
     </div>
   );
 }

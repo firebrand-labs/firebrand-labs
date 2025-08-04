@@ -435,7 +435,7 @@ const VedaCorp: FC<VedaCorpProps> = ({ frontmatter }) => {
         ]}
         alt={["pattern", "pattern"]}
       />
-      <CarouselSection vedaCorpCarouselContent={vedaCorpCarouselContent} />
+
       <FullWidthImage
         src="/case-studies/vedacorp/vedacorp-cs-4.webp"
         alt="Vedacorp"
