@@ -27,6 +27,7 @@ import CharacterCardCarousel from "@/app/_components/character-card-carousel";
 import BlogList from "@/app/_components/blog-list";
 import { toast } from "@/app/_components/ui/use-toast";
 import YoutubePlayerWithAPI from "./youtube-player-with-api";
+import { allOurBlogs } from "contentlayer/generated";
 
 function useParallax(
   value: MotionValue<number>,
@@ -190,21 +191,21 @@ const AboutSection: React.FC<SectionProps> = ({ isActive }) => {
           delay={5}
         >
           <AnimatedSpan
-            className="font-bold mb-2 2xl:mb-4 3xl:mb-4"
+            className="font-bold lowercase mb-2 2xl:mb-4 3xl:mb-4"
             delay={0.8}
           >
             We make marketing that is original, authentic, and real—with people
             who care.
           </AnimatedSpan>
           <AnimatedSpan
-            className="pt-2 mb-2.5 md:mb-2.5 lg:mb-3.5 2xl:mb-4 3xl:mb-4"
+            className="pt-2 mb-2.5 lowercase md:mb-2.5 lg:mb-3.5 2xl:mb-4 3xl:mb-4"
             delay={0.8}
           >
             We are curiously minded, bold-hearted, and restlessly creative. We
             believe in asking better questions, pushing past the obvious, and
             showing up with purpose.
           </AnimatedSpan>
-          <AnimatedSpan delay={0.8}>
+          <AnimatedSpan className="lowercase" delay={0.8}>
             {" "}
             And we’re here to use our craft for good-building ideas that move
             people, shift mindsets, and leave the world better than we found it.
@@ -415,7 +416,7 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
 
           <AnimatedRichText delay={1.6}>
             <AnimatedSpan
-              className="text-paragraph-heading max-w-2xl  text-foreground leading-normal font-paragraph tracking-wide"
+              className="text-paragraph-heading max-w-4xl  text-foreground leading-normal font-paragraph tracking-wide"
               delay={1.8}
             >
               wondering how to blog? what are sonic identities, can you think of
@@ -423,10 +424,16 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
               world!
             </AnimatedSpan>
           </AnimatedRichText>
-          <FBLButton className="hidden" href="/blog" body="all resources" />
+          <FBLButton className="" href="/our-blogs" body="all resources" />
         </div>
-        {/* <BlogList /> */}
-        <Icons.BlogImage className="w-full md:w-[60%] self-center" />
+        <BlogList
+          allOurBlogs={allOurBlogs
+            .sort(
+              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+            )
+            .slice(0, 3)}
+        />
+        {/* <Icons.BlogImage className="w-full md:w-[50%] 3xl:w-[60%] h-[300px] self-center" /> */}
       </div>
     </section>
   );

@@ -18,7 +18,7 @@ const BlogList: FC<BlogListProps> = ({ allOurBlogs }) => {
         allOurBlogs.map((item, i) => (
           <li
             key={i}
-            className="flex items-center p-3 md:pt-6 flex-col justify-center gap-2 group bg-foreground/20 rounded-2xl hover:bg-foreground/15 transition-all duration-100 3xl:min-h-[360px] 3xl:justify-start"
+            className="flex items-center p-3 md:pt-6 flex-col justify-center gap-2 h-full group bg-foreground/20 rounded-2xl hover:bg-foreground/15 transition-all duration-100 3xl:min-h-[360px] 3xl:justify-start"
           >
             <Link
               className="flex items-center flex-col w-full justify-center gap-2 relative"

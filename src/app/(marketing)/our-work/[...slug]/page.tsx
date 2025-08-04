@@ -122,3 +122,23 @@ export default async function PostPage({ params }: PostProps) {
     </ReactLenis>
   );
 }
+
+// Upcoming idea to improve the visual part
+
+//  <Link
+//    href={`${env.NEXT_PUBLIC_APP_URL}${adjacentWorks.nextBlog.slug}`}
+//    className="flex items-center justify-center group w-[300px] md:w-[330px] 2xl:w-[350px] h-full max-h-[300px] overflow-hidden  relative flex-col rounded-sm"
+//  >
+//    <img
+//      src={adjacentWorks.nextBlog.image}
+//      width={300}
+//      height={500}
+//      className="w-full transition-transform duration-500 object-cover  rounded-sm"
+//    />
+//    <div className="absolute bottom-[0px] flex items-center justify-between left-[0px] w-full bg-background/45 group-hover:bg-background/40 px-4 py-2 transition-all duration-200">
+//      <p className="text-subtitle-heading  lowercase text-foreground/80 leading-normal font-paragraph ">
+//        {adjacentWorks.nextBlog.title}
+//      </p>
+//      <Icons.ArrowRight className="w-8 self-end h-8 stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-five transition-transform duration-200 group-hover:shadow-2xl" />
+//    </div>
+//  </Link>;

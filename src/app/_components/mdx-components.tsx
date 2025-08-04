@@ -74,16 +74,20 @@ const components = {
       {...props}
     />
   ),
-  a: ({ className, ...props }: HTMLAttributes<HTMLAnchorElement>) => (
-    <a
-      className={cn("font-medium underline underline-offset-4", className)}
-      {...props}
-    />
-  ),
+
   p: ({ className, ...props }: HTMLAttributes<HTMLParagraphElement>) => (
     <p
       className={cn(
         " [&:not(:first-child)]:mt-6 text-paragraph-heading font-paragraph tracking-wide font-light leading-normal",
+        className
+      )}
+      {...props}
+    />
+  ),
+  a: ({ className, ...props }: HTMLAttributes<HTMLAnchorElement>) => (
+    <a
+      className={cn(
+        "font-medium underline underline-offset-4 text-yellow-level-three",
         className
       )}
       {...props}

@@ -132,10 +132,42 @@ export const ProjectTeamSection = function () {
   );
 };
 
+export const ThemeBasedProjectLogoSection = function ({
+  src1,
+  src2,
+}: {
+  src1: string;
+  src2: string;
+}) {
+  return (
+    <section className="flex items-center justify-center mt-16 md:0 flex-col  w-screen h-[50vh] lg:h-[77vh] xl:h-[75vh] 2xl:h-[75vh] 3xl:h-[57.5vh] overflow-x-hidden bg-transparent bg-[image:var(--color-repeating-gradient)] before:bg-no-repeat relative ">
+      <div className="container flex flex-col items-center justify-center">
+        <img
+          src={src1}
+          alt="Yellove"
+          width={800}
+          height={300}
+          className="w-[300px] lg:w-[360px] xl:w-[440px] 2xl:w-[560px] 3xl:w-[660px] h-auto hidden dark:block"
+        />
+        <img
+          src={src2}
+          alt="Yellove"
+          width={800}
+          height={300}
+          className="w-[300px] lg:w-[360px] xl:w-[440px] 2xl:w-[560px] 3xl:w-[660px] h-auto block dark:hidden"
+        />
+      </div>
+    </section>
+  );
+};
+
 const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
   return (
     <>
-      <ProjectLogoSection src="/case-studies/vedacorp/veda-corp.png" />
+      <ThemeBasedProjectLogoSection
+        src2="/case-studies/svaphile/svaphile-logo-dark.png"
+        src1="/case-studies/svaphile/svaphile-logo-light.png"
+      />
       <SvaphileChallengeSectionOne />
       <section className="hidden items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-4 md:py-8">
         <div className="container">
@@ -159,19 +191,23 @@ const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
         </div>
       </section>
       <FullWidthImage
-        src="/case-studies/svaphile/svaphile-cs-1.webp"
+        src="/case-studies/svaphile/svaphile-analytics.jpg"
         alt="Svaphile"
       />
 
       <CarouselSection vedaCorpCarouselContent={svaphileCarouselContent} />
       <FullWidthImage
-        src="/case-studies/svaphile/svaphile-cs-3.png"
+        src="/case-studies/svaphile/svaphile-analytics-2.jpg"
+        alt="Svaphile"
+      />
+      <FullWidthImage
+        src="/case-studies/svaphile/svaphile-report.jpg"
         alt="Svaphile"
       />
       <ParallelImageSection
         images={[
-          "/case-studies/svaphile/svaphile-cs-4.png",
-          "/case-studies/svaphile/svaphile-cs-5.webp",
+          "/case-studies/svaphile/svaphile-slider-3.jpg",
+          "/case-studies/svaphile/svaphile-mobile.jpg",
         ]}
         alt={["pattern", "pattern"]}
       />

@@ -159,11 +159,13 @@ export const TYOStorySection = function ({}) {
 const TYO: FC<TYOProps> = ({ frontmatter }) => {
   return (
     <>
-      <ProjectLogoSection src="/case-studies/vedacorp/veda-corp.png" />
+      <ProjectLogoSection src="/case-studies/tyo/TYO-logo.png" />
       <TYOChallengeSectionOne />
-      <FullWidthImage src="/case-studies/tyo/tyo-cs-1.webp" alt="Svaphile" />
+      <FullWidthImage src="/case-studies/tyo/tyo-cs-1.webp" alt="TYO" />
+      <FullWidthImage src="/case-studies/tyo/mobile-tyo-1.jpg" alt="TYO" />
 
       <CarouselSection vedaCorpCarouselContent={tyoCarouselContent} />
+      <FullWidthImage src="/case-studies/tyo/mobile-tyo-3.jpg" alt="TYO" />
       {/* <ProjectTeamSection /> */}
       <TYOStorySection />
     </>

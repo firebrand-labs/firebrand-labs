@@ -77,62 +77,46 @@ export const vedaCorpCarouselContent: VedacorpCarouselContent = [
 
 export const tyoCarouselContent: VedacorpCarouselContent = [
   {
-    image: "/case-studies/tyo/tyo-cs-2.png",
-    title: "A Seamless Reading Experience",
+    image: "/case-studies/tyo/TYO-slider-1.jpg",
+    title: "Passenger App",
     description: [
-      "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
+      "Empowering the passenger with choice to choose a fare of their preference.",
     ],
   },
   {
-    image: "/case-studies/tyo/tyo-cs-2.png",
-    title: "A Seamless Reading Experience",
+    image: "/case-studies/tyo/TYO-slider-2.jpg",
+    title: "Driver App",
     description: [
-      "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
+      "Giving choice to the driver to set their own tariffs for each ride.",
     ],
   },
   {
-    image: "/case-studies/tyo/tyo-cs-2.png",
-    title: "A Seamless Reading Experience",
+    image: "/case-studies/tyo/TYO-slider-3.jpg",
+    title: "Admin App",
     description: [
-      "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
-    ],
-  },
-  {
-    image: "/case-studies/tyo/tyo-cs-2.png",
-    title: "A Seamless Reading Experience",
-    description: [
-      "Using Vedacorp’s brand colors as a foundation, we built a visually cohesive, non-intrusive interface that allows key information to stand out without visual fatigue or distraction. No jarring contrasts—just a seamless reading experience by harmonizing information through color.",
+      "A comprehensive administrator portal for app management and governance.",
     ],
   },
 ];
 
 export const svaphileCarouselContent: VedacorpCarouselContent = [
   {
-    image: "/case-studies/svaphile/svaphile-cs-2.webp",
-    title: "Store Reports",
+    image: "/case-studies/svaphile/slider1-DICOM-viewer.jpg",
+    title: "DICOM Viewer",
     description: [
-      "Upload test and scan reports easily in our super secure personal cloud storage, and keep an archive ready for all future use.",
+      "Comprehensive DICOM viewer that aids in reading and comparing multiple scanned images",
     ],
   },
   {
-    image: "/case-studies/svaphile/svaphile-cs-2.webp",
-    title: "Store Reports",
-    description: [
-      "Upload test and scan reports easily in our super secure personal cloud storage, and keep an archive ready for all future use.",
-    ],
+    image: "/case-studies/svaphile/ai-powered.jpg",
+    title: "AI powered",
+    description: ["Anamoly detection using SvaMi lens -  AI powered engine"],
   },
   {
-    image: "/case-studies/svaphile/svaphile-cs-2.webp",
-    title: "Store Reports",
+    image: "/case-studies/svaphile/slider3-smart-report.jpg",
+    title: "Smart Reports",
     description: [
-      "Upload test and scan reports easily in our super secure personal cloud storage, and keep an archive ready for all future use.",
-    ],
-  },
-  {
-    image: "/case-studies/svaphile/svaphile-cs-2.webp",
-    title: "Store Reports",
-    description: [
-      "Upload test and scan reports easily in our super secure personal cloud storage, and keep an archive ready for all future use.",
+      "Generate AI powered reports for scans and tests uploaded to the portal",
     ],
   },
 ];

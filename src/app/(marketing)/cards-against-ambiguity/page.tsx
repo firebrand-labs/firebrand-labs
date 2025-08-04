@@ -38,16 +38,16 @@ const page: FC<pageProps> = () => {
         <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-svh py-16">
           <div className="container flex items-start flex-col gap-4 justify-start">
             <AnimatedTextReveal
-              text="this is what ambiguity looks like, and it hinders growth."
-              className="text-secondary-heading  text-foreground font-normal leading-tight tracking-wide max-w-4xl font-heading"
+              text="Assumptions hinder growth."
+              className="text-secondary-heading lowercase text-foreground font-normal leading-tight tracking-wide max-w-4xl font-heading"
             />
 
             <AnimatedRichText
               className="text-paragraph-heading tracking-wide font-light text-foreground leading-normal font-paragraph"
               delay={1.8}
             >
-              <AnimatedSpan className="" delay={1.8}>
-                you’ve been here, and so have we.
+              <AnimatedSpan className="lowercase" delay={1.8}>
+                Cultivate empathy. Tide over ambiguity.
               </AnimatedSpan>
             </AnimatedRichText>
           </div>
@@ -71,11 +71,11 @@ const page: FC<pageProps> = () => {
                     className="text-paragraph-heading tracking-wide text-foreground leading-normal font-semibold font-paragraph mb-2.5"
                     delay={1.8}
                   >
-                    A creative tool to enable introspection and drive clarity in
+                    a creative tool to enable introspection and drive clarity in
                     a volatile, uncertain, complex and ambiguous world.
                   </AnimatedSpan>
                   <AnimatedSpan
-                    className="text-paragraph-heading tracking-wide text-foreground leading-normal font-light font-paragraph"
+                    className="text-paragraph-heading lowercase tracking-wide text-foreground leading-normal font-light font-paragraph"
                     delay={1.8}
                   >
                     Designed for entrepreneurs, professionals, CxOs and Business
@@ -140,13 +140,13 @@ const page: FC<pageProps> = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
               <div className="flex flex-col items-start justify-start h-full  gap-3">
                 <AnimatedTextReveal
-                  text="Explore the full set"
+                  text="explore the full set"
                   className="text-secondary-heading  max-w-3xl text-foreground leading-tight tracking-wide font-normal font-heading"
                 />
 
                 <AnimatedRichText delay={1.6}>
                   <AnimatedSpan
-                    className="text-subtitle-heading tracking-wide text-foreground leading-normal font-normal mb-2 font-paragraph"
+                    className="text-subtitle-heading tracking-wide lowercase text-foreground leading-normal font-normal mb-2 font-paragraph"
                     delay={1.8}
                   >
                     The complete pack consists of 54 unique question cards.

@@ -344,7 +344,7 @@ export const ProjectLogoSection = function ({ src }: { src: string }) {
           alt="Banner Section"
           width={800}
           height={300}
-          className="w-[300px] lg:w-[360px] xl:w-[440px] 2xl:w-[520px] 3xl:w-[660px] h-auto"
+          className="w-[300px]  lg:w-[360px] xl:w-[440px] 2xl:w-[520px] 3xl:w-[660px] h-auto"
         />
         {/* <Logo className="w-36 md:w-2xl xl:w-3xl 3xl:w-5xl fill-foreground stroke-foreground" /> */}
       </div>
@@ -370,7 +370,7 @@ const Xpheno: FC<XphenoProps> = ({ frontmatter }) => {
         ]}
         alt={["pattern", "pattern"]}
       />
-      <CarouselSection vedaCorpCarouselContent={vedaCorpCarouselContent} />
+      {/* <CarouselSection vedaCorpCarouselContent={vedaCorpCarouselContent} /> */}
       <FullWidthImage src="/case-studies/xpheno/xpheno-cs-8.jpg" alt="Xpheno" />
       <ParallelImageSection
         images={[

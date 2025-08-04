@@ -73,14 +73,14 @@ const CaseStudiesCarousel: FC<CaseStudiesCarouselProps> = ({
                   height={700}
                 />
                 <div className="flex flex-col items-start justify-end gap-4 self-end py-8 md:py-24">
-                  <p className="text-foreground font-bold font-paragraph text-tertiary-heading leading-tight">
+                  <p className="text-foreground  font-bold font-paragraph text-tertiary-heading leading-tight">
                     {item.title}
                   </p>
                   {item.description.length
                     ? item.description.map((txt, i) => (
                         <p
                           key={i}
-                          className="text-foreground font-light font-paragraph text-subtitle-heading"
+                          className="text-foreground  font-light font-paragraph text-subtitle-heading"
                         >
                           {txt}
                         </p>
