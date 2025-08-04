@@ -54,84 +54,84 @@ const AnimatedCardInterface: React.FC = () => {
   const cards: Card[] = [
     {
       id: 1,
-      title: "orchestrating a unified user experience",
+      title: "Storytelling",
       position: { xPercent: 10, yPercent: 12.5 }, // ~120px/1200px, ~100px/800px
       arcType: "high",
       delay: 0,
     },
     {
       id: 3,
-      title: "strategic vision one",
+      title: "Design Thinking",
       position: { xPercent: 37.5, yPercent: 22.5 }, // ~450px/1200px, ~180px/800px
       arcType: "medium",
       delay: 0.8,
     },
     {
       id: 4,
-      title: "strategic vision",
+      title: "Brand Strategy",
       position: { xPercent: 66.7, yPercent: 27.5 }, // ~800px/1200px, ~220px/800px
       arcType: "high",
       delay: 1.2,
     },
     {
       id: 6,
-      title: "innovation hub",
+      title: "Thought Leadership",
       position: { xPercent: 50, yPercent: 35 }, // ~600px/1200px, ~280px/800px
       arcType: "medium",
       delay: 2.0,
     },
     {
       id: 7,
-      title: "cultivating digital brand ecosystems",
+      title: "Ux/Ui",
       position: { xPercent: 79.2, yPercent: 37.5 }, // ~950px/1200px, ~300px/800px
       arcType: "high",
       delay: 2.4,
     },
     {
       id: 8,
-      title: "transformative design thinking",
+      title: "Engagement",
       position: { xPercent: 25, yPercent: 52.5 }, // ~300px/1200px, ~420px/800px
       arcType: "low",
       delay: 2.8,
     },
     {
       id: 10,
-      title: "agile development methodologies",
+      title: "Community",
       position: { xPercent: 91.7, yPercent: 45 }, // ~1100px/1200px, ~360px/800px
       arcType: "high",
       delay: 3.6,
     },
     {
       id: 13,
-      title: "user-centric design philosophy",
+      title: "Growth",
       position: { xPercent: 70.8, yPercent: 62.5 }, // ~850px/1200px, ~500px/800px
       arcType: "high",
       delay: 4.8,
     },
     {
       id: 14,
-      title: "emerging technology adoption",
+      title: "Creativity",
       position: { xPercent: 29.2, yPercent: 72.5 }, // ~350px/1200px, ~580px/800px
       arcType: "low",
       delay: 5.2,
     },
     {
       id: 15,
-      title: "collaborative innovation frameworks",
+      title: "Design Thinking",
       position: { xPercent: 58.3, yPercent: 70 }, // ~700px/1200px, ~560px/800px
       arcType: "medium",
       delay: 5.6,
     },
     {
       id: 16,
-      title: "sustainable development practices",
+      title: "Brand Strategy",
       position: { xPercent: 83.3, yPercent: 67.5 }, // ~1000px/1200px, ~540px/800px
       arcType: "high",
       delay: 6.0,
     },
     {
       id: 19,
-      title: "sustainable development practices",
+      title: "Engagement",
       position: { xPercent: 100, yPercent: 80 }, // ~1200px/1200px, ~640px/800px
       arcType: "high",
       delay: 6.0,
