@@ -117,10 +117,10 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
       <DialogTrigger className="" asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="max-w-[80vh] md:max-w-[65vw]">
+      <DialogContent className="max-w-[90vw] h-[70vh] md:h-fit overflow-y-scroll scrollbar-hide md:max-w-[65vw]">
         <DialogHeader className="hidden" />
         <DialogTitle className="hidden" />
-        <div className="flex flex-col items-start justify-center gap-6 md:gap-12">
+        <div className="flex flex-col items-start justify-center gap-6 md:gap-12  ">
           <div className="flex items-start justify-center gap-4 flex-col">
             <h3 className="font-paragraph text-tertiary-heading leading-normal text-foreground w-full">
               can we get to know you?
@@ -137,9 +137,9 @@ const CaaPopupForm: FC<CaaPopupFormProps> = ({ children }) => {
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="w-full grid grid-cols-1 md:grid-cols-2 items-center gap-4"
+            className="w-full grid grid-cols-1 md:grid-cols-2 items-center gap-4 "
           >
-            <div className="flex  items-start flex-col justify-start gap-2 w-full group relative">
+            <div className="flex items-start flex-col justify-start gap-2 w-full group relative">
               <Label
                 htmlFor="Name"
                 className="!text-extra-subtitle-heading lowercase text-foreground leading-normal font-paragraph"

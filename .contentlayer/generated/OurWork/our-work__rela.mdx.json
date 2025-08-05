@@ -1,0 +1,33 @@
+{
+  "title": "rela",
+  "description": "Rela Institute is the best multispecialty hospital in Chennai. We deliver high quality medical treatment with expert doctors. Your path to a healthier life starts here.",
+  "guidelines": false,
+  "image": "/case-studies/rela/slider-1.jpg",
+  "industry": "Healthcare",
+  "client": "Rela",
+  "duration": "December 2023 - January 2024",
+  "tech": "In-Progress\r",
+  "date": "2019-01-11T18:30:00.000Z",
+  "body": {
+    "raw": "\r\n<Rela />\r\n",
+    "code": "var Component=(()=>{var m=Object.create;var o=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),y=(e,t)=>{for(var r in t)o(e,r,{get:t[r],enumerable:!0})},s=(e,t,r,i)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let n of p(t))!g.call(e,n)&&n!==r&&o(e,n,{get:()=>t[n],enumerable:!(i=h(t,n))||i.enumerable});return e};var j=(e,t,r)=>(r=e!=null?m(f(e)):{},s(t||!e||!e.__esModule?o(r,\"default\",{value:e,enumerable:!0}):r,e)),D=e=>s(o({},\"__esModule\",{value:!0}),e);var l=x((w,c)=>{c.exports=_jsx_runtime});var b={};y(b,{default:()=>d,frontmatter:()=>R});var a=j(l()),R={title:\"rela\",description:\"Rela Institute is the best multispecialty hospital in Chennai. We deliver high quality medical treatment with expert doctors. Your path to a healthier life starts here.\",image:\"/case-studies/rela/slider-1.jpg\",date:\"January 12, 2019\",category:\"Healthcare\",client:\"Rela\",guidelines:!1,industry:\"Healthcare\",duration:\"December 2023 - January 2024\",team:[\"Product Design\",\"Full-Stack Development\",\"DevOps\"],tags:[\"React\",\"Node.js\",\"AWS\",\"PostgreSQL\"],tech:\"In-Progress\"};function u(e){let{Rela:t}=e.components||{};return t||_(\"Rela\",!0),(0,a.jsx)(t,{})}function d(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,{...e,children:(0,a.jsx)(u,{...e})}):u(e)}function _(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return D(b);})();\n;return Component;"
+  },
+  "_id": "our-work/rela.mdx",
+  "_raw": {
+    "sourceFilePath": "our-work/rela.mdx",
+    "sourceFileName": "rela.mdx",
+    "sourceFileDir": "our-work",
+    "contentType": "mdx",
+    "flattenedPath": "our-work/rela"
+  },
+  "type": "OurWork",
+  "slug": "/our-work/rela",
+  "slugAsParams": "rela",
+  "readTime": {
+    "sourceFilePath": "our-work/rela.mdx",
+    "sourceFileName": "rela.mdx",
+    "sourceFileDir": "our-work",
+    "contentType": "mdx",
+    "flattenedPath": "our-work/rela"
+  }
+}

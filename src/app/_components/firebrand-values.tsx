@@ -88,7 +88,7 @@ const FirebrandValues: FC<FirebrandValuesProps> = ({ className }) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="absolute  top-[104%] md:top-[initial] md:bottom-0 left-0 border border-foreground rounded-full px-2 min-w-[190px] py-2 flex items-center justify-center">
+      <div className="absolute  top-[103.5%]  md:top-[initial] md:bottom-0 left-0 border border-foreground rounded-full px-2 min-w-[190px] py-2 flex items-center justify-center">
         <CarouselPrevious className="bg-transparent relative top-0 -translate-y-0 hover:text-yellow-level-three hover:bg-transparent cursor-pointer" />
         <span className="font-paragraph text-yellow-level-three">{`${current}/${count}`}</span>
         <CarouselNext className="bg-transparent relative top-0 -translate-y-0 hover:text-yellow-level-three hover:bg-transparent cursor-pointer" />

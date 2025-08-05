@@ -15,6 +15,7 @@ import {
 import Image from "next/image";
 import { Icon, Icons } from "@/app/_components/icons";
 import { ProjectLogoSection } from "@/app/_components/case-studies/xpheno";
+import PamperedPawsCaseStudyVideo from "@/app/_components/pampered-paws-case-study-video";
 
 interface PamperedPawsProps {
   frontmatter: OurWork;
@@ -210,6 +211,7 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
         src="/case-studies/pampered-paws/pamper-paws-cs-11.webp"
         alt="Pampered Paws"
       />
+      {/* <PamperedPawsCaseStudyVideo /> */}
       {/* <CarouselSection pampered-pawsCarouselContent={tyoCarouselContent} /> */}
       {/* <ProjectTeamSection /> */}
       <PamperedPawsStorySection />

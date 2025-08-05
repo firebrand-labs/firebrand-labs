@@ -124,7 +124,7 @@ const Header: FC<HeaderProps> = () => {
                 <Icons.Menu className="!w-full !h-full stroke-foreground stroke-1 group-hover:stroke-foreground/80" />
               </Button>
             </SheetTrigger>
-            <SheetContent className="min-h-screen flex items-center bg-background bg-[image:var(--color-repeating-gradient)] justify-center w-full">
+            <SheetContent className="h-screen overflow-y-scroll scrollbar-hide flex items-center bg-background bg-[image:var(--color-repeating-gradient)] justify-center w-full">
               <SheetTitle />
               <div className="container flex items-center justify-center">
                 <div className="grid w-full grid-cols-1 md:grid-cols-2 items-center justify-center gap-8">
@@ -195,7 +195,7 @@ const Header: FC<HeaderProps> = () => {
                       </div>
                     </div>
                   </div>
-                  <ul className="flex order-first md:order-last flex-col items-start justify-center gap-3 xl:gap-2.5 2xl:gap-3 3xl:gap-4">
+                  <ul className="flex order-first md:order-last flex-col items-start justify-center gap-1.5 xl:gap-2.5 2xl:gap-3 3xl:gap-4">
                     {mainNavContents.map((item, i) => (
                       <li
                         className={cn(

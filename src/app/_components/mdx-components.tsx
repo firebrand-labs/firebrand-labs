@@ -13,6 +13,7 @@ import PamperedPaws from "@/app/_components/case-studies/pampered-paws";
 import Xpheno from "@/app/_components/case-studies/xpheno";
 import SvaphileOne from "@/app/_components/case-studies/svaphile-one";
 import Image from "next/image";
+import Rela from "@/app/_components/case-studies/rela";
 
 interface MdxComponentsProps {
   code: string;
@@ -192,6 +193,7 @@ const MdxComponents: FC<MdxComponentsProps> = ({ code, frontmatter }) => {
     TYO: (props: any) => <TYO {...props} frontmatter={frontmatter} />,
     Xpheno: (props: any) => <Xpheno {...props} frontmatter={frontmatter} />,
     Neolt: (props: any) => <Neolt {...props} frontmatter={frontmatter} />,
+    Rela: (props: any) => <Rela {...props} frontmatter={frontmatter} />,
     PamperedPaws: (props: any) => (
       <PamperedPaws {...props} frontmatter={frontmatter} />
     ),

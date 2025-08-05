@@ -22,8 +22,6 @@ const page: FC<pageProps> = () => {
     notFound();
   }
 
-  console.log(allOurWorks.filter((item) => item.guidelines));
-  console.log(allOurWorks.filter((item) => !item.guidelines));
   return (
     <ReactLenis>
       <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 pt-32 md:pt-40 md:pb-16">
@@ -76,7 +74,7 @@ const page: FC<pageProps> = () => {
                 >
                   <Link
                     href={`${env.NEXT_PUBLIC_APP_URL}${item.slug}`}
-                    className="w-full h-fit flex-col items-center justify-center flex relative gap-3 bg-foreground/20 group rounded-2xl overflow-hidden "
+                    className="w-full h-fit  flex-col items-center justify-center flex relative gap-3 bg-foreground/20 group rounded-2xl overflow-hidden "
                   >
                     <span className=" mb-2 hidden lowercase bg-background/60 px-2.5 py-1 rounded-full text-[14px] text-foreground font-light font-paragraph leading-normal tracking-wide absolute top-[14px] left-[14px] z-10">
                       {item.industry}

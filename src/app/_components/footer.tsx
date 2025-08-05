@@ -66,7 +66,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
                 16 Years of Fabulous Ideas, Brilliant Execution, and Lovable
                 People.
               </h2>
-              <p className="text-[16px]  text-background lowercase leading-tight tracking-wide font-normal font-heading">
+              <p className="text-[14px] md:hidden text-background lowercase leading-tight tracking-wide font-light font-heading">
                 This web-experience is made for widescreens - switch to a bigger
                 view.
               </p>

@@ -120,3 +120,27 @@ export const svaphileCarouselContent: VedacorpCarouselContent = [
     ],
   },
 ];
+
+export const relaCarouselContent: VedacorpCarouselContent = [
+  {
+    image: "/case-studies/rela/slider-1.jpg",
+    title: "Growing beyond Silver",
+    description: [
+      "Consistent effort to put out relatable content helped us to grow from 2000 to 200K subscribers earning a Silver Play Button",
+    ],
+  },
+  {
+    image: "/case-studies/rela/slider-2.jpg",
+    title: "A Christmas tribute to medical professionals",
+    description: [
+      "We wrote a Christmas jingle celebrating medical professionals and was enthusiastically performed by Rela Hospital's team",
+    ],
+  },
+  {
+    image: "/case-studies/rela/slider-3.jpg",
+    title: "Using trends for the better:",
+    description: [
+      "Ideated and scripted lyrics for nurses day 2021 based on the popular indie song 'Enjoy Enjaami', garnering widespread coverage across news outlets such as NDTV, Zee News, News18TN, etc.",
+    ],
+  },
+];
