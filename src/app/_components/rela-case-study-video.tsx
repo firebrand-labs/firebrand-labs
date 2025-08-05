@@ -39,13 +39,13 @@ const RelaCaseStudyVideo: FC<RelaCaseStudyVideoProps> = ({
   // Calculate video size based on screen size
   const getVideoSize = () => {
     if (isLargeMobile) {
-      return { width: "1920", height: "226" };
+      return { width: "1920", height: "210" };
     }
     if (isSmallTablet) {
-      return { width: "1920", height: "540" };
+      return { width: "1920", height: "500" };
     }
     if (isSmallLaptop) {
-      return { width: "1920", height: "600" };
+      return { width: "1920", height: "642" };
     }
     return { width: "1920", height: "700" };
   };

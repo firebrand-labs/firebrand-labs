@@ -59,23 +59,6 @@ const HeroSection: React.FC<SectionProps> = ({ isActive }) => {
 
   const mobile = useMediaQuery({ query: "(max-width:676px)" });
 
-  useEffect(() => {
-    if (mobile) {
-      toast({
-        title: "",
-        description: (
-          <div className="flex items-center gap-5 w-full p-0">
-            <Icons.Monitor className="h-8 w-8" />
-            <span className="text-[14px] font-paragraph text-foreground font-light leading-normal tracking-normal">
-              This web-experience is made for widescreens - switch to a bigger
-              view.
-            </span>
-          </div>
-        ),
-      });
-    }
-  }, [mobile]);
-
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 300);

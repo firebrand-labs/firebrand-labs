@@ -106,15 +106,12 @@ const Rela: FC<RelaProps> = () => {
         src1="/case-studies/rela/rela-logo.png"
       />
       <RelaChallengeSectionOne />
-      <CarouselSection vedaCorpCarouselContent={relaCarouselContent} />
-
-      <RelaCaseStudyVideo videoId="2nRYdXIwQ-g" uniqueId="12" />
-      <RelaCaseStudyVideo videoId="Z3nankuxbaE" uniqueId="10" />
-      <RelaCaseStudyVideo videoId="YLUCt4Ih31c" uniqueId="9" />
-      <RelaCaseStudyVideo videoId="KIRPwFBjJUY" uniqueId="8" />
       <RelaCaseStudyVideo videoId="um5JxBBDTx8" uniqueId="7" />
-      <RelaCaseStudyVideo videoId="KIRPwFBjJUY" uniqueId="3" />
       <RelaCaseStudyVideo videoId="5B4UpXl6eC4" uniqueId="6" />
+      <CarouselSection vedaCorpCarouselContent={relaCarouselContent} />
+      <RelaCaseStudyVideo videoId="KIRPwFBjJUY" uniqueId="3" />
+      <RelaCaseStudyVideo videoId="2nRYdXIwQ-g" uniqueId="12" />
+      <RelaCaseStudyVideo videoId="YLUCt4Ih31c" uniqueId="9" />
 
       <RelaStorySection />
     </>
