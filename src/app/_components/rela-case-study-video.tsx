@@ -61,7 +61,7 @@ const RelaCaseStudyVideo: FC<RelaCaseStudyVideoProps> = ({
         autoplay: 1,
         mute: 1,
         loop: 1,
-        playlist: videoId, // Use the passed videoId
+        playlist: videoId,
         controls: 0,
         rel: 0,
         fs: 0,
@@ -70,6 +70,8 @@ const RelaCaseStudyVideo: FC<RelaCaseStudyVideoProps> = ({
         playsinline: 1,
         disablekb: 1,
         cc_load_policy: 0,
+        enablejsapi: 1, // Enable JS API
+        origin: window.location.origin, // Set origin
       },
       events: {
         onReady: () => {
@@ -84,6 +86,36 @@ const RelaCaseStudyVideo: FC<RelaCaseStudyVideoProps> = ({
         },
         onStateChange: (event: any) => {
           setIsPlaying(event.data === window.YT.PlayerState.PLAYING);
+
+          // Handle loop manually for better reliability
+          if (event.data === window.YT.PlayerState.ENDED) {
+            setTimeout(() => {
+              if (playerRef.current) {
+                playerRef.current.playVideo();
+              }
+            }, 100);
+          }
+        },
+        onError: (event: any) => {
+          console.error(`YouTube Player Error for ${playerId}:`, event.data);
+          // Handle different error codes
+          switch (event.data) {
+            case 2:
+              console.error("Invalid video ID");
+              break;
+            case 5:
+              console.error("HTML5 player error");
+              break;
+            case 100:
+              console.error("Video not found or private");
+              break;
+            case 101:
+            case 150:
+              console.error(
+                "Video not allowed to be played in embedded players"
+              );
+              break;
+          }
         },
       },
     });
@@ -95,8 +127,14 @@ const RelaCaseStudyVideo: FC<RelaCaseStudyVideoProps> = ({
       window.youtubePlayersQueue = [];
     }
 
-    // Add this player's initialization to the queue
-    window.youtubePlayersQueue.push(initializePlayer);
+    // Add this player's initialization to the queue with delay
+    const delayedInit = () => {
+      setTimeout(() => {
+        initializePlayer();
+      }, Math.random() * 1000); // Random delay up to 1 second
+    };
+
+    window.youtubePlayersQueue.push(delayedInit);
 
     if (!window.YT) {
       // Load YouTube API script only once
@@ -107,19 +145,25 @@ const RelaCaseStudyVideo: FC<RelaCaseStudyVideoProps> = ({
 
       // Set up the global callback
       window.onYouTubeIframeAPIReady = () => {
-        // Initialize all queued players
-        window.youtubePlayersQueue.forEach((initPlayer) => initPlayer());
+        // Initialize all queued players with staggered timing
+        window.youtubePlayersQueue.forEach((initPlayer, index) => {
+          setTimeout(() => initPlayer(), index * 200); // 200ms delay between players
+        });
         window.youtubePlayersQueue = []; // Clear the queue
       };
     } else if (window.YT && window.YT.Player) {
-      // API is already loaded, initialize immediately
-      initializePlayer();
+      // API is already loaded, initialize with delay
+      delayedInit();
     }
 
     // Cleanup function
     return () => {
       if (playerRef.current && playerRef.current.destroy) {
-        playerRef.current.destroy();
+        try {
+          playerRef.current.destroy();
+        } catch (error) {
+          console.error("Error destroying player:", error);
+        }
       }
     };
   }, [videoId]);
