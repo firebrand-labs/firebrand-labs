@@ -58,22 +58,29 @@ const BlogFiltersUI: FC<BlogFiltersUIProps> = ({}) => {
 
   return (
     <section className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] min-h-screen py-16 md:py-24 2xl:py-28">
-      <div className="container flex flex-col items-start justify-center">
+      <div className="container flex flex-col items-start justify-center gap-2.5 md:gap-4 2xl:gap-8">
         {/* Added default value to ensure accordion works */}
-
+        <button
+          className="font-heading font-light text-tertiary-heading text-foreground leading-normal tracking-normal w-full text-left border-b border-foreground cursor-pointer"
+          onClick={portalOpenHandler}
+        >
+          {selectedCategory}
+        </button>
         <ul
           className={cn(
-            "w-full items-start justify-center flex flex-col transition-all duration-200 space-y-2"
+            "w-full items-start justify-center flex flex-col transition-all duration-200  overflow-hidden  gap-2",
+            openPortal ? "h-64 3xl:h-72 py-1" : "h-0"
           )}
         >
           <li className="list-none text-paragraph-heading">
             <button
               onClick={() => selectCategory("All")}
               className={cn(
-                "flex items-center cursor-pointer lowercase justify-center text-paragraph-heading font-light font-paragraph leading-normal tracking-normal hover:text-yellow-level-three transition-colors duration-200 px-2 py-1",
+                "flex !p-0 items-center cursor-pointer lowercase justify-center text-paragraph-heading font-light font-paragraph leading-normal tracking-normal hover:text-yellow-level-three transition-colors duration-200 px-2 py-1",
                 selectedCategory === "All"
-                  ? "text-yellow-level-three border-b-2 border-yellow-level-three"
+                  ? "text-yellow-level-three "
                   : "text-foreground"
+                // openPortal ? "flex" : "hidden"
               )}
             >
               All
@@ -85,10 +92,11 @@ const BlogFiltersUI: FC<BlogFiltersUIProps> = ({}) => {
                   <button
                     onClick={() => selectCategory(item)}
                     className={cn(
-                      "flex items-center cursor-pointer justify-center lowercase text-paragraph-heading font-light font-paragraph leading-normal tracking-normal hover:text-yellow-level-three h-[initial] transition-colors duration-200 px-2 py-1",
+                      "flex !p-0 items-center cursor-pointer justify-center lowercase text-paragraph-heading font-light font-paragraph leading-normal tracking-normal hover:text-yellow-level-three h-[initial] transition-colors duration-200 px-2 py-1",
                       selectedCategory === item
-                        ? "text-yellow-level-three border-b-2 border-yellow-level-three"
+                        ? "text-yellow-level-three"
                         : "text-foreground"
+                      // openPortal ? "flex" : "hidden"
                     )}
                   >
                     {item}
