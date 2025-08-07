@@ -96,6 +96,11 @@ const page: FC<pageProps> = () => {
                       ) : null}
                       <Icons.ArrowRight className="w-8 self-end h-8 stroke-foreground rotate-0 group-hover:-rotate-45 group-hover:stroke-yellow-level-five transition-transform duration-200 group-hover:shadow-2xl" />
                     </div>
+                    <p className="text-foreground font-paragraph font-light w-full text-subtitle-heading leading-normal tracking-normal pb-3 px-3">
+                      Svaphile’s brand was designed to transform the health
+                      management experience - moving beyond the typical clinical
+                      approach to something intuitive, empowering, and human.
+                    </p>
                   </Link>
                 </article>
               ))}

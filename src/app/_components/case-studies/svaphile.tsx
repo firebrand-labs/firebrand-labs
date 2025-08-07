@@ -187,6 +187,17 @@ const Svaphile: FC<SvaphileProps> = ({ frontmatter }) => {
           </p>
         </div>
       </section>
+      <section className="flex items-center justify-center lowercase flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
+        <div className="container flex flex-col items-start justify-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5B4UpXl6eC4?si=uMttJ6mgxFlZ5c1R"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </section>
       <OverviewSection
         overviewContent={svaphileOverviewContent}
         frontmatter={frontmatter}

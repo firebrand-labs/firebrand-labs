@@ -47,7 +47,7 @@ const RelaCaseStudyVideo: FC<RelaCaseStudyVideoProps> = ({
     if (isSmallLaptop) {
       return { width: "1920", height: "642" };
     }
-    return { width: "1920", height: "700" };
+    return { width: "1920", height: "696" };
   };
 
   const initializePlayer = () => {

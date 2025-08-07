@@ -37,12 +37,12 @@ const Switch = React.forwardRef<
       className="flex flex-col items-center justify-center gap-12 md:gap-20 border border-foreground rounded-2xl w-full min-h-[75.75vh]"
     >
       <div className="flex max-w-5xl">
-        <h2 className="text-3xl md:text-6xl text-yellow-level-five leading-tight font-bold inline-flex mr-3">
+        <h2 className="text-3xl md:text-6xl text-yellow-level-five leading-tight font-bold font-heading inline-flex mr-3">
           Thinking
         </h2>
         <h2
           className={cn(
-            "text-3xl md:text-6xl text-yellow-level-five leading-tight font-bold text-center opacity-0 ease-in duration-100",
+            "text-3xl md:text-6xl text-yellow-level-five leading-tight font-bold text-center font-heading opacity-0 ease-in duration-100",
             checked && "opacity-100"
           )}
         >

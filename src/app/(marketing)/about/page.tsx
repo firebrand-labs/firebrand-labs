@@ -70,11 +70,11 @@ const page: FC<pageProps> = () => {
                 </AnimatedSpan>
                 <br />
                 <AnimatedSpan className="" delay={1.8}>
-                  firebrand labs
+                  firebrand labs.
                 </AnimatedSpan>
                 <br />
                 <AnimatedSpan className="pb-6 xl:pb-5 2xl:pb-7" delay={1.8}>
-                  composers of ideas. of clarity. of credibility
+                  composers of ideas. of clarity. of credibility.
                 </AnimatedSpan>
               </AnimatedRichText>
             </div>
@@ -105,7 +105,7 @@ const page: FC<pageProps> = () => {
                   1
                 </span>
                 <br />
-                philosophy
+                philosophy.
               </p>
             </div>
             <AnimatedTextReveal
@@ -159,7 +159,7 @@ const page: FC<pageProps> = () => {
                 <FBLButton
                   body="read yellove"
                   target="_blank"
-                  href="https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXi6IykLxpThs8Y3qHSXFb0ok97ftJVZcnBQCEw"
+                  href="/homepage/yellove.pdf"
                 />
               </div>
 
@@ -188,11 +188,11 @@ const page: FC<pageProps> = () => {
 
         <section
           id="book"
-          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 pb-0 md:py-16"
+          className="flex items-center justify-center flex-col w-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-16 pb-0 md:pt-16"
         >
           <div className="container flex flex-col items-start justify-center gap-8">
             <div className="grid grid-cols-1 md:grid-cols-3">
-              <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center">
+              <div className="flex items-start md:col-start-1 md:col-end-3 gap-3 flex-col justify-center pb-16  md:pb-16">
                 <AnimatedTextReveal
                   text="want to learn more about us?"
                   className="text-secondary-heading tracking-wide text-foreground leading-tight font-normal font-heading"

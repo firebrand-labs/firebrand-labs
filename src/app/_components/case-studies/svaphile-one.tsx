@@ -11,6 +11,7 @@ import {
 } from "@/config/case-studies/marketing";
 import SvaphileCarouselSection from "@/app/_components/svaphile-carousel-section";
 import { ProjectLogoSection } from "@/app/_components/case-studies/xpheno";
+import RelaCaseStudyVideo from "../rela-case-study-video";
 
 interface SvaphileOneProps {}
 
@@ -190,6 +191,21 @@ const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
           </div>
         </div>
       </section>
+      {/* <section className="flex items-center justify-center lowercase flex-col w-screen min-h-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
+        <div className="container flex flex-col items-start justify-center h-full ">
+          <div className="relative w-full h-full pb-[56.25%]">
+            <iframe
+              width="100%"
+              height="500"
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/5B4UpXl6eC4?si=uMttJ6mgxFlZ5c1R"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+        </div>
+      </section> */}
+      {/* <RelaCaseStudyVideo videoId="5B4UpXl6eC4" uniqueId="6" /> */}
       <FullWidthImage
         src="/case-studies/svaphile/svaphile-analytics.jpg"
         alt="Svaphile"

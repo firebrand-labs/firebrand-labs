@@ -106,6 +106,7 @@ const Rela: FC<RelaProps> = () => {
         src1="/case-studies/rela/rela-logo.png"
       />
       <RelaChallengeSectionOne />
+
       <RelaCaseStudyVideo videoId="um5JxBBDTx8" uniqueId="7" />
       <RelaCaseStudyVideo videoId="5B4UpXl6eC4" uniqueId="6" />
       <CarouselSection vedaCorpCarouselContent={relaCarouselContent} />
