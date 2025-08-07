@@ -1,4 +1,5 @@
 import BlogFilters from "@/app/_components/blog-filters";
+import BlogFiltersUI from "@/app/_components/blog-filters-ui";
 import BlogList from "@/app/_components/blog-list";
 import BlogSearchContainer from "@/app/_components/blog-search-container";
 import Footer from "@/app/_components/footer";
@@ -30,7 +31,7 @@ const page: FC<pageProps> = () => {
           <InfiniteScroll items={[24, 29]} />
         </div>
       </section>
-      <BlogFilters />
+      <BlogFiltersUI />
       <Footer />
     </ReactLenis>
   );

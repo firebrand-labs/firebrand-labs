@@ -41,7 +41,7 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, items }) => {
       }}
       plugins={[
         Autoplay({
-          delay: 1000,
+          delay: 0,
           stopOnInteraction: false,
         }),
       ]}
@@ -50,6 +50,7 @@ const InfiniteScroll: FC<InfiniteScrollProps> = ({ className, items }) => {
       <CarouselContent className="pl-0 ml-0 w-screen max-h-[300px]">
         {Array.from({ length: 2 }).map((_, index) => (
           <CarouselItem
+            key={index}
             className="w-full pl-0 z-10 flex items-center justify-center"
             // style={{ backgroundColor: colors[index] }}
           >

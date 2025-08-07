@@ -4,7 +4,7 @@ import { useMDXComponent } from "next-contentlayer2/hooks";
 
 import type { HTMLAttributes, ImgHTMLAttributes } from "react";
 import VedaCorp from "@/app/_components/case-studies/veda-corp";
-import Neolt from "@/app/_components/case-studies/Neolt";
+
 import Footer from "@/app/_components/footer";
 import Svaphile from "@/app/_components/case-studies/svaphile";
 import { OurBlogs, OurWork } from ".contentlayer/generated/types";
@@ -192,7 +192,6 @@ const MdxComponents: FC<MdxComponentsProps> = ({ code, frontmatter }) => {
     ),
     TYO: (props: any) => <TYO {...props} frontmatter={frontmatter} />,
     Xpheno: (props: any) => <Xpheno {...props} frontmatter={frontmatter} />,
-    Neolt: (props: any) => <Neolt {...props} frontmatter={frontmatter} />,
     Rela: (props: any) => <Rela {...props} frontmatter={frontmatter} />,
     PamperedPaws: (props: any) => (
       <PamperedPaws {...props} frontmatter={frontmatter} />

@@ -20,14 +20,6 @@ interface InfiniteMapProps {
   className?: string;
 }
 
-const colors = [
-  "bg-red-500",
-  "bg-violet-500",
-  "bg-orange-500",
-  "bg-green-500",
-  "bg-yellow-500",
-];
-
 const InfiniteMap: FC<InfiniteMapProps> = ({ className }) => {
   return (
     <Carousel
@@ -40,7 +32,7 @@ const InfiniteMap: FC<InfiniteMapProps> = ({ className }) => {
       }}
       plugins={[
         Autoplay({
-          delay: 1000,
+          delay: 0,
           stopOnInteraction: false,
         }),
       ]}

@@ -191,7 +191,7 @@ const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
           </div>
         </div>
       </section>
-      {/* <section className="flex items-center justify-center lowercase flex-col w-screen min-h-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
+      <section className="flex items-center justify-center lowercase flex-col w-screen min-h-screen overflow-x-hidden bg-background bg-[image:var(--color-repeating-gradient)] pt-4 pb-8 md:pb-16 md:py-16">
         <div className="container flex flex-col items-start justify-center h-full ">
           <div className="relative w-full h-full pb-[56.25%]">
             <iframe
@@ -204,8 +204,8 @@ const SvaphileOne: FC<SvaphileOneProps> = ({}) => {
             ></iframe>
           </div>
         </div>
-      </section> */}
-      {/* <RelaCaseStudyVideo videoId="5B4UpXl6eC4" uniqueId="6" /> */}
+      </section>
+      <RelaCaseStudyVideo videoId="5B4UpXl6eC4" uniqueId="6" />
       <FullWidthImage
         src="/case-studies/svaphile/svaphile-analytics.jpg"
         alt="Svaphile"
