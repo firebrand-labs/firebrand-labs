@@ -46,7 +46,7 @@ const Switch = React.forwardRef<
             checked && "opacity-100"
           )}
         >
-          + Doing
+          & Doing
         </h2>
       </div>
       <SwitchPrimitives.Root

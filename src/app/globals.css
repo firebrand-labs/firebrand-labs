@@ -250,3 +250,12 @@
     transform: translateX(calc(-1 * (10 * (200px + 16px))));
   }
 }
+
+@keyframes infiniteScrollOne {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move by half the container width */
+  }
+}

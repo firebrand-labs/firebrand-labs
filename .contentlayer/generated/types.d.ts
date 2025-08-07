@@ -15,6 +15,7 @@ export type OurBlogs = {
   type: 'OurBlogs'
   title: string
   description?: string | undefined
+  featured?: boolean | undefined
   image?: string | undefined
   category?: string | undefined
   categoryType?: string | undefined

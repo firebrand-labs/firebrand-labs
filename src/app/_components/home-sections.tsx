@@ -190,7 +190,7 @@ const AboutSection: React.FC<SectionProps> = ({ isActive }) => {
           </AnimatedSpan>
           <AnimatedSpan className="lowercase" delay={0.8}>
             {" "}
-            And we’re here to use our craft for good-building ideas that move
+            And we are here to use our craft for good-building ideas that move
             people, shift mindsets, and leave the world better than we found it.
           </AnimatedSpan>
         </AnimatedRichText>
@@ -407,11 +407,6 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
               world!
             </AnimatedSpan>
           </AnimatedRichText>
-          <FBLButton
-            className="xl:mt-1 2xl:mt-4"
-            href="/our-blogs"
-            body="all resources"
-          />
         </div>
         <BlogList
           hideMeta={true}
@@ -419,7 +414,12 @@ const BlogSection: React.FC<SectionProps> = ({ isActive }) => {
             .sort(
               (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
             )
-            .slice(0, 3)}
+            .filter((item) => item.featured)}
+        />
+        <FBLButton
+          className="xl:mt-1 2xl:mt-4"
+          href="/our-blogs"
+          body="read all blogs"
         />
         {/* <Icons.BlogImage className="w-full md:w-[50%] 3xl:w-[60%] h-[300px] self-center" /> */}
       </div>

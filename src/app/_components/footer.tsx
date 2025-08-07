@@ -7,6 +7,8 @@ import { Icons } from "@/app/_components/icons";
 import { AnimatedTextReveal } from "@/app/_components/animated-text";
 import FBLButton from "@/app/_components/fbl-button";
 import React from "react";
+import InfiniteMap from "@/app/_components/infinite-map";
+import CaaPopupForm from "@/app/_components/caa-popup-form";
 
 interface pageProps {
   children?: React.ReactNode;
@@ -25,7 +27,7 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
         <div className="container flex flex-col items-start justify-center gap-2">
           <AnimatedTextReveal
             text="would you like us to be your extended marketing officers?"
-            className="text-secondary-heading  max-w-3xl 2xl:max-w-4xl text-background leading-tight tracking-wide font-normal font-heading"
+            className="text-secondary-heading  max-w-3xl 2xl:max-w-3xl 3xl:max-w-4xl text-background leading-tight tracking-wide font-normal font-heading"
           />
           <FBLButton href="/contact" body="get in touch" />
         </div>
@@ -36,36 +38,15 @@ const Footer = React.forwardRef<HTMLElement, FooterProps>((props, ref) => {
         )}
       >
         <div className="container flex flex-col items-center justify-start md:justify-center">
-          <motion.div
-            className="flex w-full"
-            animate={{
-              x: [0, -100 * 16], // Move by the width of one complete text block
-            }}
-            transition={{
-              x: {
-                repeat: Number.POSITIVE_INFINITY,
-                repeatType: "loop",
-                duration: 20,
-                ease: "linear",
-              },
-            }}
-          >
-            {/* Repeat the text multiple times for seamless loop */}
-            {Array.from({ length: 8 }).map((_, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 text-7xl relative md:text-7xl xl:text-9xl ml-8 pb-12 md:pb-6 3xl:pb-12  font-normal font-paragraph text-background "
-              >
-                we live in the space between chaos and clarity.
-              </div>
-            ))}
-          </motion.div>
+          <InfiniteMap />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full pb-8 md:pb-0 mt-5">
             <div className="flex flex-col items-start justify-center gap-1.5">
-              <h2 className="text-subtitle-heading text-background lowercase leading-tight tracking-wide font-normal font-heading">
-                16 Years of Fabulous Ideas, Brilliant Execution, and Lovable
-                People.
-              </h2>
+              <Link href={"/thebook"}>
+                <h2 className="text-subtitle-heading text-background lowercase leading-tight tracking-wide font-normal font-heading cursor-pointer hover:text-background/85">
+                  16 Years of Fabulous Ideas, Brilliant Execution, and Lovable
+                  People.
+                </h2>
+              </Link>
               <p className="text-[14px] md:hidden text-background lowercase leading-tight tracking-wide font-light font-heading">
                 This web-experience is made for widescreens - switch to a bigger
                 view.

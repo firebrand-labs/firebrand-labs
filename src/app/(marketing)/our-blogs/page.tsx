@@ -23,11 +23,11 @@ const page: FC<pageProps> = () => {
             welcome to the lab notes.
           </h1>
         </div>
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-around">
-          <InfiniteScroll className="" />
-          <InfiniteScroll className="" reverseRow={true} />
-          <InfiniteScroll className="" />
-          <InfiniteScroll className="" reverseRow={true} />
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center py-24">
+          <InfiniteScroll items={[0, 6]} />
+          <InfiniteScroll items={[8, 13]} />
+          <InfiniteScroll items={[15, 21]} />
+          <InfiniteScroll items={[24, 29]} />
         </div>
       </section>
       <BlogFilters />

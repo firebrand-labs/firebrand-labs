@@ -211,7 +211,7 @@ const PamperedPaws: FC<PamperedPawsProps> = ({}) => {
         src="/case-studies/pampered-paws/pamper-paws-cs-11.webp"
         alt="Pampered Paws"
       />
-      {/* <PamperedPawsCaseStudyVideo /> */}
+      <PamperedPawsCaseStudyVideo />
       {/* <CarouselSection pampered-pawsCarouselContent={tyoCarouselContent} /> */}
       {/* <ProjectTeamSection /> */}
       <PamperedPawsStorySection />

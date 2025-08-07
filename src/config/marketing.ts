@@ -292,29 +292,29 @@ export const subTeamContent = [
       },
     },
   },
-  {
-    id: "11",
-    url: "about/sandy.png",
-    name: "santhosh s",
-    role: "Designe Partner",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
-    popupContent: {
-      role: "Designe Partner",
-      popupImage: "about/sandy-am.png",
-      description: [
-        "he’s an excellent artist, the kind who lets his work speak louder than words, and when he does speak, the jokes hit after a 2-second delay. always up for a good time, always gets the job done-with full josh. low volume, high impact. or as they’d say- semma build-up, but all heart. his story might sound similar to a certain simbu movie.",
-      ],
-      linkedIn: "",
-      phone: "",
-      mail: "",
-      colors: {
-        paletteX: "#8D9ABA",
-        paletteY: "#DCE3F3",
-        paletteZ: "#ABB5DF",
-      },
-    },
-  },
+  // {
+  //   id: "11",
+  //   url: "about/sandy.png",
+  //   name: "santhosh s",
+  //   role: "Designe Partner",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",
+  //   popupContent: {
+  //     role: "Designe Partner",
+  //     popupImage: "about/sandy-am.png",
+  //     description: [
+  //       "he’s an excellent artist, the kind who lets his work speak louder than words, and when he does speak, the jokes hit after a 2-second delay. always up for a good time, always gets the job done-with full josh. low volume, high impact. or as they’d say- semma build-up, but all heart. his story might sound similar to a certain simbu movie.",
+  //     ],
+  //     linkedIn: "",
+  //     phone: "",
+  //     mail: "",
+  //     colors: {
+  //       paletteX: "#8D9ABA",
+  //       paletteY: "#DCE3F3",
+  //       paletteZ: "#ABB5DF",
+  //     },
+  //   },
+  // },
   {
     id: "12",
     url: "about/ritika.png",

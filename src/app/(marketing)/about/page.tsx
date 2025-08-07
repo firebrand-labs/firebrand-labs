@@ -88,7 +88,7 @@ const page: FC<pageProps> = () => {
             <div className="flex items-end gap-12 md:gap-16 2xl:gap-28 justify-end ">
               <p className="text-tertiary-heading text-foreground leading-tight font-paragraph font-light">
                 <span className="font-semibold text-5xl md:text-9xl leading-[0.6] text-yellow-level-one font-paragraph">
-                  15
+                  16
                 </span>
                 <br />
                 years.

@@ -6,8 +6,11 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
   type CarouselApi,
 } from "@/app/_components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const carouselImages = [
   // "https://x687dt1j5j.ufs.sh/f/pTbrMlXytQXijRPnNby97HSzYgIKboODG1N6WZ8QMBV0xwPl",
@@ -49,7 +52,7 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
   };
 
   return (
-    <div className="w-full max-w-sm 3xl:max-w-lg max-h-[530px] 2xl:max-h-[530px] 3xl:min-h-[800px]">
+    <div className="w-full max-w-sm 3xl:max-w-lg max-h-[530px] 2xl:max-h-[530px] 3xl:min-h-[800px] ">
       <Carousel
         opts={{
           align: "start",
@@ -57,10 +60,15 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
           duration: 25,
         }}
         setApi={setApi}
-        plugins={[]}
+        plugins={[
+          Autoplay({
+            delay: 10000,
+            stopOnInteraction: false,
+          }),
+        ]}
         className="py-4 md:py-0"
       >
-        <CarouselContent className="pl-0 ml-0 max-h-[530px] 2xl:max-h-[530px] 3xl:min-h-[800px]">
+        <CarouselContent className="pl-0 ml-0 max-h-[530px] 2xl:max-h-[530px] 3xl:min-h-[800px] cursor-grab">
           {carouselImages.map((item, index) => (
             <CarouselItem key={index} className="pl-0">
               <div className="justify-center gap-4">
@@ -76,10 +84,15 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <div className="relative w-full h-full bottom-0 left-0 gap-4  flex items-center  justify-center py-2">
+          <CarouselPrevious className="relative top-[unset] left-[unset] right-[unset] translate-0" />
+          <CarouselNext className="relative top-[unset] left-[unset] right-[unset] translate-0" />
+        </div>
       </Carousel>
 
       {/* Pagination Dots */}
-      <div className="flex justify-center gap-2 mt-4">
+
+      <div className=" justify-center gap-2 mt-4 hidden">
         {Array.from({ length: count }).map((_, index) => (
           <button
             key={index}
