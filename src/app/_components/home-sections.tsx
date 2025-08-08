@@ -362,14 +362,16 @@ const ShowReelSection: React.FC<SectionProps> = function () {
       className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh "
     >
       <div className="container flex flex-col items-center justify-center gap-8 relative  rounded-2xl overflow-hidden md:max-h-vh md:overflow-y-hidden">
-        {/* <iframe
-          width="1200"
-          className="w-full h-auto aspect-[1920/1080] rounded-2xl overflow-hidden scale-90 shadow-2xl pointer-events-none"
-          height="315"
-          src="https://www.youtube.com/embed/12aaVh4bVBs?si=r2rFfIviQR3xmTt2showinfo=0&playlist=12aaVh4bVBs&modestbranding=1&loop=1&rel=0&autoplay=0&controls=0&mute=0&videoId=12aaVh4bVBs&cc_load_policy=0&fs=0&iv_load_policy=3&playsinline=1&branding=0"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        ></iframe> */}
+        {/* <div className="relative w-full h-[400px] pb-[56.25%]">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/12aaVh4bVBs?si=cLEJb789MCmitwtU"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            className="absolute top-0 left-0 w-full h-full rounded-2xl"
+          ></iframe>
+        </div> */}
         <YoutubePlayerWithAPI />
         {/* <BackgroundVideo
           className="absolute left-0 top-0 w-full h-full z-0"

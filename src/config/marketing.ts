@@ -89,7 +89,7 @@ export const subTeamContent = [
   {
     id: "2",
     url: "about/arun.png",
-    name: "Arun",
+    name: "Arun Kumar R",
     description: "co-founder. head of design and a silent storm.",
     popupContent: {
       role: "Co-Founder",
@@ -225,7 +225,7 @@ export const subTeamContent = [
   {
     id: "12",
     url: "about/venkat.png",
-    name: "Venkatesh",
+    name: "Venkatesh s",
     role: "Technology Partner",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in",

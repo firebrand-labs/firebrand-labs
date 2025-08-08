@@ -61,14 +61,14 @@ const BlogFiltersUI: FC<BlogFiltersUIProps> = ({}) => {
       <div className="container flex flex-col items-start justify-center gap-2.5 md:gap-4 2xl:gap-8">
         {/* Added default value to ensure accordion works */}
         <button
-          className="font-heading font-light text-tertiary-heading text-foreground leading-normal tracking-normal w-full text-left border-b border-foreground cursor-pointer"
+          className="font-heading lowercase font-light text-tertiary-heading text-foreground leading-normal tracking-normal w-full text-left border-b border-foreground cursor-pointer"
           onClick={portalOpenHandler}
         >
           {selectedCategory}
         </button>
         <ul
           className={cn(
-            "w-full items-start justify-center flex flex-col transition-all duration-200  overflow-hidden  gap-2",
+            "w-full items-start overflow-y-scroll md:overflow-hidden justify-start grid md:grid-flow-col  md:grid-rows-6 transition-all duration-200   gap-x-8  gap-y-3.5",
             openPortal ? "h-64 3xl:h-72 py-1" : "h-0"
           )}
         >
@@ -86,6 +86,7 @@ const BlogFiltersUI: FC<BlogFiltersUIProps> = ({}) => {
               All
             </button>
           </li>
+
           {uniqueCategories.length
             ? uniqueCategories.map((item, i) => (
                 <li className="list-none text-paragraph-heading" key={item}>

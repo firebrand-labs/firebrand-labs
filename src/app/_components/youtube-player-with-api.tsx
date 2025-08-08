@@ -35,19 +35,21 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
     console.log(isLargeMobile, isSmallTablet);
     const updateValue = function () {
       if (isLargeMobile) {
-        videoSize.width = "1920";
-        videoSize.height = "226";
+        videoSize.width = "100%";
+        videoSize.height = "100%";
       }
       if (isSmallTablet) {
         videoSize.width = "1920";
         videoSize.height = "540";
       }
       if (isSmallLaptop) {
-        videoSize.width = "1920";
-        videoSize.height = "600";
+        videoSize.width = "1000";
+        videoSize.height = "500";
       }
     };
     updateValue();
+
+    window.addEventListener("resize", updateValue);
   }, []);
 
   useEffect(() => {
@@ -132,7 +134,7 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
   };
 
   return (
-    <div className="w-full relative">
+    <div className="w-full xl:w-[70vw] 2xl:w-full relative">
       <div
         id="youtube-id"
         className={cn(
