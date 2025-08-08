@@ -52,7 +52,7 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
   };
 
   return (
-    <div className="w-full max-w-sm 3xl:max-w-lg max-h-[530px] 2xl:max-h-[530px] 3xl:min-h-[800px] ">
+    <div className="w-full  max-w-sm 3xl:max-w-lg max-h-[510px]  2xl:max-h-[530px] 3xl:min-h-[800px] ">
       <Carousel
         opts={{
           align: "start",
@@ -68,15 +68,15 @@ const CharacterCardCarousel: FC<CharacterCardCarouselProps> = () => {
         ]}
         className="py-4 md:py-0"
       >
-        <CarouselContent className="pl-0 ml-0 max-h-[530px] 2xl:max-h-[530px] 3xl:min-h-[800px] cursor-grab">
+        <CarouselContent className="pl-0 ml-0 max-h-[510px]  2xl:max-h-[530px] 3xl:min-h-[800px] cursor-grab">
           {carouselImages.map((item, index) => (
             <CarouselItem key={index} className="pl-0">
-              <div className="justify-center gap-4">
+              <div className=" flex items-center justify-center gap-4">
                 <img
                   draggable={false}
                   src={item || "/placeholder.svg"}
                   alt="doers. misfits. firebrands."
-                  className="w-full"
+                  className="w-full xl:w-[80%] 2xl:w-full object-cover"
                   width={500}
                   height={900}
                 />

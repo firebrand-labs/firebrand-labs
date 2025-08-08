@@ -325,7 +325,7 @@ const TeamSection: React.FC<SectionProps> = ({ isActive }) => {
   return (
     <section
       ref={ref}
-      className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] py-16 xl:py-4  md:min-h-svh "
+      className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative  bg-[image:var(--color-repeating-gradient)] py-16 xl:py-0 2xl:py-8  md:min-h-svh "
     >
       <div className="container flex items-center justify-center ">
         <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full gap-8">
@@ -359,10 +359,11 @@ const ShowReelSection: React.FC<SectionProps> = function () {
   return (
     <section
       ref={ref}
-      className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] md:min-h-svh "
+      className="flex items-center justify-center flex-col w-screen overflow-x-hidden relative bg-background bg-[image:var(--color-repeating-gradient)] xl:max-h-screen  md:min-h-svh "
     >
       <div className="container flex flex-col items-center justify-center gap-8 relative  rounded-2xl overflow-hidden md:max-h-vh md:overflow-y-hidden">
-        {/* <div className="relative w-full h-[400px] pb-[56.25%]">
+        <YoutubePlayerWithAPI />
+        <div className="relative w-full pb-[56.25%] hidden">
           <iframe
             width="560"
             height="315"
@@ -371,8 +372,8 @@ const ShowReelSection: React.FC<SectionProps> = function () {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             className="absolute top-0 left-0 w-full h-full rounded-2xl"
           ></iframe>
-        </div> */}
-        <YoutubePlayerWithAPI />
+        </div>
+        {/* <YoutubePlayerWithAPI /> */}
         {/* <BackgroundVideo
           className="absolute left-0 top-0 w-full h-full z-0"
           classForVideo="object-right md:object-cover"

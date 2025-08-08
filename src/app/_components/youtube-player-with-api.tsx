@@ -35,8 +35,8 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
     console.log(isLargeMobile, isSmallTablet);
     const updateValue = function () {
       if (isLargeMobile) {
-        videoSize.width = "100%";
-        videoSize.height = "100%";
+        videoSize.width = "354";
+        videoSize.height = "185";
       }
       if (isSmallTablet) {
         videoSize.width = "1920";
@@ -44,12 +44,13 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
       }
       if (isSmallLaptop) {
         videoSize.width = "1000";
-        videoSize.height = "500";
+        videoSize.height = "505";
       }
     };
     updateValue();
 
     window.addEventListener("resize", updateValue);
+    return () => window.removeEventListener("resize", updateValue);
   }, []);
 
   useEffect(() => {
@@ -62,8 +63,8 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
 
     window.onYouTubeIframeAPIReady = () => {
       playerRef.current = new window.YT.Player("youtube-id", {
-        height: videoSize.height,
-        width: videoSize.width,
+        height: "100%",
+        width: "100%",
         videoId: "12aaVh4bVBs",
         playerVars: {
           autoplay: 1,
@@ -134,11 +135,11 @@ const YoutubePlayerWithAPI: FC<YoutubePlayerWithAPIProps> = () => {
   };
 
   return (
-    <div className="w-full xl:w-[70vw] 2xl:w-full relative">
+    <div className="w-full xl:scale-[0.75] 2xl:scale-100 relative pb-[56.25%] rounded-2xl overflow-hidden">
       <div
         id="youtube-id"
         className={cn(
-          "w-full rounded-2xl overflow-hidden shadow-sm 2xl:scale-90 3xl:scale-100 relative",
+          "absolute !w-full !h-full left-0 top-0",
           useIsMac() ? "pointer-events-auto" : "pointer-events-none"
         )}
       />
